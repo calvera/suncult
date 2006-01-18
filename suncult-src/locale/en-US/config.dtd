@@ -1,0 +1,9 @@
+<!ENTITY title.label "Sun Cult Configuration">
+<!ENTITY location.label "Location">
+<!ENTITY latitude.label "Latitude:">
+<!ENTITY longitude.label "Longitude:">
+<!ENTITY east.label "East">
+<!ENTITY west.label "West">
+<!ENTITY north.label "North">
+<!ENTITY south.label "South">
+<!ENTITY close.label "Close">

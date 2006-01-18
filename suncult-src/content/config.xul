@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://suncult/locale/config.dtd">
+
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+        title="&title.label;"
+        buttonalign="center"
+        onbeforeaccept="return suncultConfig.validate(event);"
+        >
+
+  <script src="config.js"/>
+
+  <stringbundleset>
+    <stringbundle id="string-bundle" src="chrome://suncult/locale/suncult.properties"/>
+  </stringbundleset>
+  
+
+	<prefpane id="location" label="&location.label;">
+	  <preferences>
+	    <preference id="pref-latitude" name="suncult.latitude" type="int"/>
+	    <preference id="pref-latitudeNorthSouth" name="suncult.latitudeNorthSouth" type="string"/>
+	    <preference id="pref-longitude" name="suncult.longitude" type="int"/>
+	    <preference id="pref-longitudeEastWest" name="suncult.longitudeEastWest" type="string"/>
+	  </preferences>
+		<grid align="center">
+			<columns>
+				<column/>
+				<column flex="1"/>
+				<column/>
+			</columns>
+			<rows>
+				<row>
+					<description value="&latitude.label;" control="latitude"/>
+					<textbox id="latitude" preference="pref-latitude"/>
+					<radiogroup id="northSouth" preference="pref-latitudeNorthSouth" orient="horizontal">
+  					<radio id="north" value="north" label="&north.label;"/>
+  					<radio id="south" value="south" label="&south.label;"/>
+					</radiogroup>
+				</row>
+				<row>
+					<description value="&longitude.label;" control="longitude"/>
+					<textbox id="longitude" preference="pref-longitude"/>
+					<radiogroup id="eastWest" preference="pref-longitudeEastWest" orient="horizontal">
+  					<radio id="east" value="east" label="&east.label;"/>
+  					<radio id="west" value="west" label="&west.label;"/>
+					</radiogroup>
+				</row>
+			</rows>
+		</grid>
+	</prefpane>
+
+</prefwindow>
