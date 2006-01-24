@@ -7,3 +7,8 @@
 <!ENTITY north.label "North">
 <!ENTITY south.label "South">
 <!ENTITY close.label "Close">
+<!ENTITY time.label "Time">
+<!ENTITY timezone.label "Timezone:">
+<!ENTITY timeformat.label "Time format:">
+<!ENTITY h24 "24 hour">
+<!ENTITY ampm "AM/PM">

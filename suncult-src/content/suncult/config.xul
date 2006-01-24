@@ -2,10 +2,11 @@
 <?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
 <!DOCTYPE prefwindow SYSTEM "chrome://suncult/locale/suncult/config.dtd">
 
-<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+<prefwindow 
+        id="sunCultConfig"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+        type="prefwindow"
         title="&title.label;"
-        buttonalign="center"
-        onbeforeaccept="return suncultConfig.validate(event);"
         >
 
   <script src="config.js"/>
@@ -13,40 +14,104 @@
   <stringbundleset>
     <stringbundle id="string-bundle" src="chrome://suncult/locale/suncult.properties"/>
   </stringbundleset>
-  
 
-	<prefpane id="location" label="&location.label;">
-	  <preferences>
-	    <preference id="pref-latitude" name="suncult.latitude" type="int"/>
-	    <preference id="pref-latitudeNorthSouth" name="suncult.latitudeNorthSouth" type="string"/>
-	    <preference id="pref-longitude" name="suncult.longitude" type="int"/>
-	    <preference id="pref-longitudeEastWest" name="suncult.longitudeEastWest" type="string"/>
-	  </preferences>
-		<grid align="center">
-			<columns>
-				<column/>
-				<column flex="1"/>
-				<column/>
-			</columns>
-			<rows>
-				<row>
-					<description value="&latitude.label;" control="latitude"/>
-					<textbox id="latitude" preference="pref-latitude"/>
-					<radiogroup id="northSouth" preference="pref-latitudeNorthSouth" orient="horizontal">
-  					<radio id="north" value="north" label="&north.label;"/>
-  					<radio id="south" value="south" label="&south.label;"/>
-					</radiogroup>
-				</row>
-				<row>
-					<description value="&longitude.label;" control="longitude"/>
-					<textbox id="longitude" preference="pref-longitude"/>
-					<radiogroup id="eastWest" preference="pref-longitudeEastWest" orient="horizontal">
-  					<radio id="east" value="east" label="&east.label;"/>
-  					<radio id="west" value="west" label="&west.label;"/>
-					</radiogroup>
-				</row>
-			</rows>
-		</grid>
-	</prefpane>
+  <prefpane>
+    <preferences>
+      <preference id="pref-latitude" name="suncult.latitude" type="int"/>
+      <preference id="pref-longitude" name="suncult.longitude" type="int"/>
+      <preference id="pref-timezone" name="suncult.timezone" type="string"/>
+      <preference id="pref-timeformat" name="suncult.timeformat" type="string"/>
+   </preferences>
+ 
+     <tabbox>
+      <tabs>
+        <tab label="&location.label;"/>
+        <tab label="&time.label;"/>
+      </tabs>
+      
+      <tabpanels flex="1">   
+        <tabpanel>
+          <grid align="center">
+            <columns>
+              <column/>
+              <column flex="1"/>
+            </columns>
+            <rows>
+              <row>
+                <description value="&latitude.label;" control="latitude"/>
+                <textbox id="latitude" preference="pref-latitude"/>
+              </row>
+              <row>
+                <description value="&longitude.label;" control="longitude"/>
+                <textbox id="longitude" preference="pref-longitude"/>
+              </row>
+            </rows>
+          </grid>
+        </tabpanel>
+        <tabpanel>
+          <grid align="center">
+            <columns>
+              <column/>
+              <column flex="1"/>
+              <column/>
+            </columns>
+            <rows>
+              <row>
+                <description value="&timezone.label;" control="timezone"/>
+                <menulist id="timezone" preference="pref-timezone">
+                  <menupopup>
+                    <menuitem label="default" value=""/>
+                    <menuitem label="GMT+13:00" value="-780"/>
+                    <menuitem label="GMT+12:00" value="-720"/>
+                    <menuitem label="GMT+11:00" value="-660"/>
+                    <menuitem label="GMT+10:00" value="-600"/>
+                    <menuitem label="GMT+9:30" value="-570"/>
+                    <menuitem label="GMT+9:00" value="-540"/>
+                    <menuitem label="GMT+8:00" value="-480"/>
+                    <menuitem label="GMT+7:00" value="-420"/>
+                    <menuitem label="GMT+6:30" value="-390"/>
+                    <menuitem label="GMT+6:00" value="-360"/>
+                    <menuitem label="GMT+5:45" value="-345"/>
+                    <menuitem label="GMT+5:30" value="-330"/>
+                    <menuitem label="GMT+5:00" value="-300"/>
+                    <menuitem label="GMT+4:30" value="-270"/>
+                    <menuitem label="GMT+4:00" value="-240"/>
+                    <menuitem label="GMT+3:30" value="-210"/>
+                    <menuitem label="GMT+3:00" value="-180"/>
+                    <menuitem label="GMT+2:00" value="-120"/>
+                    <menuitem label="GMT+1:00" value="-60"/>
+                    <menuitem label="GMT" value="0"/>
+                    <menuitem label="GMT-1:00" value="60"/>
+                    <menuitem label="GMT-2:00" value="120"/>
+                    <menuitem label="GMT-3:00" value="180"/>
+                    <menuitem label="GMT-3:30" value="210"/>
+                    <menuitem label="GMT-4:00" value="240"/>
+                    <menuitem label="GMT-5:00" value="300"/>
+                    <menuitem label="GMT-6:00" value="360"/>
+                    <menuitem label="GMT-7:00" value="420"/>
+                    <menuitem label="GMT-8:00" value="480"/>
+                    <menuitem label="GMT-9:00" value="540"/>
+                    <menuitem label="GMT-10:00" value="600"/>
+                    <menuitem label="GMT-11:00" value="660"/>
+                    <menuitem label="GMT-12:00" value="720"/>
+                    <menuitem label="GMT-13:00" value="780"/>
+                  </menupopup>
+                </menulist>
+              </row>
+              <row>
+                <description value="&timeformat.label;" control="timeformat"/>
+                <menulist id="timeformat" preference="pref-timeformat">
+                  <menupopup>
+                    <menuitem label="&h24;" value="h24"/>
+                    <menuitem label="&ampm;" value="ampm"/>
+                  </menupopup>
+                </menulist>
+              </row>
+            </rows>
+          </grid>
+        </tabpanel>
+      </tabpanels>
+    </tabbox>      
+  </prefpane>
 
 </prefwindow>

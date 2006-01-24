@@ -357,40 +357,40 @@ GMST0 : function( dayDiff ) {
 
 
 
-formValues: function(lat, lon, xdate)
+formValues: function(lat, lon, _date, tzOffset, tf)
 {
-  var year = xdate.getFullYear();
+  var year = _date.getFullYear();
 
-  var month = xdate.getMonth()+1;
+  var month = _date.getMonth()+1;
 
-  var day = xdate.getDate();
+  var day = _date.getDate();
 
   this.sunRiseSet(year,month,day,lat,lon);
 
   this.civTwilight(year,month,day,lat,lon);
 
-	var timezoneoffset = xdate.getTimezoneOffset() / 60;
+  tzOffset = tzOffset / 60.0;
 
-  var twst_h = Math.floor(this.twStartT - timezoneoffset)
-  var twst_m = Math.floor((this.twStartT - timezoneoffset - twst_h)*60)
+  var twst_h = Math.floor(this.twStartT - tzOffset)
+  var twst_m = Math.floor((this.twStartT - tzOffset - twst_h)*60)
 
-  var sris_h = Math.floor(this.sRiseT - timezoneoffset )
-  var sris_m = Math.floor((this.sRiseT - timezoneoffset - sris_h)*60)
+  var sris_h = Math.floor(this.sRiseT - tzOffset )
+  var sris_m = Math.floor((this.sRiseT - tzOffset - sris_h)*60)
 
-  var sset_h = Math.floor(this.sSetT - timezoneoffset )
-  var sset_m = Math.floor((this.sSetT - timezoneoffset - sset_h)*60)
+  var sset_h = Math.floor(this.sSetT - tzOffset )
+  var sset_m = Math.floor((this.sSetT - tzOffset - sset_h)*60)
 
-  var twen_h = Math.floor(this.twEndT - timezoneoffset )
-  var twen_m = Math.floor((this.twEndT - timezoneoffset - twen_h)*60)
+  var twen_h = Math.floor(this.twEndT - tzOffset )
+  var twen_m = Math.floor((this.twEndT - tzOffset - twen_h)*60)
 
-	var twStart;
-	var twEnd;
-	var srise;
-	var sset;
-	
+  var twStart;
+  var twEnd;
+  var srise;
+  var sset;
+  
   if(this.twStatus == 0){
-		twStart = this.formatTime(twst_h, twst_m);     
-    twEnd = this.formatTime(twen_h, twen_m);
+    twStart = this.formatTime(twst_h, twst_m, tf);     
+    twEnd = this.formatTime(twen_h, twen_m, tf);
   } else if(this.twStatus > 0 && this.srStatus <= 0)  {
     twStart = "all";
     twEnd = "no";
@@ -400,18 +400,38 @@ formValues: function(lat, lon, xdate)
   }
 
   if(this.srStatus == 0) {
-		srise = this.formatTime(sris_h, sris_m);     
-    sset = this.formatTime(sset_h, sset_m);
+    srise = this.formatTime(sris_h, sris_m, tf);     
+    sset = this.formatTime(sset_h, sset_m, tf);
   } else {
-		srise = "na";     
+    srise = "na";     
     sset = "na";
   }
 
   return new Array(twStart, twEnd, srise, sset);
 },
 
-formatTime: function(h,m) {
-	return h + ":" + (m < 10 ? "0" : "") + m;
-	}
+formatTime: function(h, m, tf) {
+  if (h > 23) h -= 24;
+  if (h < 0) h += 24;
+  
+  var minutes = (m < 10 ? "0" : "") + m;
+  
+  if (tf == "ampm") {
+    var hour;
+    var mer;
+    if (h > 11) {
+      mer = "PM";
+      h-=12;
+    } else {
+      mer = "AM";
+    }
+
+    if (h == 0) h = 12;
+    
+    return h + ":" + minutes + mer;
+  } else {
+    return (h < 10 ? "0" : "") + h + ":" + minutes;
+  }
+}
 
 };

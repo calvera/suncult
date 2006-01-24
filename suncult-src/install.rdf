@@ -6,13 +6,20 @@
   
     <em:id>suncult@sf.net</em:id>
     <em:name>Sun Cult</em:name>
-    <em:version>0.2</em:version>
+    <em:version>0.3</em:version>
     <em:description>Worldwide Sunrise, Sunset And Twilight Times</em:description>
     <em:creator>Karel Sommer</em:creator>
 		<em:homepageURL>http://suncult.sourceforge.net</em:homepageURL>
 		<em:optionsURL>chrome://suncult/content/config.xul</em:optionsURL>
   
-    <!-- Firefox -->
+		<em:file>
+			<Description about="urn:mozilla:extension:file:suncult.jar">
+				<em:package>content/suncult/</em:package>
+				<em:skin>skin/suncult/</em:skin>
+			</Description>
+		</em:file>
+		
+		<!-- Firefox -->
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>

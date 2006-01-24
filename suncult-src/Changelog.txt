@@ -1,0 +1,5 @@
+0.3
+- bugfixes
+- added timezone configuration
+- added timeformat configuration
+- coordinates can be negative

@@ -1,6 +1,6 @@
 var suncultConfig = {
 	_stringBundle: null,
-	_numberValidation: /^\d+$/,
+	_numberValidation: /^-?\d+$/,
 
   init: function() {
     // initialization code
