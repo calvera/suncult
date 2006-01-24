@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
-<!DOCTYPE window SYSTEM "chrome://suncult/locale/config.dtd">
+<!DOCTYPE prefwindow SYSTEM "chrome://suncult/locale/suncult/config.dtd">
 
 <prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
         title="&title.label;"

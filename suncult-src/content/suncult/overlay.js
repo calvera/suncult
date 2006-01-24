@@ -12,6 +12,7 @@ var suncult = {
 	_longitude: null,
 	
   init: function() {
+		dump("in suncult.init\n");
 		this._twilightStart = document.getElementById("suncult-twilight-start");
 		this._sunrise = document.getElementById("suncult-sunrise");
 		this._sunset = document.getElementById("suncult-sunset");
@@ -21,6 +22,7 @@ var suncult = {
 			this.showConfig();
 			}
     this.initialized = true;
+		dump("leaving suncult.init\n");
   },
 
 	readPreferences: function() {
@@ -51,7 +53,9 @@ var suncult = {
 	},
 	
   showConfig: function() {
+		dump("in suncult.showConfig\n");
     window.open("chrome://suncult/content/config.xul", "", "chrome,centerscreen,modal");
+		dump("leaving suncult.showConfig\n");
   },
   
   onPopupShowing: function(popup) {

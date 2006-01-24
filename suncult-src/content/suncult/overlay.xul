@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://suncult/skin/overlay.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://suncult/locale/suncult/overlay.dtd">
+
+<overlay id="suncult-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="calculations.js"/>
+  <script src="overlay.js"/>
+
+	<commandset id="mainCommandSet">
+  	<command id="cmd_suncult_config" oncommand="suncult.showConfig();"/>
+	</commandset>
+
+	<commandset id="tasksCommands">
+  	<command id="cmd_suncult_config" oncommand="suncult.showConfig();"/>
+	</commandset>
+
+  <menupopup id="menu_ToolsPopup">
+    <menuitem id="suncult-config" label="&suncultConfig;" accesskey="&suncultConfigKey;" command="cmd_suncult_config"/>
+  </menupopup>
+
+  <menupopup id="taskPopup">
+    <menuitem id="suncult-config" label="&suncultConfig;" accesskey="&suncultConfigKey;" command="cmd_suncult_config"/>
+  </menupopup>
+
+  <statusbar id="status-bar">
+      <statusbarpanel id="suncult-status" insertafter="livemark-button" tooltip="suncult-tooltip">
+					<label id="suncult-status-label" collapsed="true" crop="end" style="width:0px" /> 
+          <image id="suncult-status-icon" width="32" height="20" src="chrome://suncult/content/icon.png" context="suncult-status-popup"/>
+       </statusbarpanel>
+  	<tooltip id="suncult-tooltip" orient="vertical" onpopupshowing="suncult.onPopupShowing(this);">
+			<grid align="center">
+				<columns>
+					<column />
+					<column align="right"/>
+				</columns>
+				<rows>
+					<row>
+					 	<description value="&suncultTwilightStart;"/>
+					 	<description id="suncult-twilight-start" align="right"/>
+					</row>
+					<row>
+					 	<description value="&suncultSunRise;"/>
+					 	<description id="suncult-sunrise" align="right"/>
+					</row>
+					<row>
+					 	<description value="&suncultSunset;"/>
+					 	<description id="suncult-sunset" align="right"/>
+					</row>
+					<row>
+					 	<description value="&suncultTwilightEnd;"/>
+					 	<description id="suncult-twilight-end" align="right"/>
+					</row>
+				</rows>
+			</grid>
+  	</tooltip>
+    <popup id="suncult-status-popup" position="before_end" onpopupshowing="event.preventBubble();">
+      <menuitem label="&suncultConfig;" accesskey="&suncultConfigKey;" command="cmd_suncult_config"/>
+    </popup>
+  </statusbar>
+</overlay>

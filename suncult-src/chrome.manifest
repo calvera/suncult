@@ -1,7 +1,9 @@
-content	suncult	content/
+content	suncult	content/suncult/
+
 overlay	chrome://browser/content/browser.xul	chrome://suncult/content/overlay.xul
+overlay	chrome://messenger/content/messenger.xul chrome://suncult/content/overlay.xul
 
 locale	suncult	en-US	locale/en-US/
 
-skin	suncult	classic/1.0	skin/
+skin	suncult	classic/1.0	skin/suncult/
 style	chrome://global/content/customizeToolbar.xul	chrome://suncult/skin/overlay.css
