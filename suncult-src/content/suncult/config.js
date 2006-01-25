@@ -24,6 +24,23 @@ var suncultConfig = {
     	} 
 		
   	return true;
+  },
+  
+  onSelectCity: function(event) {
+    var tree = event.target;
+  
+    if (!tree.view.isContainer(tree.currentIndex)) {
+      var latitude = document.getElementById("latitude");
+      var longitude = document.getElementById("longitude");
+      var latcol = tree.columns ? tree.columns['latitude-column'] : 'latitude-column';
+      var longcol = tree.columns ? tree.columns['longitude-column'] : 'longitude-column';
+    
+      var lat = tree.view.getCellText(tree.currentIndex, latcol);
+      var lon = tree.view.getCellText(tree.currentIndex, longcol);
+    
+      latitude.value = lat;
+      longitude.value = lon;
+    }
   }
   
 };

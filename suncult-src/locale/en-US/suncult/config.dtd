@@ -1,14 +1,15 @@
 <!ENTITY title.label "Sun Cult Configuration">
 <!ENTITY location.label "Location">
-<!ENTITY latitude.label "Latitude:">
-<!ENTITY longitude.label "Longitude:">
+<!ENTITY latitude.label "Latitude">
+<!ENTITY longitude.label "Longitude">
+<!ENTITY name.label "Name">
 <!ENTITY east.label "East">
 <!ENTITY west.label "West">
 <!ENTITY north.label "North">
 <!ENTITY south.label "South">
 <!ENTITY close.label "Close">
 <!ENTITY time.label "Time">
-<!ENTITY timezone.label "Timezone:">
-<!ENTITY timeformat.label "Time format:">
+<!ENTITY timezone.label "Timezone">
+<!ENTITY timeformat.label "Time format">
 <!ENTITY h24 "24 hour">
 <!ENTITY ampm "AM/PM">

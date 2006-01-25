@@ -6,20 +6,20 @@
   
     <em:id>suncult@sf.net</em:id>
     <em:name>Sun Cult</em:name>
-    <em:version>0.3</em:version>
+    <em:version>0.4dev</em:version>
     <em:description>Worldwide Sunrise, Sunset And Twilight Times</em:description>
     <em:creator>Karel Sommer</em:creator>
-		<em:homepageURL>http://suncult.sourceforge.net</em:homepageURL>
-		<em:optionsURL>chrome://suncult/content/config.xul</em:optionsURL>
+    <em:homepageURL>http://suncult.sourceforge.net</em:homepageURL>
+    <em:optionsURL>chrome://suncult/content/config.xul</em:optionsURL>
   
-		<em:file>
-			<Description about="urn:mozilla:extension:file:suncult.jar">
-				<em:package>content/suncult/</em:package>
-				<em:skin>skin/suncult/</em:skin>
-			</Description>
-		</em:file>
-		
-		<!-- Firefox -->
+    <em:file>
+      <Description about="urn:mozilla:extension:file:suncult.jar">
+        <em:package>content/suncult/</em:package>
+        <em:skin>skin/suncult/</em:skin>
+      </Description>
+    </em:file>
+    
+    <!-- Firefox -->
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
@@ -28,7 +28,7 @@
       </Description>
     </em:targetApplication>
 
-		<!-- Thunderbird -->
+    <!-- Thunderbird -->
     <em:targetApplication>
       <Description>
         <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
@@ -37,7 +37,7 @@
       </Description>
     </em:targetApplication>
 
-		<!-- Mozilla 
+    <!-- Mozilla 
     <em:targetApplication>
       <Description>
         <em:id>{86c18b42-e466-45a9-ae7a-9b95ba6f5640}</em:id>

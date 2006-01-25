@@ -31,22 +31,48 @@
       
       <tabpanels flex="1">   
         <tabpanel>
-          <grid align="center">
-            <columns>
-              <column/>
-              <column flex="1"/>
-            </columns>
-            <rows>
-              <row>
-                <description value="&latitude.label;" control="latitude"/>
-                <textbox id="latitude" preference="pref-latitude"/>
-              </row>
-              <row>
-                <description value="&longitude.label;" control="longitude"/>
-                <textbox id="longitude" preference="pref-longitude"/>
-              </row>
-            </rows>
-          </grid>
+          <vbox>
+            <grid align="center">
+              <columns>
+                <column/>
+                <column flex="1"/>
+              </columns>
+              <rows>
+                <row>
+                  <description value="&latitude.label;:" control="latitude"/>
+                  <textbox id="latitude" preference="pref-latitude"/>
+                </row>
+                <row>
+                  <description value="&longitude.label;:" control="longitude"/>
+                  <textbox id="longitude" preference="pref-longitude"/>
+                </row>
+              </rows>
+            </grid>
+            <tree id="cities" seltype="single" flex="1" width="400" height="200"
+                  datasources="cities.rdf" ref="http://suncult.sf.net/all-cities" flags="dont-build-content"
+                  onselect="suncultConfig.onSelectCity(event);">
+              <treecols>
+                <treecol id="name" label="&name.label;" primary="true" flex="1"
+                      sortActive="true" sortDirection="ascending" sort="rdf:http://suncult.sf.net/rdf#name"/>
+                <splitter/>
+                <treecol id="latitude-column" label="&latitude.label;"/>
+                <treecol id="longitude-column" label="&longitude.label;"/>
+              </treecols>
+              <template>
+                <rule>
+                  <treechildren>
+                    <treeitem uri="rdf:*">
+                      <treerow>
+                        <treecell label="rdf:http://suncult.sf.net/rdf#name"/>
+                        <treecell label="rdf:http://suncult.sf.net/rdf#latitude"/>
+                        <treecell label="rdf:http://suncult.sf.net/rdf#longitude"/>
+                      </treerow>
+                    </treeitem>
+                  </treechildren>
+                </rule>
+              </template>
+            </tree>            
+          </vbox>
         </tabpanel>
         <tabpanel>
           <grid align="center">
@@ -57,7 +83,7 @@
             </columns>
             <rows>
               <row>
-                <description value="&timezone.label;" control="timezone"/>
+                <description value="&timezone.label;:" control="timezone"/>
                 <menulist id="timezone" preference="pref-timezone">
                   <menupopup>
                     <menuitem label="default" value=""/>
@@ -99,7 +125,7 @@
                 </menulist>
               </row>
               <row>
-                <description value="&timeformat.label;" control="timeformat"/>
+                <description value="&timeformat.label;:" control="timeformat"/>
                 <menulist id="timeformat" preference="pref-timeformat">
                   <menupopup>
                     <menuitem label="&h24;" value="h24"/>
