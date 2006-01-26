@@ -1,10 +1,10 @@
 var suncult = {
-	_prefLatitude: "suncult.latitude",
-	_prefLatitudeNorthSouth: "suncult.latitudeNorthSouth",
-	_prefLongitude: "suncult.longitude",
-	_prefLongitudeEastWest: "suncult.longitudeEastWest",
-	_prefTimezone: "suncult.timezone",
-	_prefTimeFormat: "suncult.timeformat",
+	_prefLatitude: "extensions.suncult.latitude",
+	_prefLatitudeNorthSouth: "extensions.suncult.latitudeNorthSouth",
+	_prefLongitude: "extensions.suncult.longitude",
+	_prefLongitudeEastWest: "extensions.suncult.longitudeEastWest",
+	_prefTimezone: "extensions.suncult.timezone",
+	_prefTimeFormat: "extensions.suncult.timeformat",
 	
 	_twilightStart: null,
 	_sunrise: null,
@@ -15,9 +15,12 @@ var suncult = {
 	_longitude: null,
   _timezone: null,
   _timeFormat: null,
+  
+  _prefs: null,
 	
   init: function() {
 		dump("in suncult.init\n");
+	  this._prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
 		this._twilightStart = document.getElementById("suncult-twilight-start");
 		this._sunrise = document.getElementById("suncult-sunrise");
 		this._sunset = document.getElementById("suncult-sunset");
@@ -32,9 +35,7 @@ var suncult = {
   },
 
 	migratePreferences: function() {
-	  var prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
-	  
-	  // 0.2 - 0.3
+	  var prefs = this._prefs;
 		var latitude = null;
 		var longitude = null;
 
@@ -71,19 +72,19 @@ var suncult = {
     }
 
 		if (latitude) {
-			prefs.setIntPref(this._prefLatitude, latitude);
+			prefs.setCharPref(this._prefLatitude, latitude);
 			}
 		if (longitude) {
-			prefs.setIntPref(this._prefLongitude, longitude);
+			prefs.setCharPref(this._prefLongitude, longitude);
 			}
 			
 	},
 	
 	readPreferences: function() {
-    var prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
+	  var prefs = this._prefs;
   	
     try {
- 	    this._latitude = prefs.getIntPref(this._prefLatitude);
+ 	    this._latitude = prefs.getCharPref(this._prefLatitude);
    	}	catch(ex) {
       dump(ex + "\n");
     } finally {
@@ -91,7 +92,7 @@ var suncult = {
     }
   		
     try {
- 	    this._longitude = prefs.getIntPref(this._prefLongitude);
+ 	    this._longitude = prefs.getCharPref(this._prefLongitude);
    	}	catch(ex) {
       dump(ex + "\n");
     } finally {
@@ -124,12 +125,15 @@ var suncult = {
 	},
 
   showConfig: function() {
-    window.open("chrome://suncult/content/config.xul", "", "chrome,centerscreen,modal");
-  	this.readPreferences();
+    window.open("chrome://suncult/content/config.xul", "", "chrome,centerscreen");
   },
   
   onPopupShowing: function(popup) {
-  	result = suncultCalc.formValues(this._latitude,this._longitude,new Date(), this._timezone, this._timeFormat);
+    dump("lat: " + this._latitude + "\n");
+    dump("long: " + this._longitude + "\n");
+    dump("timezone: " + this._timezone + "\n");
+    dump("timeformat: " + this._timeFormat + "\n");
+  	result = suncultCalc.formValues(parseFloat(this._latitude),parseFloat(this._longitude), new Date(), this._timezone, this._timeFormat);
 		this._twilightStart.value = result[0];
 		this._twilightEnd.value = result[1];
 		this._sunrise.value = result[2];

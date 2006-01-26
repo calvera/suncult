@@ -122,10 +122,14 @@ sunTimes : function(year, month, day, lat, lon, altit, sUppLimb){
       /* Compute dayDiff of 12h local mean solar time */
       
   dayDiff = this.dayDiff2000(year,month,day) + 0.5 - lon/360.0;
+//  dump(dayDiff + "\n");
 
       /* Compute local sideral time of this moment */
 
-  locSidT = this.revolution( this.GMST0(dayDiff) + 180.0 + lon );
+  var gmts = this.GMST0(dayDiff);
+//  dump(gmts + "\n");
+  locSidT = this.revolution( gmts + 180.0 + lon);
+//  dump(locSidT + "\n");
 
       /* Compute Sun's RA + Decl at this moment */
 
@@ -135,6 +139,7 @@ sunTimes : function(year, month, day, lat, lon, altit, sUppLimb){
       
 
   sSouthT = 12.0 - this.rev180(locSidT - this.sRA)/15.0;
+//  dump(sSouthT + "\n");
 
 
       /* Compute the Sun's apparent radius, degrees */
@@ -222,9 +227,9 @@ sunRaDec : function(dayDiff){
 
       /* Compute ecliptic rectangular coordinates (z=0) */
 
-  x = this.sDIST * this.cosd(this.sDEC);
+  x = this.sDIST * this.cosd(this.sLON);
 
-  y = this.sDIST * this.sind(this.sDEC);
+  y = this.sDIST * this.sind(this.sLON);
 
       /* Compute obliquity of ecliptic */
       /* (inclination of Earth's axis) */
@@ -285,22 +290,20 @@ sunPos : function(dayDiff){
 
   v = this.atan2d( y, x );                // True anomaly
 
-  this.sDEC = v + w;                      // True solar longitude
+  this.sLON = v + w;                      // True solar longitude
 
-  if ( this.sDEC >= 360.0 )
-    this.sDEC -= 360.0;                   // Make it 0..360 degrees
+  if ( this.sLON >= 360.0 )
+    this.sLON -= 360.0;                   // Make it 0..360 degrees
 
 }, //=================== sunPos() =============================
 
-
-INV360 : 1.0 / 360.0,
 
 
 //-------------------------------------------------------------
 // Reduce angle to within 0..360 degrees
 //-------------------------------------------------------------
 revolution : function( x ){
-  return (x - 360.0 * Math.floor( x * this.INV360 ));
+  return (x - 360.0 * Math.floor( x / 360.0 ));
 },
 
 
@@ -308,7 +311,7 @@ revolution : function( x ){
 // Reduce angle to within -180..+180 degrees
 //-------------------------------------------------------------
 rev180 : function( x ){
-  return ( x - 360.0 * Math.floor( x * this.INV360 + 0.5 ) );
+  return ( x - 360.0 * Math.floor( 0.5 + x / 360.0  ) );
 },
 
 
@@ -345,10 +348,11 @@ GMST0 : function( dayDiff ) {
 
 //  var const2 = 0.9856002585 + 4.70935E-5;
 
-  var const2 = 0.9856002585 + 4.70935/100000;  // for Opera
+  var const2 = 0.9856002585 + 4.70935/100000.0;  // for Opera
 
-
-  return this.revolution( const1 + const2 * dayDiff );
+  var result = this.revolution( const1 + const2 * dayDiff );
+//  dump(result + "\n");
+  return result;
       
 }, //=================== GMST0() =========================
 
@@ -365,23 +369,32 @@ formValues: function(lat, lon, _date, tzOffset, tf)
 
   var day = _date.getDate();
 
+//  dump("y: " + year + "\n");
+//  dump("m: " + month + "\n");
+//  dump("d: " + day + "\n");
+
   this.sunRiseSet(year,month,day,lat,lon);
 
   this.civTwilight(year,month,day,lat,lon);
 
   tzOffset = tzOffset / 60.0;
 
-  var twst_h = Math.floor(this.twStartT - tzOffset)
-  var twst_m = Math.floor((this.twStartT - tzOffset - twst_h)*60)
+//  dump("ts: " + this.twStartT + "\n");
+//  dump("sr: " + this.sRiseT + "\n");
+//  dump("ss: " + this.sSetT + "\n");
+//  dump("te: " + this.twEndT + "\n");
+  
+  var twst_h = Math.floor(this.twStartT - tzOffset);
+  var twst_m = Math.floor((this.twStartT - tzOffset - twst_h)*60);
 
-  var sris_h = Math.floor(this.sRiseT - tzOffset )
-  var sris_m = Math.floor((this.sRiseT - tzOffset - sris_h)*60)
+  var sris_h = Math.floor(this.sRiseT - tzOffset );
+  var sris_m = Math.floor((this.sRiseT - tzOffset - sris_h)*60);
 
-  var sset_h = Math.floor(this.sSetT - tzOffset )
-  var sset_m = Math.floor((this.sSetT - tzOffset - sset_h)*60)
+  var sset_h = Math.floor(this.sSetT - tzOffset );
+  var sset_m = Math.floor((this.sSetT - tzOffset - sset_h)*60);
 
-  var twen_h = Math.floor(this.twEndT - tzOffset )
-  var twen_m = Math.floor((this.twEndT - tzOffset - twen_h)*60)
+  var twen_h = Math.floor(this.twEndT - tzOffset );
+  var twen_m = Math.floor((this.twEndT - tzOffset - twen_h)*60);
 
   var twStart;
   var twEnd;

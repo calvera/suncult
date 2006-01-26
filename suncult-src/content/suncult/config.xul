@@ -1,12 +1,12 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
 <!DOCTYPE prefwindow SYSTEM "chrome://suncult/locale/suncult/config.dtd">
 
-<prefwindow 
-        id="sunCultConfig"
-        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
-        type="prefwindow"
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+        id="suncultConfig"
         title="&title.label;"
+        buttons="accept,cancel"
+        ondialogaccept="opener.suncult.readPreferences();"
         >
 
   <script src="config.js"/>
@@ -17,10 +17,10 @@
 
   <prefpane>
     <preferences>
-      <preference id="pref-latitude" name="suncult.latitude" type="int"/>
-      <preference id="pref-longitude" name="suncult.longitude" type="int"/>
-      <preference id="pref-timezone" name="suncult.timezone" type="string"/>
-      <preference id="pref-timeformat" name="suncult.timeformat" type="string"/>
+      <preference id="pref-latitude" name="extensions.suncult.latitude" type="string"/>
+      <preference id="pref-longitude" name="extensions.suncult.longitude" type="string"/>
+      <preference id="pref-timezone" name="extensions.suncult.timezone" type="string"/>
+      <preference id="pref-timeformat" name="extensions.suncult.timeformat" type="string"/>
    </preferences>
  
      <tabbox>
@@ -32,19 +32,25 @@
       <tabpanels flex="1">   
         <tabpanel>
           <vbox>
+            <description width="400">
+              Enter your coordinates. Accepted values are (for example) -50.30, 49n20, 13°N, 13° 19'N and 13°19'43.3"N
+            </description>
             <grid align="center">
               <columns>
                 <column/>
                 <column flex="1"/>
+                <column flex="1"/>
               </columns>
               <rows>
                 <row>
-                  <description value="&latitude.label;:" control="latitude"/>
-                  <textbox id="latitude" preference="pref-latitude"/>
+                  <label value="&latitude.label;:" control="latitude-edit"/>
+                  <textbox id="latitude-edit" oninput="suncultConfig.oninputLatitude(event);"/>
+                  <textbox id="latitude" preference="pref-latitude" readonly="true"/>
                 </row>
                 <row>
-                  <description value="&longitude.label;:" control="longitude"/>
-                  <textbox id="longitude" preference="pref-longitude"/>
+                  <label value="&longitude.label;:" control="longitude-edit"/>
+                  <textbox id="longitude-edit" oninput="suncultConfig.oninputLongitude(event);"/>
+                  <textbox id="longitude" preference="pref-longitude" readonly="true"/>
                 </row>
               </rows>
             </grid>

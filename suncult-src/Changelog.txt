@@ -1,3 +1,7 @@
+0.4
+- bugfixes
+- configuration dialog rewritten
+
 0.3
 - bugfixes
 - added timezone configuration
