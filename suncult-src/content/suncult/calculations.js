@@ -445,6 +445,21 @@ formatTime: function(h, m, tf) {
   } else {
     return (h < 10 ? "0" : "") + h + ":" + minutes;
   }
-}
+},
 
+		moonPhasePercent: function(theDate) {
+      var synodic = 29.53058867;
+  		var msPerDay = 24 * 60 * 60 * 1000;
+			var baseDate = new Date();
+				baseDate.setUTCFullYear(2005);
+				baseDate.setUTCMonth(4);
+				baseDate.setUTCDate(8);
+				baseDate.setUTCHours(8);
+				baseDate.setUTCMinutes(48);
+				
+			var diff = theDate - baseDate;
+			var phase = diff / (synodic * msPerDay);
+			phase *= 100;
+			return Math.floor(phase) % 100;
+		} 
 };

@@ -5,3 +5,6 @@
 <!ENTITY suncultSunRise "Sunrise:">
 <!ENTITY suncultSunset "Sunset:">
 <!ENTITY suncultTwilightEnd "Twilight ends:">
+<!ENTITY suncultMoonPhase "Moon Phase:">
+<!ENTITY suncultMoonSet "Moonset:">
+<!ENTITY suncultMoonRise "Moonrise:">

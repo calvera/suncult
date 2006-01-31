@@ -10,7 +10,11 @@ var suncult = {
 	_sunrise: null,
 	_sunset: null,
 	_twilightEnd: null,
+	_moonPhaseImg: null,
+	_moonImg: null,
+	_moonPhase: null,
 
+	_moonPhase: null,
 	_latitude: null,
 	_longitude: null,
   _timezone: null,
@@ -19,66 +23,23 @@ var suncult = {
   _prefs: null,
 	
   init: function() {
-		dump("in suncult.init\n");
+//		dump("in suncult.init\n");
 	  this._prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
 		this._twilightStart = document.getElementById("suncult-twilight-start");
 		this._sunrise = document.getElementById("suncult-sunrise");
 		this._sunset = document.getElementById("suncult-sunset");
 		this._twilightEnd = document.getElementById("suncult-twilight-end");
-		this.migratePreferences();
+		this._moonPhaseImg = document.getElementById("suncult-status-icon-moon");
+		this._moonImg = document.getElementById("suncult-moon");
+		this._moonPhase = document.getElementById("suncult-moonphase");
 		this.readPreferences();
 		if (this._latitude == null || this._longitude == null) {
 			this.showConfig();
 			}
+	  this.updateMoon();
     this.initialized = true;
-		dump("leaving suncult.init\n");
+//		dump("leaving suncult.init\n");
   },
-
-	migratePreferences: function() {
-	  var prefs = this._prefs;
-		var latitude = null;
-		var longitude = null;
-
-    try {
-  	  if (prefs.getPrefType(this._prefLatitude) == prefs.PREF_INT){
-  	    latitude = prefs.getIntPref(this._prefLatitude);
-  	  }
-  		
-  	  if (prefs.getPrefType(this._prefLatitudeNorthSouth) == prefs.PREF_STRING){
-  	    var northSouth = prefs.getCharPref(this._prefLatitudeNorthSouth);
-  	    if ("south" == northSouth) {
-  	    	latitude = -latitude;
-  	    	}
-  			prefs.clearUserPref(this._prefLatitudeNorthSouth);
-  	  }
-   	}	catch(ex) {
-      dump(ex + "\n");
-    }
-
-    try {
-  	  if (prefs.getPrefType(this._prefLongitude) == prefs.PREF_INT){
-  	    longitude = prefs.getIntPref(this._prefLongitude);
-  	  }
-  
-  	  if (prefs.getPrefType(this._prefLongitudeEastWest) == prefs.PREF_STRING){
-  	    var eastWest = prefs.getCharPref(this._prefLongitudeEastWest);
-  	    if ("west" == eastWest) {
-  	    	longitude = -longitude;
-  	    	}
-  			prefs.clearUserPref(this._prefLongitudeEastWest);
-  	  }
-   	}	catch(ex) {
-      dump(ex + "\n");
-    }
-
-		if (latitude) {
-			prefs.setCharPref(this._prefLatitude, latitude);
-			}
-		if (longitude) {
-			prefs.setCharPref(this._prefLongitude, longitude);
-			}
-			
-	},
 	
 	readPreferences: function() {
 	  var prefs = this._prefs;
@@ -86,41 +47,41 @@ var suncult = {
     try {
  	    this._latitude = prefs.getCharPref(this._prefLatitude);
    	}	catch(ex) {
-      dump(ex + "\n");
+//      dump(ex + "\n");
     } finally {
-      dump("latitude: " + this._latitude + "\n");
+//      dump("latitude: " + this._latitude + "\n");
     }
   		
     try {
  	    this._longitude = prefs.getCharPref(this._prefLongitude);
    	}	catch(ex) {
-      dump(ex + "\n");
+//      dump(ex + "\n");
     } finally {
-      dump("longitude: " + this._longitude + "\n");
+//      dump("longitude: " + this._longitude + "\n");
     }
 
     try {
  	    this._timezone = prefs.getCharPref(this._prefTimezone);
    	}	catch(ex) {
-      dump(ex + "\n");
+//      dump(ex + "\n");
     } finally {
   	  if (this._timezone == null || this._timezone == "") {
   	    this._timezone = new Date().getTimezoneOffset();
-  	    dump("default ");
+//  	    dump("default ");
   	  }
-  	  dump("timezone: " + this._timezone + "\n");
+//  	  dump("timezone: " + this._timezone + "\n");
     }
 
     try {
  	    this._timeFormat = prefs.getCharPref(this._prefTimeFormat);
    	}	catch(ex) {
-      dump(ex + "\n");
+//      dump(ex + "\n");
     } finally {
   	  if (this._timeFormat != 'h24' && this._timeFormat != "ampm") {
   	    this._timeFormat = 'h24';
-  	    dump("default ");
+//  	    dump("default ");
   	  }
-  	  dump("timeformat: " + this._timeFormat + "\n");
+//  	  dump("timeformat: " + this._timeFormat + "\n");
     }
 	},
 
@@ -129,16 +90,43 @@ var suncult = {
   },
   
   onPopupShowing: function(popup) {
-    dump("lat: " + this._latitude + "\n");
+/*    dump("lat: " + this._latitude + "\n");
     dump("long: " + this._longitude + "\n");
     dump("timezone: " + this._timezone + "\n");
-    dump("timeformat: " + this._timeFormat + "\n");
-  	result = suncultCalc.formValues(parseFloat(this._latitude),parseFloat(this._longitude), new Date(), this._timezone, this._timeFormat);
+    dump("timeformat: " + this._timeFormat + "\n"); */
+    var today = new Date();
+  	result = suncultCalc.formValues(parseFloat(this._latitude),parseFloat(this._longitude), today, this._timezone, this._timeFormat);
 		this._twilightStart.value = result[0];
 		this._twilightEnd.value = result[1];
 		this._sunrise.value = result[2];
 		this._sunset.value = result[3];
-  	}
+		var phase = this.getMoonPhasePercent(today);
+		this._moonPhase.value = Math.floor(phase) + "%";
+		this._moonImg.src = this.getMoonImageSrc(today, 64);
+  	},
+  	
+  getMoonPhase: function(xdate) {
+			thePhase = Math.floor(this.getMoonPhasePercent(xdate) * .279);
+			return (this._latitude < 0) ? 27 - thePhase : thePhase;
+  },
+  
+  getMoonPhasePercent: function(xdate) {
+			return suncultCalc.moonPhasePercent(xdate);
+  },
+
+  getMoonImageSrc: function(xdate, size) {
+    var phase = this.getMoonPhase(xdate);
+    var dir = "chrome://suncult/content/images/";
+    var base = "moon";
+    var delim = "_";
+    var ext = ".png";
+    return dir + base + delim + phase + delim + size + ext;
+  },
+
+  updateMoon: function() {
+    var imgsrc = this.getMoonImageSrc(new Date(), 20);
+    this._moonPhaseImg.src = imgsrc;
+  }
 };
 
 window.addEventListener("load", function(e) { suncult.init(e); }, false); 
