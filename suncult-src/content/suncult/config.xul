@@ -92,7 +92,7 @@
                 <description value="&timezone.label;:" control="timezone"/>
                 <menulist id="timezone" preference="pref-timezone">
                   <menupopup>
-                    <menuitem label="default" value=""/>
+                    <menuitem label="&timezone.system;" value=""/>
                     <menuitem label="GMT+13:00" value="-780"/>
                     <menuitem label="GMT+12:00" value="-720"/>
                     <menuitem label="GMT+11:00" value="-660"/>

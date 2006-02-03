@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="chrome://suncult/skin/overlay.css" type="text/css"?>
 
 <!DOCTYPE overlay SYSTEM "chrome://suncult/locale/suncult/overlay.dtd">
@@ -56,19 +56,19 @@
       				<rows>
        					<label flex="1"/> 
       					<row>
-      					 	<description value="&suncultTwilightStart;"/>
+      					 	<description value="&suncultTwilightStart;:"/>
       					 	<description id="suncult-twilight-start"/>
       					</row>
       					<row>
-      					 	<description value="&suncultSunRise;"/>
+      					 	<description value="&suncultSunRise;:"/>
       					 	<description id="suncult-sunrise"/>
       					</row>
       					<row>
-      					 	<description value="&suncultSunset;"/>
+      					 	<description value="&suncultSunset;:"/>
       					 	<description id="suncult-sunset"/>
       					</row>
       					<row>
-      					 	<description value="&suncultTwilightEnd;"/>
+      					 	<description value="&suncultTwilightEnd;:"/>
       					 	<description id="suncult-twilight-end"/>
       					</row>
        					<label flex="1"/> 
@@ -90,16 +90,24 @@
       				<rows>
        					<label flex="1"/> 
       					<row>
-      					 	<description value="&suncultMoonPhase;"/>
+      					 	<description value="&suncultMoonPhase;:"/>
         		 	    <description id="suncult-moonphase"/>
       					</row>
       					<row>
-      					 	<description value="&suncultMoonRise;"/>
+      					 	<description value="&suncultMoonRise;:"/>
         		 	    <description id="suncult-moonrise" />
       					</row>
       					<row>
-      					 	<description value="&suncultMoonSet;"/>
+      					 	<description value="&suncultMoonRiseAzimuth;:"/>
+         		 	    <description id="suncult-moonrise-azimuth" />
+      					</row>
+      					<row>
+      					 	<description value="&suncultMoonSet;:"/>
         		 	    <description id="suncult-moonset"/>
+      					</row>
+      					<row>
+      					 	<description value="&suncultMoonSetAzimuth;:"/>
+      		 	      <description id="suncult-moonset-azimuth" />
       					</row>
        					<label flex="1"/> 
       				</rows>

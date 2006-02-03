@@ -10,6 +10,7 @@
 <!ENTITY close.label "Close">
 <!ENTITY time.label "Time">
 <!ENTITY timezone.label "Timezone">
+<!ENTITY timezone.system "Use system">
 <!ENTITY timeformat.label "Time format">
 <!ENTITY h24 "24 hour">
 <!ENTITY ampm "AM/PM">

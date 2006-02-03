@@ -6,8 +6,8 @@
   
     <em:id>suncult@sf.net</em:id>
     <em:name>Sun Cult</em:name>
-    <em:version>0.5</em:version>
-    <em:description>Worldwide Sunrise, Sunset And Twilight Times</em:description>
+    <em:version>0.6</em:version>
+    <em:description>Worldwide Sunrise, Sunset, Twilight, Moonrise and Moonset Times</em:description>
     <em:creator>Karel Sommer</em:creator>
 		<em:homepageURL>http://suncult.sourceforge.net</em:homepageURL>
 		<em:optionsURL>chrome://suncult/content/config.xul</em:optionsURL>

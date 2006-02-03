@@ -15,6 +15,8 @@ var suncult = {
 	_moonPhase: null,
 	_moonRise: null,
 	_moonSet: null,
+	_moonRiseAz: null,
+	_moonSetAz: null,
 
 	_moonPhase: null,
 	_latitude: null,
@@ -36,11 +38,14 @@ var suncult = {
 		this._moonPhase = document.getElementById("suncult-moonphase");
 		this._moonRise = document.getElementById("suncult-moonrise");
 		this._moonSet = document.getElementById("suncult-moonset");
+		this._moonRiseAz = document.getElementById("suncult-moonrise-azimuth");
+		this._moonSetAz = document.getElementById("suncult-moonset-azimuth");
 		this.readPreferences();
 		if (this._latitude == null || this._longitude == null) {
 			this.showConfig();
 			}
-	  this.updateMoon();
+	  this.updateStatusBar();
+	  this.schedule();
     this.initialized = true;
 //		dump("leaving suncult.init\n");
   },
@@ -110,6 +115,8 @@ var suncult = {
 		result = suncultCalcMoon.riseset(parseFloat(this._latitude),parseFloat(this._longitude), today, this._timezone, this._timeFormat);
 		this._moonRise.value = result[0];
 		this._moonSet.value = result[1];
+		this._moonRiseAz.value = result[2];
+		this._moonSetAz.value = result[3];
   	},
   	
   getMoonPhase: function(xdate) {
@@ -130,10 +137,27 @@ var suncult = {
     return dir + base + delim + phase + delim + size + ext;
   },
 
-  updateMoon: function() {
+  updateStatusBar: function() {
     var imgsrc = this.getMoonImageSrc(new Date(), 20);
     this._moonPhaseImg.src = imgsrc;
+  },
+  
+  showAlerts: function() {
+  },
+  
+  trigger: function() {
+    this.updateStatusBar();
+    this.showAlerts();
+    this.schedule();
+  },
+  
+  schedule: function() {
+    setTimeout("sunCultTrigger();", 60000);
   }
 };
+
+function sunCultTrigger() {
+  suncult.trigger();
+}
 
 window.addEventListener("load", function(e) { suncult.init(e); }, false); 

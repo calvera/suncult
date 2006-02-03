@@ -57,8 +57,8 @@ DEGRAD : Math.PI / 180.0,
 // 2000 Jan 0.0  (which is equal to 1999 Dec 31, 0h UT)
 //-------------------------------------------------------------
 dayDiff2000 : function(y,m,d){
-  return (367.0*(y)-((7*((y)+(((m)+9)/12)))/4)+
-          ((275*(m))/9)+(d)-730530.0);
+  return 367 * y - Math.floor( (7 * (y + Math.floor((m + 9)/12)))/4)+
+          Math.floor((275*m)/9) + d - 730530;
 },
 
 
@@ -544,7 +544,9 @@ riseset: function( lat, lon, now, zone, tf) {
 
     // display results
     return [ suncultUtils.formatTime(this.Rise_time[0],this.Rise_time[1], tf),
-             suncultUtils.formatTime(this.Set_time[0],this.Set_time[1], tf) ];
+             suncultUtils.formatTime(this.Set_time[0],this.Set_time[1], tf),
+             Math.floor(this.Rise_az),
+             Math.floor(this.Set_az) ];
              
 },
 
