@@ -1,3 +1,7 @@
+0.5
+- changed graphics
+- added moon phase, moonrise and moonset
+
 0.4
 - bugfixes
 - configuration dialog rewritten

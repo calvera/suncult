@@ -13,6 +13,8 @@ var suncult = {
 	_moonPhaseImg: null,
 	_moonImg: null,
 	_moonPhase: null,
+	_moonRise: null,
+	_moonSet: null,
 
 	_moonPhase: null,
 	_latitude: null,
@@ -32,6 +34,8 @@ var suncult = {
 		this._moonPhaseImg = document.getElementById("suncult-status-icon-moon");
 		this._moonImg = document.getElementById("suncult-moon");
 		this._moonPhase = document.getElementById("suncult-moonphase");
+		this._moonRise = document.getElementById("suncult-moonrise");
+		this._moonSet = document.getElementById("suncult-moonset");
 		this.readPreferences();
 		if (this._latitude == null || this._longitude == null) {
 			this.showConfig();
@@ -95,7 +99,7 @@ var suncult = {
     dump("timezone: " + this._timezone + "\n");
     dump("timeformat: " + this._timeFormat + "\n"); */
     var today = new Date();
-  	result = suncultCalc.formValues(parseFloat(this._latitude),parseFloat(this._longitude), today, this._timezone, this._timeFormat);
+  	result = suncultCalcSun.formValues(parseFloat(this._latitude),parseFloat(this._longitude), today, this._timezone, this._timeFormat);
 		this._twilightStart.value = result[0];
 		this._twilightEnd.value = result[1];
 		this._sunrise.value = result[2];
@@ -103,6 +107,9 @@ var suncult = {
 		var phase = this.getMoonPhasePercent(today);
 		this._moonPhase.value = Math.floor(phase) + "%";
 		this._moonImg.src = this.getMoonImageSrc(today, 64);
+		result = suncultCalcMoon.riseset(parseFloat(this._latitude),parseFloat(this._longitude), today, this._timezone, this._timeFormat);
+		this._moonRise.value = result[0];
+		this._moonSet.value = result[1];
   	},
   	
   getMoonPhase: function(xdate) {
@@ -111,7 +118,7 @@ var suncult = {
   },
   
   getMoonPhasePercent: function(xdate) {
-			return suncultCalc.moonPhasePercent(xdate);
+			return suncultCalcMoon.phasePercent(xdate);
   },
 
   getMoonImageSrc: function(xdate, size) {
