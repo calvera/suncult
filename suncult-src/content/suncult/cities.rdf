@@ -164,8 +164,9 @@
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/FRANCE/Nice" sc:name="Nice" sc:latitude="43N42" sc:longitude="7E16"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/FRANCE/Paris" sc:name="Paris" sc:latitude="48N49" sc:longitude="2E29"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/FRANCE/Strasbourg" sc:name="Strasbourg" sc:latitude="48N35" sc:longitude="7E46"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/FRANCE/La_Rochelle" sc:name="La Rochelle" sc:latitude="46N10" sc:longitude="1W9"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/GERMANY" sc:name="GERMANY"/>
-      <sc:city RDF:about="http://suncult.sf.net/EUROPE/GERMANY/Berlin_(West)" sc:name="Berlin (West)" sc:latitude="52N27" sc:longitude="13E18"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/GERMANY/Berlin" sc:name="Berlin" sc:latitude="52N27" sc:longitude="13E18"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/GERMANY/Hamburg" sc:name="Hamburg" sc:latitude="53N33" sc:longitude="9E58"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/GERMANY/Hannover" sc:name="Hannover" sc:latitude="52N24" sc:longitude="9E40"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/GERMANY/Mannheim" sc:name="Mannheim" sc:latitude="49N34" sc:longitude="8E28"/>
@@ -198,8 +199,8 @@
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/POLAND/Warsaw" sc:name="Warsaw" sc:latitude="52N13" sc:longitude="21E2"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/PORTUGAL" sc:name="PORTUGAL"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/PORTUGAL/Lisbon" sc:name="Lisbon" sc:latitude="38N43" sc:longitude="9W8"/>
-    <sc:country RDF:about="http://suncult.sf.net/EUROPE/RUMANIA" sc:name="RUMANIA"/>
-      <sc:city RDF:about="http://suncult.sf.net/EUROPE/RUMANIA/Bucharest" sc:name="Bucharest" sc:latitude="44N25" sc:longitude="26E6"/>
+    <sc:country RDF:about="http://suncult.sf.net/EUROPE/ROMANIA" sc:name="RUMANIA"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/ROMANIA/Bucharest" sc:name="Bucharest" sc:latitude="44N25" sc:longitude="26E6"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/RUSSIA" sc:name="RUSSIA"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/RUSSIA/Alma_Ata" sc:name="Alma Ata" sc:latitude="43N14" sc:longitude="76E53"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/RUSSIA/Archangel" sc:name="Archangel" sc:latitude="64N33" sc:longitude="40E32"/>
@@ -1180,8 +1181,8 @@
       <sc:city RDF:about="http://suncult.sf.net/NORTH_AMERICA/BAHAMAS/Nassau" sc:name="Nassau" sc:latitude="25N5" sc:longitude="77W21"/>
     <sc:country RDF:about="http://suncult.sf.net/NORTH_AMERICA/BERMUDA" sc:name="BERMUDA"/>
       <sc:city RDF:about="http://suncult.sf.net/NORTH_AMERICA/BERMUDA/Kindley_AFB" sc:name="Kindley AFB" sc:latitude="33N22" sc:longitude="64W41"/>
-    <sc:country RDF:about="http://suncult.sf.net/NORTH_AMERICA/FRENCH GUIANA" sc:name="FRENCH GUIANA"/>
-      <sc:city RDF:about="http://suncult.sf.net/NORTH_AMERICA/FRENCH GUIANA/Cayenne" sc:name="Cayenne" sc:latitude="4N56" sc:longitude="52W27"/>
+    <sc:country RDF:about="http://suncult.sf.net/NORTH_AMERICA/FRENCH_GUYANA" sc:name="FRENCH GUYANA"/>
+      <sc:city RDF:about="http://suncult.sf.net/NORTH_AMERICA/FRENCH_GUYANA/Cayenne" sc:name="Cayenne" sc:latitude="4N56" sc:longitude="52W27"/>
     <sc:country RDF:about="http://suncult.sf.net/NORTH_AMERICA/BELIZE" sc:name="BELIZE"/>
       <sc:city RDF:about="http://suncult.sf.net/NORTH_AMERICA/BELIZE/Belize" sc:name="Belize" sc:latitude="17N31" sc:longitude="88W11"/>
     <sc:country RDF:about="http://suncult.sf.net/NORTH_AMERICA/DOMINICANxREPUBLIC" sc:name="DOMINICAN REPUBLIC"/>
@@ -1261,6 +1262,96 @@
 	   		<RDF:li>
           <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/BAHAMAS">
             <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/BAHAMAS/Nassau"/>
+          </RDF:Seq>
+  			</RDF:li>
+  			<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/SURINAM">
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/SURINAM/Paramaribo"/>
+          </RDF:Seq>
+  			</RDF:li>
+  			<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/MARTINIQUE">
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/MARTINIQUE/Fort_De_France"/>
+          </RDF:Seq>
+  			</RDF:li>
+  			<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/NICARAGUA">
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/NICARAGUA/Managua"/>
+          </RDF:Seq>
+  			</RDF:li>
+  			<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/PANAMA">
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/PANAMA/Panama_City"/>
+          </RDF:Seq>
+  			</RDF:li>
+  			<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/PUERTOxRICO">
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/PUERTOxRICO/San_Juan"/>
+          </RDF:Seq>
+  			</RDF:li>
+  			<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/TRINIDAD">
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/TRINIDAD/Port_of_Spain"/>
+          </RDF:Seq>
+  			</RDF:li>
+  			<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/DOMINICANxREPUBLIC">
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/DOMINICANxREPUBLIC/Santo_Domingo"/>
+          </RDF:Seq>
+  			</RDF:li>
+  			<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/FRENCH_GUYANA">
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/FRENCH_GUYANA/Cayenne"/>
+          </RDF:Seq>
+  			</RDF:li>
+  			<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/ELxSALVADOR">
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/ELxSALVADOR/San_Salvador"/>
+          </RDF:Seq>
+  			</RDF:li>
+  			<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/CUBA">
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/CUBA/Guantanamo_Bay"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/CUBA/Havana"/>
+          </RDF:Seq>
+  			</RDF:li>
+  			<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/BELIZE">
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/BELIZE/Belize"/>
+          </RDF:Seq>
+  			</RDF:li>
+  			<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/BERMUDA">
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/BERMUDA/Kindley_AFB"/>
+          </RDF:Seq>
+  			</RDF:li>
+  			<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/GUATEMALA">
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/GUATEMALA/Guatemala_City"/>
+          </RDF:Seq>
+  			</RDF:li>
+  			<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/GUYANA">
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/GUYANA/Georgetown"/>
+          </RDF:Seq>
+  			</RDF:li>
+  			<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/HAITI">
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/HAITI/Port_Au_Prince"/>
+          </RDF:Seq>
+  			</RDF:li>
+  			<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/HONDURAS">
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/HONDURAS/Tegucigalpa"/>
+          </RDF:Seq>
+  			</RDF:li>
+  			<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/NORTH_AMERICA/MEXICO">
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/MEXICO/Guadalajara"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/MEXICO/Merida"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/MEXICO/Mexico_City"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/MEXICO/Monterrey"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/NORTH_AMERICA/MEXICO/Vera_Cruz"/>
           </RDF:Seq>
   			</RDF:li>
 				<RDF:li>
@@ -2262,6 +2353,177 @@
 						<RDF:li RDF:resource="http://suncult.sf.net/ASIA/AFGHANISTAN/Kabul"/>
 					</RDF:Seq>
 				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/BANGLADESH">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/BANGLADESH/Chittagong"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/BURMA">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/BURMA/Mandalay"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/BURMA/Rangoon"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/CAMBODIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/CAMBODIA/Phnom_Penh"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/CHINA">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/CHINA/Chongquing"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/CHINA/Shanghai"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/HONGxKONG">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/HONGxKONG/Hong_Kong"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/INDIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/Ahmenabad"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/Bangalore"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/Bombay"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/Calcutta"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/Madras"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/Nagpur"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/New_Delhi"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/INDONESIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDONESIA/Djakarta"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDONESIA/Kupang"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDONESIA/Makassar"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDONESIA/Medan"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDONESIA/Palembang"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDONESIA/Surabaya"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/IRAN">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/IRAN/Abadan"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/IRAN/Meshed"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/IRAN/Tehran"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/IRAQ">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/IRAQ/Baghdad"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/IRAQ/Mosul"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/IRIANxBARAT">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/IRIANxBARAT/Manokwari"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/ISRAEL">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/ISRAEL/Jerusalem"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/ISRAEL/Tel_Aviv"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/JAPAN">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/JAPAN/Fukuoka"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/JAPAN/Sapporo"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/JAPAN/Tokyo"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/JORDAN">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/JORDAN/Amman"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/KOREA">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/KOREA/Pyongyang"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/KOREA/Seoul"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/LEBANON">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/LEBANON/Beirut"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/MALAYSIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/MALAYSIA/Kuala_Lumpur"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/MALAYSIA/Penang"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/NEPAL">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/NEPAL/Katmandu"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/PAKISTAN">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/PAKISTAN/Karachi"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/PAKISTAN/Lahore"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/PAKISTAN/Peshwar"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/PHILIPPINES">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/PHILIPPINES/Manila"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/SAUDIxARABIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/SAUDIxARABIA/Dhahran"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/SAUDIxARABIA/Jedda"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/SAUDIxARABIA/Riyadh"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/SINGAPORE">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/SINGAPORE/Singapore"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/SOUTHxYEMEN">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/SOUTHxYEMEN/Aden"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/SRIxLANKA">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/SRIxLANKA/Colombo"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/SYRIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/SYRIA/Damascus"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/TAIWAN">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/TAIWAN/Tainan"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/TAIWAN/Taipei"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/THAILAND">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/THAILAND/Bangkok"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/TURKEY">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/TURKEY/Adana"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/TURKEY/Ankara"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/TURKEY/Istanbul"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/TURKEY/Izmir"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/VIETNAM">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/VIETNAM/Da_Nang"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/VIETNAM/Hanoi"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/VIETNAM/(Saigon)"/>
+          </RDF:Seq>
+				</RDF:li>
 			</RDF:Seq>
 			<RDF:Seq RDF:about="http://suncult.sf.net/SOUTH_AMERICA">
 				<RDF:li>
@@ -2271,12 +2533,167 @@
 						<RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/ARGENTINA/Tucuman"/>
 					</RDF:Seq>
 				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/SOUTH_AMERICA/BOLIVIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/BOLIVIA/La_Paz"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/SOUTH_AMERICA/BRAZIL">
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/BRAZIL/Belem"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/BRAZIL/Belo_Horizonte"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/BRAZIL/Brasilia"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/BRAZIL/Curitiba"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/BRAZIL/Fortaleza"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/BRAZIL/Porto_Alegre"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/BRAZIL/Recife"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/BRAZIL/Rio_De_Janeiro"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/BRAZIL/Salvador"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/BRAZIL/Sao_Paulo"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/SOUTH_AMERICA/CHILE">
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/CHILE/Punta_Arenas"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/CHILE/Santiago"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/CHILE/Valparaiso"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/SOUTH_AMERICA/COLOMBIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/COLOMBIA/Baranquilla"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/COLOMBIA/Bogota"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/COLOMBIA/Cali"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/COLOMBIA/Medellin"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/SOUTH_AMERICA/EQUADOR">
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/EQUADOR/Guayaquil"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/EQUADOR/Quito"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/SOUTH_AMERICA/PARAGUAY">
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/PARAGUAY/Ascuncion"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/SOUTH_AMERICA/PERU">
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/PERU/Lima"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/SOUTH_AMERICA/URUGUAY">
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/URUGUAY/Montevideo"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/SOUTH_AMERICA/VENEZUELA">
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/VENEZUELA/Caracas"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/SOUTH_AMERICA/VENEZUELA/Maracaibo"/>
+          </RDF:Seq>
+				</RDF:li>
 			</RDF:Seq>
 			<RDF:Seq RDF:about="http://suncult.sf.net/AFRICA">
 				<RDF:li>
 					<RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/ALGERIA">
 						<RDF:li RDF:resource="http://suncult.sf.net/AFRICA/ALGERIA/Algiers"/>
 					</RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/CONGO">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/CONGO/Brazzaville"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/EGYPT">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/EGYPT/Cairo"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/ETHIOPIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/ETHIOPIA/Addis_Ababa"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/ETHIOPIA/Asmara"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/GHANA">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/GHANA/Accra"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/NIGERIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/NIGERIA/Lagos"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/IVORY COAST">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/IVORY COAST/Abidjan"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/KENYA">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/KENYA/Nairobi"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/LIBERIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/LIBERIA/Monrovia"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/LIBYA">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/LIBYA/Benghazi"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/MADAGASCAR">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/MADAGASCAR/Tananarive"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/MOROCCO">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/MOROCCO/Casablanca"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/SENEGAL">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/SENEGAL/Dakar"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/SOMALIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/SOMALIA/Mogadiscio"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/SOUTHxAFRICA">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/SOUTHxAFRICA/Cape_Town"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/SOUTHxAFRICA/Johannesburg"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/SOUTHxAFRICA/Pretoria"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/SUDAN">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/SUDAN/Khartoum"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/TANZANIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/TANZANIA/Dar_es_Salaam"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/TUNISIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/TUNISIA/Tunis"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/ZAIRE">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/ZAIRE/Kinshasa_(Leopoldville)"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/ZAIRE/Kisangani_(Stanleyville)"/>
+          </RDF:Seq>
 				</RDF:li>
 			</RDF:Seq>
 			<RDF:Seq RDF:about="http://suncult.sf.net/AUSTRALIAxOCEANIA">
@@ -2290,6 +2707,18 @@
 						<RDF:li RDF:resource="http://suncult.sf.net/AUSTRALIAxOCEANIA/AUSTRALIA/Perth"/>
 						<RDF:li RDF:resource="http://suncult.sf.net/AUSTRALIAxOCEANIA/AUSTRALIA/Sydney"/>
 					</RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AUSTRALIAxOCEANIA/NEWxZEALAND">
+            <RDF:li RDF:resource="http://suncult.sf.net/AUSTRALIAxOCEANIA/NEWxZEALAND/Auckland"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/AUSTRALIAxOCEANIA/NEWxZEALAND/Christchurch"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/AUSTRALIAxOCEANIA/NEWxZEALAND/Wellington"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/AUSTRALIAxOCEANIA/PAPUAxNEWxGUINEA">
+            <RDF:li RDF:resource="http://suncult.sf.net/AUSTRALIAxOCEANIA/PAPUAxNEWxGUINEA/Port_Moresby"/>
+          </RDF:Seq>
 				</RDF:li>
 			</RDF:Seq>
 			<RDF:Seq RDF:about="http://suncult.sf.net/EUROPE">
@@ -2313,6 +2742,152 @@
 				<RDF:li>
           <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/AZORES">
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/AZORES/Lajes_(Terceira)"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/BELGIUM">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/BELGIUM/Brussels"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/BULGARIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/BULGARIA/Sofia"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/DENMARK">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/DENMARK/Copenhagen"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/FINLAND">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/FINLAND/Helsinki"/>
+          </RDF:Seq>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/FRANCE">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/FRANCE/Lyon"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/FRANCE/Marseilles"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/FRANCE/Nantes"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/FRANCE/Nice"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/FRANCE/Paris"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/FRANCE/Strasbourg"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/FRANCE/La_Rochelle"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/GERMANY">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/GERMANY/Berlin"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/GERMANY/Hamburg"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/GERMANY/Hannover"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/GERMANY/Mannheim"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/GERMANY/Munich"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/GIBRALTAR">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/GIBRALTAR/Gibraltar"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/GREECE">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/GREECE/Athens"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/GREECE/Thessaloniki"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/GREENLAND">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/GREENLAND/Narsarssuaq"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/HUNGARY">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/HUNGARY/Budapest"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/ICELAND">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/ICELAND/Reykjavik"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/IRELAND">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/IRELAND/Dublin"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/IRELAND/Shannon"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/ITALY">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/ITALY/Milan"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/ITALY/Naples"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/ITALY/Rome"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/NETHERLANDS">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/NETHERLANDS/Amsterdam"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/NORWAY">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/NORWAY/Bergen"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/NORWAY/Oslo"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/POLAND">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/POLAND/Krakow"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/POLAND/Warsaw"/>
+          </RDF:Seq>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/PORTUGAL">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/PORTUGAL/Lisbon"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/ROMANIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/ROMANIA/Bucharest"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/RUSSIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Alma_Ata"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Archangel"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Kaliningrad"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Krasnoyarsk"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Kiev"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Kharkov"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Kuibyshev"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Leningrad"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Minsk"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Moscow"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Odessa"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Petropavlovsk"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Rostov_on_Don"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Sverdlovsk"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Tashkent"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Tbilisi"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Vladivostok"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Volgograd"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/SPAIN">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/SPAIN/Barcelona"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/SPAIN/Madrid"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/SPAIN/Valencia"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Belfast"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Birmingham"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Cardiff"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Edinburgh"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Glasgow"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/London"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/YUGOSLAVIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/YUGOSLAVIA/Belgrade"/>
           </RDF:Seq>
 				</RDF:li>
 			</RDF:Seq>
