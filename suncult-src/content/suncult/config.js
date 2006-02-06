@@ -4,19 +4,20 @@ var suncultConfig = {
   _longitude: null,
   _latitudeEdit: null,
   _longitudeEdit: null,
-  
 
   init: function() {
     // initialization code
     // dump("suncultConfig.init\n");
-    this._stringBundle = document.getElementById("string-bundle");
-    this.initialized = true;
-    this._latitude = document.getElementById("pref-latitude");
-    this._longitude = document.getElementById("pref-longitude");
-    this._latitudeEdit = document.getElementById("latitude-edit");
-    this._longitudeEdit = document.getElementById("longitude-edit");
-    this._latitudeEdit.value = this.formatValue(this._latitude.value, "N", "S");
-    this._longitudeEdit.value = this.formatValue(this._longitude.value, "E", "W");
+    with (this) {
+      _stringBundle = document.getElementById("string-bundle");
+      this.initialized = true;
+      _latitude = document.getElementById("pref-latitude");
+      _longitude = document.getElementById("pref-longitude");
+      _latitudeEdit = document.getElementById("latitude-edit");
+      _longitudeEdit = document.getElementById("longitude-edit");
+      _latitudeEdit.value = this.formatValue(_latitude.value, "N", "S");
+      _longitudeEdit.value = this.formatValue(_longitude.value, "E", "W");
+    }
   },
   
   onSelectCity: function(event) {
@@ -39,7 +40,7 @@ var suncultConfig = {
   },
   
   oninputLatitude: function(event) {
-    dump("suncultConfig.oninputLatitude\n");
+//    dump("suncultConfig.oninputLatitude\n");
     var v = new String(this._latitudeEdit.value);
     var r = null;
 
@@ -69,7 +70,7 @@ var suncultConfig = {
   },
   
   oninputLongitude: function(event) {
-    dump("suncultConfig.oninputLongitude\n");
+//    dump("suncultConfig.oninputLongitude\n");
     v = this._longitudeEdit.value;
     var r = null;
 
