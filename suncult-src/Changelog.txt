@@ -4,6 +4,7 @@
 - moonrise and moonset azimuth
 - sunrise/sunset moment definition config
 - twilight moment definition config
+- added almost all cities :)
  
 0.5
 - changed graphics
