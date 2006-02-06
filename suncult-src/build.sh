@@ -120,11 +120,11 @@ if [ $CLEAN_UP = 0 ]; then
   # save the jar file
   mv $TMP_DIR/chrome/$APP_NAME.jar .
 else
+# remove the working files
+  rm -rf $TMP_DIR
   rm ./files
 fi
 
-# remove the working files
-rm -rf $TMP_DIR
 echo "Done!"
 
 $AFTER_BUILD

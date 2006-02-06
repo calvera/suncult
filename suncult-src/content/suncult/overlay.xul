@@ -10,9 +10,9 @@
   <script src="overlay.js"/>
 
   <stringbundleset>
-    <stringbundle id="string-bundle" src="chrome://suncult/locale/suncult/suncult.properties"/>
+    <stringbundle id="string-bundle" src="chrome://suncult/locale/suncult.properties"/>
   </stringbundleset>
-  
+
   <commandset id="mainCommandSet">
     <command id="cmd_suncult_config" oncommand="suncult.showConfig();"/>
   </commandset>
@@ -125,4 +125,3 @@
     </popup>
   </statusbar>
 </overlay>
-<!-- vim: ts=2 -->

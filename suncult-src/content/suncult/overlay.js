@@ -225,5 +225,3 @@ function sunCultTrigger() {
 }
 
 window.addEventListener("load", function(e) { suncult.init(e); }, false); 
-
-// vim: ts=2

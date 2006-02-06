@@ -17,6 +17,7 @@
 			<Description about="urn:mozilla:extension:file:suncult.jar">
 				<em:package>content/suncult/</em:package>
 				<em:skin>skin/suncult/</em:skin>
+				<em:locale>locale/en-US/</em:locale> 
 			</Description>
 		</em:file>
 		
