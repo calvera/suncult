@@ -36,7 +36,7 @@
         <tabpanel>
           <vbox>
             <description>
-              Enter your coordinates. Accepted values are (for example) -50.30, 49n20, 13°N, 13° 19'N and 13°19'43.3"N
+              &enter.label;
             </description>
             <grid align="center">
               <columns>

@@ -8,6 +8,7 @@
 <!ENTITY north.label "North">
 <!ENTITY south.label "South">
 <!ENTITY close.label "Close">
+<!ENTITY enter.label "Enter your coordinates. Accepted values are (for example) -50.30, 49n20, 13°N, 13° 19&apos;N and 13°19&apos;43.3&quot;N">
 <!ENTITY time.label "Time">
 <!ENTITY timezone.label "Timezone">
 <!ENTITY timezone.system "Use system">
