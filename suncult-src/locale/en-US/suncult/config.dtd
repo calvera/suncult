@@ -14,3 +14,14 @@
 <!ENTITY timeformat.label "Time format">
 <!ENTITY h24 "24 hour">
 <!ENTITY ampm "AM/PM">
+<!ENTITY sunriseTime.label "Sunrise/Sunset time">
+<!ENTITY srTime0 "Center of Sun's disk touches mathematical horizon">
+<!ENTITY srTime25 "Sun's upper limb touches mathematical horizon">
+<!ENTITY srTime583 "Default - Center of Sun's disk touches horizon (atmospheric refraction accounted)">
+<!ENTITY srTime833 "Sun's upper limb touches horizon (atmospheric refraction accounted)">
+<!ENTITY twilightTime.label "Twilight time">
+<!ENTITY twTime6 "Default - Civil twilight (one can no longer read outside)">
+<!ENTITY twTime12 "Nautical twilight (navigation using a sea horizon no longer possible)">
+<!ENTITY twTime15 "Amateur astronomical twilight (the sky is dark enough for most observations)">
+<!ENTITY twTime18 "Astronomical twilight (the sky is comletely dark)">
+

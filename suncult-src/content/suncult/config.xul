@@ -21,6 +21,8 @@
       <preference id="pref-longitude" name="extensions.suncult.longitude" type="string"/>
       <preference id="pref-timezone" name="extensions.suncult.timezone" type="string"/>
       <preference id="pref-timeformat" name="extensions.suncult.timeformat" type="string"/>
+      <preference id="pref-twAngle" name="extensions.suncult.twAngle" type="string"/>
+      <preference id="pref-srAngle" name="extensions.suncult.srAngle" type="string"/>
    </preferences>
  
      <tabbox>
@@ -32,7 +34,7 @@
       <tabpanels flex="1">   
         <tabpanel>
           <vbox>
-            <description width="400">
+            <description>
               Enter your coordinates. Accepted values are (for example) -50.30, 49n20, 13°N, 13° 19'N and 13°19'43.3"N
             </description>
             <grid align="center">
@@ -54,7 +56,7 @@
                 </row>
               </rows>
             </grid>
-            <tree id="cities" seltype="single" flex="1" width="400" height="200"
+            <tree id="cities" seltype="single" flex="1" height="200"
                   datasources="cities.rdf" ref="http://suncult.sf.net/all-cities" flags="dont-build-content"
                   onselect="suncultConfig.onSelectCity(event);">
               <treecols>
@@ -85,11 +87,11 @@
             <columns>
               <column/>
               <column flex="1"/>
-              <column/>
             </columns>
             <rows>
               <row>
                 <description value="&timezone.label;:" control="timezone"/>
+                <hbox> 
                 <menulist id="timezone" preference="pref-timezone">
                   <menupopup>
                     <menuitem label="&timezone.system;" value=""/>
@@ -129,13 +131,40 @@
                     <menuitem label="GMT-13:00" value="780"/>
                   </menupopup>
                 </menulist>
+                <label flex="1"/>
+                </hbox> 
               </row>
               <row>
                 <description value="&timeformat.label;:" control="timeformat"/>
+                <hbox> 
                 <menulist id="timeformat" preference="pref-timeformat">
                   <menupopup>
                     <menuitem label="&h24;" value="h24"/>
                     <menuitem label="&ampm;" value="ampm"/>
+                  </menupopup>
+                </menulist>
+                <label flex="1"/>
+                </hbox> 
+              </row>
+              <row>
+                <description value="&sunriseTime.label;:" control="srAngle"/>
+                <menulist id="srAngle" preference="pref-srAngle">
+                  <menupopup>
+                    <menuitem label="0° - &srTime0;" value="0"/>
+                    <menuitem label="-1/4° - &srTime25;" value="-0.25"/>
+                    <menuitem label="-7/12° - &srTime583;" value="-0.583333"/>
+                    <menuitem label="-5/6° - &srTime833;" value="-0.833333"/>
+                  </menupopup>
+                </menulist>
+              </row>
+              <row>
+                <description value="&twilightTime.label;:" control="twAngle"/>
+                <menulist id="twAngle" preference="pref-twAngle">
+                  <menupopup>
+                    <menuitem label="-6° - &twTime6;" value="-6"/>
+                    <menuitem label="-12° - &twTime12;" value="-12"/>
+                    <menuitem label="-15° - &twTime15;" value="-15"/>
+                    <menuitem label="-18° - &twTime18;" value="-18"/>
                   </menupopup>
                 </menulist>
               </row>

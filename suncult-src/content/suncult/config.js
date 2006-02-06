@@ -1,14 +1,14 @@
 var suncultConfig = {
-	_stringBundle: null,
+  _stringBundle: null,
   _latitude: null,
   _longitude: null,
   _latitudeEdit: null,
   _longitudeEdit: null,
-	
+  
 
   init: function() {
     // initialization code
-    dump("suncultConfig.init\n");
+    // dump("suncultConfig.init\n");
     this._stringBundle = document.getElementById("string-bundle");
     this.initialized = true;
     this._latitude = document.getElementById("pref-latitude");
@@ -116,3 +116,5 @@ var suncultConfig = {
 };
 
 window.addEventListener("load", function(e) { suncultConfig.init(e); }, false); 
+
+// vim: ts=2

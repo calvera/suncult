@@ -1,3 +1,10 @@
+0.6
+- popup doesn't disappear after a few seconds
+- precision improvement (bug fixed)
+- moonrise and moonset azimuth
+- sunrise/sunset moment definition config
+- twilight moment definition config
+ 
 0.5
 - changed graphics
 - added moon phase, moonrise and moonset

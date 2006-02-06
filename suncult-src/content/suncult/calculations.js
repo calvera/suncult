@@ -26,11 +26,6 @@ var suncultUtils = {
 
 var suncultCalcSun = {
 // Global variables:
-  
-twAngle : -6.0,    // For civil twilight, set to -12.0 for
-                       // nautical, and -18.0 for astr. twilight
-
-srAngle : -35.0/60.0,    // For sunrise/sunset
 
 sRiseT : null,        // For sunrise/sunset times
 sSetT : null,
@@ -93,8 +88,8 @@ atan2d : function(y,x){
 // limb is 35 arc minutes below the horizon (this accounts for
 // the refraction of the Earth's atmosphere).
 //-------------------------------------------------------------
-sunRiseSet : function(year,month,day,lat,lon){
-  return this.sunTimes( year, month, day, lat, lon, this.srAngle, 1);
+sunRiseSet : function(year,month,day,lat,lon, srAngle){
+  return this.sunTimes( year, month, day, lat, lon, srAngle, 1);
 },
 
 
@@ -104,8 +99,8 @@ sunRiseSet : function(year,month,day,lat,lon){
 // twilight. Civil twilight starts/ends when the Sun's center
 // is 6 degrees below the horizon.
 //-------------------------------------------------------------
-civTwilight : function(year,month,day,lat,lon){
-  return this.sunTimes( year, month, day, lat, lon, this.twAngle, 0);
+civTwilight : function(year,month,day,lat,lon, twAngle){
+  return this.sunTimes( year, month, day, lat, lon, twAngle, 0);
 },
 
 
@@ -387,7 +382,7 @@ GMST0 : function( dayDiff ) {
 
 
 
-formValues: function(lat, lon, _date, tzOffset, tf)
+formValues: function(lat, lon, _date, tzOffset, tf, srAngle, twAngle)
 {
   var year = _date.getFullYear();
 
@@ -399,9 +394,9 @@ formValues: function(lat, lon, _date, tzOffset, tf)
 //  dump("m: " + month + "\n");
 //  dump("d: " + day + "\n");
 
-  this.sunRiseSet(year,month,day,lat,lon);
+  this.sunRiseSet(year,month,day,lat,lon, srAngle);
 
-  this.civTwilight(year,month,day,lat,lon);
+  this.civTwilight(year,month,day,lat,lon, twAngle);
 
   tzOffset = tzOffset / 60.0;
 
@@ -471,18 +466,18 @@ VHz: [0.0, 0.0, 0.0],
 
 phasePercent: function(theDate) {
   var synodic = 29.53058867;
-	var msPerDay = 24 * 60 * 60 * 1000;
-	var baseDate = new Date();
-		baseDate.setUTCFullYear(2005);
-		baseDate.setUTCMonth(4);
-		baseDate.setUTCDate(8);
-		baseDate.setUTCHours(8);
-		baseDate.setUTCMinutes(48);
-		
-	var diff = theDate - baseDate;
-	var phase = diff / (synodic * msPerDay);
-	phase *= 100;
-	return Math.floor(phase) % 100;
+  var msPerDay = 24 * 60 * 60 * 1000;
+  var baseDate = new Date();
+    baseDate.setUTCFullYear(2005);
+    baseDate.setUTCMonth(4);
+    baseDate.setUTCDate(8);
+    baseDate.setUTCHours(8);
+    baseDate.setUTCMinutes(48);
+    
+  var diff = theDate - baseDate;
+  var phase = diff / (synodic * msPerDay);
+  phase *= 100;
+  return Math.floor(phase) % 100;
 },
 
 // calculate moonrise and moonset times
@@ -543,8 +538,8 @@ riseset: function( lat, lon, now, zone, tf) {
 //          this.Set_time[0] + ":" + this.Set_time[1] + "\n");
 
     // display results
-    return [ suncultUtils.formatTime(this.Rise_time[0],this.Rise_time[1], tf),
-             suncultUtils.formatTime(this.Set_time[0],this.Set_time[1], tf),
+    return [ this.Moonrise ? suncultUtils.formatTime(this.Rise_time[0],this.Rise_time[1], tf) : null,
+             this.Moonset ? suncultUtils.formatTime(this.Set_time[0],this.Set_time[1], tf) : null,
              Math.floor(this.Rise_az),
              Math.floor(this.Set_az) ];
              
