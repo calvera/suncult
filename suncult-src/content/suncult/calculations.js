@@ -464,8 +464,9 @@ RAn: [0.0, 0.0, 0.0],
 Dec: [0.0, 0.0, 0.0],
 VHz: [0.0, 0.0, 0.0],
 
+synodic: 29.53058867,
+
 phasePercent: function(theDate) {
-  var synodic = 29.53058867;
   var msPerDay = 24 * 60 * 60 * 1000;
   var baseDate = new Date();
     baseDate.setUTCFullYear(2005);
@@ -475,9 +476,35 @@ phasePercent: function(theDate) {
     baseDate.setUTCMinutes(48);
     
   var diff = theDate - baseDate;
-  var phase = diff / (synodic * msPerDay);
-  phase *= 100;
-  return Math.floor(phase) % 100;
+  var phase = diff / (this.synodic * msPerDay);
+  phase *= 10000;
+  return (Math.floor(phase) % 10000) / 100.0;
+},
+
+age: function(theDate) {
+  return this.phasePercent(theDate) * this.synodic / 100;
+},
+
+phaseName: function(theDate) {
+  var age = this.age();
+  if (age < 1.84566)
+    return "new";
+  else if (age < 5.53699)
+    return "waxing.crescent";
+  else if (age < 9.22831)
+    return "first.quarter";
+  else if (age < 12.91963)
+    return "waxing.gibbous";
+  else if (age < 16.61096)
+    return "full";
+  else if (age < 20.30228)
+    return "waning.gibbous";
+  else if (age < 23.99361)
+    return "last.quarter";
+  else if (age < 27.68493)
+    return "waning.crescent";
+  else
+    return "new";
 },
 
 // calculate moonrise and moonset times

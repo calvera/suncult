@@ -1,3 +1,7 @@
+0.7
+- moon phase names
+- display next full moon
+
 0.6
 - popup doesn't disappear after a few seconds
 - precision improvement (bug fixed)

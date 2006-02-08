@@ -12,10 +12,6 @@
 
   <script src="config.js"/>
 
-  <stringbundleset>
-    <stringbundle id="string-bundle" src="chrome://suncult/locale/suncult.properties"/>
-  </stringbundleset>
-
   <prefpane>
     <preferences>
       <preference id="pref-latitude" name="extensions.suncult.latitude" type="string"/>

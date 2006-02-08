@@ -6,6 +6,7 @@
 <!ENTITY suncultSunset "Sunset">
 <!ENTITY suncultTwilightEnd "Twilight ends">
 <!ENTITY suncultMoonPhase "Moon Phase">
+<!ENTITY suncultNextFullMoon "Next Full Moon">
 <!ENTITY suncultMoonSet "Moonset">
 <!ENTITY suncultMoonRise "Moonrise">
 <!ENTITY suncultMoonSetAzimuth "Moonset azimuth (&#176;)">

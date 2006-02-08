@@ -9,8 +9,8 @@
   <script src="calculations.js"/>
   <script src="overlay.js"/>
 
-  <stringbundleset>
-    <stringbundle id="string-bundle" src="chrome://suncult/locale/suncult.properties"/>
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="string-bundle" src="chrome://suncult/locale/suncult/suncult.properties"/>
   </stringbundleset>
 
   <commandset id="mainCommandSet">
@@ -96,6 +96,10 @@
                 <row>
                    <description value="&suncultMoonPhase;:"/>
                    <description id="suncult-moonphase"/>
+                </row>
+                <row>
+                   <description value="&suncultNextFullMoon;:"/>
+                   <description id="suncult-next-fullmoon"/>
                 </row>
                 <row>
                    <description value="&suncultMoonRise;:"/>

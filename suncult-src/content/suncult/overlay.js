@@ -9,6 +9,7 @@ var suncult = {
   _prefSetRiseAngle: "extensions.suncult.srAngle",
   _resNoMoonrise: "suncult.noMoonrise",
   _resNoMoonset: "suncult.noMoonset",
+  _resMoonPrefix: "suncult.moon.",
   
   _twilightStart: null,
   _sunrise: null,
@@ -17,6 +18,7 @@ var suncult = {
   _moonPhaseImg: null,
   _moonImg: null,
   _moonPhase: null,
+  _nextFullMoon: null,
   _moonRise: null,
   _moonSet: null,
   _moonRiseAz: null,
@@ -44,6 +46,7 @@ var suncult = {
       _moonPhaseImg = document.getElementById("suncult-status-icon-moon");
       _moonImg = document.getElementById("suncult-moon");
       _moonPhase = document.getElementById("suncult-moonphase");
+      _nextFullMoon = document.getElementById("suncult-next-fullmoon");
       _moonRise = document.getElementById("suncult-moonrise");
       _moonSet = document.getElementById("suncult-moonset");
       _moonRiseAz = document.getElementById("suncult-moonrise-azimuth");
@@ -137,7 +140,12 @@ var suncult = {
   },
   
   onPopupShowing: function(popup) {
-    with (this) {  
+    this.updatePopupSun(popup);
+    this.updatePopupMoon(popup);
+  },
+  
+  updatePopupSun: function(popup) {
+    with (this) {
 /*    dump("lat: " + _latitude + "\n");
       dump("long: " + _longitude + "\n");
       dump("timezone: " + _timezone + "\n");
@@ -147,38 +155,50 @@ var suncult = {
       var lon = parseFloat(_longitude);
       result = suncultCalcSun.formValues(lat, lon, today, _timezone, _timeFormat, _srAngle, _twAngle);
       if (result[0] == "all") {
-        _twilightStart.value = this.getResource(_resAllTwilight)
+        _twilightStart.value = getResource(_resAllTwilight)
       } else if (result[0] == "no") {
-        _twilightStart.value = this.getResource(_resNoTwilight)
+        _twilightStart.value = getResource(_resNoTwilight)
       } else {
         _twilightStart.value = result[0];
       }
       if (result[1] == "all") {
-        _twilightStart.value = this.getResource(_resAllTwilight)
+        _twilightStart.value = getResource(_resAllTwilight)
       } else if (result[1] == "no") {
-        _twilightStart.value = this.getResource(_resNoTwilight)
+        _twilightStart.value = getResource(_resNoTwilight)
       } else {
         _twilightEnd.value = result[1];
       }
       _sunrise.value = result[2];
       _sunset.value = result[3];
-      var phase = this.getMoonPhasePercent(today);
-      _moonPhase.value = Math.floor(phase) + "%";
-      _moonImg.src = this.getMoonImageSrc(today, 64);
+    }
+  },
+  
+  updatePopupMoon: function(popup) {
+    with (this) {
+      var today = new Date();
+      var lat = parseFloat(_latitude);
+      var lon = parseFloat(_longitude);
+      _moonPhase.value = getResource(_resMoonPrefix + suncultCalcMoon.phaseName(today));
+      var age = suncultCalcMoon.age(today);
+      var d = Math.floor(age);
+      var h = Math.floor((age - d) * 24)
+      _nextFullMoon.value = d + "d " + h + "h";
+      _moonImg.src = getMoonImageSrc(today, 64);
+
       result = suncultCalcMoon.riseset(parseFloat(_latitude),parseFloat(_longitude), today, _timezone, _timeFormat);
       if (result[0]) {
         _moonRise.value = result[0];
         _moonRiseAz.value = result[2];
       } else {
-        _moonRise.value = this.getResource(_resNoMoonrise);
-        _moonRiseAz.value = this.getResource(_resNoMoonrise);
+        _moonRise.value = getResource(_resNoMoonrise);
+        _moonRiseAz.value = getResource(_resNoMoonrise);
       }
       if (result[1]) {
         _moonSet.value = result[1];
         _moonSetAz.value = result[3];
       } else {
-        _moonSet.value = this.getResource(_resNoMoonset);
-        _moonSetAz.value = this.getResource(_resNoMoonset);
+        _moonSet.value = getResource(_resNoMoonset);
+        _moonSetAz.value = getResource(_resNoMoonset);
       }
     } 
   },
