@@ -442,7 +442,7 @@ formValues: function(lat, lon, _date, tzOffset, tf, srAngle, twAngle)
   }
 
   return [ twStart, twEnd, srise, sset ];
-},
+}
 
 
 };
@@ -482,11 +482,17 @@ phasePercent: function(theDate) {
 },
 
 age: function(theDate) {
-  return this.phasePercent(theDate) * this.synodic / 100;
+  return this.phasePercent(theDate) * this.synodic / 100.0;
+},
+
+daysToFullMoon: function(theDate) {
+  var age = this.age(theDate);
+  var r = this.synodic / 2 - age;
+  return r > 0 ? r : this.synodic + r;  
 },
 
 phaseName: function(theDate) {
-  var age = this.age();
+  var age = this.age(theDate);
   if (age < 1.84566)
     return "new";
   else if (age < 5.53699)

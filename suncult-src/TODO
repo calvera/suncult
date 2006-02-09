@@ -1,0 +1,11 @@
+Suncult ToDo List
+
+- make it working on old FF, TB releases and Mozilla Suite/Seamonkey HIGH
+- higher precision when entering lat/long HIGH
+- ability to control what is/is not displayed in popup MID
+- application position configuration MID
+- add solar midday time MID 
+- times computation for other dates LOW
+- integrate with Mozilla Calendar
+- add more cities/places LOW
+- ability to hide menuitem in the 'Tools' menu LOW

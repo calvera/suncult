@@ -67,6 +67,7 @@ var suncult = {
       return this._stringBundle.getString(r);
     } catch (ex) {
       dump(ex + "\n");
+      return null;
     }
   },
   
@@ -179,9 +180,9 @@ var suncult = {
       var lat = parseFloat(_latitude);
       var lon = parseFloat(_longitude);
       _moonPhase.value = getResource(_resMoonPrefix + suncultCalcMoon.phaseName(today));
-      var age = suncultCalcMoon.age(today);
-      var d = Math.floor(age);
-      var h = Math.floor((age - d) * 24)
+      var dfm = suncultCalcMoon.daysToFullMoon(today);
+      var d = Math.floor(dfm);
+      var h = Math.floor((dfm - d) * 24)
       _nextFullMoon.value = d + "d " + h + "h";
       _moonImg.src = getMoonImageSrc(today, 64);
 
