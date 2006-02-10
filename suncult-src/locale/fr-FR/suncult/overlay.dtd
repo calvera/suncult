@@ -1,0 +1,12 @@
+<!ENTITY suncult "Sun Cult">
+<!ENTITY suncultConfig "Configuration de Sun Cult">
+<!ENTITY suncultConfigKey "C">
+<!ENTITY suncultTwilightStart "Début du crépuscule">
+<!ENTITY suncultSunRise "Lever du Soleil">
+<!ENTITY suncultSunset "Coucher du Soleil">
+<!ENTITY suncultTwilightEnd "Fin du crépuscule">
+<!ENTITY suncultMoonPhase "Phase lunaire">
+<!ENTITY suncultMoonSet "Coucher Lune">
+<!ENTITY suncultMoonRise "Lever Lune">
+<!ENTITY suncultMoonSetAzimuth "Azimuth Coucher (&#176;)">
+<!ENTITY suncultMoonRiseAzimuth "Azimuth Lever (&#176;)">

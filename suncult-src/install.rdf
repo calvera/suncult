@@ -18,6 +18,8 @@
 				<em:package>content/suncult/</em:package>
 				<em:skin>skin/suncult/</em:skin>
 				<em:locale>locale/en-US/</em:locale> 
+				<em:locale>locale/cz-CS/</em:locale>
+				<em:locale>locale/fr-FR/</em:locale>
 			</Description>
 		</em:file>
 		
@@ -39,25 +41,6 @@
       </Description>
     </em:targetApplication>
 
-		<!-- SeaMonkey 
-    <em:targetApplication>
-      <Description>
-        <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
-        <em:minVersion>1.0</em:minVersion>
-        <em:maxVersion>1.0</em:maxVersion>
-      </Description>
-    </em:targetApplication>
-    -->
-    
-    <!-- NVU 
-    <em:targetApplication>
-      <Description>
-        <em:id>{136c295a-4a5a-41cf-bf24-5cee526720d5}</em:id>
-        <em:minVersion>1.0</em:minVersion>
-        <em:maxVersion>1.0</em:maxVersion>
-      </Description>
-    </em:targetApplication>
-    -->
   </Description>
 
 </RDF>

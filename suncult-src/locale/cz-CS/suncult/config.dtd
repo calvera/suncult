@@ -1,0 +1,28 @@
+<!ENTITY title.label "Kult Slunce Nastavení">
+<!ENTITY location.label "Poloha">
+<!ENTITY latitude.label "Zem. šířka">
+<!ENTITY longitude.label "Zem. délka">
+<!ENTITY name.label "Jméno">
+<!ENTITY east.label "Východ">
+<!ENTITY west.label "Západ">
+<!ENTITY north.label "Sever">
+<!ENTITY south.label "Jih">
+<!ENTITY close.label "Zavřít">
+<!ENTITY enter.label "Zadejte polohu. Hodnoty mohou být v těchto tvarech -50.30, 49n20, 13°N, 13° 19&apos;N and 13°19&apos;43.3&quot;N">
+<!ENTITY time.label "Čas">
+<!ENTITY timezone.label "Časová zóna">
+<!ENTITY timezone.system "Ze systému">
+<!ENTITY timeformat.label "Formát času">
+<!ENTITY h24 "24 hodin">
+<!ENTITY ampm "AM/PM">
+<!ENTITY sunriseTime.label "Okamžik východu a západu slunce">
+<!ENTITY srTime0 "Střed slunečního disku na matematickém horizontu">
+<!ENTITY srTime25 "Vršek slunčního disku na matematickém horizontu">
+<!ENTITY srTime583 "Výchozí - Střed slunečního disku na horizontu (se započtením lomu světla v atmosféře)">
+<!ENTITY srTime833 "Vršek slunčního disku na horizontu (se započtením lomu světla v atmosféře)">
+<!ENTITY twilightTime.label "Okamžik úsvitu a soumralu">
+<!ENTITY twTime6 "Výchozí - civilní (venku není možné číst)">
+<!ENTITY twTime12 "Námořní (není možná navigace podle mořského horizontu)">
+<!ENTITY twTime15 "Amatérský astronomický (obloha je dostatečně tmavá na většinu pozorování)">
+<!ENTITY twTime18 "Astronomický (obloha je kompletně tmavá">
+
