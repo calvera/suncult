@@ -493,6 +493,7 @@ daysToFullMoon: function(theDate) {
 
 phaseName: function(theDate) {
   var age = this.age(theDate);
+//  dump("age: " + age + "\n");
   if (age < 1.84566)
     return "new";
   else if (age < 5.53699)

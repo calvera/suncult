@@ -1,8 +1,6 @@
 var suncult = {
   _prefLatitude: "extensions.suncult.latitude",
-  _prefLatitudeNorthSouth: "extensions.suncult.latitudeNorthSouth",
   _prefLongitude: "extensions.suncult.longitude",
-  _prefLongitudeEastWest: "extensions.suncult.longitudeEastWest",
   _prefTimezone: "extensions.suncult.timezone",
   _prefTimeFormat: "extensions.suncult.timeformat",
   _prefTwilightAngle: "extensions.suncult.twAngle",
@@ -52,8 +50,9 @@ var suncult = {
       _moonRiseAz = document.getElementById("suncult-moonrise-azimuth");
       _moonSetAz = document.getElementById("suncult-moonset-azimuth");
       readPreferences();
-      if (_latitude == null || _longitude == null) {
-        showConfig();
+      if (!_prefs.prefHasUserValue(_prefLongitude) || !_prefs.prefHasUserValue(_prefLatitude)) {
+        var module = this;
+        setTimeout(function() { module.showConfig(); }, 250);
         }
       updateStatusBar();
       schedule();
@@ -237,12 +236,9 @@ var suncult = {
   },
   
   schedule: function() {
-    setTimeout("sunCultTrigger();", 60000);
+    module = this;
+    setTimeout(function() { module.trigger(); }, 60000);
   }
 };
-
-function sunCultTrigger() {
-  suncult.trigger();
-}
 
 window.addEventListener("load", function(e) { suncult.init(e); }, false); 
