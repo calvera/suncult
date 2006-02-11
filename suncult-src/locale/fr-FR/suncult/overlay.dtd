@@ -6,6 +6,7 @@
 <!ENTITY suncultSunset "Coucher du Soleil">
 <!ENTITY suncultTwilightEnd "Fin du crépuscule">
 <!ENTITY suncultMoonPhase "Phase lunaire">
+<!ENTITY suncultNextFullMoon "Prochaine pleine Lune">
 <!ENTITY suncultMoonSet "Coucher Lune">
 <!ENTITY suncultMoonRise "Lever Lune">
 <!ENTITY suncultMoonSetAzimuth "Azimuth Coucher (&#176;)">
