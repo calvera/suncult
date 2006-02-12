@@ -153,7 +153,7 @@ var suncult = {
       var today = new Date();
       var lat = parseFloat(_latitude);
       var lon = parseFloat(_longitude);
-      result = suncultCalcSun.formValues(lat, lon, today, _timezone, _timeFormat, _srAngle, _twAngle);
+      var result = suncultCalcSun.formValues(lat, lon, today, _timezone, _timeFormat, _srAngle, _twAngle);
       if (result[0] == "all") {
         _twilightStart.value = getResource(_resAllTwilight)
       } else if (result[0] == "no") {
@@ -185,7 +185,7 @@ var suncult = {
       _nextFullMoon.value = d + "d " + h + "h";
       _moonImg.src = getMoonImageSrc(today, 64);
 
-      result = suncultCalcMoon.riseset(parseFloat(_latitude),parseFloat(_longitude), today, _timezone, _timeFormat);
+      var result = suncultCalcMoon.riseset(parseFloat(_latitude),parseFloat(_longitude), today, _timezone, _timeFormat);
       if (result[0]) {
         _moonRise.value = result[0];
         _moonRiseAz.value = result[2];

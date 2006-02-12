@@ -19,18 +19,18 @@ var suncultConfig = {
       _longitudeEdit.value = this.formatValue(_longitude.value, "E", "W");
     }
   },
-  
+
   onSelectCity: function(event) {
     dump("suncultConfig.onSelectCity\n");
     var tree = event.target;
-  
+
     if (!tree.view.isContainer(tree.currentIndex)) {
       var latcol = tree.columns ? tree.columns['latitude-column'] : 'latitude-column';
       var longcol = tree.columns ? tree.columns['longitude-column'] : 'longitude-column';
-    
+
       var lat = tree.view.getCellText(tree.currentIndex, latcol);
       var lon = tree.view.getCellText(tree.currentIndex, longcol);
-    
+
       this._latitudeEdit.value = lat;
       this.oninputLatitude(event);
 
@@ -38,7 +38,7 @@ var suncultConfig = {
       this.oninputLongitude(event);
     }
   },
-  
+
   oninputLatitude: function(event) {
 //    dump("suncultConfig.oninputLatitude\n");
     var v = new String(this._latitudeEdit.value);
@@ -57,7 +57,7 @@ var suncultConfig = {
     }
 
     var m = v.match(/^\s*(\d+)\D*(\d*)\D*(\d*([.,]\d*)?)\D*([NS])\s*$/i);
-    if (m) { //13°N, 13° 19'N and 13°19'43"N
+    if (m) { //13Â°N, 13Â° 19'N and 13Â°19'43"N
       r = parseFloat(m[1]) + (m[2] != "" ? parseFloat(m[2]) / 60 : 0) + (m[3] != "" ? parseFloat(m[3]) / 60 / 60 : 0);
       if (m[5] == 's' || m[5] == 'S') {
         r = -r;
@@ -68,10 +68,10 @@ var suncultConfig = {
       this._latitude.value = r;
     }
   },
-  
+
   oninputLongitude: function(event) {
 //    dump("suncultConfig.oninputLongitude\n");
-    v = this._longitudeEdit.value;
+    var v = this._longitudeEdit.value;
     var r = null;
 
     if (v.match(/^\s*-?\d*([.,]\d*)?\s*$/)) {  //-50.30
@@ -87,7 +87,7 @@ var suncultConfig = {
     }
 
     var m = v.match(/^\s*(\d+)\D*(\d*)\D*(\d*([.,]\d*)?)\D*([WE])\s*$/i);
-    if (m) { //13°E, 13° 19'W and 13°19'43"W
+    if (m) { //13Â°E, 13Â° 19'W and 13Â°19'43"W
       r = parseFloat(m[1]) + (m[2] != "" ? parseFloat(m[2]) / 60 : 0) + (m[3] != "" ? parseFloat(m[3]) / 60 / 60 : 0);
       if (m[5] == 'W' || m[5] == 'w') {
         r = -r;
@@ -98,13 +98,13 @@ var suncultConfig = {
       this._longitude.value = r;
     }
   },
-  
+
   validate: function(v, min, max) {
     var r = v != null && v >= min && v <= max;
     document.documentElement.getButton("accept").disabled = !r;
     return r;
   },
-  
+
   formatValue: function(value, positive, negative) {
     var absValue = value <0 ? -value : value;
     var result = Math.floor(absValue);
@@ -113,7 +113,7 @@ var suncultConfig = {
     result += min > 0 ? min : "";
     return result;
   }
-  
+
 };
 
-window.addEventListener("load", function(e) { suncultConfig.init(e); }, false); 
+window.addEventListener("load", function(e) { suncultConfig.init(e); }, false);

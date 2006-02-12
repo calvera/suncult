@@ -556,7 +556,7 @@ riseset: function( lat, lon, now, zone, tf) {
     
     for (k = 0; k < 24; k++)                   // check each hour of this day
     {
-        ph = (k + 1)/24;
+        var ph = (k + 1)/24;
         
         this.RAn[2] = this.interpolate(mp[0][0], mp[1][0], mp[2][0], ph);
         this.Dec[2] = this.interpolate(mp[0][1], mp[1][1], mp[2][1], ph);
