@@ -25,4 +25,4 @@
 <!ENTITY twTime12 "Nautical twilight (navigation using a sea horizon no longer possible)">
 <!ENTITY twTime15 "Amateur astronomical twilight (the sky is dark enough for most observations)">
 <!ENTITY twTime18 "Astronomical twilight (the sky is comletely dark)">
-
+<!ENTITY display.label "Display">

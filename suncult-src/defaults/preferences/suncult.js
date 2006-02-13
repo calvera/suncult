@@ -5,3 +5,5 @@ pref("extensions.suncult.timeformat", "h24");
 pref("extensions.suncult.srAngle", "-0.583333");
 pref("extensions.suncult.twAngle", "-6");
 pref("extensions.suncult.location", "statusbar");
+pref("extensions.suncult.bar", "status-bar");
+pref("extensions.suncult.bar.position", -1);

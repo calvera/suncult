@@ -5,6 +5,9 @@ var suncult = {
   _prefTimeFormat: "extensions.suncult.timeformat",
   _prefTwilightAngle: "extensions.suncult.twAngle",
   _prefSetRiseAngle: "extensions.suncult.srAngle",
+  _prefBar: "extensions.suncult.bar",
+  _prefBarPosition: "extensions.suncult.bar.position",
+
   _resNoMoonrise: "suncult.noMoonrise",
   _resNoMoonset: "suncult.noMoonset",
   _resMoonPrefix: "suncult.moon.",
@@ -132,11 +135,74 @@ var suncult = {
       } finally {
         dump("twAngle: " + _twAngle + "\n");
       }
+
+      _move();
     }
   },
 
+  _move: function() {
+    with (this) {
+      var toolbar = document.getElementById(_prefs.getCharPref(_prefBar));
+      var box = document.getElementById("suncult-box");
+      var position = _prefs.getIntPref(_prefBarPosition);
+      
+      if (!toolbar) {
+        _prefs.setCharPref(_prefBar, "status-bar");
+        this._manager.branch.setIntPref(_prefBarPosition, -1);
+        return;
+      };
+      
+      // bail if it is in the right place
+      if (this._indexOf(toolbar,box) == position)
+        return;
+  
+      //remove us from parent
+      box.parentNode.removeChild(box);
+      
+      //make sure we have the right element type
+      var newbox = null;
+      if (toolbar.localName == "statusbar") {
+        if (box.localName != "statusbarpanel")
+          newbox = document.createElement("statusbarpanel");
+      } else {
+        if (box.localName == "statusbarpanel")
+          newbox = document.createElement("hbox");    
+      };
+      
+      //append children of old box
+      if (newbox) {
+        newbox.setAttribute("id", "suncult-box");
+        newbox.setAttribute("class", "chromeclass-toolbar-additional");
+        while (box.hasChildNodes())
+          newbox.appendChild(box.firstChild);      
+      } else
+        newbox = box;
+      
+      //insert us in correct place
+      this._insertAtIndex(toolbar, newbox, position);
+    }
+  },
+
+  _indexOf: function(aParent, aChild){
+    // -1 if it does not exist
+    var children = aParent.childNodes;
+    for (var x=0; x<children.length; x++)
+      if (children[x] == aChild)
+        return (x == children.length - 1) ? -1 : x;
+   
+    return null;
+  },
+  
+  _insertAtIndex: function(aParent, aChild, aIndex){
+    var children = aParent.childNodes;
+    if ((children.length == 0) || (aIndex >= children.length) || (aIndex < 0))
+      aParent.appendChild(aChild);
+    else
+      aParent.insertBefore(aChild, children[aIndex]);
+  },
+  
   showConfig: function() {
-    window.open("chrome://suncult/content/config.xul", "", "chrome,centerscreen");
+    window.openDialog("chrome://suncult/content/config.xul", "Suncult:Configuration", "chrome,resizable,titlebar,toolbar,modal");
   },
   
   onPopupShowing: function(popup) {

@@ -5,171 +5,175 @@
 
 <prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
         id="suncultConfig"
+        persist="screenX screenY width height"
         title="&title.label;"
         buttons="accept,cancel"
         ondialogaccept="opener.suncult.readPreferences();"
+        windowtype="SunCult:Configuration"
+        type="prefwindow"
         >
 
-  <script src="config.js"/>
+  <box>
+    <script src="config.js"/>
+  </box>
 
-  <prefpane>
+  <prefpane id="location-pane" label="&location.label;" image="images/location.png" onpaneload="parent.lastSelected=this.id;">
     <preferences>
       <preference id="pref-latitude" name="extensions.suncult.latitude" type="string"/>
       <preference id="pref-longitude" name="extensions.suncult.longitude" type="string"/>
+   </preferences>
+
+    <vbox>
+      <description>
+        &enter.label;
+      </description>
+      <grid align="center">
+        <columns>
+          <column/>
+          <column flex="1"/>
+          <column flex="1"/>
+        </columns>
+        <rows>
+          <row>
+            <label value="&latitude.label;:" control="latitude-edit"/>
+            <textbox id="latitude-edit" oninput="suncultConfig.oninputLatitude(event);"/>
+            <textbox id="latitude" preference="pref-latitude" readonly="true"/>
+          </row>
+          <row>
+            <label value="&longitude.label;:" control="longitude-edit"/>
+            <textbox id="longitude-edit" oninput="suncultConfig.oninputLongitude(event);"/>
+            <textbox id="longitude" preference="pref-longitude" readonly="true"/>
+          </row>
+        </rows>
+      </grid>
+      <tree id="cities" seltype="single" flex="1" height="200"
+            datasources="cities.rdf" ref="http://suncult.sf.net/all-cities" flags="dont-build-content"
+            onselect="suncultConfig.onSelectCity(event);">
+        <treecols>
+          <treecol id="name" label="&name.label;" primary="true" flex="1"
+                sortActive="true" sortDirection="ascending" sort="rdf:http://suncult.sf.net/rdf#name"/>
+          <splitter/>
+          <treecol id="latitude-column" label="&latitude.label;"/>
+          <treecol id="longitude-column" label="&longitude.label;"/>
+        </treecols>
+        <template>
+          <rule>
+            <treechildren>
+              <treeitem uri="rdf:*">
+                <treerow>
+                  <treecell label="rdf:http://suncult.sf.net/rdf#name"/>
+                  <treecell label="rdf:http://suncult.sf.net/rdf#latitude"/>
+                  <treecell label="rdf:http://suncult.sf.net/rdf#longitude"/>
+                </treerow>
+              </treeitem>
+            </treechildren>
+          </rule>
+        </template>
+      </tree>            
+    </vbox>
+  </prefpane>
+
+  <prefpane id="time-pane" label="&time.label;" image="images/clock.png" onpaneload="parent.lastSelected=this.id;">
+    <preferences>
       <preference id="pref-timezone" name="extensions.suncult.timezone" type="string"/>
       <preference id="pref-timeformat" name="extensions.suncult.timeformat" type="string"/>
       <preference id="pref-twAngle" name="extensions.suncult.twAngle" type="string"/>
       <preference id="pref-srAngle" name="extensions.suncult.srAngle" type="string"/>
    </preferences>
- 
-     <tabbox>
-      <tabs>
-        <tab label="&location.label;"/>
-        <tab label="&time.label;"/>
-      </tabs>
-      
-      <tabpanels flex="1">   
-        <tabpanel>
-          <vbox>
-            <description>
-              &enter.label;
-            </description>
-            <grid align="center">
-              <columns>
-                <column/>
-                <column flex="1"/>
-                <column flex="1"/>
-              </columns>
-              <rows>
-                <row>
-                  <label value="&latitude.label;:" control="latitude-edit"/>
-                  <textbox id="latitude-edit" oninput="suncultConfig.oninputLatitude(event);"/>
-                  <textbox id="latitude" preference="pref-latitude" readonly="true"/>
-                </row>
-                <row>
-                  <label value="&longitude.label;:" control="longitude-edit"/>
-                  <textbox id="longitude-edit" oninput="suncultConfig.oninputLongitude(event);"/>
-                  <textbox id="longitude" preference="pref-longitude" readonly="true"/>
-                </row>
-              </rows>
-            </grid>
-            <tree id="cities" seltype="single" flex="1" height="200"
-                  datasources="cities.rdf" ref="http://suncult.sf.net/all-cities" flags="dont-build-content"
-                  onselect="suncultConfig.onSelectCity(event);">
-              <treecols>
-                <treecol id="name" label="&name.label;" primary="true" flex="1"
-                      sortActive="true" sortDirection="ascending" sort="rdf:http://suncult.sf.net/rdf#name"/>
-                <splitter/>
-                <treecol id="latitude-column" label="&latitude.label;"/>
-                <treecol id="longitude-column" label="&longitude.label;"/>
-              </treecols>
-              <template>
-                <rule>
-                  <treechildren>
-                    <treeitem uri="rdf:*">
-                      <treerow>
-                        <treecell label="rdf:http://suncult.sf.net/rdf#name"/>
-                        <treecell label="rdf:http://suncult.sf.net/rdf#latitude"/>
-                        <treecell label="rdf:http://suncult.sf.net/rdf#longitude"/>
-                      </treerow>
-                    </treeitem>
-                  </treechildren>
-                </rule>
-              </template>
-            </tree>            
-          </vbox>
-        </tabpanel>
-        <tabpanel>
-          <grid align="center">
-            <columns>
-              <column/>
-              <column flex="1"/>
-            </columns>
-            <rows>
-              <row>
-                <description value="&timezone.label;:" control="timezone"/>
-                <hbox> 
-                <menulist id="timezone" preference="pref-timezone">
-                  <menupopup>
-                    <menuitem label="&timezone.system;" value=""/>
-                    <menuitem label="GMT+13:00" value="-780"/>
-                    <menuitem label="GMT+12:00" value="-720"/>
-                    <menuitem label="GMT+11:00" value="-660"/>
-                    <menuitem label="GMT+10:00" value="-600"/>
-                    <menuitem label="GMT+9:30" value="-570"/>
-                    <menuitem label="GMT+9:00" value="-540"/>
-                    <menuitem label="GMT+8:00" value="-480"/>
-                    <menuitem label="GMT+7:00" value="-420"/>
-                    <menuitem label="GMT+6:30" value="-390"/>
-                    <menuitem label="GMT+6:00" value="-360"/>
-                    <menuitem label="GMT+5:45" value="-345"/>
-                    <menuitem label="GMT+5:30" value="-330"/>
-                    <menuitem label="GMT+5:00" value="-300"/>
-                    <menuitem label="GMT+4:30" value="-270"/>
-                    <menuitem label="GMT+4:00" value="-240"/>
-                    <menuitem label="GMT+3:30" value="-210"/>
-                    <menuitem label="GMT+3:00" value="-180"/>
-                    <menuitem label="GMT+2:00" value="-120"/>
-                    <menuitem label="GMT+1:00" value="-60"/>
-                    <menuitem label="GMT" value="0"/>
-                    <menuitem label="GMT-1:00" value="60"/>
-                    <menuitem label="GMT-2:00" value="120"/>
-                    <menuitem label="GMT-3:00" value="180"/>
-                    <menuitem label="GMT-3:30" value="210"/>
-                    <menuitem label="GMT-4:00" value="240"/>
-                    <menuitem label="GMT-5:00" value="300"/>
-                    <menuitem label="GMT-6:00" value="360"/>
-                    <menuitem label="GMT-7:00" value="420"/>
-                    <menuitem label="GMT-8:00" value="480"/>
-                    <menuitem label="GMT-9:00" value="540"/>
-                    <menuitem label="GMT-10:00" value="600"/>
-                    <menuitem label="GMT-11:00" value="660"/>
-                    <menuitem label="GMT-12:00" value="720"/>
-                    <menuitem label="GMT-13:00" value="780"/>
-                  </menupopup>
-                </menulist>
-                <label flex="1"/>
-                </hbox> 
-              </row>
-              <row>
-                <description value="&timeformat.label;:" control="timeformat"/>
-                <hbox> 
-                <menulist id="timeformat" preference="pref-timeformat">
-                  <menupopup>
-                    <menuitem label="&h24;" value="h24"/>
-                    <menuitem label="&ampm;" value="ampm"/>
-                  </menupopup>
-                </menulist>
-                <label flex="1"/>
-                </hbox> 
-              </row>
-              <row>
-                <description value="&sunriseTime.label;:" control="srAngle"/>
-                <menulist id="srAngle" preference="pref-srAngle">
-                  <menupopup>
-                    <menuitem label="0° - &srTime0;" value="0"/>
-                    <menuitem label="-1/4° - &srTime25;" value="-0.25"/>
-                    <menuitem label="-7/12° - &srTime583;" value="-0.583333"/>
-                    <menuitem label="-5/6° - &srTime833;" value="-0.833333"/>
-                  </menupopup>
-                </menulist>
-              </row>
-              <row>
-                <description value="&twilightTime.label;:" control="twAngle"/>
-                <menulist id="twAngle" preference="pref-twAngle">
-                  <menupopup>
-                    <menuitem label="-6° - &twTime6;" value="-6"/>
-                    <menuitem label="-12° - &twTime12;" value="-12"/>
-                    <menuitem label="-15° - &twTime15;" value="-15"/>
-                    <menuitem label="-18° - &twTime18;" value="-18"/>
-                  </menupopup>
-                </menulist>
-              </row>
-            </rows>
-          </grid>
-        </tabpanel>
-      </tabpanels>
-    </tabbox>      
+
+    <grid align="center">
+      <columns>
+        <column/>
+        <column flex="1"/>
+      </columns>
+      <rows>
+        <row>
+          <description value="&timezone.label;:" control="timezone"/>
+          <hbox> 
+          <menulist id="timezone" preference="pref-timezone">
+            <menupopup>
+              <menuitem label="&timezone.system;" value=""/>
+              <menuitem label="GMT+13:00" value="-780"/>
+              <menuitem label="GMT+12:00" value="-720"/>
+              <menuitem label="GMT+11:00" value="-660"/>
+              <menuitem label="GMT+10:00" value="-600"/>
+              <menuitem label="GMT+9:30" value="-570"/>
+              <menuitem label="GMT+9:00" value="-540"/>
+              <menuitem label="GMT+8:00" value="-480"/>
+              <menuitem label="GMT+7:00" value="-420"/>
+              <menuitem label="GMT+6:30" value="-390"/>
+              <menuitem label="GMT+6:00" value="-360"/>
+              <menuitem label="GMT+5:45" value="-345"/>
+              <menuitem label="GMT+5:30" value="-330"/>
+              <menuitem label="GMT+5:00" value="-300"/>
+              <menuitem label="GMT+4:30" value="-270"/>
+              <menuitem label="GMT+4:00" value="-240"/>
+              <menuitem label="GMT+3:30" value="-210"/>
+              <menuitem label="GMT+3:00" value="-180"/>
+              <menuitem label="GMT+2:00" value="-120"/>
+              <menuitem label="GMT+1:00" value="-60"/>
+              <menuitem label="GMT" value="0"/>
+              <menuitem label="GMT-1:00" value="60"/>
+              <menuitem label="GMT-2:00" value="120"/>
+              <menuitem label="GMT-3:00" value="180"/>
+              <menuitem label="GMT-3:30" value="210"/>
+              <menuitem label="GMT-4:00" value="240"/>
+              <menuitem label="GMT-5:00" value="300"/>
+              <menuitem label="GMT-6:00" value="360"/>
+              <menuitem label="GMT-7:00" value="420"/>
+              <menuitem label="GMT-8:00" value="480"/>
+              <menuitem label="GMT-9:00" value="540"/>
+              <menuitem label="GMT-10:00" value="600"/>
+              <menuitem label="GMT-11:00" value="660"/>
+              <menuitem label="GMT-12:00" value="720"/>
+              <menuitem label="GMT-13:00" value="780"/>
+            </menupopup>
+          </menulist>
+          <label flex="1"/>
+          </hbox> 
+        </row>
+        <row>
+          <description value="&timeformat.label;:" control="timeformat"/>
+          <hbox> 
+          <menulist id="timeformat" preference="pref-timeformat">
+            <menupopup>
+              <menuitem label="&h24;" value="h24"/>
+              <menuitem label="&ampm;" value="ampm"/>
+            </menupopup>
+          </menulist>
+          <label flex="1"/>
+          </hbox> 
+        </row>
+        <row>
+          <description value="&sunriseTime.label;:" control="srAngle"/>
+          <menulist id="srAngle" preference="pref-srAngle">
+            <menupopup>
+              <menuitem label="0° - &srTime0;" value="0"/>
+              <menuitem label="-1/4° - &srTime25;" value="-0.25"/>
+              <menuitem label="-7/12° - &srTime583;" value="-0.583333"/>
+              <menuitem label="-5/6° - &srTime833;" value="-0.833333"/>
+            </menupopup>
+          </menulist>
+        </row>
+        <row>
+          <description value="&twilightTime.label;:" control="twAngle"/>
+          <menulist id="twAngle" preference="pref-twAngle">
+            <menupopup>
+              <menuitem label="-6° - &twTime6;" value="-6"/>
+              <menuitem label="-12° - &twTime12;" value="-12"/>
+              <menuitem label="-15° - &twTime15;" value="-15"/>
+              <menuitem label="-18° - &twTime18;" value="-18"/>
+            </menupopup>
+          </menulist>
+        </row>
+      </rows>
+    </grid>
+  </prefpane>
+
+  <prefpane id="display-pane" label="&display.label;" image="images/display.png" onpaneload="parent.lastSelected=this.id;">
+    <description>
+    Lákamí vůněhulás úmyval rohlivý jednovod lek jený škou boutný záprajak rojskočár.
+    </description>
   </prefpane>
 
 </prefwindow>

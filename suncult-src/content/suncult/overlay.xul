@@ -29,103 +29,111 @@
     <menuitem id="suncult-config" label="&suncultConfig;" accesskey="&suncultConfigKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
   </menupopup>
 
+  <window id="main-window">
+    <popupset id="suncult-popupset">
+      <tooltip id="suncult-tooltip" orient="vertical" onpopupshowing="suncult.onPopupShowing(this);" noautohide="true">
+        <grid align="center">
+          <columns>
+            <column/>
+            <column/>
+          </columns>
+          <rows>
+            <row>
+              <vbox>
+                 <label flex="1"/> 
+                <image id="suncult-sun" width="64" height="64" src="chrome://suncult/content/images/sun_64.png" align="center"/>
+                 <label flex="1"/> 
+               </vbox>
+              <grid align="center">
+                <columns>
+                  <column/>
+                  <column/>
+                </columns>
+                <rows>
+                   <label flex="1"/> 
+                  <row>
+                     <description value="&suncultTwilightStart;:"/>
+                     <description id="suncult-twilight-start"/>
+                  </row>
+                  <row>
+                     <description value="&suncultSunRise;:"/>
+                     <description id="suncult-sunrise"/>
+                  </row>
+                  <row>
+                     <description value="&suncultSunset;:"/>
+                     <description id="suncult-sunset"/>
+                  </row>
+                  <row>
+                     <description value="&suncultTwilightEnd;:"/>
+                     <description id="suncult-twilight-end"/>
+                  </row>
+                   <label flex="1"/> 
+                </rows>
+              </grid>
+            </row>
+            <html:hr style="width:1px"/>
+            <row>
+               <vbox>
+                 <label flex="1"/> 
+                <image id="suncult-moon" width="64" height="64" src="chrome://suncult/content/images/moon_14_64.png" align="center"/>
+                 <label flex="1"/> 
+               </vbox>
+              <grid align="center">
+                <columns>
+                  <column/>
+                  <column/>
+                </columns>
+                <rows>
+                   <label flex="1"/> 
+                  <row>
+                     <description value="&suncultMoonPhase;:"/>
+                     <description id="suncult-moonphase"/>
+                  </row>
+                  <row>
+                     <description value="&suncultNextFullMoon;:"/>
+                     <description id="suncult-next-fullmoon"/>
+                  </row>
+                  <row>
+                     <description value="&suncultMoonRise;:"/>
+                     <description id="suncult-moonrise" />
+                  </row>
+                  <row>
+                     <description value="&suncultMoonRiseAzimuth;:"/>
+                      <description id="suncult-moonrise-azimuth" />
+                  </row>
+                  <row>
+                     <description value="&suncultMoonSet;:"/>
+                     <description id="suncult-moonset"/>
+                  </row>
+                  <row>
+                     <description value="&suncultMoonSetAzimuth;:"/>
+                     <description id="suncult-moonset-azimuth" />
+                  </row>
+                   <label flex="1"/> 
+                </rows>
+              </grid>
+            </row>
+           </rows>
+        </grid>
+      </tooltip>
+      <popup id="suncult-status-popup" position="before_end" onpopupshowing="event.preventBubble();">
+        <menuitem id="suncult-config" label="&suncultConfig;" accesskey="&suncultConfigKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
+      </popup>
+    </popupset>
+  </window>    
+
   <statusbar id="status-bar">
-      <statusbarpanel id="suncult-status" insertafter="livemark-button" tooltip="suncult-tooltip" context="suncult-status-popup">
-          <stack>
-            <hbox>
-              <image id="suncult-status-icon-sun" width="21" height="20" src="chrome://suncult/content/images/sun_20.png"/>
-               <label flex="1"/> 
-            </hbox>
-            <image id="suncult-status-icon-moon" width="20" height="20" src="chrome://suncult/content/images/moon_14_20.png" left="12"/>
-          </stack>
-       </statusbarpanel>
-    <tooltip id="suncult-tooltip" orient="vertical" onpopupshowing="suncult.onPopupShowing(this);" noautohide="true">
-      <grid align="center">
-        <columns>
-          <column/>
-          <column/>
-        </columns>
-        <rows>
-          <row>
-            <vbox>
-               <label flex="1"/> 
-              <image id="suncult-sun" width="64" height="64" src="chrome://suncult/content/images/sun_64.png" align="center"/>
-               <label flex="1"/> 
-             </vbox>
-            <grid align="center">
-              <columns>
-                <column/>
-                <column/>
-              </columns>
-              <rows>
-                 <label flex="1"/> 
-                <row>
-                   <description value="&suncultTwilightStart;:"/>
-                   <description id="suncult-twilight-start"/>
-                </row>
-                <row>
-                   <description value="&suncultSunRise;:"/>
-                   <description id="suncult-sunrise"/>
-                </row>
-                <row>
-                   <description value="&suncultSunset;:"/>
-                   <description id="suncult-sunset"/>
-                </row>
-                <row>
-                   <description value="&suncultTwilightEnd;:"/>
-                   <description id="suncult-twilight-end"/>
-                </row>
-                 <label flex="1"/> 
-              </rows>
-            </grid>
-          </row>
-          <html:hr style="width:1px"/>
-          <row>
-             <vbox>
-               <label flex="1"/> 
-              <image id="suncult-moon" width="64" height="64" src="chrome://suncult/content/images/moon_14_64.png" align="center"/>
-               <label flex="1"/> 
-             </vbox>
-            <grid align="center">
-              <columns>
-                <column/>
-                <column/>
-              </columns>
-              <rows>
-                 <label flex="1"/> 
-                <row>
-                   <description value="&suncultMoonPhase;:"/>
-                   <description id="suncult-moonphase"/>
-                </row>
-                <row>
-                   <description value="&suncultNextFullMoon;:"/>
-                   <description id="suncult-next-fullmoon"/>
-                </row>
-                <row>
-                   <description value="&suncultMoonRise;:"/>
-                   <description id="suncult-moonrise" />
-                </row>
-                <row>
-                   <description value="&suncultMoonRiseAzimuth;:"/>
-                    <description id="suncult-moonrise-azimuth" />
-                </row>
-                <row>
-                   <description value="&suncultMoonSet;:"/>
-                   <description id="suncult-moonset"/>
-                </row>
-                <row>
-                   <description value="&suncultMoonSetAzimuth;:"/>
-                   <description id="suncult-moonset-azimuth" />
-                </row>
-                 <label flex="1"/> 
-              </rows>
-            </grid>
-          </row>
-         </rows>
-      </grid>
-    </tooltip>
-    <popup id="suncult-status-popup" position="before_end" onpopupshowing="event.preventBubble();">
-      <menuitem id="suncult-config" label="&suncultConfig;" accesskey="&suncultConfigKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
-    </popup>
+    <statusbarpanel id="suncult-box">
+      <vbox tooltip="suncult-tooltip" context="suncult-status-popup">
+        <stack>
+          <hbox>
+            <image id="suncult-status-icon-sun" width="21" height="20" src="chrome://suncult/content/images/sun_20.png"/>
+            <label flex="1"/> 
+          </hbox>
+          <image id="suncult-status-icon-moon" width="20" height="20" src="chrome://suncult/content/images/moon_14_20.png" left="12"/>
+        </stack>
+        <label flex="1"/>
+      </vbox>
+    </statusbarpanel>
   </statusbar>
 </overlay>
