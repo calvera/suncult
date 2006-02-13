@@ -40,9 +40,9 @@
           <rows>
             <row>
               <vbox>
-                 <label flex="1"/> 
+                 <spacer flex="1"/> 
                 <image id="suncult-sun" width="64" height="64" src="chrome://suncult/content/images/sun_64.png" align="center"/>
-                 <label flex="1"/> 
+                 <spacer flex="1"/> 
                </vbox>
               <grid align="center">
                 <columns>
@@ -50,7 +50,7 @@
                   <column/>
                 </columns>
                 <rows>
-                   <label flex="1"/> 
+                   <spacer flex="1"/> 
                   <row>
                      <description value="&suncultTwilightStart;:"/>
                      <description id="suncult-twilight-start"/>
@@ -67,16 +67,16 @@
                      <description value="&suncultTwilightEnd;:"/>
                      <description id="suncult-twilight-end"/>
                   </row>
-                   <label flex="1"/> 
+                   <spacer flex="1"/> 
                 </rows>
               </grid>
             </row>
             <html:hr style="width:1px"/>
             <row>
                <vbox>
-                 <label flex="1"/> 
-                <image id="suncult-moon" width="64" height="64" src="chrome://suncult/content/images/moon_14_64.png" align="center"/>
-                 <label flex="1"/> 
+                 <spacer flex="1"/> 
+                 <image id="suncult-moon" width="64" height="64" src="chrome://suncult/content/images/moon_14_64.png" align="center"/>
+                 <spacer flex="1"/> 
                </vbox>
               <grid align="center">
                 <columns>
@@ -84,7 +84,7 @@
                   <column/>
                 </columns>
                 <rows>
-                   <label flex="1"/> 
+                  <spacer flex="1"/> 
                   <row>
                      <description value="&suncultMoonPhase;:"/>
                      <description id="suncult-moonphase"/>
@@ -109,7 +109,7 @@
                      <description value="&suncultMoonSetAzimuth;:"/>
                      <description id="suncult-moonset-azimuth" />
                   </row>
-                   <label flex="1"/> 
+                   <spacer flex="1"/> 
                 </rows>
               </grid>
             </row>
@@ -117,7 +117,7 @@
         </grid>
       </tooltip>
       <popup id="suncult-status-popup" position="before_end" onpopupshowing="event.preventBubble();">
-        <menuitem id="suncult-config" label="&suncultConfig;" accesskey="&suncultConfigKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
+        <menuitem id="popup-suncult-config" label="&suncultConfig;" accesskey="&suncultConfigKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
       </popup>
     </popupset>
   </window>    
@@ -128,11 +128,11 @@
         <stack>
           <hbox>
             <image id="suncult-status-icon-sun" width="21" height="20" src="chrome://suncult/content/images/sun_20.png"/>
-            <label flex="1"/> 
+            <spacer flex="1"/> 
           </hbox>
           <image id="suncult-status-icon-moon" width="20" height="20" src="chrome://suncult/content/images/moon_14_20.png" left="12"/>
         </stack>
-        <label flex="1"/>
+        <spacer flex="1"/>
       </vbox>
     </statusbarpanel>
   </statusbar>

@@ -30,3 +30,4 @@
 <!ENTITY toolbar.label   "Toolbar">
 <!ENTITY last.label      "Always last">
 <!ENTITY specific.label  "Specific position">
+<!ENTITY config.menu.label  "Show 'Sun Cult Configuration' in Tools Menu">

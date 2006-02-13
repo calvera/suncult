@@ -7,7 +7,8 @@ var suncult = {
   _prefSetRiseAngle: "extensions.suncult.srAngle",
   _prefBar: "extensions.suncult.bar",
   _prefBarPosition: "extensions.suncult.bar.position",
-
+  _prefMenuConfig: "extensions.suncult.config.menu",
+  
   _resNoMoonrise: "suncult.noMoonrise",
   _resNoMoonset: "suncult.noMoonset",
   _resMoonPrefix: "suncult.moon.",
@@ -135,6 +136,9 @@ var suncult = {
       } finally {
         dump("twAngle: " + _twAngle + "\n");
       }
+
+      var mc = prefs.getBoolPref(_prefMenuConfig);
+      document.getElementById("suncult-config").hidden = !mc;
 
       _move();
     }

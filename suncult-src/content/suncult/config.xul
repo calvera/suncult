@@ -175,6 +175,7 @@
     <preferences>
       <preference id="pref-bar" name="extensions.suncult.bar" type="string"/>
       <preference id="pref-bar-position" name="extensions.suncult.bar.position" type="int"/>
+      <preference id="pref-config-menu" name="extensions.suncult.config.menu" type="bool"/>
    </preferences>
 
     <groupbox>
@@ -188,12 +189,7 @@
           <row align="center">
             <label value="&toolbar.label;:"/>
             <menulist id="suncult-list-bars" oncommand="suncultConfig.populatePositions();" preference="pref-bar">
-              <menupopup>
-                <menuitem label="statusbar" value="statusbar"/>
-                <menuitem label="menubar" value="toolbar-menubar"/>
-                <menuitem label="mainmenu" value="main-menubar"/>
-                <menuitem label="bookmarks toolbar" value="PersonalToolbar"/>
-              </menupopup>
+              <menupopup id="suncult-popup-bars"/>
             </menulist>
           </row>
           <radiogroup id="suncult-group-position" oncommand="suncultConfig.validatePos()">
@@ -212,6 +208,7 @@
         </rows>
       </grid>
     </groupbox>
+    <checkbox label="&config.menu.label;" preference="pref-config-menu"/>
   </prefpane>
 
 </prefwindow>

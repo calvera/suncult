@@ -20,6 +20,7 @@ var suncultConfig = {
       _longitudeEdit = document.getElementById("longitude-edit");
       _latitudeEdit.value = this.formatValue(_latitude.value, "N", "S");
       _longitudeEdit.value = this.formatValue(_longitude.value, "E", "W");
+      populateBars();
       populatePositions();
     }
   },
@@ -118,8 +119,43 @@ var suncultConfig = {
     return result;
   },
 
+  populateBars: function() {
+    // Creates the menuitems for the toolbar selector.
+    var win = window.opener;
+    var toolbars = win.document.getElementsByTagName("toolbar");
+    var statusbars = win.document.getElementsByTagName("statusbar");
+    var menubars = win.document.getElementsByTagName("menubar");
+    var popup = document.getElementById("suncult-popup-bars");
+    
+    // first remove the toolbars already there...
+    while (popup.hasChildNodes())
+      popup.removeChild(popup.firstChild);
+          
+    toolbars = concat(toolbars, statusbars);
+    toolbars = concat(toolbars, menubars);
+    for (var x=0; x<toolbars.length; x++) {
+      var bar = toolbars[x];
+      
+      //do not include find toolbar
+      if (bar.getAttribute("id") == "FindToolbar")
+        continue;
+             
+      var item = document.createElement("menuitem");
+      item.setAttribute("id", bar.getAttribute("id"));
+      item.setAttribute("value", bar.getAttribute("id"));
+      item.value = bar.getAttribute("id");         
+      if (bar.hasAttribute("toolbarname"))
+        item.setAttribute("label", bar.getAttribute("toolbarname"));
+      else
+        item.setAttribute("label", bar.getAttribute("id"));                 
+      popup.appendChild(item);
+    }
+    
+    this.setElement("suncult-list-bars", "pref-bar", "Char", "suncult-popup-bars");    
+  },
+  
   populatePositions: function() {
-    var barid = document.getElementById("suncult-list-bars").selectedItem.getAttribute("id");
+    var barid = document.getElementById("suncult-list-bars").selectedItem.getAttribute("value");
     var win = window.opener;
     var bar = win.document.getElementById(barid);
 
@@ -184,6 +220,39 @@ var suncultConfig = {
     setTimeout("suncultConfig.validatePos()", 5);
   },
     
+  setElement: function(aName, aPref, aType, aGroup){
+    var x, el, els, val;
+    
+    el = document.getElementById(aName);
+    val = document.getElementById(aPref).value;
+    switch (el.localName) {
+      case "checkbox":
+        el.checked = val;
+        break;
+      case "textbox":
+        el.value = val;
+        break;
+      case "menulist":
+        els = document.getElementById(aGroup).childNodes;        
+        for (x=0; x < els.length; x++) {
+          if (((aType == "Int") ? parseInt(els[x].value) : els[x].value) == val) {
+            el.selectedItem = els[x];
+            break;
+          }
+        }      
+        break;            
+      case "radiogroup":
+        els = document.getElementsByAttribute("group", aGroup);        
+        for (x=0; x < els.length; x++) {
+          if (((aType == "Int") ? parseInt(els[x].value) : els[x].value) == val) {
+            el.selectedItem = els[x];
+            break;
+          }
+        }      
+        break;
+    }  
+  },
+  
   validatePos: function() {
     var pref = document.getElementById("pref-bar-position");
     var position = document.getElementById("suncult-group-position");
@@ -201,5 +270,20 @@ var suncultConfig = {
   }
     
 };
+
+function concat(c1, c2)
+{
+  // Concats too collections into an array.
+  var c3 = new Array(c1.length + c2.length);
+  var x,y = 0;
+
+  for (x = 0; x < c1.length; x++)
+    c3[y++] = c1[x];
+
+  for (x = 0; x < c2.length; x++)
+    c3[y++] = c2[x];
+
+  return c3;
+}
 
 window.addEventListener("load", function(e) { suncultConfig.init(e); }, false);

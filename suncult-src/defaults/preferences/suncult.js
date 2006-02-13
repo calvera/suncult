@@ -7,3 +7,4 @@ pref("extensions.suncult.twAngle", "-6");
 pref("extensions.suncult.location", "statusbar");
 pref("extensions.suncult.bar", "status-bar");
 pref("extensions.suncult.bar.position", -1);
+pref("extensions.suncult.config.menu", true);
