@@ -153,6 +153,8 @@
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/BELGIUM/Brussels" sc:name="Brussels" sc:latitude="50N48" sc:longitude="4E21"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/BULGARIA" sc:name="BULGARIA"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/BULGARIA/Sofia" sc:name="Sofia" sc:latitude="42N42" sc:longitude="23E20"/>
+    <sc:country RDF:about="http://suncult.sf.net/EUROPE/CROATIA" sc:name="CROATIA"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/CROATIA/Rijeka" sc:name="Rijeka" sc:latitude="45N20" sc:longitude="14E21"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/DENMARK" sc:name="DENMARK"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/DENMARK/Copenhagen" sc:name="Copenhagen" sc:latitude="55N41" sc:longitude="12E33"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/FINLAND" sc:name="FINLAND"/>
@@ -2752,6 +2754,11 @@
 				<RDF:li>
           <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/BULGARIA">
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/BULGARIA/Sofia"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/CROATIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/CROATIA/Rijeka"/>
           </RDF:Seq>
 				</RDF:li>
 				<RDF:li>
