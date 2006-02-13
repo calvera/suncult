@@ -148,7 +148,7 @@ var suncult = {
       
       if (!toolbar) {
         _prefs.setCharPref(_prefBar, "status-bar");
-        this._manager.branch.setIntPref(_prefBarPosition, -1);
+        _prefs.setIntPref(_prefBarPosition, -1);
         return;
       };
       

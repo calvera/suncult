@@ -171,9 +171,47 @@
   </prefpane>
 
   <prefpane id="display-pane" label="&display.label;" image="images/display.png" onpaneload="parent.lastSelected=this.id;">
-    <description>
-    Lákamí vůněhulás úmyval rohlivý jednovod lek jený škou boutný záprajak rojskočár.
-    </description>
+
+    <preferences>
+      <preference id="pref-bar" name="extensions.suncult.bar" type="string"/>
+      <preference id="pref-bar-position" name="extensions.suncult.bar.position" type="int"/>
+   </preferences>
+
+    <groupbox>
+      <caption label="&placement.label;"/>
+      <grid>
+        <columns>
+          <column/>
+          <column flex="3"/>
+        </columns>
+        <rows>
+          <row align="center">
+            <label value="&toolbar.label;:"/>
+            <menulist id="suncult-list-bars" oncommand="suncultConfig.populatePositions();" preference="pref-bar">
+              <menupopup>
+                <menuitem label="statusbar" value="statusbar"/>
+                <menuitem label="menubar" value="toolbar-menubar"/>
+                <menuitem label="mainmenu" value="main-menubar"/>
+                <menuitem label="bookmarks toolbar" value="PersonalToolbar"/>
+              </menupopup>
+            </menulist>
+          </row>
+          <radiogroup id="suncult-group-position" oncommand="suncultConfig.validatePos()">
+            <row align="center">
+              <radio group="position" label="&last.label;" value="-1"/>
+              <spacer flex="1"/>
+            </row>
+            <row align="center">
+              <radio group="position" label="&specific.label;:" value="0"/>
+              <hbox align="center">    
+                <textbox id="suncult-text-position" size="2" maxlength="3" oninput="suncultConfig.validatePos()" onfocus="this.select()" preference="pref-bar-position"/>
+                <label id="suncult-text-position-valid" class="valid-label" hidden="true"/>
+              </hbox>
+            </row>
+          </radiogroup>
+        </rows>
+      </grid>
+    </groupbox>
   </prefpane>
 
 </prefwindow>
