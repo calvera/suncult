@@ -1,13 +1,14 @@
 <!ENTITY suncult "Sun Cult">
-<!ENTITY suncultConfig "Configuration de Sun Cult">
-<!ENTITY suncultConfigKey "C">
-<!ENTITY suncultTwilightStart "Début du crépuscule">
-<!ENTITY suncultSunRise "Lever du Soleil">
-<!ENTITY suncultSunset "Coucher du Soleil">
-<!ENTITY suncultTwilightEnd "Fin du crépuscule">
-<!ENTITY suncultMoonPhase "Phase lunaire">
-<!ENTITY suncultNextFullMoon "Prochaine pleine Lune">
-<!ENTITY suncultMoonSet "Coucher Lune">
-<!ENTITY suncultMoonRise "Lever Lune">
-<!ENTITY suncultMoonSetAzimuth "Azimuth Coucher (&#176;)">
-<!ENTITY suncultMoonRiseAzimuth "Azimuth Lever (&#176;)">
+<!ENTITY config "Configuration de Sun Cult">
+<!ENTITY configKey "C">
+<!ENTITY twilightStart "Début du crépuscule">
+<!ENTITY sunrise "Lever du Soleil">
+<!ENTITY sunset "Coucher du Soleil">
+<!ENTITY twilightEnd "Fin du crépuscule">
+<!ENTITY moonPhase "Phase lunaire">
+<!ENTITY nextFullMoon "Prochaine pleine Lune">
+<!ENTITY nextNewMoon "Prochaine nouvelle Lune">
+<!ENTITY moonSet "Coucher Lune">
+<!ENTITY moonRise "Lever Lune">
+<!ENTITY moonSetAzimuth "Azimuth Coucher">
+<!ENTITY moonRiseAzimuth "Azimuth Lever">

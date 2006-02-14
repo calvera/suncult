@@ -41,7 +41,7 @@
     </statusbarpanel>
 
     <popupset id="suncult-popupset">
-      <tooltip id="suncult-tooltip" orient="vertical" onpopupshowing="suncult.onPopupShowing(this);" noautohide="true">
+ <tooltip id="suncult-tooltip" orient="vertical" onpopupshowing="suncult.onPopupShowing(this);" noautohide="true">
         <grid align="center">
           <columns>
             <column/>
@@ -81,6 +81,7 @@
                 </rows>
               </grid>
             </row>
+            <html:hr style="width:1px"/>
             <row>
                <vbox>
                  <spacer flex="1"/> 
@@ -103,11 +104,15 @@
                      <description id="suncult-next-fullmoon"/>
                   </row>
                   <row>
+                     <description value="&nextNewMoon;:"/>
+                     <description id="suncult-next-newmoon"/>
+                  </row>
+                  <row>
                      <description value="&moonRise;:"/>
                      <description id="suncult-moonrise" />
                   </row>
                   <row>
-                     <description value="&moonRiseAzimuth; (&#176;):"/>
+                     <description value="&moonRiseAzimuth;:"/>
                       <description id="suncult-moonrise-azimuth" />
                   </row>
                   <row>
@@ -115,7 +120,7 @@
                      <description id="suncult-moonset"/>
                   </row>
                   <row>
-                     <description value="&moonSetAzimuth; (&#176;):"/>
+                     <description value="&moonSetAzimuth;:"/>
                      <description id="suncult-moonset-azimuth" />
                   </row>
                    <spacer flex="1"/> 

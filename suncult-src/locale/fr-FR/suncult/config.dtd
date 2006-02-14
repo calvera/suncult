@@ -1,4 +1,4 @@
-﻿<!ENTITY title.label "Configuration de Sun Cult">
+<!ENTITY title.label "Configuration de Sun Cult">
 <!ENTITY location.label "Localisation">
 <!ENTITY latitude.label "Latitude">
 <!ENTITY longitude.label "Longitude">
@@ -25,4 +25,9 @@
 <!ENTITY twTime12 "Crépuscule nautique (l'horizon marin est imperceptible)">
 <!ENTITY twTime15 "Crépuscule astronomique Amateur (Ciel assez sombre pour la majorité des observations)">
 <!ENTITY twTime18 "Crépuscule astronomique (Ciel entièrement noir)">
-
+<!ENTITY config.menu.label  "Show 'Sun Cult Configuration' in Tools Menu">
+<!ENTITY menu.label "Menu">
+<!ENTITY show.label "Show">
+<!ENTITY sun.label "Soleil">
+<!ENTITY moon.label "Lune">
+<!ENTITY image.label "Image">

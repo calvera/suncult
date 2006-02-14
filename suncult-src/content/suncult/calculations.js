@@ -491,6 +491,12 @@ daysToFullMoon: function(theDate) {
   return r > 0 ? r : this.synodic + r;  
 },
 
+daysToNewMoon: function(theDate) {
+  var age = this.age(theDate);
+  var r = this.synodic - age;
+  return r;  
+},
+
 phaseName: function(theDate) {
   var age = this.age(theDate);
 //  dump("age: " + age + "\n");

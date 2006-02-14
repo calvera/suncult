@@ -21,6 +21,7 @@ var suncult = {
   _moonImg: null,
   _moonPhase: null,
   _nextFullMoon: null,
+  _nextNewMoon: null,
   _moonRise: null,
   _moonSet: null,
   _moonRiseAz: null,
@@ -51,6 +52,7 @@ var suncult = {
       _moonImg = document.getElementById("suncult-moon");
       _moonPhase = document.getElementById("suncult-moonphase");
       _nextFullMoon = document.getElementById("suncult-next-fullmoon");
+      _nextNewMoon = document.getElementById("suncult-next-newmoon");
       _moonRise = document.getElementById("suncult-moonrise");
       _moonSet = document.getElementById("suncult-moonset");
       _moonRiseAz = document.getElementById("suncult-moonrise-azimuth");
@@ -280,6 +282,10 @@ var suncult = {
       var d = Math.floor(dfm);
       var h = Math.floor((dfm - d) * 24)
       _nextFullMoon.value = d + "d " + h + "h";
+      var dnm = suncultCalcMoon.daysToNewMoon(today);
+      d = Math.floor(dnm);
+      h = Math.floor((dnm - d) * 24)
+      _nextNewMoon.value = d + "d " + h + "h";
       _moonImg.src = getMoonImageSrc(today, 64);
 
       var result = suncultCalcMoon.riseset(parseFloat(_latitude),parseFloat(_longitude), today, _timezone, _timeFormat);

@@ -31,3 +31,8 @@
 <!ENTITY last.label      "Always last">
 <!ENTITY specific.label  "Specific position">
 <!ENTITY config.menu.label  "Show 'Sun Cult Configuration' in Tools Menu">
+<!ENTITY menu.label "Menu">
+<!ENTITY show.label "Show">
+<!ENTITY showSun.label "Show sun">
+<!ENTITY showMoon.label "Show moon">
+<!ENTITY image.label "Image">
