@@ -1,3 +1,8 @@
+0.8
+- added ability to hide menuitem in the 'Tools' menu
+- added icon position configuration
+- works in Flock
+
 0.7
 - moon phase names
 - display next full moon time
