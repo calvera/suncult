@@ -1,13 +1,17 @@
+const suncultPrefix = "extensions.suncult.";
+
 var suncult = {
-  _prefLatitude: "extensions.suncult.latitude",
-  _prefLongitude: "extensions.suncult.longitude",
-  _prefTimezone: "extensions.suncult.timezone",
-  _prefTimeFormat: "extensions.suncult.timeformat",
-  _prefTwilightAngle: "extensions.suncult.twAngle",
-  _prefSetRiseAngle: "extensions.suncult.srAngle",
-  _prefBar: "extensions.suncult.bar",
-  _prefBarPosition: "extensions.suncult.bar.position",
-  _prefMenuConfig: "extensions.suncult.config.menu",
+  _prefLatitude: suncultPrefix + "latitude",
+  _prefLongitude: suncultPrefix + "longitude",
+  _prefTimezone: suncultPrefix + "timezone",
+  _prefTimeFormat: suncultPrefix + "timeformat",
+  _prefTwilightAngle: suncultPrefix + "twAngle",
+  _prefSetRiseAngle: suncultPrefix + "srAngle",
+  _prefBar: suncultPrefix + "bar",
+  _prefBarPosition: suncultPrefix + "bar.position",
+  _prefMenuConfig: suncultPrefix + "config.menu",
+  _prefShowSun: suncultPrefix + "show.sun",
+  _prefShowMoon: suncultPrefix + "show.moon",
   
   _resNoMoonrise: "suncult.noMoonrise",
   _resNoMoonset: "suncult.noMoonset",
@@ -31,10 +35,12 @@ var suncult = {
   _longitude: null,
   _timezone: null,
   _timeFormat: null,
-  _srAngle: null,
-  _twAngle: null,
-  _toolbar: null,
-  _toolbarPosition: null,
+  _srAngle: -7.0/12.0,
+  _twAngle: -6.0,
+  _toolbar: "status-bar",
+  _toolbarPosition: "-1",
+  _showSun: true,
+  _showMoon: true,
   
   _prefs: null,
   _stringBundle: null,
@@ -49,7 +55,7 @@ var suncult = {
       _sunset = document.getElementById("suncult-sunset");
       _twilightEnd = document.getElementById("suncult-twilight-end");
       _moonPhaseImg = document.getElementById("suncult-status-icon-moon");
-      _moonImg = document.getElementById("suncult-moon");
+      _moonImg = document.getElementById("suncult-moon-img");
       _moonPhase = document.getElementById("suncult-moonphase");
       _nextFullMoon = document.getElementById("suncult-next-fullmoon");
       _nextNewMoon = document.getElementById("suncult-next-newmoon");
@@ -123,7 +129,6 @@ var suncult = {
       }
   
       try {
-         _srAngle = -7.0/12.0;
          _srAngle = parseFloat(prefs.getCharPref(_prefSetRiseAngle));
        }  catch(ex) {
         dump(ex + "\n");
@@ -131,9 +136,7 @@ var suncult = {
         dump("srAngle: " + _srAngle + "\n");
       }
   
-  
       try {
-         _twAngle = -6.0;
          _twAngle = parseFloat(prefs.getCharPref(_prefTwilightAngle));
        }  catch(ex) {
         dump(ex + "\n");
@@ -152,7 +155,6 @@ var suncult = {
       document.getElementById("suncult-config").hidden = !mc;
 
       try {
-         _toolbar = "statusbar";
          _toolbar = prefs.getCharPref(_prefBar);
        }  catch(ex) {
         dump(ex + "\n");
@@ -161,7 +163,6 @@ var suncult = {
       }
 
       try {
-         _toolbarPosition = -1;
          _toolbarPosition = prefs.getIntPref(_prefBarPosition);
        }  catch(ex) {
         dump(ex + "\n");
@@ -169,10 +170,34 @@ var suncult = {
         dump("_toolbarPosition: " + _toolbarPosition + "\n");
       }
 
+      try {
+         _showSun = prefs.getBoolPref(_prefShowSun);
+       }  catch(ex) {
+        dump(ex + "\n");
+      } finally {
+        dump("_showSun: " + _showSun + "\n");
+      }
+
+      try {
+         _showMoon = prefs.getBoolPref(_prefShowMoon);
+       }  catch(ex) {
+        dump(ex + "\n");
+      } finally {
+        dump("_showMoon: " + _showMoon + "\n");
+      }
+
+      _showHide();
       _move();
     }
   },
 
+  _showHide: function() {
+    with (this) {
+      document.getElementById("suncult-sun").collapsed = !_showSun;
+      document.getElementById("suncult-moon").collapsed = !_showMoon;
+    }
+  },
+  
   _move: function() {
     with (this) {
       var toolbar = document.getElementById(_toolbar);

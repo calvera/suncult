@@ -41,51 +41,51 @@
     </statusbarpanel>
 
     <popupset id="suncult-popupset">
- <tooltip id="suncult-tooltip" orient="vertical" onpopupshowing="suncult.onPopupShowing(this);" noautohide="true">
+      <tooltip id="suncult-tooltip" orient="vertical" onpopupshowing="suncult.onPopupShowing(this);" noautohide="true">
         <grid align="center">
           <columns>
             <column/>
             <column/>
           </columns>
           <rows>
-            <row>
+            <row id="suncult-sun">
               <vbox>
-                 <spacer flex="1"/> 
-                <image id="suncult-sun" width="64" height="64" src="chrome://suncult/content/images/sun_64.png" align="center"/>
-                 <spacer flex="1"/> 
-               </vbox>
+                <spacer flex="1"/> 
+                  <image id="suncult-sun-img" width="64" height="64" src="chrome://suncult/content/images/sun_64.png" align="center"/>
+                <spacer flex="1"/> 
+              </vbox>
               <grid align="center">
                 <columns>
                   <column/>
                   <column/>
                 </columns>
                 <rows>
-                   <spacer flex="1"/> 
-                  <row>
+                  <spacer flex="1"/> 
+                  <row id="suncult-twilightStart">
                      <description value="&twilightStart;:"/>
                      <description id="suncult-twilight-start"/>
                   </row>
-                  <row>
+                  <row id="suncult-">
                      <description value="&sunrise;:"/>
                      <description id="suncult-sunrise"/>
                   </row>
-                  <row>
+                  <row id="suncult-">
                      <description value="&sunset;:"/>
                      <description id="suncult-sunset"/>
                   </row>
-                  <row>
+                  <row id="suncult-">
                      <description value="&twilightEnd;:"/>
                      <description id="suncult-twilight-end"/>
                   </row>
-                   <spacer flex="1"/> 
+                  <spacer flex="1"/> 
                 </rows>
               </grid>
             </row>
-            <html:hr style="width:1px"/>
-            <row>
+            <spacer/>
+            <row id="suncult-moon">
                <vbox>
                  <spacer flex="1"/> 
-                 <image id="suncult-moon" width="64" height="64" src="chrome://suncult/content/images/moon_14_64.png" align="center"/>
+                 <image id="suncult-moon-img" width="64" height="64" src="chrome://suncult/content/images/moon_14_64.png" align="center"/>
                  <spacer flex="1"/> 
                </vbox>
               <grid align="center">
@@ -95,31 +95,31 @@
                 </columns>
                 <rows>
                   <spacer flex="1"/> 
-                  <row>
+                  <row id="suncult-">
                      <description value="&moonPhase;:"/>
                      <description id="suncult-moonphase"/>
                   </row>
-                  <row>
+                  <row id="suncult-">
                      <description value="&nextFullMoon;:"/>
                      <description id="suncult-next-fullmoon"/>
                   </row>
-                  <row>
+                  <row id="suncult-">
                      <description value="&nextNewMoon;:"/>
                      <description id="suncult-next-newmoon"/>
                   </row>
-                  <row>
+                  <row id="suncult-">
                      <description value="&moonRise;:"/>
                      <description id="suncult-moonrise" />
                   </row>
-                  <row>
+                  <row id="suncult-">
                      <description value="&moonRiseAzimuth;:"/>
                       <description id="suncult-moonrise-azimuth" />
                   </row>
-                  <row>
+                  <row id="suncult-">
                      <description value="&moonSet;:"/>
                      <description id="suncult-moonset"/>
                   </row>
-                  <row>
+                  <row id="suncult-">
                      <description value="&moonSetAzimuth;:"/>
                      <description id="suncult-moonset-azimuth" />
                   </row>
