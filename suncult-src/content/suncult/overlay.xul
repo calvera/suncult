@@ -9,18 +9,6 @@
   <script src="calculations.js"/>
   <script src="overlay.js"/>
 
-  <stringbundleset id="stringbundleset">
-    <stringbundle id="string-bundle" src="chrome://suncult/locale/suncult.properties"/>
-  </stringbundleset>
-
-  <commandset id="mainCommandSet">
-    <command id="cmd_suncult_config" oncommand="suncult.showConfig();"/>
-  </commandset>
-
-  <commandset id="tasksCommands">
-    <command id="cmd_suncult_config" oncommand="suncult.showConfig();"/>
-  </commandset>
-
   <menupopup id="menu_ToolsPopup">
     <menuitem id="suncult-config" label="&suncultConfig;" accesskey="&suncultConfigKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
   </menupopup>
@@ -29,7 +17,29 @@
     <menuitem id="suncult-config" label="&suncultConfig;" accesskey="&suncultConfigKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
   </menupopup>
 
-  <window id="main-window">
+  <statusbar id="status-bar">
+
+    <stringbundleset>
+      <stringbundle id="suncult-string-bundle" src="chrome://suncult/locale/suncult.properties"/>
+    </stringbundleset>
+
+    <commandset>
+      <command id="cmd_suncult_config" oncommand="suncult.showConfig();"/>
+    </commandset>
+
+    <statusbarpanel id="suncult-box">
+      <vbox tooltip="suncult-tooltip" context="suncult-status-popup">
+        <stack>
+          <hbox>
+            <image id="suncult-status-icon-sun" width="21" height="20" src="chrome://suncult/content/images/sun_20.png"/>
+            <spacer flex="1"/> 
+          </hbox>
+          <image id="suncult-status-icon-moon" width="20" height="20" src="chrome://suncult/content/images/moon_14_20.png" left="12"/>
+        </stack>
+        <spacer flex="1"/>
+      </vbox>
+    </statusbarpanel>
+
     <popupset id="suncult-popupset">
       <tooltip id="suncult-tooltip" orient="vertical" onpopupshowing="suncult.onPopupShowing(this);" noautohide="true">
         <grid align="center">
@@ -120,20 +130,5 @@
         <menuitem id="popup-suncult-config" label="&suncultConfig;" accesskey="&suncultConfigKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
       </popup>
     </popupset>
-  </window>    
-
-  <statusbar id="status-bar">
-    <statusbarpanel id="suncult-box">
-      <vbox tooltip="suncult-tooltip" context="suncult-status-popup">
-        <stack>
-          <hbox>
-            <image id="suncult-status-icon-sun" width="21" height="20" src="chrome://suncult/content/images/sun_20.png"/>
-            <spacer flex="1"/> 
-          </hbox>
-          <image id="suncult-status-icon-moon" width="20" height="20" src="chrome://suncult/content/images/moon_14_20.png" left="12"/>
-        </stack>
-        <spacer flex="1"/>
-      </vbox>
-    </statusbarpanel>
   </statusbar>
 </overlay>

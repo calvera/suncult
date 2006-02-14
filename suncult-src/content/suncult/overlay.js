@@ -41,7 +41,7 @@ var suncult = {
   init: function() {
 //    dump("in suncult.init\n");
     with (this) {
-      _stringBundle = document.getElementById("string-bundle");
+      _stringBundle = document.getElementById("suncult-string-bundle");
       _prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
       _twilightStart = document.getElementById("suncult-twilight-start");
       _sunrise = document.getElementById("suncult-sunrise");
