@@ -1,13 +1,14 @@
 <!ENTITY suncult "Kult Slunce">
-<!ENTITY suncultConfig "Kult Slunce Nastavení">
-<!ENTITY suncultConfigKey "N">
-<!ENTITY suncultTwilightStart "Začátek úsvitu">
-<!ENTITY suncultSunRise "Východ slunce">
-<!ENTITY suncultSunset "Západ slunce">
-<!ENTITY suncultTwilightEnd "Konec soumraku">
-<!ENTITY suncultMoonPhase "Fáze měsíce">
-<!ENTITY suncultNextFullMoon "Nejbližší úplněk">
-<!ENTITY suncultMoonSet "Západ měsíce">
-<!ENTITY suncultMoonRise "Východ měsíce ">
-<!ENTITY suncultMoonSetAzimuth "Azimut (&#176;)">
-<!ENTITY suncultMoonRiseAzimuth "Azimut (&#176;)">
+<!ENTITY config "Kult Slunce Nastavení">
+<!ENTITY configKey "N">
+<!ENTITY twilightStart "Začátek úsvitu">
+<!ENTITY sunrise "Východ slunce">
+<!ENTITY sunset "Západ slunce">
+<!ENTITY twilightEnd "Konec soumraku">
+<!ENTITY moonPhase "Fáze měsíce">
+<!ENTITY nextFullMoon "Následující úplněk">
+<!ENTITY nextNewMoon "Následující nov">
+<!ENTITY moonSet "Západ měsíce">
+<!ENTITY moonRise "Východ měsíce ">
+<!ENTITY moonSetAzimuth "Azimut západu">
+<!ENTITY moonRiseAzimuth "Azimut východu">

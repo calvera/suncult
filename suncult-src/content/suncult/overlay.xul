@@ -10,11 +10,11 @@
   <script src="overlay.js"/>
 
   <menupopup id="menu_ToolsPopup">
-    <menuitem id="suncult-config" label="&suncultConfig;" accesskey="&suncultConfigKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
+    <menuitem id="suncult-config" label="&config;" accesskey="&configKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
   </menupopup>
 
   <menupopup id="taskPopup">
-    <menuitem id="suncult-config" label="&suncultConfig;" accesskey="&suncultConfigKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
+    <menuitem id="suncult-config" label="&config;" accesskey="&configKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
   </menupopup>
 
   <statusbar id="status-bar">
@@ -62,26 +62,25 @@
                 <rows>
                    <spacer flex="1"/> 
                   <row>
-                     <description value="&suncultTwilightStart;:"/>
+                     <description value="&twilightStart;:"/>
                      <description id="suncult-twilight-start"/>
                   </row>
                   <row>
-                     <description value="&suncultSunRise;:"/>
+                     <description value="&sunrise;:"/>
                      <description id="suncult-sunrise"/>
                   </row>
                   <row>
-                     <description value="&suncultSunset;:"/>
+                     <description value="&sunset;:"/>
                      <description id="suncult-sunset"/>
                   </row>
                   <row>
-                     <description value="&suncultTwilightEnd;:"/>
+                     <description value="&twilightEnd;:"/>
                      <description id="suncult-twilight-end"/>
                   </row>
                    <spacer flex="1"/> 
                 </rows>
               </grid>
             </row>
-            <html:hr style="width:1px"/>
             <row>
                <vbox>
                  <spacer flex="1"/> 
@@ -96,27 +95,27 @@
                 <rows>
                   <spacer flex="1"/> 
                   <row>
-                     <description value="&suncultMoonPhase;:"/>
+                     <description value="&moonPhase;:"/>
                      <description id="suncult-moonphase"/>
                   </row>
                   <row>
-                     <description value="&suncultNextFullMoon;:"/>
+                     <description value="&nextFullMoon;:"/>
                      <description id="suncult-next-fullmoon"/>
                   </row>
                   <row>
-                     <description value="&suncultMoonRise;:"/>
+                     <description value="&moonRise;:"/>
                      <description id="suncult-moonrise" />
                   </row>
                   <row>
-                     <description value="&suncultMoonRiseAzimuth;:"/>
+                     <description value="&moonRiseAzimuth; (&#176;):"/>
                       <description id="suncult-moonrise-azimuth" />
                   </row>
                   <row>
-                     <description value="&suncultMoonSet;:"/>
+                     <description value="&moonSet;:"/>
                      <description id="suncult-moonset"/>
                   </row>
                   <row>
-                     <description value="&suncultMoonSetAzimuth;:"/>
+                     <description value="&moonSetAzimuth; (&#176;):"/>
                      <description id="suncult-moonset-azimuth" />
                   </row>
                    <spacer flex="1"/> 
@@ -127,7 +126,7 @@
         </grid>
       </tooltip>
       <popup id="suncult-status-popup" position="before_end" onpopupshowing="event.preventBubble();">
-        <menuitem id="popup-suncult-config" label="&suncultConfig;" accesskey="&suncultConfigKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
+        <menuitem id="popup-suncult-config" label="&config;" accesskey="&configKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
       </popup>
     </popupset>
   </statusbar>

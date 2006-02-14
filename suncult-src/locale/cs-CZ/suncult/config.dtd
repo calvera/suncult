@@ -25,4 +25,9 @@
 <!ENTITY twTime12 "Námořní (není možná navigace podle mořského horizontu)">
 <!ENTITY twTime15 "Amatérský astronomický (obloha je dostatečně tmavá na většinu pozorování)">
 <!ENTITY twTime18 "Astronomický (obloha je kompletně tmavá">
-
+<!ENTITY config.menu.label  "Ukaž 'Kult Slunce Nastavení' v nabídce">
+<!ENTITY menu.label "Nabídka">
+<!ENTITY show.label "Zobrazuj">
+<!ENTITY sun.label "Slunce">
+<!ENTITY moon.label "Měsíc">
+<!ENTITY image.label "Obrázek">

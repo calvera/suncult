@@ -8,3 +8,5 @@ pref("extensions.suncult.location", "statusbar");
 pref("extensions.suncult.bar", "status-bar");
 pref("extensions.suncult.bar.position", -1);
 pref("extensions.suncult.config.menu", true);
+pref("extensions.suncult.show.sun", true);
+pref("extensions.suncult.show.moon", true);

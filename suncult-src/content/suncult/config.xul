@@ -3,7 +3,12 @@
 <?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <?xml-stylesheet href="chrome://suncult/skin/config.css" type="text/css"?>
-<!DOCTYPE prefwindow SYSTEM "chrome://suncult/locale/config.dtd">
+<!DOCTYPE prefwindow [
+<!ENTITY % config SYSTEM "chrome://suncult/locale/config.dtd" >
+%config;
+<!ENTITY % suncult SYSTEM "chrome://suncult/locale/overlay.dtd" >
+%suncult;
+]> 
 
 <prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
         id="suncultConfig"
@@ -178,39 +183,107 @@
       <preference id="pref-bar" name="extensions.suncult.bar" type="string"/>
       <preference id="pref-bar-position" name="extensions.suncult.bar.position" type="int"/>
       <preference id="pref-config-menu" name="extensions.suncult.config.menu" type="bool"/>
-   </preferences>
+      <preference id="pref-sun" name="extensions.suncult.show.sun" type="bool" onchange="suncultConfig.onSun();"/>
+      <preference id="pref-moon" name="extensions.suncult.show.moon" type="bool" onchange="suncultConfig.onMoon();"/>
+    </preferences>
 
-    <groupbox>
-      <caption label="&placement.label;"/>
-      <grid>
-        <columns>
-          <column/>
-          <column flex="3"/>
-        </columns>
-        <rows>
-          <row align="center">
-            <label value="&toolbar.label;:"/>
-            <menulist id="suncult-list-bars" oncommand="suncultConfig.populatePositions();" preference="pref-bar">
-              <menupopup id="suncult-popup-bars"/>
-            </menulist>
-          </row>
-          <radiogroup id="suncult-group-position" oncommand="suncultConfig.validatePos()">
+    <hbox>
+      <groupbox flex="2">
+        <caption label="&placement.label;"/>
+        <grid>
+          <columns>
+            <column/>
+            <column flex="3"/>
+          </columns>
+          <rows>
             <row align="center">
-              <radio group="position" label="&last.label;" value="-1"/>
-              <spacer flex="1"/>
+              <label value="&toolbar.label;:"/>
+              <menulist id="suncult-list-bars" oncommand="suncultConfig.populatePositions();" preference="pref-bar">
+                <menupopup id="suncult-popup-bars"/>
+              </menulist>
             </row>
-            <row align="center">
-              <radio group="position" label="&specific.label;:" value="0"/>
-              <hbox align="center">    
-                <textbox id="suncult-text-position" size="2" maxlength="3" oninput="suncultConfig.validatePos()" onfocus="this.select()" preference="pref-bar-position"/>
-                <label id="suncult-text-position-valid" class="valid-label" hidden="true"/>
-              </hbox>
+            <radiogroup id="suncult-group-position" oncommand="suncultConfig.validatePos()">
+              <row align="center">
+                <radio group="position" label="&last.label;" value="-1"/>
+                <spacer flex="1"/>
+              </row>
+              <row align="center">
+                <radio group="position" label="&specific.label;:" value="0"/>
+                <hbox align="center">    
+                  <textbox id="suncult-text-position" size="2" maxlength="3" oninput="suncultConfig.validatePos()" onfocus="this.select()" preference="pref-bar-position"/>
+                  <label id="suncult-text-position-valid" class="valid-label" hidden="true"/>
+                </hbox>
+              </row>
+            </radiogroup>
+          </rows>
+        </grid>
+      </groupbox>
+      <groupbox flex="1">
+        <caption label="&menu.label;"/>
+        <checkbox label="&config.menu.label;" preference="pref-config-menu"/>
+      </groupbox>
+    </hbox>
+    <hbox>
+      <groupbox>
+        <caption>
+          <checkbox label="&showSun.label;" preference="pref-sun"/>
+        </caption>
+        <grid id="sun-grid">
+          <columns>
+            <column/>
+          </columns>
+          <rows>
+            <row align="left">
+              <checkbox label="&image.label;"/>
             </row>
-          </radiogroup>
-        </rows>
-      </grid>
-    </groupbox>
-    <checkbox label="&config.menu.label;" preference="pref-config-menu"/>
+            <row align="left">
+              <checkbox label="&twilightStart;"/>
+            </row>
+            <row align="left">
+              <checkbox label="&twilightEnd;"/>
+            </row>
+            <row align="left">
+              <checkbox label="&sunrise;"/>
+            </row>
+            <row align="left">
+              <checkbox label="&sunset;"/>
+            </row>
+          </rows>
+        </grid>
+      </groupbox>
+      <groupbox>
+        <caption>
+          <checkbox label="&showMoon.label;" preference="pref-moon"/>
+        </caption>
+        <grid id="moon-grid">
+          <columns>
+            <column/>
+            <column/>
+          </columns>
+          <rows>
+            <row align="left">
+              <checkbox label="&image.label;"/>
+            </row>
+            <row align="left">
+              <checkbox label="&moonRise;"/>
+              <checkbox label="&moonRiseAzimuth;"/>
+            </row>
+            <row align="left">
+              <checkbox label="&moonSet;"/>
+              <checkbox label="&moonSetAzimuth;"/>
+            </row>
+            <row align="left">
+              <checkbox label="&moonPhase;"/>
+              <checkbox label="&nextFullMoon;"/>
+            </row>
+            <row align="left">
+              <spacer/>
+              <checkbox label="&nextNewMoon;"/>
+            </row>
+          </rows>
+        </grid>
+      </groupbox>
+    </hbox>
   </prefpane>
 
 </prefwindow>

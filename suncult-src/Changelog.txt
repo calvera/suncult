@@ -2,6 +2,7 @@
 - added ability to hide menuitem in the 'Tools' menu
 - added icon position configuration
 - works in Flock
+- added ability to control what is/is not displayed in popup
 
 0.7
 - moon phase names

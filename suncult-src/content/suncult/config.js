@@ -22,6 +22,8 @@ var suncultConfig = {
       _longitudeEdit.value = this.formatValue(_longitude.value, "E", "W");
       populateBars();
       populatePositions();
+      onSun();
+      onMoon();
     }
   },
 
@@ -270,8 +272,27 @@ var suncultConfig = {
       document.documentElement.getButton("accept").disabled = !r;
     document.getElementById("suncult-text-position-valid").hidden = r;
     return r;
-  }
+  },
+  
+  onSun: function() {
+    var value = document.getElementById("pref-sun").value;
+    var grid = document.getElementById("sun-grid");
+    this._disableCheckboxes(grid, !value);
+  },
     
+  onMoon: function() {
+    var value = document.getElementById("pref-moon").value;
+    var grid = document.getElementById("moon-grid");
+    this._disableCheckboxes(grid, !value);
+  },
+  
+  _disableCheckboxes: function(grid, value) {
+    dump(value);
+    var x=grid.getElementsByTagName("checkbox");
+    for (var i=0; i<x.length;i++) {
+      x[i].disabled = value;
+    }
+  } 
 };
 
 function concat(c1, c2)
