@@ -5,8 +5,7 @@
 APP_NAME=suncult
 CHROME_PROVIDERS="content locale skin"
 CLEAN_UP=1
-ROOT_FILES=
-#install.js
+ROOT_FILES=install.js
 ROOT_DIRS=defaults
 BEFORE_BUILD=
 AFTER_BUILD=

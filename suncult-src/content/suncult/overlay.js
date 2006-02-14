@@ -32,6 +32,8 @@ var suncult = {
   _timeFormat: null,
   _srAngle: null,
   _twAngle: null,
+  _toolbar: null,
+  _toolbarPosition: null,
   
   _prefs: null,
   _stringBundle: null,
@@ -137,8 +139,33 @@ var suncult = {
         dump("twAngle: " + _twAngle + "\n");
       }
 
-      var mc = prefs.getBoolPref(_prefMenuConfig);
+      var mc = true; 
+      try {
+        mc = prefs.getBoolPref(_prefMenuConfig);
+      }  catch(ex) {
+        dump(ex + "\n");
+      } finally {
+        dump("menuconfig: " + mc + "\n");
+      }
       document.getElementById("suncult-config").hidden = !mc;
+
+      try {
+         _toolbar = "statusbar";
+         _toolbar = prefs.getCharPref(_prefBar);
+       }  catch(ex) {
+        dump(ex + "\n");
+      } finally {
+        dump("toolbar: " + _toolbar + "\n");
+      }
+
+      try {
+         _toolbarPosition = -1;
+         _toolbarPosition = prefs.getIntPref(_prefBarPosition);
+       }  catch(ex) {
+        dump(ex + "\n");
+      } finally {
+        dump("_toolbarPosition: " + _toolbarPosition + "\n");
+      }
 
       _move();
     }
@@ -146,9 +173,9 @@ var suncult = {
 
   _move: function() {
     with (this) {
-      var toolbar = document.getElementById(_prefs.getCharPref(_prefBar));
+      var toolbar = document.getElementById(_toolbar);
       var box = document.getElementById("suncult-box");
-      var position = _prefs.getIntPref(_prefBarPosition);
+      var position = _toolbarPosition;
       
       if (!toolbar) {
         _prefs.setCharPref(_prefBar, "status-bar");
@@ -206,7 +233,7 @@ var suncult = {
   },
   
   showConfig: function() {
-    window.openDialog("chrome://suncult/content/config.xul", "Suncult:Configuration", "chrome,resizable,titlebar,toolbar,modal");
+    window.openDialog("chrome://suncult/content/config.xul", "Suncult:Configuration", "chrome,resizable,titlebar,toolbar");
   },
   
   onPopupShowing: function(popup) {

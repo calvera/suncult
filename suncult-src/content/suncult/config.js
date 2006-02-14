@@ -106,7 +106,8 @@ var suncultConfig = {
 
   validate: function(v, min, max) {
     var r = v != null && v >= min && v <= max;
-    document.documentElement.getButton("accept").disabled = !r;
+    if (document.documentElement.getButton)
+      document.documentElement.getButton("accept").disabled = !r;
     return r;
   },
 
@@ -155,7 +156,8 @@ var suncultConfig = {
   },
   
   populatePositions: function() {
-    var barid = document.getElementById("suncult-list-bars").selectedItem.getAttribute("value");
+    var selitem = document.getElementById("suncult-list-bars").selectedItem;
+    var barid = selitem ? selitem.getAttribute("value") : null;
     var win = window.opener;
     var bar = win.document.getElementById(barid);
 
@@ -264,7 +266,8 @@ var suncultConfig = {
       var v = pref.value = parseInt(document.getElementById("suncult-text-position").value); 
       r = v != null && v >= 0 && v <= this._positionMax;
     }
-    document.documentElement.getButton("accept").disabled = !r;
+    if (document.documentElement.getButton)
+      document.documentElement.getButton("accept").disabled = !r;
     document.getElementById("suncult-text-position-valid").hidden = r;
     return r;
   }

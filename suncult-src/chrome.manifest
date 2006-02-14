@@ -4,9 +4,9 @@ overlay	chrome://browser/content/browser.xul	chrome://suncult/content/overlay.xu
 overlay	chrome://messenger/content/messenger.xul chrome://suncult/content/overlay.xul
 overlay	chrome://navigator/content/navigator.xul chrome://suncult/content/overlay.xul
 
-locale	suncult	en-US	locale/en-US/
-locale	suncult	cs-CZ	locale/cs-CZ/
-locale	suncult	fr-FR	locale/fr-FR/
+locale	suncult	en-US	locale/en-US/suncult/
+locale	suncult	cs-CZ	locale/cs-CZ/suncult/
+locale	suncult	fr-FR	locale/fr-FR/suncult/
 
-skin	suncult	classic/1.0	skin/suncult/
+skin	suncult	classic/1.0	skin/classic/suncult/
 style	chrome://global/content/customizeToolbar.xul	chrome://suncult/skin/overlay.css

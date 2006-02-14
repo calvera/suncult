@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="chrome://suncult/skin/overlay.css" type="text/css"?>
 
-<!DOCTYPE overlay SYSTEM "chrome://suncult/locale/suncult/overlay.dtd">
+<!DOCTYPE overlay SYSTEM "chrome://suncult/locale/overlay.dtd">
 
 <overlay id="suncult-overlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
@@ -10,7 +10,7 @@
   <script src="overlay.js"/>
 
   <stringbundleset id="stringbundleset">
-    <stringbundle id="string-bundle" src="chrome://suncult/locale/suncult/suncult.properties"/>
+    <stringbundle id="string-bundle" src="chrome://suncult/locale/suncult.properties"/>
   </stringbundleset>
 
   <commandset id="mainCommandSet">
