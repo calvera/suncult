@@ -51,7 +51,7 @@
             <row id="suncult-sun">
               <vbox>
                 <spacer flex="1"/> 
-                  <image id="suncult-sun-img" width="64" height="64" src="chrome://suncult/content/images/sun_64.png" align="center"/>
+                <image id="suncult-sun-img" width="64" height="64" src="chrome://suncult/content/images/sun_64.png" align="center"/>
                 <spacer flex="1"/> 
               </vbox>
               <grid align="center">
