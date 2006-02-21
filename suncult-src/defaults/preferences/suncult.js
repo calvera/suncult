@@ -8,5 +8,20 @@ pref("extensions.suncult.location", "statusbar");
 pref("extensions.suncult.bar", "status-bar");
 pref("extensions.suncult.bar.position", -1);
 pref("extensions.suncult.config.menu", true);
+
 pref("extensions.suncult.show.sun", true);
+pref("extensions.suncult.show.sun.image", true);
+pref("extensions.suncult.show.sun.twilight-start", true);
+pref("extensions.suncult.show.sun.twilight-end", true);
+pref("extensions.suncult.show.sun.sunrise", true);
+pref("extensions.suncult.show.sun.sunset", true);
 pref("extensions.suncult.show.moon", true);
+
+pref("extensions.suncult.show.moon.image", true);
+pref("extensions.suncult.show.moon.moonrise", true);
+pref("extensions.suncult.show.moon.moonrise.azimuth", false);
+pref("extensions.suncult.show.moon.moonset", true);
+pref("extensions.suncult.show.moon.moonset.azimuth", false);
+pref("extensions.suncult.show.moon.phase", true);
+pref("extensions.suncult.show.moon.next-full", true);
+pref("extensions.suncult.show.moon.next-new", false);

@@ -49,7 +49,7 @@
           </columns>
           <rows>
             <row id="suncult-sun">
-              <vbox>
+              <vbox id="suncult-sun-img-box">
                 <spacer flex="1"/> 
                 <image id="suncult-sun-img" width="64" height="64" src="chrome://suncult/content/images/sun_64.png" align="center"/>
                 <spacer flex="1"/> 
@@ -61,19 +61,19 @@
                 </columns>
                 <rows>
                   <spacer flex="1"/> 
-                  <row id="suncult-twilightStart">
+                  <row id="suncult-row-twilightStart">
                      <description value="&twilightStart;:"/>
                      <description id="suncult-twilight-start"/>
                   </row>
-                  <row id="suncult-">
+                  <row id="suncult-row-sunrise">
                      <description value="&sunrise;:"/>
                      <description id="suncult-sunrise"/>
                   </row>
-                  <row id="suncult-">
+                  <row id="suncult-row-sunset">
                      <description value="&sunset;:"/>
                      <description id="suncult-sunset"/>
                   </row>
-                  <row id="suncult-">
+                  <row id="suncult-row-twilightEnd">
                      <description value="&twilightEnd;:"/>
                      <description id="suncult-twilight-end"/>
                   </row>
@@ -81,9 +81,9 @@
                 </rows>
               </grid>
             </row>
-            <spacer/>
+            <separator id="suncult-separator" class="groove-thin"/>
             <row id="suncult-moon">
-               <vbox>
+               <vbox id="suncult-moon-img-box">
                  <spacer flex="1"/> 
                  <image id="suncult-moon-img" width="64" height="64" src="chrome://suncult/content/images/moon_14_64.png" align="center"/>
                  <spacer flex="1"/> 
@@ -95,35 +95,35 @@
                 </columns>
                 <rows>
                   <spacer flex="1"/> 
-                  <row id="suncult-">
+                  <row id="suncult-row-moonphase">
                      <description value="&moonPhase;:"/>
                      <description id="suncult-moonphase"/>
                   </row>
-                  <row id="suncult-">
+                  <row id="suncult-row-nextFullMoon">
                      <description value="&nextFullMoon;:"/>
                      <description id="suncult-next-fullmoon"/>
                   </row>
-                  <row id="suncult-">
+                  <row id="suncult-row-nextNewMoon">
                      <description value="&nextNewMoon;:"/>
                      <description id="suncult-next-newmoon"/>
                   </row>
-                  <row id="suncult-">
+                  <row id="suncult-row-moonrise">
                      <description value="&moonRise;:"/>
                      <description id="suncult-moonrise" />
                   </row>
-                  <row id="suncult-">
+                  <row id="suncult-row-moonrise-azimuth">
                      <description value="&moonRiseAzimuth;:"/>
                       <description id="suncult-moonrise-azimuth" />
                   </row>
-                  <row id="suncult-">
+                  <row id="suncult-row-moonset">
                      <description value="&moonSet;:"/>
                      <description id="suncult-moonset"/>
                   </row>
-                  <row id="suncult-">
+                  <row id="suncult-row-moonset-azimuth">
                      <description value="&moonSetAzimuth;:"/>
                      <description id="suncult-moonset-azimuth" />
                   </row>
-                   <spacer flex="1"/> 
+                  <spacer flex="1"/>
                 </rows>
               </grid>
             </row>

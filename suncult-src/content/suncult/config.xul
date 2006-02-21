@@ -183,8 +183,23 @@
       <preference id="pref-bar" name="extensions.suncult.bar" type="string"/>
       <preference id="pref-bar-position" name="extensions.suncult.bar.position" type="int"/>
       <preference id="pref-config-menu" name="extensions.suncult.config.menu" type="bool"/>
+
       <preference id="pref-sun" name="extensions.suncult.show.sun" type="bool" onchange="suncultConfig.onSun();"/>
+      <preference id="pref-sun-image" name="extensions.suncult.show.sun.image" type="bool"/>
+      <preference id="pref-sun-twilight-start" name="extensions.suncult.show.sun.twilight-start" type="bool"/>
+      <preference id="pref-sun-twilight-end" name="extensions.suncult.show.sun.twilight-end" type="bool"/>
+      <preference id="pref-sun-sunrise" name="extensions.suncult.show.sun.sunrise" type="bool"/>
+      <preference id="pref-sun-sunset" name="extensions.suncult.show.sun.sunset" type="bool"/>
+
       <preference id="pref-moon" name="extensions.suncult.show.moon" type="bool" onchange="suncultConfig.onMoon();"/>
+      <preference id="pref-moon-image" name="extensions.suncult.show.moon.image" type="bool"/>
+      <preference id="pref-moonrise" name="extensions.suncult.show.moon.moonrise" type="bool"/>
+      <preference id="pref-moonrise-azimuth" name="extensions.suncult.show.moon.moonrise.azimuth" type="bool"/>
+      <preference id="pref-moonset" name="extensions.suncult.show.moon.moonset" type="bool"/>
+      <preference id="pref-moonset-azimuth" name="extensions.suncult.show.moon.moonset.azimuth" type="bool"/>
+      <preference id="pref-moonphase" name="extensions.suncult.show.moon.phase" type="bool"/>
+      <preference id="pref-moon-nextfull" name="extensions.suncult.show.moon.next-full" type="bool"/>
+      <preference id="pref-moon-nextnew" name="extensions.suncult.show.moon.next-new" type="bool"/>
     </preferences>
 
     <hbox>
@@ -234,19 +249,19 @@
           </columns>
           <rows>
             <row align="left">
-              <checkbox label="&image.label;"/>
+              <checkbox label="&image.label;" preference="pref-sun-image"/>
             </row>
             <row align="left">
-              <checkbox label="&twilightStart;"/>
+              <checkbox label="&twilightStart;" preference="pref-sun-twilight-start"/>
             </row>
             <row align="left">
-              <checkbox label="&twilightEnd;"/>
+              <checkbox label="&twilightEnd;" preference="pref-sun-twilight-end"/>
             </row>
             <row align="left">
-              <checkbox label="&sunrise;"/>
+              <checkbox label="&sunrise;" preference="pref-sun-sunrise"/>
             </row>
             <row align="left">
-              <checkbox label="&sunset;"/>
+              <checkbox label="&sunset;" preference="pref-sun-sunset"/>
             </row>
           </rows>
         </grid>
@@ -262,23 +277,23 @@
           </columns>
           <rows>
             <row align="left">
-              <checkbox label="&image.label;"/>
+              <checkbox label="&image.label;" preference="pref-moon-image"/>
             </row>
             <row align="left">
-              <checkbox label="&moonRise;"/>
-              <checkbox label="&moonRiseAzimuth;"/>
+              <checkbox label="&moonRise;" preference="pref-moonrise"/>
+              <checkbox label="&moonRiseAzimuth;" preference="pref-moonrise-azimuth"/>
             </row>
             <row align="left">
-              <checkbox label="&moonSet;"/>
-              <checkbox label="&moonSetAzimuth;"/>
+              <checkbox label="&moonSet;" preference="pref-moonset"/>
+              <checkbox label="&moonSetAzimuth;" preference="pref-moonset-azimuth"/>
             </row>
             <row align="left">
-              <checkbox label="&moonPhase;"/>
-              <checkbox label="&nextFullMoon;"/>
+              <checkbox label="&moonPhase;" preference="pref-moonphase"/>
+              <checkbox label="&nextFullMoon;" preference="pref-moon-nextfull"/>
             </row>
             <row align="left">
               <spacer/>
-              <checkbox label="&nextNewMoon;"/>
+              <checkbox label="&nextNewMoon;" preference="pref-moon-nextnew"/>
             </row>
           </rows>
         </grid>

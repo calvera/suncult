@@ -3,6 +3,7 @@
 - added icon position configuration
 - works in Flock
 - added ability to control what is/is not displayed in popup
+- fixed configuration dialog on Mac
 
 0.7
 - moon phase names

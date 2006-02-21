@@ -10,9 +10,24 @@ var suncult = {
   _prefBar: suncultPrefix + "bar",
   _prefBarPosition: suncultPrefix + "bar.position",
   _prefMenuConfig: suncultPrefix + "config.menu",
+
   _prefShowSun: suncultPrefix + "show.sun",
+  _prefShowSunImage: suncultPrefix + "show.sun.image",
+  _prefShowSunTwilightStart: suncultPrefix + "show.sun.twilight-start",
+  _prefShowSunTwilightEnd: suncultPrefix + "show.sun.twilight-end",
+  _prefShowSunrise: suncultPrefix + "show.sun.sunrise",
+  _prefShowSunset: suncultPrefix + "show.sun.sunset",
+
   _prefShowMoon: suncultPrefix + "show.moon",
-  
+  _prefShowMoonImage: suncultPrefix + "show.moon.image",
+  _prefShowMoonrise: suncultPrefix + "show.moon.moonrise",
+  _prefShowMoonriseAzimuth: suncultPrefix + "show.moon.moonrise.azimuth",
+  _prefShowMoonset: suncultPrefix + "show.moon.moonset",
+  _prefShowMoonsetAzimuth: suncultPrefix + "show.moon.moonset.azimuth",
+  _prefShowMoonphase: suncultPrefix + "show.moon.phase",
+  _prefShowNextFullMoon: suncultPrefix + "show.moon.next-full",
+  _prefShowNextNewMoon: suncultPrefix + "show.moon.next-new",
+
   _resNoMoonrise: "suncult.noMoonrise",
   _resNoMoonset: "suncult.noMoonset",
   _resMoonPrefix: "suncult.moon.",
@@ -39,9 +54,24 @@ var suncult = {
   _twAngle: -6.0,
   _toolbar: "status-bar",
   _toolbarPosition: "-1",
+
   _showSun: true,
+  _showSunImage: true,
+  _showSunTwilightStart: true,
+  _showSunTwilightEnd: true,
+  _showSunrise: true,
+  _showSunset: true,
+
   _showMoon: true,
-  
+  _showMoonImage: true,
+  _showMoonrise: true,
+  _showMoonriseAzimuth: false,
+  _showMoonset: true,
+  _showMoonsetAzimuth: false,
+  _showMoonphase: true,
+  _showNextFullMoon: true,
+  _showNextNewMoon: false,
+
   _prefs: null,
   _stringBundle: null,
   
@@ -86,115 +116,97 @@ var suncult = {
   
   readPreferences: function() {
     with (this) {
-      var prefs = _prefs;
-      
-      try {
-         _latitude = prefs.getCharPref(_prefLatitude);
-       }  catch(ex) {
-        dump(ex + "\n");
-      } finally {
-        dump("latitude: " + _latitude + "\n");
-      }
-        
-      try {
-         _longitude = prefs.getCharPref(_prefLongitude);
-       }  catch(ex) {
-        dump(ex + "\n");
-      } finally {
-        dump("longitude: " + _longitude + "\n");
-      }
-  
-      try {
-         _timezone = prefs.getCharPref(_prefTimezone);
-       }  catch(ex) {
-        dump(ex + "\n");
-      } finally {
-        if (_timezone == null || _timezone == "") {
-          _timezone = new Date().getTimezoneOffset();
-          dump("default ");
-        }
-        dump("timezone: " + _timezone + "\n");
-      }
-  
-      try {
-         _timeFormat = prefs.getCharPref(_prefTimeFormat);
-       }  catch(ex) {
-        dump(ex + "\n");
-      } finally {
-        if (_timeFormat != 'h24' && _timeFormat != "ampm") {
-          _timeFormat = 'h24';
-          dump("default ");
-        }
-        dump("timeformat: " + _timeFormat + "\n");
-      }
-  
-      try {
-         _srAngle = parseFloat(prefs.getCharPref(_prefSetRiseAngle));
-       }  catch(ex) {
-        dump(ex + "\n");
-      } finally {
-        dump("srAngle: " + _srAngle + "\n");
-      }
-  
-      try {
-         _twAngle = parseFloat(prefs.getCharPref(_prefTwilightAngle));
-       }  catch(ex) {
-        dump(ex + "\n");
-      } finally {
-        dump("twAngle: " + _twAngle + "\n");
-      }
+      _latitude = getCharPref(_prefLatitude, null);
+      _longitude = getCharPref(_prefLongitude, null);
+      _timezone = getCharPref(_prefTimezone, new Date().getTimezoneOffset());
+      _timeFormat = getCharPref(_prefTimeFormat, 'h24');
+      _srAngle = parseFloat(getCharPref(_prefSetRiseAngle, -7.0/12.0));
+      _twAngle = parseFloat(getCharPref(_prefTwilightAngle, -6.0));
 
-      var mc = true; 
-      try {
-        mc = prefs.getBoolPref(_prefMenuConfig);
-      }  catch(ex) {
-        dump(ex + "\n");
-      } finally {
-        dump("menuconfig: " + mc + "\n");
-      }
+      var mc = getBoolPref(_prefMenuConfig, true);
       document.getElementById("suncult-config").hidden = !mc;
 
-      try {
-         _toolbar = prefs.getCharPref(_prefBar);
-       }  catch(ex) {
-        dump(ex + "\n");
-      } finally {
-        dump("toolbar: " + _toolbar + "\n");
-      }
+      _toolbar = getCharPref(_prefBar, "status-bar");
+      _toolbarPosition = getIntPref(_prefBarPosition, -1);
 
-      try {
-         _toolbarPosition = prefs.getIntPref(_prefBarPosition);
-       }  catch(ex) {
-        dump(ex + "\n");
-      } finally {
-        dump("_toolbarPosition: " + _toolbarPosition + "\n");
-      }
+      _showSun = getBoolPref(_prefShowSun, true);
+      _showSunImage = getBoolPref(_prefShowSunImage, true);
+      _showSunTwilightStart = getBoolPref(_prefShowSunTwilightStart, true);
+      _showSunTwilightEnd = getBoolPref(_prefShowSunTwilightEnd, true);
+      _showSunrise = getBoolPref(_prefShowSunrise, true);
+      _showSunset = getBoolPref(_prefShowSunset, true);
 
-      try {
-         _showSun = prefs.getBoolPref(_prefShowSun);
-       }  catch(ex) {
-        dump(ex + "\n");
-      } finally {
-        dump("_showSun: " + _showSun + "\n");
-      }
-
-      try {
-         _showMoon = prefs.getBoolPref(_prefShowMoon);
-       }  catch(ex) {
-        dump(ex + "\n");
-      } finally {
-        dump("_showMoon: " + _showMoon + "\n");
-      }
+      _showMoon = getBoolPref(_prefShowMoon, true);
+      _showMoonImage = getBoolPref(_prefShowMoonImage, true);
+      _showMoonrise = getBoolPref(_prefShowMoonrise, true);
+      _showMoonriseAzimuth = getBoolPref(_prefShowMoonriseAzimuth, false);
+      _showMoonset = getBoolPref(_prefShowMoonset, true);
+      _showMoonsetAzimuth = getBoolPref(_prefShowMoonsetAzimuth, false);
+      _showMoonphase = getBoolPref(_prefShowMoonphase, true);
+      _showNextFullMoon = getBoolPref(_prefShowNextFullMoon, true);
+      _showNextNewMoon = getBoolPref(_prefShowNextNewMoon, false);
 
       _showHide();
       _move();
     }
   },
+  
+  getBoolPref: function(name, defval) {
+    var result = defval;
+    try {
+       result = this._prefs.getBoolPref(name);
+     } catch(ex) {
+//      dump(ex + "\n");
+    } finally {
+      dump(name + ": " + result + "\n");
+    }
+    return result;
+  },
+
+  getCharPref: function(name, defval) {
+    var result = defval;
+    try {
+       result = this._prefs.getCharPref(name);
+     } catch(ex) {
+//      dump(ex + "\n");
+    } finally {
+      dump(name + ": " + result + "\n");
+    }
+    return result;
+  },
+
+  getIntPref: function(name, defval) {
+    var result = defval;
+    try {
+       result = this._prefs.getIntPref(name);
+     } catch(ex) {
+//      dump(ex + "\n");
+    } finally {
+      dump(name + ": " + result + "\n");
+    }
+    return result;
+  },
 
   _showHide: function() {
     with (this) {
       document.getElementById("suncult-sun").collapsed = !_showSun;
+      document.getElementById("suncult-sun-img-box").collapsed = !_showSunImage;
+      document.getElementById("suncult-row-twilightStart").collapsed = !_showSunTwilightStart;
+      document.getElementById("suncult-row-sunrise").collapsed = !_showSunrise;
+      document.getElementById("suncult-row-sunset").collapsed = !_showSunset;
+      document.getElementById("suncult-row-twilightEnd").collapsed = !_showSunTwilightEnd;
+
       document.getElementById("suncult-moon").collapsed = !_showMoon;
+      document.getElementById("suncult-moon-img-box").collapsed = !_showMoonImage;
+      document.getElementById("suncult-row-moonrise").collapsed = !_showMoonrise;
+      document.getElementById("suncult-row-moonrise-azimuth").collapsed = !_showMoonriseAzimuth;
+      document.getElementById("suncult-row-moonset").collapsed = !_showMoonset;
+      document.getElementById("suncult-row-moonset-azimuth").collapsed = !_showMoonsetAzimuth;
+      document.getElementById("suncult-row-moonphase").collapsed = !_showMoonphase;
+      document.getElementById("suncult-row-nextFullMoon").collapsed = !_showNextFullMoon;
+      document.getElementById("suncult-row-nextNewMoon").collapsed = !_showNextNewMoon;
+
+      document.getElementById("suncult-separator").collapsed = _showMoon ^ _showSun;
     }
   },
   
