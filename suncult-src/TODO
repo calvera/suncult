@@ -2,7 +2,7 @@ Suncult ToDo List
 
 - make it working on old FF, TB releases and Mozilla Suite/Seamonkey HIGH
 - higher precision when entering lat/long HIGH
-- ability to control what is/is not displayed in popup MID
+- ability to control what is/is not displayed in popup MID (Done)
 - application position configuration MID (Done)
 - add solar midday time MID 
 - times computation for other dates LOW
