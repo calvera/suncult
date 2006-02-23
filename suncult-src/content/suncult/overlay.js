@@ -170,6 +170,7 @@ var suncult = {
      } catch(ex) {
 //      dump(ex + "\n");
     } finally {
+      if (!result) result = defval;
       dump(name + ": " + result + "\n");
     }
     return result;

@@ -1,3 +1,6 @@
+0.9
+- fixes
+
 0.8
 - added ability to hide menuitem in the 'Tools' menu
 - added icon position configuration
