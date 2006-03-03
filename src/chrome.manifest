@@ -3,6 +3,7 @@ content	suncult	content/suncult/
 overlay	chrome://browser/content/browser.xul	chrome://suncult/content/overlay.xul
 overlay	chrome://messenger/content/messenger.xul chrome://suncult/content/overlay.xul
 overlay	chrome://navigator/content/navigator.xul chrome://suncult/content/overlay.xul
+overlay chrome://calendar/content/calendar.xul chrome://suncult/content/overlay.xul
 
 locale	suncult	en-US	locale/en-US/suncult/
 locale	suncult	cs-CZ	locale/cs-CZ/suncult/

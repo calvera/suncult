@@ -25,9 +25,14 @@
 <!ENTITY twTime12 "Crépuscule nautique (l'horizon marin est imperceptible)">
 <!ENTITY twTime15 "Crépuscule astronomique Amateur (Ciel assez sombre pour la majorité des observations)">
 <!ENTITY twTime18 "Crépuscule astronomique (Ciel entièrement noir)">
-<!ENTITY config.menu.label  "Show 'Sun Cult Configuration' in Tools Menu">
+<!ENTITY config.menu.label  "Montrer 'Configuration de Sun Cult' en Outils Menu">
 <!ENTITY menu.label "Menu">
-<!ENTITY show.label "Show">
-<!ENTITY sun.label "Soleil">
-<!ENTITY moon.label "Lune">
+<!ENTITY display.label "Ecran">
+<!ENTITY placement.label "Placement">
+<!ENTITY toolbar.label   "Barre">
+<!ENTITY last.label      "Toujours dernière">
+<!ENTITY specific.label  "Position spécifique">
+<!ENTITY show.label "Montrer">
+<!ENTITY showSun.label "Montrer le Soleil">
+<!ENTITY showMoon.label "Montrer la Lune">
 <!ENTITY image.label "Image">

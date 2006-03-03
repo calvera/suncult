@@ -17,6 +17,10 @@
     <menuitem id="suncult-config" label="&config;" accesskey="&configKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
   </menupopup>
 
+  <menupopup id="toolsPopup">
+    <menuitem id="suncult-config" label="&config;" accesskey="&configKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
+  </menupopup>
+
   <statusbar id="status-bar">
 
     <stringbundleset>

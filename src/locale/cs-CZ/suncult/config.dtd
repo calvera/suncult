@@ -27,7 +27,12 @@
 <!ENTITY twTime18 "Astronomický (obloha je kompletně tmavá">
 <!ENTITY config.menu.label  "Ukaž 'Kult Slunce Nastavení' v nabídce">
 <!ENTITY menu.label "Nabídka">
+<!ENTITY display.label "Display">
+<!ENTITY placement.label "Umístění">
+<!ENTITY toolbar.label   "Lišta">
+<!ENTITY last.label      "Vždy poslední">
+<!ENTITY specific.label  "Pozice">
 <!ENTITY show.label "Zobrazuj">
-<!ENTITY sun.label "Slunce">
-<!ENTITY moon.label "Měsíc">
+<!ENTITY showSun.label "Slunce">
+<!ENTITY showMoon.label "Měsíc">
 <!ENTITY image.label "Obrázek">
