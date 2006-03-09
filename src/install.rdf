@@ -10,6 +10,7 @@
     <em:description>Worldwide Sunrise, Sunset, Twilight, Moonrise and Moonset Times</em:description>
     <em:creator>Karel Sommer</em:creator>
     <em:contributor>Daniel Calonnec (French)</em:contributor>
+    <em:contributor>Jan Six (German)</em:contributor>
 		<em:homepageURL>http://suncult.sourceforge.net</em:homepageURL>
 		<em:optionsURL>chrome://suncult/content/config.xul</em:optionsURL>
 		<em:iconURL>chrome://suncult/content/icon.png</em:iconURL>
@@ -21,6 +22,7 @@
 				<em:locale>locale/en-US/suncult/</em:locale> 
 				<em:locale>locale/cs-CZ/suncult/</em:locale>
 				<em:locale>locale/fr-FR/suncult/</em:locale>
+				<em:locale>locale/de-DE/suncult/</em:locale>
 			</Description>
 		</em:file>
 		

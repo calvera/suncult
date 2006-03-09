@@ -1,0 +1,14 @@
+<!ENTITY suncult "Sonnenkult">
+<!ENTITY config "Sonnenkult Konfiguration">
+<!ENTITY configKey "K">
+<!ENTITY twilightStart "Morgendämmerung">
+<!ENTITY sunrise "Sonnenaufgang">
+<!ENTITY sunset "Sonnenuntergang">
+<!ENTITY twilightEnd "Abenddämmerung">
+<!ENTITY moonPhase "Mondphase">
+<!ENTITY nextFullMoon "Nächster Vollmond">
+<!ENTITY nextNewMoon "Nächster Neumond">
+<!ENTITY moonSet "Monduntergang">
+<!ENTITY moonRise "Mondaufgang">
+<!ENTITY moonSetAzimuth "Monduntergang Abweichung">
+<!ENTITY moonRiseAzimuth "Mondaufgang Abweichung">

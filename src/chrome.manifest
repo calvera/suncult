@@ -8,6 +8,7 @@ overlay chrome://calendar/content/calendar.xul chrome://suncult/content/overlay.
 locale	suncult	en-US	locale/en-US/suncult/
 locale	suncult	cs-CZ	locale/cs-CZ/suncult/
 locale	suncult	fr-FR	locale/fr-FR/suncult/
+locale	suncult	de-DE	locale/de-DE/suncult/
 
 skin	suncult	classic/1.0	skin/classic/suncult/
 style	chrome://global/content/customizeToolbar.xul	chrome://suncult/skin/overlay.css
