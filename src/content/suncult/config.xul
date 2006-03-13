@@ -16,7 +16,7 @@
         persist="screenX screenY width height"
         title="&title.label;"
         buttons="accept,cancel"
-        ondialogaccept="opener.suncult.readPreferences();"
+        ondialogaccept="suncultConfig.onDialogAccept(event);"
         windowtype="SunCult:Configuration"
         type="prefwindow"
         >

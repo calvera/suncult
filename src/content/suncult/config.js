@@ -27,8 +27,14 @@ var suncultConfig = {
     }
   },
 
+  onDialogAccept: function(event) {
+    Components.classes["@mozilla.org/observer-service;1"]
+            .getService(Components.interfaces.nsIObserverService)
+            .notifyObservers(null, "SunCult:Configuration", null);
+  },
+  
   onSelectCity: function(event) {
-    dump("suncultConfig.onSelectCity\n");
+//    dump("suncultConfig.onSelectCity\n");
     var tree = event.target;
 
     if (!tree.view.isContainer(tree.currentIndex)) {
@@ -122,9 +128,17 @@ var suncultConfig = {
     return result;
   },
 
+  getWindow: function() {
+		   var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"].getService(Components.interfaces.nsIWindowMediator);
+		   var ww = Components.classes["@mozilla.org/embedcomp/window-watcher;1"].getService(Components.interfaces.nsIWindowWatcher);
+		   var top = wm.getMostRecentWindow("navigator:browser");
+       
+       return top;
+  },
+    
   populateBars: function() {
     // Creates the menuitems for the toolbar selector.
-    var win = window.opener;
+    var win = this.getWindow();
     var toolbars = win.document.getElementsByTagName("toolbar");
     var statusbars = win.document.getElementsByTagName("statusbar");
     var menubars = win.document.getElementsByTagName("menubar");
@@ -160,7 +174,7 @@ var suncultConfig = {
   populatePositions: function() {
     var selitem = document.getElementById("suncult-list-bars").selectedItem;
     var barid = selitem ? selitem.getAttribute("value") : null;
-    var win = window.opener;
+    var win = this.getWindow();
     var bar = win.document.getElementById(barid);
 
     if (!bar)
@@ -287,7 +301,7 @@ var suncultConfig = {
   },
   
   _disableCheckboxes: function(grid, value) {
-    dump(value);
+//    dump(value);
     var x=grid.getElementsByTagName("checkbox");
     for (var i=0; i<x.length;i++) {
       x[i].disabled = value;

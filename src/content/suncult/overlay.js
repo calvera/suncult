@@ -100,6 +100,10 @@ var suncult = {
         }
       updateStatusBar();
       schedule();
+      
+      Components.classes["@mozilla.org/observer-service;1"]
+            .getService(Components.interfaces.nsIObserverService)
+            .addObserver(this, "SunCult:Configuration", false);      
       initialized = true;
     }
 //    dump("leaving suncult.init\n");
@@ -113,6 +117,15 @@ var suncult = {
       return null;
     }
   },
+
+  observe: function(subject, topic, data) {
+    if (topic == "SunCult:Configuration") {
+      this.readPreferences();
+    } else {
+      throw new Error("Unexpected topic received: {" + topic + "}");
+    }
+  },
+
   
   readPreferences: function() {
     with (this) {
@@ -158,7 +171,7 @@ var suncult = {
      } catch(ex) {
 //      dump(ex + "\n");
     } finally {
-      dump(name + ": " + result + "\n");
+//      dump(name + ": " + result + "\n");
     }
     return result;
   },
@@ -171,7 +184,7 @@ var suncult = {
 //      dump(ex + "\n");
     } finally {
       if (!result) result = defval;
-      dump(name + ": " + result + "\n");
+//      dump(name + ": " + result + "\n");
     }
     return result;
   },
@@ -183,7 +196,7 @@ var suncult = {
      } catch(ex) {
 //      dump(ex + "\n");
     } finally {
-      dump(name + ": " + result + "\n");
+//      dump(name + ": " + result + "\n");
     }
     return result;
   },
