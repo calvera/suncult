@@ -15,8 +15,9 @@ pref("extensions.suncult.show.sun.twilight-start", true);
 pref("extensions.suncult.show.sun.twilight-end", true);
 pref("extensions.suncult.show.sun.sunrise", true);
 pref("extensions.suncult.show.sun.sunset", true);
-pref("extensions.suncult.show.moon", true);
+pref("extensions.suncult.show.sun.midday", false);
 
+pref("extensions.suncult.show.moon", true);
 pref("extensions.suncult.show.moon.image", true);
 pref("extensions.suncult.show.moon.moonrise", true);
 pref("extensions.suncult.show.moon.moonrise.azimuth", false);

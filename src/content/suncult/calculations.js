@@ -35,6 +35,8 @@ twStartT : null,      // For twilight times
 twEndT : null,
 twStatus : null,
 
+sSouthT: null,     // Time when Sun is at south
+
 sDIST : null,     // Solar distance, astronomical units
 sRA : null,       // Sun's Right Ascension
 sDEC : null,      // Sun's declination
@@ -135,7 +137,6 @@ sunTimes : function(year, month, day, lat, lon, altit, sUppLimb){
   var dayDiff;    // Days since 2000 Jan 0.0 (negative before)
   var sRadius;    // Sun's apparent radius
   var diuArc;     // Diurnal arc
-  var sSouthT;    // Time when Sun is at south
   var locSidT;    // Local sidereal time
 
   var stCode = 0     // Status code from function - usually 0
@@ -159,8 +160,8 @@ sunTimes : function(year, month, day, lat, lon, altit, sUppLimb){
       /* Compute time when Sun is at south - in hours UT */
       
 
-  sSouthT = 12.0 - this.rev180(locSidT - this.sRA)/15.0;
-//  dump(sSouthT + "\n");
+  this.sSouthT = 12.0 - this.rev180(locSidT - this.sRA)/15.0;
+//  dump(this.sSouthT + "\n");
 
 
       /* Compute the Sun's apparent radius, degrees */
@@ -203,12 +204,12 @@ sunTimes : function(year, month, day, lat, lon, altit, sUppLimb){
 
   if ( sUppLimb != 0)       // For sunrise/sunset
   {
-    this.sRiseT = sSouthT - diuArc;
+    this.sRiseT = this.sSouthT - diuArc;
 
     if(this.sRiseT < 0)        // Sunrise day before
       this.sRiseT += 24;
       
-    this.sSetT  = sSouthT + diuArc;
+    this.sSetT  = this.sSouthT + diuArc;
 
     if(this.sSetT > 24)        // Sunset next day
       this.sSetT -= 24;
@@ -217,12 +218,12 @@ sunTimes : function(year, month, day, lat, lon, altit, sUppLimb){
   }
   else                      // For twilight times
   {
-    this.twStartT = sSouthT - diuArc;
+    this.twStartT = this.sSouthT - diuArc;
 
     if(this.twStartT < 0)
       this.twStartT += 24;
       
-    this.twEndT  = sSouthT + diuArc;
+    this.twEndT  = this.sSouthT + diuArc;
 
     if(this.twEndT > 24)
       this.twEndT -= 24;
@@ -417,10 +418,14 @@ formValues: function(lat, lon, _date, tzOffset, tf, srAngle, twAngle)
   var twen_h = Math.floor(this.twEndT - tzOffset );
   var twen_m = Math.floor((this.twEndT - tzOffset - twen_h)*60);
 
+  var sSouthT_h = Math.floor(this.sSouthT - tzOffset );
+  var sSouthT_m = Math.floor((this.sSouthT - tzOffset - sSouthT_h)*60);
+  
   var twStart;
   var twEnd;
   var srise;
   var sset;
+  var ssouth = suncultUtils.formatTime(sSouthT_h, sSouthT_m, tf);
   
   if(this.twStatus == 0){
     twStart = suncultUtils.formatTime(twst_h, twst_m, tf);     
@@ -441,7 +446,7 @@ formValues: function(lat, lon, _date, tzOffset, tf, srAngle, twAngle)
     sset = "na";
   }
 
-  return [ twStart, twEnd, srise, sset ];
+  return [ twStart, twEnd, srise, sset, ssouth ];
 }
 
 

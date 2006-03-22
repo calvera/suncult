@@ -191,6 +191,7 @@
       <preference id="pref-sun-twilight-end" name="extensions.suncult.show.sun.twilight-end" type="bool"/>
       <preference id="pref-sun-sunrise" name="extensions.suncult.show.sun.sunrise" type="bool"/>
       <preference id="pref-sun-sunset" name="extensions.suncult.show.sun.sunset" type="bool"/>
+      <preference id="pref-sun-midday" name="extensions.suncult.show.sun.midday" type="bool"/>
 
       <preference id="pref-moon" name="extensions.suncult.show.moon" type="bool" onchange="suncultConfig.onMoon();"/>
       <preference id="pref-moon-image" name="extensions.suncult.show.moon.image" type="bool"/>
@@ -263,6 +264,9 @@
             </row>
             <row align="left">
               <checkbox label="&sunset;" preference="pref-sun-sunset"/>
+            </row>
+            <row align="left">
+              <checkbox label="&midday;" preference="pref-sun-midday"/>
             </row>
           </rows>
         </grid>

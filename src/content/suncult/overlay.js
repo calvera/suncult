@@ -17,6 +17,7 @@ var suncult = {
   _prefShowSunTwilightEnd: suncultPrefix + "show.sun.twilight-end",
   _prefShowSunrise: suncultPrefix + "show.sun.sunrise",
   _prefShowSunset: suncultPrefix + "show.sun.sunset",
+  _prefShowMidday: suncultPrefix + "show.sun.midday",
 
   _prefShowMoon: suncultPrefix + "show.moon",
   _prefShowMoonImage: suncultPrefix + "show.moon.image",
@@ -34,6 +35,7 @@ var suncult = {
   
   _twilightStart: null,
   _sunrise: null,
+  _midday: null,
   _sunset: null,
   _twilightEnd: null,
   _moonPhaseImg: null,
@@ -61,6 +63,7 @@ var suncult = {
   _showSunTwilightEnd: true,
   _showSunrise: true,
   _showSunset: true,
+  _showMidday: false,
 
   _showMoon: true,
   _showMoonImage: true,
@@ -83,6 +86,7 @@ var suncult = {
       _twilightStart = document.getElementById("suncult-twilight-start");
       _sunrise = document.getElementById("suncult-sunrise");
       _sunset = document.getElementById("suncult-sunset");
+      _midday = document.getElementById("suncult-midday");
       _twilightEnd = document.getElementById("suncult-twilight-end");
       _moonPhaseImg = document.getElementById("suncult-status-icon-moon");
       _moonImg = document.getElementById("suncult-moon-img");
@@ -148,6 +152,7 @@ var suncult = {
       _showSunTwilightEnd = getBoolPref(_prefShowSunTwilightEnd, true);
       _showSunrise = getBoolPref(_prefShowSunrise, true);
       _showSunset = getBoolPref(_prefShowSunset, true);
+      _showMidday = getBoolPref(_prefShowMidday, false);
 
       _showMoon = getBoolPref(_prefShowMoon, true);
       _showMoonImage = getBoolPref(_prefShowMoonImage, true);
@@ -207,6 +212,7 @@ var suncult = {
       document.getElementById("suncult-sun-img-box").collapsed = !_showSunImage;
       document.getElementById("suncult-row-twilightStart").collapsed = !_showSunTwilightStart;
       document.getElementById("suncult-row-sunrise").collapsed = !_showSunrise;
+      document.getElementById("suncult-row-midday").collapsed = !_showMidday;
       document.getElementById("suncult-row-sunset").collapsed = !_showSunset;
       document.getElementById("suncult-row-twilightEnd").collapsed = !_showSunTwilightEnd;
 
@@ -320,6 +326,7 @@ var suncult = {
       }
       _sunrise.value = result[2];
       _sunset.value = result[3];
+      _midday.value = result[4];
     }
   },
   

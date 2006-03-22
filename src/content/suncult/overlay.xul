@@ -73,6 +73,10 @@
                      <description value="&sunrise;:"/>
                      <description id="suncult-sunrise"/>
                   </row>
+                  <row id="suncult-row-midday">
+                     <description value="&midday;:"/>
+                     <description id="suncult-midday"/>
+                  </row>
                   <row id="suncult-row-sunset">
                      <description value="&sunset;:"/>
                      <description id="suncult-sunset"/>
