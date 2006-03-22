@@ -1,5 +1,5 @@
 1.0.20060322
-- added real middat (high noon) time
+- added real midday (high noon) time
 
 1.0.20060310
 - added german localisation

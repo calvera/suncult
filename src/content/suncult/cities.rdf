@@ -145,6 +145,7 @@
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/SVK" sc:name="Slovakia"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/SVK/Bratislava" sc:name="Bratislava" sc:latitude="48N10" sc:longitude="17E8"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/SVK/Kosice" sc:name="Kosice" sc:latitude="48N44" sc:longitude="21E15"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/SVK/BanskaBystrica" sc:name="Banska Bystrica" sc:latitude="48N43" sc:longitude="19E8"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/AUSTRIA" sc:name="AUSTRIA"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/AUSTRIA/Vienna" sc:name="Vienna" sc:latitude="48N15" sc:longitude="16E22"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/AZORES" sc:name="AZORES"/>
@@ -2739,6 +2740,7 @@
 					<RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/SVK">
 						<RDF:li RDF:resource="http://suncult.sf.net/EUROPE/SVK/Bratislava"/>
 						<RDF:li RDF:resource="http://suncult.sf.net/EUROPE/SVK/Kosice"/>
+						<RDF:li RDF:resource="http://suncult.sf.net/EUROPE/SVK/BanskaBystrica"/>
 					</RDF:Seq>
 				</RDF:li>
 				<RDF:li>
