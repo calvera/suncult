@@ -2885,6 +2885,11 @@
           </RDF:Seq>
 				</RDF:li>
 				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/SWEDEN">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/SWEDEN/Stockholm"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
           <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM">
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Belfast"/>
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Birmingham"/>

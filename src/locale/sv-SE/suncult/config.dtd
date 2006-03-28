@@ -1,0 +1,38 @@
+<!ENTITY title.label "Sun Cult Konfiguration">
+<!ENTITY location.label "Plats">
+<!ENTITY latitude.label "Latitude">
+<!ENTITY longitude.label "Longitude">
+<!ENTITY name.label "Namn">
+<!ENTITY east.label "Öst">
+<!ENTITY west.label "Väst">
+<!ENTITY north.label "Nord">
+<!ENTITY south.label "Syd">
+<!ENTITY close.label "Stäng">
+<!ENTITY enter.label "Ange dina koordinater. Godtagna värden är (t.ex.) -50.30, 49n20, 13°N, 13° 19&apos;N and 13°19&apos;43.3&quot;N">
+<!ENTITY time.label "Tid">
+<!ENTITY timezone.label "Tidszon">
+<!ENTITY timezone.system "Använd systemets">
+<!ENTITY timeformat.label "Tidsformat">
+<!ENTITY h24 "24 timmar">
+<!ENTITY ampm "AM/PM">
+<!ENTITY sunriseTime.label "Soluppgångs-/Solnedgångstid">
+<!ENTITY srTime0 "Centrum av solskivan vidrör matematiska horisonten">
+<!ENTITY srTime25 "Solens övre kant vidrör matematiska horisonten">
+<!ENTITY srTime583 "Default - Centrum av solskivan vidrör horisonten (atmosfärisk brytning inräknad)">
+<!ENTITY srTime833 "Solens övre kant vidrör horisonten (atmosfärisk brytning inräknad)">
+<!ENTITY twilightTime.label "Skymningstid">
+<!ENTITY twTime6 "Default - Civil skymning (det går inte att läsa utomhus längre)">
+<!ENTITY twTime12 "Nautisk skymning (navigering med hjälpa av sjöhorisont ej längrte möjlig)">
+<!ENTITY twTime15 "Amatörastronomisk skymning (himlen är tillräckligt mörk för de flesta observationer)">
+<!ENTITY twTime18 "Astronomisk skymning (himlen är fullständigt mörk)">
+<!ENTITY display.label "Presentation">
+<!ENTITY placement.label "Presentationsplacering">
+<!ENTITY toolbar.label   "Verktygsfält">
+<!ENTITY last.label      "Alltid sist">
+<!ENTITY specific.label  "Specifik position">
+<!ENTITY config.menu.label  "Visa 'Sun Cult Konfiguration' i menyn Verktyg">
+<!ENTITY menu.label "Meny">
+<!ENTITY show.label "Visa">
+<!ENTITY showSun.label "Visa sol">
+<!ENTITY showMoon.label "Visa måne">
+<!ENTITY image.label "Bild">

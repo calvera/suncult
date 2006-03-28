@@ -23,6 +23,7 @@
 				<em:locale>locale/cs-CZ/suncult/</em:locale>
 				<em:locale>locale/fr-FR/suncult/</em:locale>
 				<em:locale>locale/de-DE/suncult/</em:locale>
+				<em:locale>locale/sv-SE/suncult/</em:locale>
 			</Description>
 		</em:file>
 		
