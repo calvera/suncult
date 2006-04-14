@@ -1,4 +1,4 @@
-- added swedish locale
+- added swedish/polish locale
 
 1.0.20060322
 - added real midday (high noon) time
