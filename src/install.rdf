@@ -13,6 +13,7 @@
     <em:contributor>Jan Six (German)</em:contributor>
     <em:contributor>Mats Larsson (Swedish)</em:contributor>
     <em:contributor>SeIZe (Polish)</em:contributor>
+    <em:contributor>Jernej Drobež (Slovenian)</em:contributor>
 		<em:homepageURL>http://suncult.sourceforge.net</em:homepageURL>
 		<em:optionsURL>chrome://suncult/content/config.xul</em:optionsURL>
 		<em:iconURL>chrome://suncult/content/icon.png</em:iconURL>
@@ -27,6 +28,7 @@
 				<em:locale>locale/de-DE/suncult/</em:locale>
 				<em:locale>locale/sv-SE/suncult/</em:locale>
 				<em:locale>locale/pl-PL/suncult/</em:locale>
+				<em:locale>locale/sl-SL/suncult/</em:locale>
 			</Description>
 		</em:file>
 		

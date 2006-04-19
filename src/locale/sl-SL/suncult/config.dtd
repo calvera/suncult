@@ -1,0 +1,38 @@
+<!ENTITY title.label "Nastavitve Sun Cult-a">
+<!ENTITY location.label "Lokacija">
+<!ENTITY latitude.label "Zemljepisna širina">
+<!ENTITY longitude.label "Zemljepisna dolžina">
+<!ENTITY name.label "Ime">
+<!ENTITY east.label "Vzhod">
+<!ENTITY west.label "Zahod">
+<!ENTITY north.label "Sever">
+<!ENTITY south.label "Jug">
+<!ENTITY close.label "Zapri">
+<!ENTITY enter.label "Vstavite svoje koordinate. Sprejete vrednosti so (na primer) -50.30, 49n20, 13Â°N, 13Â° 19&apos;N and 13Â°19&apos;43.3&quot;N">
+<!ENTITY time.label "Čas">
+<!ENTITY timezone.label "Časovni pas">
+<!ENTITY timezone.system "Sistemska nastavitev">
+<!ENTITY timeformat.label "Oblika zapisa časa">
+<!ENTITY h24 "24-urni način">
+<!ENTITY ampm "AM/PM">
+<!ENTITY sunriseTime.label "Čas sončnega vzhoda/zahoda">
+<!ENTITY srTime0 "Središče sonca se dotika matematičnega horizonta">
+<!ENTITY srTime25 "Zgornji rob sonca so dotika matematičnega horizonta">
+<!ENTITY srTime583 "Privzeto - Središče sonca se dotika horizonta (lom svetlobnih žarkov v atmosferi upoštevan)">
+<!ENTITY srTime833 "Zgornji rob sonca se dotika horizonta (lom svetlobnih žarkov v atmosferi upoštevan)">
+<!ENTITY twilightTime.label "Čas somraka">
+<!ENTITY twTime6 "Privzeto - civilni somrak (morski horizont ni več viden)">
+<!ENTITY twTime12 "Navtični somrak (navigacija s pomočjo morskega horizonta ni več mogoča)">
+<!ENTITY twTime15 "Amaterski astronomski somrak (nebo je dovolj temno za večino opazovanj neba)">
+<!ENTITY twTime18 "Astronomski somrak (nebo je popolnoma temno)">
+<!ENTITY display.label "Pokaži">
+<!ENTITY placement.label "Pokaži postavitev">
+<!ENTITY toolbar.label   "Orodna vrstica">
+<!ENTITY last.label      "Vedno zadnji">
+<!ENTITY specific.label  "Specifičen položaj">
+<!ENTITY config.menu.label  "Pokaži 'Nastavitve Sun Cult-a' v meniju Orodja">
+<!ENTITY menu.label "Meni">
+<!ENTITY show.label "Pokaži">
+<!ENTITY showSun.label "Pokaži sonce">
+<!ENTITY showMoon.label "Pokaži luno">
+<!ENTITY image.label "Slika">
