@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
@@ -6,7 +6,7 @@
   
     <em:id>suncult@sf.net</em:id>
     <em:name>Sun Cult</em:name>
-    <em:version>1.0.20060322</em:version>
+    <em:version>1.0.20060419</em:version>
     <em:description>Worldwide Sunrise, Sunset, Twilight, Moonrise and Moonset Times</em:description>
     <em:creator>Karel Sommer</em:creator>
     <em:contributor>Daniel Calonnec (French)</em:contributor>
