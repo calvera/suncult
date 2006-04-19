@@ -130,9 +130,13 @@ var suncultConfig = {
 
   getWindow: function() {
 		   var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"].getService(Components.interfaces.nsIWindowMediator);
-		   var ww = Components.classes["@mozilla.org/embedcomp/window-watcher;1"].getService(Components.interfaces.nsIWindowWatcher);
+//		   var ww = Components.classes["@mozilla.org/embedcomp/window-watcher;1"].getService(Components.interfaces.nsIWindowWatcher);
 		   var top = wm.getMostRecentWindow("navigator:browser");
-       
+       if (top) {
+         return top;
+         }
+      
+       top = wm.getMostRecentWindow("mail:3pane");
        return top;
   },
     

@@ -1,4 +1,5 @@
-- added swedish, polish and slovenian locale
+- added swedish, polish and slovene locale
+- fixed suncult moving on TB
 
 1.0.20060322
 - added real midday (high noon) time
