@@ -1,3 +1,4 @@
+1.0.20060419
 - added swedish, polish and slovene locale
 - fixed suncult moving on TB
 
