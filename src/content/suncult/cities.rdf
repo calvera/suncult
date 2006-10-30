@@ -197,6 +197,7 @@
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/NORWAY" sc:name="NORWAY"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/NORWAY/Bergen" sc:name="Bergen" sc:latitude="60N24" sc:longitude="5E19"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/NORWAY/Oslo" sc:name="Oslo" sc:latitude="59N56" sc:longitude="10E44"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/NORWAY/Tromso" sc:name="Tromso" sc:latitude="69N66" sc:longitude="18E96"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/POLAND" sc:name="POLAND"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/POLAND/Krakow" sc:name="Krakow" sc:latitude="50N4" sc:longitude="19E57"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/POLAND/Warsaw" sc:name="Warsaw" sc:latitude="52N13" sc:longitude="21E2"/>

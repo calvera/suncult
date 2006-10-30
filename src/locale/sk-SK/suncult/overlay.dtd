@@ -1,0 +1,16 @@
+<!ENTITY suncult "Sun Cult">
+<!ENTITY config "Sun Cult - Konfigurácia">
+<!ENTITY configKey "C">
+<!ENTITY twilightStart "Svitanie">
+<!ENTITY sunrise "Východ slnka">
+<!ENTITY sunset "Západ slnka">
+<!ENTITY twilightEnd "Koniec súmraku">
+<!ENTITY moonPhase "Fáza mesiaca">
+<!ENTITY nextFullMoon "Nasledujúci spln">
+<!ENTITY nextNewMoon "Nasledujúci nov">
+<!ENTITY moonSet "Západ mesiaca">
+<!ENTITY moonRise "Východ mesiaca">
+<!ENTITY moonSetAzimuth "Azimut západu mesiaca">
+<!ENTITY moonRiseAzimuth "Azimut východu mesiaca">
+<!ENTITY midday "Pravé poludnie">
+

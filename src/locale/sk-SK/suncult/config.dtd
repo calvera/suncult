@@ -1,0 +1,39 @@
+<!ENTITY title.label "Sun Cult - Konfigurácia">
+<!ENTITY location.label "Lokalita">
+<!ENTITY latitude.label "Zemepisná šírka">
+<!ENTITY longitude.label "Zemepisná dĺžka">
+<!ENTITY name.label "Názov">
+<!ENTITY east.label "Východ">
+<!ENTITY west.label "Západ">
+<!ENTITY north.label "Sever">
+<!ENTITY south.label "Juh">
+<!ENTITY close.label "Zavrieť">
+<!ENTITY enter.label "Zadajte vašu polohu. Akceptované sú rôzne formáty (napríklad) -50.30, 49n20, 13°N, 13° 19&apos;N a 13°19&apos;43.3&quot;N">
+<!ENTITY time.label "Čas">
+<!ENTITY timezone.label "Časové pásmo">
+<!ENTITY timezone.system "Použiť systémový čas">
+<!ENTITY timeformat.label "Formát času">
+<!ENTITY h24 "24 hodín">
+<!ENTITY ampm "AM/PM">
+<!ENTITY sunriseTime.label "Okamžik východu a západu slnka">
+<!ENTITY srTime0 "Stred slnečného disku na matematickom horizonte">
+<!ENTITY srTime25 "Okraj slnečného disku na matematickom horizonte">
+<!ENTITY srTime583 "Predvolené - Stred slnečného disku na horizonte (vrátane atmosférického lomu)">
+<!ENTITY srTime833 "Okraj slnečného disku na horizonte (vrátane atmosférického lomu)">
+<!ENTITY twilightTime.label "Okamžik svitania a súmraku">
+<!ENTITY twTime6 "Predvolené - Občiansky (vonku už nie je možné čítať)">
+<!ENTITY twTime12 "Námorný (nie je možná navigácia podľa morského horizontu)">
+<!ENTITY twTime15 "Amatérsky astronomický (obloha je tmavá pre väčšinu pozorovaní)">
+<!ENTITY twTime18 "Astronomický (obloha je úplne tmavá)">
+<!ENTITY display.label "Rozšírené">
+<!ENTITY placement.label "Umiestnenie">
+<!ENTITY toolbar.label   "Panel nástrojov">
+<!ENTITY last.label      "Vždy posledné">
+<!ENTITY specific.label  "Špecifické umiestnenie">
+<!ENTITY config.menu.label  "Zobraziť 'Sun Cult - Konfigurácia' v hlavnej ponuke">
+<!ENTITY menu.label "Ponuka">
+<!ENTITY show.label "Zobrazenie">
+<!ENTITY showSun.label "Zobrazenie slnka">
+<!ENTITY showMoon.label "Zobrazenie mesiaca">
+<!ENTITY image.label "Obrázok">
+

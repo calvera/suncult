@@ -1,0 +1,38 @@
+<!ENTITY title.label "Configurações do Sun Cult">
+<!ENTITY location.label "Localidade">
+<!ENTITY latitude.label "Latitude">
+<!ENTITY longitude.label "Longitude">
+<!ENTITY name.label "Local">
+<!ENTITY east.label "Leste">
+<!ENTITY west.label "Oeste">
+<!ENTITY north.label "Norte">
+<!ENTITY south.label "Sul">
+<!ENTITY close.label "Fechar">
+<!ENTITY enter.label "Insira as coordenadas. Valores aceitáveis são (por exemplo) -50.30, 49n20, 13Â°N, 13Â° 19&apos;N and 13Â°19&apos;43.3&quot;N">
+<!ENTITY time.label "Hora">
+<!ENTITY timezone.label "Fuso Horário">
+<!ENTITY timezone.system "Usar do sistema">
+<!ENTITY timeformat.label "Formato de hora">
+<!ENTITY h24 "24 horas">
+<!ENTITY ampm "AM/PM">
+<!ENTITY sunriseTime.label "Hora nascer e pôr do sol">
+<!ENTITY srTime0 "Centro do disco solar toca o horizonte">
+<!ENTITY srTime25 "Parte superior do sol toca o horizonte">
+<!ENTITY srTime583 "Padrão - Centro do disco solar toca o horizonte">
+<!ENTITY srTime833 "Parte inferior solar toca o horizonte">
+<!ENTITY twilightTime.label "Hora do entardecer">
+<!ENTITY twTime6 "Padrão - Entardecer civil">
+<!ENTITY twTime12 "Entardecer náutico (navegação utilizando o horizonte marítimo enquanto possível)">
+<!ENTITY twTime15 "Entardecer amador astronômico (o céu está escuro suficiente para observações)">
+<!ENTITY twTime18 "Entardecer astronômico (o céu está completamente escuro)">
+<!ENTITY display.label "Tela">
+<!ENTITY placement.label "Colocação de tela">
+<!ENTITY toolbar.label   "Barra de ferramentas">
+<!ENTITY last.label      "Sempre depois">
+<!ENTITY specific.label  "Especificar posição">
+<!ENTITY config.menu.label  "Mostrar Configurações do Sun Cult no menu">
+<!ENTITY menu.label "Menu">
+<!ENTITY show.label "Exibir">
+<!ENTITY showSun.label "Exibir sol">
+<!ENTITY showMoon.label "Exibir lua">
+<!ENTITY image.label "Imagem">

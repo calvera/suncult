@@ -1,0 +1,38 @@
+<!ENTITY title.label "Configuración Sun Cult">
+<!ENTITY location.label "Situación">
+<!ENTITY latitude.label "Latitud">
+<!ENTITY longitude.label "Longitud">
+<!ENTITY name.label "Nombre">
+<!ENTITY east.label "Este">
+<!ENTITY west.label "Oeste">
+<!ENTITY north.label "Norte">
+<!ENTITY south.label "Sur">
+<!ENTITY close.label "Cerrar">
+<!ENTITY enter.label "Introduce tus coordenadas. Valores aceptados son (por ejemplo) -50.30, 49n20, 13°N, 13° 19'N y 13°19'43.3''N">
+<!ENTITY time.label "Hora">
+<!ENTITY timezone.label "Zona Horaria">
+<!ENTITY timezone.system "Usar sistema">
+<!ENTITY timeformat.label "Formato horario">
+<!ENTITY h24 "24 horas">
+<!ENTITY ampm "AM/PM">
+<!ENTITY sunriseTime.label "Hora Amanecer/Atardecer">
+<!ENTITY srTime0 "Centro del disco solar toca horizonte matemático">
+<!ENTITY srTime25 "Limbo superior solar toca horizonte matemático">
+<!ENTITY srTime583 "Defecto - Centro del disco solar toca horizonte (contabilizando refracción atmosférica)">
+<!ENTITY srTime833 "Limbo superior solar toca horizonte (contabilizando refracción atmosférica)">
+<!ENTITY twilightTime.label "Hora del crepúsculo">
+<!ENTITY twTime6 "Defecto - Crepúsculo civil (no se puede leer en el exterior)">
+<!ENTITY twTime12 "Crepúsculo naútico (no se puede navegar utilizando el horizonte marino)">
+<!ENTITY twTime15 "Crepúsculo astronómico amateur (cielo suficientemente oscuro para la mayoría de las observaciones)">
+<!ENTITY twTime18 "Crepúsculo astronómico (cielo completamente oscuro)">
+<!ENTITY display.label "Mostrar">
+<!ENTITY placement.label "Lugar para mostrar">
+<!ENTITY toolbar.label   "Barra de herramientas">
+<!ENTITY last.label      "Simepre al final">
+<!ENTITY specific.label  "Posición específica">
+<!ENTITY config.menu.label  "Mostrar 'Configuración Sun Cult' en Menú Herramientas">
+<!ENTITY menu.label "Menú">
+<!ENTITY show.label "Mostrar">
+<!ENTITY showSun.label "Mostrar el sol">
+<!ENTITY showMoon.label "Mostrar la luna">
+<!ENTITY image.label "Imagen">
