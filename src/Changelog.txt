@@ -1,3 +1,6 @@
+1.0.20061106
+- brazilian locale fixes
+
 1.0.20061030
 - added spanish, slovak and brazilian locale
 - works on FF 2.0

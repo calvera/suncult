@@ -6,7 +6,7 @@ var XpiInstaller = {
 	// --- Editable items begin ---
 	extFullName: 'Sun Cult', // The name displayed to the user (don't include the version)
 	extShortName: 'suncult', // The leafname of the JAR file (without the .jar part)
-	extVersion: '1.0.20061030',
+	extVersion: '1.0.20061106',
 	extAuthor: 'Karel Sommer',
 	extLocaleNames: ['en-US', 'fr-FR', 'cs-CZ', 'de-DE', 'sv-SE', 'pl-PL', 'sl-SL', 'sk-SK', 'es-ES', 'pt-BR'], // e.g. ['en-US', 'en-GB']
 	extSkinNames: [ 'classic' ], // e.g. ['classic', 'modern']
