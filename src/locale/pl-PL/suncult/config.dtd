@@ -1,4 +1,4 @@
-﻿<!ENTITY title.label "Sun Cult Konfiguracja">
+<!ENTITY title.label "Sun Cult Konfiguracja">
 <!ENTITY location.label "Lokalizacja">
 <!ENTITY latitude.label "Szerokość">
 <!ENTITY longitude.label "Długość">
@@ -27,10 +27,10 @@
 <!ENTITY twTime18 "Zmierzch astronomiczny (niebo jest kompletnie ciemne)">
 <!ENTITY display.label "Widok">
 <!ENTITY placement.label "Miejsce wyświetlania">
-<!ENTITY toolbar.label   "Pasek narzędzi">
-<!ENTITY last.label      "Zawsze ostatni">
-<!ENTITY specific.label  "Określona pozycja">
-<!ENTITY config.menu.label  "Pokazuj opcję konfiguracji w menu kontekstowym">
+<!ENTITY toolbar.label "Pasek narzędzi">
+<!ENTITY last.label "Zawsze ostatni">
+<!ENTITY specific.label "Określona pozycja">
+<!ENTITY config.menu.label "Pokazuj opcję konfiguracji w menu kontekstowym">
 <!ENTITY menu.label "Menu">
 <!ENTITY show.label "Pokaż">
 <!ENTITY showSun.label "Pokazuj Słońce">

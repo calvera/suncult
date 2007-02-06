@@ -27,10 +27,10 @@
 <!ENTITY twTime18 "Astronomische Dämmerung (der Himmel ist komplett dunkel)">
 <!ENTITY display.label "Anzeige">
 <!ENTITY placement.label "Platzierung">
-<!ENTITY toolbar.label   "Symbolleiste">
-<!ENTITY last.label      "Immer Letztes Objekt">
-<!ENTITY specific.label  "Bestimmte Position">
-<!ENTITY config.menu.label  "Zeige 'Sonnenkult Konfiguration' im Extras Menü an">
+<!ENTITY toolbar.label "Symbolleiste">
+<!ENTITY last.label "Immer Letztes Objekt">
+<!ENTITY specific.label "Bestimmte Position">
+<!ENTITY config.menu.label "Zeige &apos;Sonnenkult Konfiguration&apos; im Extras Menü an">
 <!ENTITY menu.label "Menü">
 <!ENTITY show.label "Zeige">
 <!ENTITY showSun.label "Zeige Sonne">

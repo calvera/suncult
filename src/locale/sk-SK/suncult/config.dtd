@@ -27,13 +27,12 @@
 <!ENTITY twTime18 "Astronomický (obloha je úplne tmavá)">
 <!ENTITY display.label "Rozšírené">
 <!ENTITY placement.label "Umiestnenie">
-<!ENTITY toolbar.label   "Panel nástrojov">
-<!ENTITY last.label      "Vždy posledné">
-<!ENTITY specific.label  "Špecifické umiestnenie">
-<!ENTITY config.menu.label  "Zobraziť 'Sun Cult - Konfigurácia' v hlavnej ponuke">
+<!ENTITY toolbar.label "Panel nástrojov">
+<!ENTITY last.label "Vždy posledné">
+<!ENTITY specific.label "Špecifické umiestnenie">
+<!ENTITY config.menu.label "Zobraziť &apos;Sun Cult - Konfigurácia&apos; v hlavnej ponuke">
 <!ENTITY menu.label "Ponuka">
 <!ENTITY show.label "Zobrazenie">
 <!ENTITY showSun.label "Zobrazenie slnka">
 <!ENTITY showMoon.label "Zobrazenie mesiaca">
 <!ENTITY image.label "Obrázok">
-

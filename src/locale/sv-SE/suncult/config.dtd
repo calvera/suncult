@@ -27,10 +27,10 @@
 <!ENTITY twTime18 "Astronomisk skymning (himlen är fullständigt mörk)">
 <!ENTITY display.label "Presentation">
 <!ENTITY placement.label "Presentationsplacering">
-<!ENTITY toolbar.label   "Verktygsfält">
-<!ENTITY last.label      "Alltid sist">
-<!ENTITY specific.label  "Specifik position">
-<!ENTITY config.menu.label  "Visa 'Sun Cult Konfiguration' i menyn Verktyg">
+<!ENTITY toolbar.label "Verktygsfält">
+<!ENTITY last.label "Alltid sist">
+<!ENTITY specific.label "Specifik position">
+<!ENTITY config.menu.label "Visa &apos;Sun Cult Konfiguration&apos; i menyn Verktyg">
 <!ENTITY menu.label "Meny">
 <!ENTITY show.label "Visa">
 <!ENTITY showSun.label "Visa sol">

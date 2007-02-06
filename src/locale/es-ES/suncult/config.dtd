@@ -8,7 +8,7 @@
 <!ENTITY north.label "Norte">
 <!ENTITY south.label "Sur">
 <!ENTITY close.label "Cerrar">
-<!ENTITY enter.label "Introduce tus coordenadas. Valores aceptados son (por ejemplo) -50.30, 49n20, 13°N, 13° 19'N y 13°19'43.3''N">
+<!ENTITY enter.label "Introduce tus coordenadas. Valores aceptados son (por ejemplo) -50.30, 49n20, 13°N, 13° 19&apos;N y 13°19&apos;43.3&apos;&apos;N">
 <!ENTITY time.label "Hora">
 <!ENTITY timezone.label "Zona Horaria">
 <!ENTITY timezone.system "Usar sistema">
@@ -27,10 +27,10 @@
 <!ENTITY twTime18 "Crepúsculo astronómico (cielo completamente oscuro)">
 <!ENTITY display.label "Mostrar">
 <!ENTITY placement.label "Lugar para mostrar">
-<!ENTITY toolbar.label   "Barra de herramientas">
-<!ENTITY last.label      "Simepre al final">
-<!ENTITY specific.label  "Posición específica">
-<!ENTITY config.menu.label  "Mostrar 'Configuración Sun Cult' en Menú Herramientas">
+<!ENTITY toolbar.label "Barra de herramientas">
+<!ENTITY last.label "Simepre al final">
+<!ENTITY specific.label "Posición específica">
+<!ENTITY config.menu.label "Mostrar &apos;Configuración Sun Cult&apos; en Menú Herramientas">
 <!ENTITY menu.label "Menú">
 <!ENTITY show.label "Mostrar">
 <!ENTITY showSun.label "Mostrar el sol">

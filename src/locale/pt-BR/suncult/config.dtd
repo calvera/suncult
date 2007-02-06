@@ -27,10 +27,10 @@
 <!ENTITY twTime18 "Entardecer astronômico (o céu está completamente escuro)">
 <!ENTITY display.label "Tela">
 <!ENTITY placement.label "Colocaçăo de tela">
-<!ENTITY toolbar.label   "Barra de ferramentas">
-<!ENTITY last.label      "Sempre depois">
-<!ENTITY specific.label  "Especificar posiçăo">
-<!ENTITY config.menu.label  "Mostrar Configuraçőes do Sun Cult no menu">
+<!ENTITY toolbar.label "Barra de ferramentas">
+<!ENTITY last.label "Sempre depois">
+<!ENTITY specific.label "Especificar posiçăo">
+<!ENTITY config.menu.label "Mostrar Configuraçőes do Sun Cult no menu">
 <!ENTITY menu.label "Menu">
 <!ENTITY show.label "Exibir">
 <!ENTITY showSun.label "Exibir sol">

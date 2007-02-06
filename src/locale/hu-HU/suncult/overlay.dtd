@@ -1,0 +1,15 @@
+<!ENTITY suncult "Sun Cult">
+<!ENTITY config "Sun Cult beállítások">
+<!ENTITY configKey "C">
+<!ENTITY twilightStart "szürkület kezdete">
+<!ENTITY sunrise "napkelte">
+<!ENTITY sunset "napnyugta">
+<!ENTITY twilightEnd "szürkület vége">
+<!ENTITY moonPhase "holdfázis">
+<!ENTITY nextFullMoon "köv. telihold">
+<!ENTITY nextNewMoon "köv. újhold">
+<!ENTITY moonSet "holdnyugta">
+<!ENTITY moonRise "holdkelte">
+<!ENTITY moonSetAzimuth "holdnyugta azimut">
+<!ENTITY moonRiseAzimuth "holdkelte azimut">
+<!ENTITY midday "délidõ">

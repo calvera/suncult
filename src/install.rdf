@@ -9,7 +9,7 @@
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="suncult@sf.net"
                    em:name="Sun Cult"
-                   em:version="1.0.200702"
+                   em:version="1.0.200703"
                    em:description="Worldwide Sunrise, Sunset, Twilight, Moonrise and Moonset Times"
                    em:creator="Karel Sommer"
                    em:homepageURL="http://suncult.sourceforge.net"
@@ -22,6 +22,7 @@
     <em:contributor>Jernej Drobež (Slovenian)</em:contributor>
     <em:contributor>Victor Martinez (Spannish)</em:contributor>
     <em:contributor>Marcos Perini (Brazilian)</em:contributor>
+    <em:contributor>Mihaly Gyulai (Hungarian)</em:contributor>
     <em:file RDF:resource="urn:mozilla:extension:file:suncult.jar"/>
     <em:targetApplication RDF:resource="rdf:#$CgP6L"/>
     <em:targetApplication RDF:resource="rdf:#$HgP6L"/>
@@ -40,8 +41,11 @@
     <em:locale>locale/de-DE/suncult/</em:locale>
     <em:locale>locale/sv-SE/suncult/</em:locale>
     <em:locale>locale/pl-PL/suncult/</em:locale>
-    <em:locale>locale/sl-SL/suncult/</em:locale>
+    <em:locale>locale/sl-SI/suncult/</em:locale>
+    <em:locale>locale/sk-SK/suncult/</em:locale>
     <em:locale>locale/pt-BR/suncult/</em:locale>
+    <em:locale>locale/hu-HU/suncult/</em:locale>
+    <em:locale>locale/es-ES/suncult/</em:locale>
   </RDF:Description>
   <RDF:Description RDF:about="rdf:#$MgP6L"
                    em:id="{a463f10c-3994-11da-9945-000d60ca027b}"

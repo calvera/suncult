@@ -1,0 +1,38 @@
+<!ENTITY title.label "Sun Cult beállítások">
+<!ENTITY location.label "Helyszín">
+<!ENTITY latitude.label "szélesség">
+<!ENTITY longitude.label "hosszúság">
+<!ENTITY name.label "név">
+<!ENTITY east.label "kelet">
+<!ENTITY west.label "nyugat">
+<!ENTITY north.label "észak">
+<!ENTITY south.label "dél">
+<!ENTITY close.label "bezár">
+<!ENTITY enter.label "Add meg a koordinátáidat. Elfogadott értékek formája -50.30, 49n20, 13Â°N, 13Â° 19&apos;N és 13Â°19&apos;43.3&quot;N">
+<!ENTITY time.label "Idõ">
+<!ENTITY timezone.label "idõzóna">
+<!ENTITY timezone.system "rendszeróra">
+<!ENTITY timeformat.label "idõformátum">
+<!ENTITY h24 "24 órás">
+<!ENTITY ampm "de/du">
+<!ENTITY sunriseTime.label "napkelte/napnyugta">
+<!ENTITY srTime0 "A napkorong középpontja érinti a matematikai horizontot">
+<!ENTITY srTime25 "A napkorong felsõ pereme érinti a matematikai horizontot">
+<!ENTITY srTime583 "Default - A nap közepe érinti a horizontot (légköri töréssel együtt)">
+<!ENTITY srTime833 "A napkorong felsõ pereme érinti a horizontot (légköri töréssel együtt)">
+<!ENTITY twilightTime.label "Szürkületi idõ">
+<!ENTITY twTime6 "Default - polgári (nem lehet kint olvasni)">
+<!ENTITY twTime12 "tengerészeti (a tengeri horizont nem látható)">
+<!ENTITY twTime15 "amatõrcsillagász (az égbolt elég sötét a megfigyelésekhez)">
+<!ENTITY twTime18 "csillagászati (az égbolt teljesen sötét)">
+<!ENTITY display.label "Megjelenítés">
+<!ENTITY placement.label "Elhelyezés">
+<!ENTITY toolbar.label   "Eszközsor">
+<!ENTITY last.label      "Mindig utolsó">
+<!ENTITY specific.label  "Megadott hely">
+<!ENTITY config.menu.label  "Az eszközök menüben a 'Sun Cult beállítások' mutatása">
+<!ENTITY menu.label "Menü">
+<!ENTITY show.label "Mutat">
+<!ENTITY showSun.label "Nap">
+<!ENTITY showMoon.label "Hold">
+<!ENTITY image.label "Kép">

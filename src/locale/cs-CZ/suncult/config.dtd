@@ -25,13 +25,13 @@
 <!ENTITY twTime12 "Námořní (není možná navigace podle mořského horizontu)">
 <!ENTITY twTime15 "Amatérský astronomický (obloha je dostatečně tmavá na většinu pozorování)">
 <!ENTITY twTime18 "Astronomický (obloha je kompletně tmavá">
-<!ENTITY config.menu.label  "Ukaž 'Kult Slunce Nastavení' v nabídce">
-<!ENTITY menu.label "Nabídka">
 <!ENTITY display.label "Display">
 <!ENTITY placement.label "Umístění">
-<!ENTITY toolbar.label   "Lišta">
-<!ENTITY last.label      "Vždy poslední">
-<!ENTITY specific.label  "Pozice">
+<!ENTITY toolbar.label "Lišta">
+<!ENTITY last.label "Vždy poslední">
+<!ENTITY specific.label "Pozice">
+<!ENTITY config.menu.label "Ukaž &apos;Kult Slunce Nastavení&apos; v nabídce">
+<!ENTITY menu.label "Nabídka">
 <!ENTITY show.label "Zobrazuj">
 <!ENTITY showSun.label "Slunce">
 <!ENTITY showMoon.label "Měsíc">

@@ -16,10 +16,10 @@
 <!ENTITY h24 "24 hour">
 <!ENTITY ampm "AM/PM">
 <!ENTITY sunriseTime.label "Sunrise/Sunset time">
-<!ENTITY srTime0 "Center of Sun's disk touches mathematical horizon">
-<!ENTITY srTime25 "Sun's upper limb touches mathematical horizon">
-<!ENTITY srTime583 "Default - Center of Sun's disk touches horizon (atmospheric refraction accounted)">
-<!ENTITY srTime833 "Sun's upper limb touches horizon (atmospheric refraction accounted)">
+<!ENTITY srTime0 "Center of Sun&apos;s disk touches mathematical horizon">
+<!ENTITY srTime25 "Sun&apos;s upper limb touches mathematical horizon">
+<!ENTITY srTime583 "Default - Center of Sun&apos;s disk touches horizon (atmospheric refraction accounted)">
+<!ENTITY srTime833 "Sun&apos;s upper limb touches horizon (atmospheric refraction accounted)">
 <!ENTITY twilightTime.label "Twilight time">
 <!ENTITY twTime6 "Default - Civil twilight (one can no longer read outside)">
 <!ENTITY twTime12 "Nautical twilight (navigation using a sea horizon no longer possible)">
@@ -27,10 +27,10 @@
 <!ENTITY twTime18 "Astronomical twilight (the sky is completely dark)">
 <!ENTITY display.label "Display">
 <!ENTITY placement.label "Display Placement">
-<!ENTITY toolbar.label   "Toolbar">
-<!ENTITY last.label      "Always last">
-<!ENTITY specific.label  "Specific position">
-<!ENTITY config.menu.label  "Show 'Sun Cult Configuration' in Tools Menu">
+<!ENTITY toolbar.label "Toolbar">
+<!ENTITY last.label "Always last">
+<!ENTITY specific.label "Specific position">
+<!ENTITY config.menu.label "Show &apos;Sun Cult Configuration&apos; in Tools Menu">
 <!ENTITY menu.label "Menu">
 <!ENTITY show.label "Show">
 <!ENTITY showSun.label "Show sun">

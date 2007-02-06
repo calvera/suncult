@@ -8,7 +8,7 @@ var XpiInstaller = {
 	extShortName: 'suncult', // The leafname of the JAR file (without the .jar part)
 	extVersion: '1.0.20061106',
 	extAuthor: 'Karel Sommer',
-	extLocaleNames: ['en-US', 'fr-FR', 'cs-CZ', 'de-DE', 'sv-SE', 'pl-PL', 'sl-SL', 'sk-SK', 'es-ES', 'pt-BR'], // e.g. ['en-US', 'en-GB']
+	extLocaleNames: ['en-US', 'fr-FR', 'cs-CZ', 'de-DE', 'sv-SE', 'pl-PL', 'sl-SL', 'sk-SK', 'es-ES', 'pt-BR', 'hu-HU'], // e.g. ['en-US', 'en-GB']
 	extSkinNames: [ 'classic' ], // e.g. ['classic', 'modern']
 	extPostInstallMessage: null, // Set to null for no post-install message
 	// --- Editable items end ---
