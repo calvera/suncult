@@ -1,14 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
-     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-
-  <Description about="urn:mozilla:install-manifest">
-  
-    <em:id>suncult@sf.net</em:id>
-    <em:name>Sun Cult</em:name>
-    <em:version>1.0.20061106</em:version>
-    <em:description>Worldwide Sunrise, Sunset, Twilight, Moonrise and Moonset Times</em:description>
-    <em:creator>Karel Sommer</em:creator>
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$CgP6L"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="1.5"
+                   em:maxVersion="2.0.0.*" />
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="suncult@sf.net"
+                   em:name="Sun Cult"
+                   em:version="1.0.200702"
+                   em:description="Worldwide Sunrise, Sunset, Twilight, Moonrise and Moonset Times"
+                   em:creator="Karel Sommer"
+                   em:homepageURL="http://suncult.sourceforge.net"
+                   em:optionsURL="chrome://suncult/content/config.xul"
+                   em:iconURL="chrome://suncult/content/icon.png">
     <em:contributor>Daniel Calonnec (French)</em:contributor>
     <em:contributor>Jan Six (German)</em:contributor>
     <em:contributor>Mats Larsson (Swedish)</em:contributor>
@@ -16,52 +22,29 @@
     <em:contributor>Jernej Drobež (Slovenian)</em:contributor>
     <em:contributor>Victor Martinez (Spannish)</em:contributor>
     <em:contributor>Marcos Perini (Brazilian)</em:contributor>
-		<em:homepageURL>http://suncult.sourceforge.net</em:homepageURL>
-		<em:optionsURL>chrome://suncult/content/config.xul</em:optionsURL>
-		<em:iconURL>chrome://suncult/content/icon.png</em:iconURL>
-  
-		<em:file>
-			<Description about="urn:mozilla:extension:file:suncult.jar">
-				<em:package>content/suncult/</em:package>
-				<em:skin>skin/classic/suncult/</em:skin>
-				<em:locale>locale/en-US/suncult/</em:locale> 
-				<em:locale>locale/cs-CZ/suncult/</em:locale>
-				<em:locale>locale/fr-FR/suncult/</em:locale>
-				<em:locale>locale/de-DE/suncult/</em:locale>
-				<em:locale>locale/sv-SE/suncult/</em:locale>
-				<em:locale>locale/pl-PL/suncult/</em:locale>
-				<em:locale>locale/sl-SL/suncult/</em:locale>
-				<em:locale>locale/pt-BR/suncult/</em:locale>
-			</Description>
-		</em:file>
-		
-		<!-- Firefox -->
-    <em:targetApplication>
-      <Description>
-        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>1.5</em:minVersion>
-        <em:maxVersion>2.0.0.*</em:maxVersion>
-      </Description>
-    </em:targetApplication>
-
-		<!-- Thunderbird -->
-    <em:targetApplication>
-      <Description>
-        <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
-        <em:minVersion>1.5</em:minVersion>
-        <em:maxVersion>2.0b1</em:maxVersion>
-      </Description>
-    </em:targetApplication>
-    
-    <!-- Flock -->
-    <em:targetApplication>
-      <Description>
-        <em:id>{a463f10c-3994-11da-9945-000d60ca027b}</em:id>
-        <em:minVersion>1.0+</em:minVersion>
-        <em:maxVersion>1.0+</em:maxVersion>
-      </Description>
-    </em:targetApplication> 
-
-  </Description>
-
-</RDF>
+    <em:file RDF:resource="urn:mozilla:extension:file:suncult.jar"/>
+    <em:targetApplication RDF:resource="rdf:#$CgP6L"/>
+    <em:targetApplication RDF:resource="rdf:#$HgP6L"/>
+    <em:targetApplication RDF:resource="rdf:#$MgP6L"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$HgP6L"
+                   em:id="{3550f703-e582-4d05-9a08-453d09bdfdc6}"
+                   em:minVersion="1.5"
+                   em:maxVersion="2.0b1" />
+  <RDF:Description RDF:about="urn:mozilla:extension:file:suncult.jar"
+                   em:package="content/suncult/"
+                   em:skin="skin/classic/suncult/">
+    <em:locale>locale/en-US/suncult/</em:locale>
+    <em:locale>locale/cs-CZ/suncult/</em:locale>
+    <em:locale>locale/fr-FR/suncult/</em:locale>
+    <em:locale>locale/de-DE/suncult/</em:locale>
+    <em:locale>locale/sv-SE/suncult/</em:locale>
+    <em:locale>locale/pl-PL/suncult/</em:locale>
+    <em:locale>locale/sl-SL/suncult/</em:locale>
+    <em:locale>locale/pt-BR/suncult/</em:locale>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$MgP6L"
+                   em:id="{a463f10c-3994-11da-9945-000d60ca027b}"
+                   em:minVersion="1.0+"
+                   em:maxVersion="1.0+" />
+</RDF:RDF>
