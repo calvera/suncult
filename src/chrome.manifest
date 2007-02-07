@@ -16,6 +16,7 @@ locale	suncult	sk-SK	locale/sk-SK/suncult/
 locale	suncult	es-ES	locale/es-ES/suncult/
 locale	suncult	pt-BR	locale/pt-BR/suncult/
 locale	suncult	hu-HU	locale/hu-HU/suncult/
+locale	suncult	hu-HU	locale/nl-NL/suncult/
 
 skin	suncult	classic/1.0	skin/classic/suncult/
 style	chrome://global/content/customizeToolbar.xul	chrome://suncult/skin/overlay.css

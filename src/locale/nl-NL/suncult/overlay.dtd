@@ -1,0 +1,15 @@
+<!ENTITY suncult "Sun Cult">
+<!ENTITY config "Sun Cult configuratie">
+<!ENTITY configKey "C">
+<!ENTITY twilightStart "Start van de ochtendschemering">
+<!ENTITY sunrise "Zonsopkomst">
+<!ENTITY sunset "Zonsondergang">
+<!ENTITY twilightEnd "Einde van de avondschemering">
+<!ENTITY moonPhase "Maanfase">
+<!ENTITY nextFullMoon "Volgende volle maan">
+<!ENTITY nextNewMoon "Volgende nieuwe maan">
+<!ENTITY moonSet "Maanondergang">
+<!ENTITY moonRise "Maanopkomst">
+<!ENTITY moonSetAzimuth "Maanondergang azimut">
+<!ENTITY moonRiseAzimuth "Maanopkomst azimut">
+<!ENTITY midday "Middag">

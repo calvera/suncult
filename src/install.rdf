@@ -46,6 +46,7 @@
     <em:locale>locale/pt-BR/suncult/</em:locale>
     <em:locale>locale/hu-HU/suncult/</em:locale>
     <em:locale>locale/es-ES/suncult/</em:locale>
+    <em:locale>locale/nl-NL/suncult/</em:locale>
   </RDF:Description>
   <RDF:Description RDF:about="rdf:#$MgP6L"
                    em:id="{a463f10c-3994-11da-9945-000d60ca027b}"

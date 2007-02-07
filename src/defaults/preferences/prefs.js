@@ -1,4 +1,4 @@
-pref("extensions.{ec8030f7-c20a-464f-9b0e-13a3a9e97384}.description", "chrome://suncult/locale/suncult.properties");
+pref("extensions.suncult@sf.net.description", "chrome://suncult/locale/suncult.properties");
 
 pref("extensions.suncult.latitude", "50");
 pref("extensions.suncult.longitude", "14");

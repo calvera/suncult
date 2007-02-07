@@ -1,0 +1,38 @@
+<!ENTITY title.label "Sun Cult configuratie">
+<!ENTITY location.label "Lokatie">
+<!ENTITY latitude.label "Breedtegraad">
+<!ENTITY longitude.label "Lengtegraad">
+<!ENTITY name.label "Naam">
+<!ENTITY east.label "Oost">
+<!ENTITY west.label "West">
+<!ENTITY north.label "Noord">
+<!ENTITY south.label "Zuid">
+<!ENTITY close.label "Sluiten">
+<!ENTITY enter.label "Voer s.v.p. uw coördinaten in. Geaccepteerde waardes zijn (bijvoorbeeld) -50.30, 49N20, 13°N, 13°19&apos;N en 13°19&apos;43.3&quot;N">
+<!ENTITY time.label "Tijd">
+<!ENTITY timezone.label "Tijdszone">
+<!ENTITY timezone.system "Systeem gebruiken">
+<!ENTITY timeformat.label "Tijdsopmaak">
+<!ENTITY h24 "24 uur">
+<!ENTITY ampm "VM/NM">
+<!ENTITY sunriseTime.label "Tijdstip zonsopkomst/zonsondergang">
+<!ENTITY srTime0 "Midden van de zonneschijf raakt de mathematische horizon">
+<!ENTITY srTime25 "Bovenrand van de zon raakt de mathematische horizon">
+<!ENTITY srTime583 "Standaard - het midden van de zonneschijf raakt de horizon (atmosferische refractie meegerekend)">
+<!ENTITY srTime833 "De bovenrand van de zon raakt de horizon (atmosferische refractie meegerekend)">
+<!ENTITY twilightTime.label "Schemertijd">
+<!ENTITY twTime6 "Standaard - Gebruikelijke schemering (buiten lezen niet langer mogelijk)">
+<!ENTITY twTime12 "Schemering volgens nautische begrippen (navigatie op de horizon niet langer mogelijk)">
+<!ENTITY twTime15 "Amateur-astronomische schemering (de hemel is donker genoeg voor de meeste observaties)">
+<!ENTITY twTime18 "Astronomische schemering (de hemel is volledig verduisterd)">
+<!ENTITY display.label "Weergeven">
+<!ENTITY placement.label "Plaatsing weergeven">
+<!ENTITY toolbar.label "Werkbalk">
+<!ENTITY last.label "Altijd achteraan">
+<!ENTITY specific.label "Specifieke positie">
+<!ENTITY config.menu.label "Sun Cult configuratie in Extra menu weergeven">
+<!ENTITY menu.label "Menu">
+<!ENTITY show.label "Weergeven">
+<!ENTITY showSun.label "Zon weergeven">
+<!ENTITY showMoon.label "Maan weergeven">
+<!ENTITY image.label "Afbeelding">
