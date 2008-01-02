@@ -1,0 +1,15 @@
+<!ENTITY suncult "Sun Cult">
+<!ENTITY config "Sun Cult Ayarları">
+<!ENTITY configKey "C">
+<!ENTITY twilightStart "Alacakaranlık (D)">
+<!ENTITY sunrise "Gündoğumu">
+<!ENTITY sunset "Günbatımı">
+<!ENTITY twilightEnd "Alacakaranlık (B)">
+<!ENTITY moonPhase "Ayın Evresi">
+<!ENTITY nextFullMoon "Sonraki Dolunay">
+<!ENTITY nextNewMoon "Sonraki Yeniay">
+<!ENTITY moonSet "Ayın Batışı">
+<!ENTITY moonRise "Ayın Doğuşu">
+<!ENTITY moonSetAzimuth "Ayın Batış Açısı">
+<!ENTITY moonRiseAzimuth "Ayın Doğuş Açısı">
+<!ENTITY midday "Öğle Vakti">

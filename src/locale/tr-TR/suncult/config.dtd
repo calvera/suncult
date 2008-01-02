@@ -1,0 +1,38 @@
+<!ENTITY title.label "Sun Cult Ayarları">
+<!ENTITY location.label "Konum">
+<!ENTITY latitude.label "Enlem">
+<!ENTITY longitude.label "Boylam">
+<!ENTITY name.label "İsim">
+<!ENTITY east.label "Doğu">
+<!ENTITY west.label "Batı">
+<!ENTITY north.label "Kuzey">
+<!ENTITY south.label "Güney">
+<!ENTITY close.label "Kapat">
+<!ENTITY enter.label "Koordinatları girin. Geçerli değerler (örneğin) -50.30, 49n20, 13°N, 13° 19&apos;N ve 13°19&apos;43.3&quot;N">
+<!ENTITY time.label "Zaman">
+<!ENTITY timezone.label "Saat Dilimi">
+<!ENTITY timezone.system "Sistem Saati">
+<!ENTITY timeformat.label "Zaman Formatı">
+<!ENTITY h24 "24 saat">
+<!ENTITY ampm "ÖÖ/ÖS">
+<!ENTITY sunriseTime.label "Güneşin Doğuşu/Günbatımı zamanı">
+<!ENTITY srTime0 "Güneş&apos;in Merkezi Matematiksel horizona teğet">
+<!ENTITY srTime25 "Güneş&apos;in üst bölümü matematiksel horizona teğet">
+<!ENTITY srTime583 "Varsayılan - Güneş&apos;in Merkezi horizona teğet (atmosferik sapmalar hesaba dahil)">
+<!ENTITY srTime833 "Güneş&apos;in üst bölümü horizona teğet (atmosferik sapmalar hesaba dahil)">
+<!ENTITY twilightTime.label "Alacakaranlık zamanı">
+<!ENTITY twTime6 "Varsayılan - Sivil Alacakaranlık (Dışarıyı göremeyecek kadar)">
+<!ENTITY twTime12 "Denizsel Astronomik Alacakaranlık (Deniz yolculuğunda görülemeyecek şekilde)">
+<!ENTITY twTime15 "Amatör Astronomik Alacakaranlık (Gökyüzü gözlem yapılabilecek kadar karanlık)">
+<!ENTITY twTime18 "Astronomik Alacakaranlık (Gökyüzü tamamen karanlık)">
+<!ENTITY display.label "Görünüm">
+<!ENTITY placement.label "Görünüm Ayarları">
+<!ENTITY toolbar.label "Araç Çubuğu">
+<!ENTITY last.label "Her zaman en sonda">
+<!ENTITY specific.label "Pozisyon Seç">
+<!ENTITY config.menu.label "&apos;Sun Cult Ayarlarını&apos; Araçlar Menüsünde Göster">
+<!ENTITY menu.label "Menü">
+<!ENTITY show.label "Göster">
+<!ENTITY showSun.label "Güneşi Göster">
+<!ENTITY showMoon.label "Ayı Göster">
+<!ENTITY image.label "Resim">

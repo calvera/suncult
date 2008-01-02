@@ -1,0 +1,38 @@
+<!ENTITY title.label "Sun Cult 환경설정">
+<!ENTITY location.label "위치">
+<!ENTITY latitude.label "위도">
+<!ENTITY longitude.label "경도">
+<!ENTITY name.label "이름">
+<!ENTITY east.label "동">
+<!ENTITY west.label "서">
+<!ENTITY north.label "북">
+<!ENTITY south.label "남">
+<!ENTITY close.label "닫기">
+<!ENTITY enter.label "당신의 위치를 입력하세요.인정되는 값은 (예를 들어)-50.30, 49n20, 13Â°N, 13Â° 19&apos;N 및13Â°19&apos;43.3&quot;N 입니다">
+<!ENTITY time.label "시간">
+<!ENTITY timezone.label "시간대">
+<!ENTITY timezone.system "시스템 사용">
+<!ENTITY timeformat.label "시간 형식">
+<!ENTITY h24 "24시간제">
+<!ENTITY ampm "오전/오후">
+<!ENTITY sunriseTime.label "일출/일몰 시간">
+<!ENTITY srTime0 "태양의 원반 중심이 정확한 수평선에 닿는">
+<!ENTITY srTime25 "태양의 위쪽 가장자리가 정확한 지평선에 닿는">
+<!ENTITY srTime583 "기본 - 태양의 원반 중심이 지평선에 닿는 (대기 굴절을 고려)">
+<!ENTITY srTime833 "태양의 위쪽 가장자리가 지평선에 닿는 (대기 굴절을 고려)">
+<!ENTITY twilightTime.label "황혼 시간">
+<!ENTITY twTime6 "기본 - 문명 황혼(누구도 더이상 밖에서 읽을수 없는)">
+<!ENTITY twTime12 "항해 황혼(더이상 바다 수평선을 이용해 항해 할수 없는)">
+<!ENTITY twTime15 "아마추어 천문학적 황혼(하늘이 대부분의 관측하기에 충분히 어둡다)">
+<!ENTITY twTime18 "천문학적 황혼(하늘이 완전히 어둡다)">
+<!ENTITY display.label "표시">
+<!ENTITY placement.label "표시 위치">
+<!ENTITY toolbar.label "도구막대">
+<!ENTITY last.label "항상 마지막에 위치">
+<!ENTITY specific.label "위치 지정">
+<!ENTITY config.menu.label "도구 메뉴안에 &apos;Sun Cult 환경설정&apos; 표시">
+<!ENTITY menu.label "메뉴">
+<!ENTITY show.label "표시">
+<!ENTITY showSun.label "태양 표시">
+<!ENTITY showMoon.label "달 표시">
+<!ENTITY image.label "그림">

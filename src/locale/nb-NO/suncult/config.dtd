@@ -1,0 +1,38 @@
+<!ENTITY title.label "Innstillinger - Sun Cult">
+<!ENTITY location.label "Sted">
+<!ENTITY latitude.label "Breddegrad">
+<!ENTITY longitude.label "Lengdegrad">
+<!ENTITY name.label "Navn">
+<!ENTITY east.label "Øst">
+<!ENTITY west.label "Vest">
+<!ENTITY north.label "Nord">
+<!ENTITY south.label "Syd">
+<!ENTITY close.label "Lukk">
+<!ENTITY enter.label "Skriv inn dine koordinater. Godkjente verdier er for eksempel -50.30, 49n20, 13Â°N, 13Â° 19&apos;N og 13Â°19&apos;43.3&quot;N">
+<!ENTITY time.label "Tid">
+<!ENTITY timezone.label "Tidssone">
+<!ENTITY timezone.system "Velg">
+<!ENTITY timeformat.label "Klokkeslettformat">
+<!ENTITY h24 "24 timer">
+<!ENTITY ampm "AM/PM">
+<!ENTITY sunriseTime.label "Tid for soloppgang/solnedgang">
+<!ENTITY srTime0 "Senteret av solens disk berører matematiske horisonten">
+<!ENTITY srTime25 "Solens øvre rand berører matematiske horisonten">
+<!ENTITY srTime583 "Standard - Senteret av solens disk berører horisonten (atmosfærisk lysbryting medregnet)">
+<!ENTITY srTime833 "Solens øvre rand berører horisonten (atmosfærisk lysbryting medregnet)">
+<!ENTITY twilightTime.label "Tid for skumring">
+<!ENTITY twTime6 "Standard - Sivil skumring (man kan ikke lese ute lenger)">
+<!ENTITY twTime12 "Nautisk skumring (navigasjon ved bruk av sjøhorisont ikke mulig lenger)">
+<!ENTITY twTime15 "Amatørastronomisk skumring (himmelen er mørk nok for de fleste observasjoner)">
+<!ENTITY twTime18 "Astronomisk skumring (himmelen er helt mørk)">
+<!ENTITY display.label "Visning">
+<!ENTITY placement.label "Plassering">
+<!ENTITY toolbar.label "Verktøylinje:">
+<!ENTITY last.label "Alltid sist">
+<!ENTITY specific.label "Selvvalgt plassering">
+<!ENTITY config.menu.label "Vis «Innstillinger - Sun Cult» i verktøymenyen">
+<!ENTITY menu.label "Meny">
+<!ENTITY show.label "Vis">
+<!ENTITY showSun.label "Vis sol">
+<!ENTITY showMoon.label "Vis måne">
+<!ENTITY image.label "Bilde">

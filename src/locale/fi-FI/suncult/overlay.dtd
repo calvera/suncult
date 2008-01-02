@@ -1,0 +1,15 @@
+<!ENTITY suncult "Sun Cult">
+<!ENTITY config "Sun Cult Asetukset">
+<!ENTITY configKey "C">
+<!ENTITY twilightStart "Valonkajastus Alkaa">
+<!ENTITY sunrise "Auringonnousu">
+<!ENTITY sunset "Auringonlasku">
+<!ENTITY twilightEnd "Valonkajastus Loppuu">
+<!ENTITY moonPhase "Kuukierto">
+<!ENTITY nextFullMoon "Seuraava Täysikuu">
+<!ENTITY nextNewMoon "Seuraava Uusikuu">
+<!ENTITY moonSet "Kuunlasku">
+<!ENTITY moonRise "Kuunnousu">
+<!ENTITY moonSetAzimuth "Kuunlaskun Kulma">
+<!ENTITY moonRiseAzimuth "Kuunnousun Kulma">
+<!ENTITY midday "Keskipäivä">

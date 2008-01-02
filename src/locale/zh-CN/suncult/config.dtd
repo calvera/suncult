@@ -1,0 +1,38 @@
+<!ENTITY title.label "Sun Cult 选项">
+<!ENTITY location.label "位置">
+<!ENTITY latitude.label "纬度">
+<!ENTITY longitude.label "经度">
+<!ENTITY name.label "位置">
+<!ENTITY east.label "东">
+<!ENTITY west.label "西">
+<!ENTITY north.label "北">
+<!ENTITY south.label "南">
+<!ENTITY close.label "关闭">
+<!ENTITY enter.label "输入你的坐标，如下格式均可：50.30, 49n20, 13Â°N, 13Â° 19&apos;N 或 13Â°19&apos;43.3&quot;N">
+<!ENTITY time.label "时间">
+<!ENTITY timezone.label "时区">
+<!ENTITY timezone.system "根据系统设置">
+<!ENTITY timeformat.label "时间格式">
+<!ENTITY h24 "24小时">
+<!ENTITY ampm "AM/PM">
+<!ENTITY sunriseTime.label "日出/日落时间">
+<!ENTITY srTime0 "Center of Sun&apos;s disk touches mathematical horizon">
+<!ENTITY srTime25 "Sun&apos;s upper limb touches mathematical horizon">
+<!ENTITY srTime583 "Default - Center of Sun&apos;s disk touches horizon (atmospheric refraction accounted)">
+<!ENTITY srTime833 "Sun&apos;s upper limb touches horizon (atmospheric refraction accounted)">
+<!ENTITY twilightTime.label "黄昏时间">
+<!ENTITY twTime6 "Default - Civil twilight (one can no longer read outside)">
+<!ENTITY twTime12 "Nautical twilight (navigation using a sea horizon no longer possible)">
+<!ENTITY twTime15 "Amateur astronomical twilight (the sky is dark enough for most observations)">
+<!ENTITY twTime18 "Astronomical twilight (the sky is completely dark)">
+<!ENTITY display.label "显示">
+<!ENTITY placement.label "显示位置">
+<!ENTITY toolbar.label "工具栏">
+<!ENTITY last.label "总在最后">
+<!ENTITY specific.label "指定位置">
+<!ENTITY config.menu.label "在工具菜单显示[Sun Cult 选项]">
+<!ENTITY menu.label "菜单">
+<!ENTITY show.label "显示">
+<!ENTITY showSun.label "显示日相">
+<!ENTITY showMoon.label "显示月相">
+<!ENTITY image.label "图片">

@@ -1,0 +1,15 @@
+<!ENTITY suncult "Sun Cult">
+<!ENTITY config "Innstillinger - Sun Cult">
+<!ENTITY configKey "C">
+<!ENTITY twilightStart "Skumring begynner">
+<!ENTITY sunrise "Soloppgang">
+<!ENTITY sunset "Solnedgang">
+<!ENTITY twilightEnd "Skumring slutter">
+<!ENTITY moonPhase "Månefase">
+<!ENTITY nextFullMoon "Neste fullmåne">
+<!ENTITY nextNewMoon "Neste nymåne">
+<!ENTITY moonSet "Månenedgang">
+<!ENTITY moonRise "Måneoppgang">
+<!ENTITY moonSetAzimuth "Månenedgang asimut">
+<!ENTITY moonRiseAzimuth "Måneoppgang asimut">
+<!ENTITY midday "Solen på sitt høyeste">

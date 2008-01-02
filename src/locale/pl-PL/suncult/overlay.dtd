@@ -1,5 +1,5 @@
 <!ENTITY suncult "Sun Cult">
-<!ENTITY config "Konfiguracja Sun Cult">
+<!ENTITY config "Sun Cult - ustawienia">
 <!ENTITY configKey "C">
 <!ENTITY twilightStart "Świt">
 <!ENTITY sunrise "Wschód Słońca">
@@ -7,7 +7,7 @@
 <!ENTITY twilightEnd "Zmierzch">
 <!ENTITY moonPhase "Faza Księżyca">
 <!ENTITY nextFullMoon "Następna pełnia">
-<!ENTITY nextNewMoon "Nów księżyca">
+<!ENTITY nextNewMoon "Nów Księżyca">
 <!ENTITY moonSet "Zachód Księżyca">
 <!ENTITY moonRise "Wschód Księżyca">
 <!ENTITY moonSetAzimuth "Azymut zachodu">

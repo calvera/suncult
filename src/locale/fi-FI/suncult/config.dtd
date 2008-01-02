@@ -1,0 +1,38 @@
+<!ENTITY title.label "Sun Cult Asetukset">
+<!ENTITY location.label "Sijainti">
+<!ENTITY latitude.label "Leveysaste">
+<!ENTITY longitude.label "Pituusaste">
+<!ENTITY name.label "Nimi">
+<!ENTITY east.label "Itä">
+<!ENTITY west.label "Länsi">
+<!ENTITY north.label "Pohjoinen">
+<!ENTITY south.label "Etelä">
+<!ENTITY close.label "Sulje">
+<!ENTITY enter.label "Aseta sijaintisi koordinaatit: Käytä seuraavanlaista tapaa(esim.) -50.30, 49n20, 13Â°N, 13Â° 19&apos;N and 13Â°19&apos;43.3&quot;N">
+<!ENTITY time.label "Aika">
+<!ENTITY timezone.label "Aikavyöhyke">
+<!ENTITY timezone.system "Valitse Aikavyöhyke">
+<!ENTITY timeformat.label "Aika">
+<!ENTITY h24 "24 tuntia">
+<!ENTITY ampm "AM/PM">
+<!ENTITY sunriseTime.label "Auringonnousu/Auringonlasku aika">
+<!ENTITY srTime0 "Auringon keskipiste&apos;s on horisontissa.">
+<!ENTITY srTime25 "Auringon keskipiste &apos;s kohoaa horisonttiin.">
+<!ENTITY srTime583 "Vakio- Auringon keskipiste&apos;s on horisontissa (valon taittuminen ilmassa huomioon ottaen)">
+<!ENTITY srTime833 "Vakio- Auringon keskipiste&apos;s kohoaa horisonttiin (valon taittuminen ilmassa huomioon ottaen)">
+<!ENTITY twilightTime.label "Hämärä">
+<!ENTITY twTime6 "Vakio- Hämärä(kun ei enää voi lukea ulkona)">
+<!ENTITY twTime12 "Meri Hämärä(Navigointi horisonttia hyväksikäyttäen ei mahdollista)">
+<!ENTITY twTime15 "Amatööri Astronominen Hämärä(Taivas on tarpeeksi pimeä useimpiin avaruus tarkkailuihin)">
+<!ENTITY twTime18 "Astronominen Hämärä(taivas on täysin pimeä)">
+<!ENTITY display.label "Näytä">
+<!ENTITY placement.label "Näytä Sijainti">
+<!ENTITY toolbar.label "Työkalupalkki">
+<!ENTITY last.label "Aina viimeisin">
+<!ENTITY specific.label "Erikoissijainti">
+<!ENTITY config.menu.label "Näytä &apos;Sun Cult Asetukset&apos;Työkalut Valikossa">
+<!ENTITY menu.label "Valikko">
+<!ENTITY show.label "Näytä">
+<!ENTITY showSun.label "Näytä Aurinko">
+<!ENTITY showMoon.label "Näytä Kuu">
+<!ENTITY image.label "Kuva">

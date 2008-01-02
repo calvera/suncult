@@ -1,4 +1,4 @@
-<!ENTITY title.label "Sun Cult Konfiguracja">
+<!ENTITY title.label "Sun Cult - ustawienia">
 <!ENTITY location.label "Lokalizacja">
 <!ENTITY latitude.label "Szerokość">
 <!ENTITY longitude.label "Długość">
@@ -8,31 +8,31 @@
 <!ENTITY north.label "Północ">
 <!ENTITY south.label "Południe">
 <!ENTITY close.label "Zamknij">
-<!ENTITY enter.label "Podaj swoje współrzędne Akceptowalne wartości to (dla przykładu) -50.30, 49n20, 13°N, 13° 19&apos;N and 13°19&apos;43.3&quot;N">
+<!ENTITY enter.label "Określ swoje współrzędne. Dopuszczalne formaty wartości: -50.30, 49n20, 13°N, 13° 19&apos;N i 13°19&apos;43.3&quot;N">
 <!ENTITY time.label "Czas">
 <!ENTITY timezone.label "Strefa czasowa">
 <!ENTITY timezone.system "Użyj systemowej">
 <!ENTITY timeformat.label "Format czasu">
-<!ENTITY h24 "24 godziny">
+<!ENTITY h24 "24 godzinny">
 <!ENTITY ampm "AM/PM">
 <!ENTITY sunriseTime.label "Czas wschodu Słońca">
 <!ENTITY srTime0 "Środek tarczy słonecznej dotyka matematycznego horyzontu">
 <!ENTITY srTime25 "Górny skraj tarczy Słońca dotyka matematycznego horyzontu">
 <!ENTITY srTime583 "Domyślnie - Środek tarczy słonecznej dotyka horyzontu (refrakcja atmosferyczna uwzględniona)">
 <!ENTITY srTime833 "Górny skraj tarczy Słońca dotyka horyzontu (refrakcja atmosferyczna uwzględniona)">
-<!ENTITY twilightTime.label "Zmierzch">
-<!ENTITY twTime6 "Domyślnie - Odczuwalny zmierzch (nie można czytać na zewnątrz)">
+<!ENTITY twilightTime.label "Czas zmierzchu">
+<!ENTITY twTime6 "Domyślnie - odczuwalny zmierzch (nie można czytać na zewnątrz)">
 <!ENTITY twTime12 "Zmierzch morski (nawigacja w oparciu o horyzont morski nie jest dłużej możliwa)">
-<!ENTITY twTime15 "Amatorski zmierzch astronomiczny (niebo jest wystarczająco ciemne dla większości obserwacji)">
+<!ENTITY twTime15 "Amatorski zmierzch astronomiczny (niebo jest wystarczająco ciemne, aby rozpocząć obserwacje)">
 <!ENTITY twTime18 "Zmierzch astronomiczny (niebo jest kompletnie ciemne)">
-<!ENTITY display.label "Widok">
+<!ENTITY display.label "Wyświetlanie">
 <!ENTITY placement.label "Miejsce wyświetlania">
 <!ENTITY toolbar.label "Pasek narzędzi">
-<!ENTITY last.label "Zawsze ostatni">
+<!ENTITY last.label "Zawsze na końcu">
 <!ENTITY specific.label "Określona pozycja">
-<!ENTITY config.menu.label "Pokazuj opcję konfiguracji w menu kontekstowym">
+<!ENTITY config.menu.label "Wyświetl element &quot;Sun Cult - ustawienia&quot; w menu &quot;Narzędzia&quot;">
 <!ENTITY menu.label "Menu">
-<!ENTITY show.label "Pokaż">
-<!ENTITY showSun.label "Pokazuj Słońce">
-<!ENTITY showMoon.label "Pokazuj Księżyc">
-<!ENTITY image.label "Obrazek">
+<!ENTITY show.label "Wyświetlaj w okienku informacyjnym">
+<!ENTITY showSun.label "Dane dotyczące Słońca">
+<!ENTITY showMoon.label "Dane dotyczące Księżyca">
+<!ENTITY image.label "Ikona">

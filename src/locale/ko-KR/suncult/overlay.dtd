@@ -1,0 +1,15 @@
+<!ENTITY suncult "Sun Cult">
+<!ENTITY config "Sun Cult 환경설정">
+<!ENTITY configKey "C">
+<!ENTITY twilightStart "여명 시작">
+<!ENTITY sunrise "일출">
+<!ENTITY sunset "일몰">
+<!ENTITY twilightEnd "황혼 끝">
+<!ENTITY moonPhase "달 모양">
+<!ENTITY nextFullMoon "다음번 보름달">
+<!ENTITY nextNewMoon "다음번 그믐달">
+<!ENTITY moonSet "월몰">
+<!ENTITY moonRise "월출">
+<!ENTITY moonSetAzimuth "월몰 방위각">
+<!ENTITY moonRiseAzimuth "월출 방위각">
+<!ENTITY midday "정오">

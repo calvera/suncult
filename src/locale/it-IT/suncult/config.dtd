@@ -1,0 +1,38 @@
+<!ENTITY title.label "Configurazione di Sun Cult">
+<!ENTITY location.label "Localit&#224;">
+<!ENTITY latitude.label "Latitudine">
+<!ENTITY longitude.label "Longitudine">
+<!ENTITY name.label "Nome">
+<!ENTITY east.label "Est">
+<!ENTITY west.label "Ovest">
+<!ENTITY north.label "Nord">
+<!ENTITY south.label "Sud">
+<!ENTITY close.label "Chiudi">
+<!ENTITY enter.label "Inserire le coordinate. Valori accettati sono (ad esempio) -50.30, 49n20, 13°N, 13° 19&apos;N and 13°19&apos;43.3&quot;N">
+<!ENTITY time.label "Ora">
+<!ENTITY timezone.label "Fuso orario">
+<!ENTITY timezone.system "Utilizzato dal sistema">
+<!ENTITY timeformat.label "Formato ora">
+<!ENTITY h24 "24 ore">
+<!ENTITY ampm "AM/PM">
+<!ENTITY sunriseTime.label "Ora dell&apos;Alba/Tramonto">
+<!ENTITY srTime0 "Il centro del disco del Sole tocca l&apos;orizzonte matematico">
+<!ENTITY srTime25 "Il lembo superiore del Sole tocca l&apos;orizzonte matematico">
+<!ENTITY srTime583 "Predefinito - Il centro del disco del Sole tocca l&apos;orizzonte (calcolando la rifrazione atmosferica)">
+<!ENTITY srTime833 "Il lembo superiore del Sole tocca l&apos;orizzonte (calcolando la rifrazione atmosferica)">
+<!ENTITY twilightTime.label "Ora del crepuscolo">
+<!ENTITY twTime6 "Predefinito - Crepuscolo civile (non &#232; pi&#249; possibile leggere all&apos;esterno)">
+<!ENTITY twTime12 "Crepuscolo nautico (non &#232; pi&#249; possibile navigare utilizzando l&apos;orizzonte del mare)">
+<!ENTITY twTime15 "Crepuscolo astronomico amatoriale (il cielo &#232; abbastanza scuro per la maggior parte delle osservazioni)">
+<!ENTITY twTime18 "Crepuscolo astronomico (il cielo &#232; totalmente buio)">
+<!ENTITY display.label "Visualizzazione">
+<!ENTITY placement.label "Posizionamento">
+<!ENTITY toolbar.label "Barra degli strumenti">
+<!ENTITY last.label "Sempre in fondo">
+<!ENTITY specific.label "Posizione specifica">
+<!ENTITY config.menu.label "Mostra &apos;Configurazione di Sun Cult&apos; nel menu Strumenti">
+<!ENTITY menu.label "Menu">
+<!ENTITY show.label "Mostra">
+<!ENTITY showSun.label "Mostra il sole">
+<!ENTITY showMoon.label "Mostra la luna">
+<!ENTITY image.label "Immagine">

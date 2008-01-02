@@ -1,14 +1,14 @@
-<!ENTITY title.label "Sonnenkult Konfiguration">
+<!ENTITY title.label "Sun Cult - Konfiguration">
 <!ENTITY location.label "Standort">
-<!ENTITY latitude.label "Breite">
-<!ENTITY longitude.label "Länge">
+<!ENTITY latitude.label "Breitengrad">
+<!ENTITY longitude.label "Längengrad">
 <!ENTITY name.label "Name">
 <!ENTITY east.label "Ost">
 <!ENTITY west.label "West">
 <!ENTITY north.label "Nord">
 <!ENTITY south.label "Süd">
 <!ENTITY close.label "Schließen">
-<!ENTITY enter.label "Gebe deine Koordinaten ein. Mögliche Eingabewerte sind: -50.30, 49n20, 13°N, 13° 19&apos;N und 13°19&apos;43.3&quot;N">
+<!ENTITY enter.label "Eigene Koordinaten eingeben. Mögliche Eingabewerte (Beispiele): -50.30 | 49n20 | 13°N | 13° 19&apos;N und 13°19&apos;43.3&quot;N">
 <!ENTITY time.label "Zeit">
 <!ENTITY timezone.label "Zeitzone">
 <!ENTITY timezone.system "Systemzeit">
@@ -18,21 +18,21 @@
 <!ENTITY sunriseTime.label "Sonnenaufgang">
 <!ENTITY srTime0 "Zentrum der Sonnenscheibe berührt den mathematischen Horizont">
 <!ENTITY srTime25 "Oberer Rand der Sonne berührt den mathematischen Horizont">
-<!ENTITY srTime583 "Zentrum der Sonnenscheibe berührt den Horizont (atmospherischer Strahlengang einbezogen)">
-<!ENTITY srTime833 "Oberer Rand der Sonne berührt den Horizont (atmospherischer Strahlengang einbezogen)">
+<!ENTITY srTime583 "Zentrum der Sonnenscheibe berührt den Horizont (atmosphärischer Strahlengang einbezogen)">
+<!ENTITY srTime833 "Oberer Rand der Sonne berührt den Horizont (atmosphärischer Strahlengang einbezogen)">
 <!ENTITY twilightTime.label "Dämmerung">
-<!ENTITY twTime6 "Gefühlte Dämmerung (man kann draussen nicht mehr lesen)">
+<!ENTITY twTime6 "Standard - Bürgerliche Dämmerung (Lesen im Freien ist nicht mehr möglich)">
 <!ENTITY twTime12 "Nautische Dämmerung (Navigation mit dem Meereshorizont nicht länger möglich)">
-<!ENTITY twTime15 "Amateur-astronomische Dämmerung (der Himmel ist dunkel genug für Beobachtungen)">
+<!ENTITY twTime15 "Amateurastronomische Dämmerung (der Himmel ist dunkel genug für Beobachtungen)">
 <!ENTITY twTime18 "Astronomische Dämmerung (der Himmel ist komplett dunkel)">
 <!ENTITY display.label "Anzeige">
 <!ENTITY placement.label "Platzierung">
 <!ENTITY toolbar.label "Symbolleiste">
-<!ENTITY last.label "Immer Letztes Objekt">
+<!ENTITY last.label "Immer letztes Symbol">
 <!ENTITY specific.label "Bestimmte Position">
-<!ENTITY config.menu.label "Zeige &apos;Sonnenkult Konfiguration&apos; im Extras Menü an">
+<!ENTITY config.menu.label "&quot;Sun Cult - Konfiguration&quot; im Menü &quot;Extras&quot; anzeigen">
 <!ENTITY menu.label "Menü">
-<!ENTITY show.label "Zeige">
-<!ENTITY showSun.label "Zeige Sonne">
-<!ENTITY showMoon.label "Zeige Mond">
-<!ENTITY image.label "Bild">
+<!ENTITY show.label "Anzeigen">
+<!ENTITY showSun.label "Sonne anzeigen">
+<!ENTITY showMoon.label "Mond anzeigen">
+<!ENTITY image.label "Grafik">
