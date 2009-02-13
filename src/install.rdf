@@ -1,15 +1,15 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <RDF:Description RDF:about="rdf:#$CgP6L"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="1.5"
-                   em:maxVersion="3.0b3" />
+                   em:maxVersion="3.1b2" />
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="suncult@sf.net"
                    em:name="Sun Cult"
-                   em:version="1.1.200802"
+                   em:version="1.2.200901"
                    em:description="Worldwide Sunrise, Sunset, Twilight, Moonrise and Moonset Times"
                    em:creator="Karel Sommer"
                    em:homepageURL="http://suncult.sourceforge.net"
@@ -53,6 +53,9 @@
     <em:locale>locale/nb-NO/suncult/</em:locale>
     <em:locale>locale/tr-TR/suncult/</em:locale>
     <em:locale>locale/zh-CN/suncult/</em:locale>
+    <em:locale>locale/zh-TW/suncult/</em:locale>
+    <em:locale>locale/ru-RU/suncult/</em:locale>
+    <em:locale>locale/uk-UA/suncult/</em:locale>
 
   </RDF:Description>
   <RDF:Description RDF:about="rdf:#$MgP6L"

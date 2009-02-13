@@ -1,0 +1,38 @@
+<!ENTITY title.label "Sun Cult 設定">
+<!ENTITY location.label "位置">
+<!ENTITY latitude.label "緯度">
+<!ENTITY longitude.label "經度">
+<!ENTITY name.label "地名">
+<!ENTITY east.label "東">
+<!ENTITY west.label "西">
+<!ENTITY north.label "北">
+<!ENTITY south.label "南">
+<!ENTITY close.label "關閉">
+<!ENTITY enter.label "輸入您的座標，下述格式均可：50.30, 49n20, 13Â°N, 13Â° 19&apos;N 或 13Â°19&apos;43.3&quot;N">
+<!ENTITY time.label "時間">
+<!ENTITY timezone.label "時區">
+<!ENTITY timezone.system "按照系統設定">
+<!ENTITY timeformat.label "時間格式">
+<!ENTITY h24 "24小時">
+<!ENTITY ampm "AM/PM">
+<!ENTITY sunriseTime.label "日出/日落時間">
+<!ENTITY srTime0 "日盤中心點觸及數學定義地平線">
+<!ENTITY srTime25 "日盤上端觸及數學定義地平線">
+<!ENTITY srTime583 "預設 - 日盤中心點觸及地平線(球面折射計算在內)">
+<!ENTITY srTime833 "日盤上端觸及地平線(球面折射計算在內)">
+<!ENTITY twilightTime.label "晨昏時間">
+<!ENTITY twTime6 "預設 - 平常人的晨昏(在室外伸手不辨五指)">
+<!ENTITY twTime12 "航海學定義晨昏(不再能使用海面地平線導航)">
+<!ENTITY twTime15 "天文迷定義晨昏(天色暗到大部份的目視無法進行)">
+<!ENTITY twTime18 "天文學定義晨昏(天色全暗)">
+<!ENTITY display.label "顯示">
+<!ENTITY placement.label "顯示位置">
+<!ENTITY toolbar.label "工具列">
+<!ENTITY last.label "固定排在最末端">
+<!ENTITY specific.label "指定位置">
+<!ENTITY config.menu.label "在工具選單顯示[Sun Cult 設定]">
+<!ENTITY menu.label "選單">
+<!ENTITY show.label "顯示">
+<!ENTITY showSun.label "太陽部份要顯示：">
+<!ENTITY showMoon.label "月亮部份要顯示：">
+<!ENTITY image.label "圖片">

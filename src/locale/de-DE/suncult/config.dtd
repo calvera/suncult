@@ -1,4 +1,4 @@
-<!ENTITY title.label "Sun Cult - Konfiguration">
+<!ENTITY title.label "Sun Cult - Einstellungen">
 <!ENTITY location.label "Standort">
 <!ENTITY latitude.label "Breitengrad">
 <!ENTITY longitude.label "Längengrad">
@@ -30,7 +30,7 @@
 <!ENTITY toolbar.label "Symbolleiste">
 <!ENTITY last.label "Immer letztes Symbol">
 <!ENTITY specific.label "Bestimmte Position">
-<!ENTITY config.menu.label "&quot;Sun Cult - Konfiguration&quot; im Menü &quot;Extras&quot; anzeigen">
+<!ENTITY config.menu.label "&quot;Sun Cult - Einstellungen&quot; im Menü &quot;Extras&quot; anzeigen">
 <!ENTITY menu.label "Menü">
 <!ENTITY show.label "Anzeigen">
 <!ENTITY showSun.label "Sonne anzeigen">

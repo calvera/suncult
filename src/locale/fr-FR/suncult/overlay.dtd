@@ -10,6 +10,6 @@
 <!ENTITY nextNewMoon "Prochaine nouvelle Lune">
 <!ENTITY moonSet "Coucher Lune">
 <!ENTITY moonRise "Lever Lune">
-<!ENTITY moonSetAzimuth "Azimuth Coucher">
-<!ENTITY moonRiseAzimuth "Azimuth Lever">
+<!ENTITY moonSetAzimuth "Azimuth au coucher de la lune">
+<!ENTITY moonRiseAzimuth "Azimuth au lever de la lune">
 <!ENTITY midday "Plein midi">

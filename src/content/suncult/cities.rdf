@@ -192,6 +192,8 @@
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/ITALY/Milan" sc:name="Milan" sc:latitude="45N27" sc:longitude="9E17"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/ITALY/Naples" sc:name="Naples" sc:latitude="40N53" sc:longitude="14E18"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/ITALY/Rome" sc:name="Rome" sc:latitude="41N48" sc:longitude="12E36"/>
+    <sc:country RDF:about="http://suncult.sf.net/EUROPE/MALTA" sc:name="MALTA"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/MALTA/Valletta" sc:name="Valletta" sc:latitude="35N54" sc:longitude="14E31"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/NETHERLANDS" sc:name="NETHERLANDS"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/NETHERLANDS/Amsterdam" sc:name="Amsterdam" sc:latitude="52N23" sc:longitude="4E55"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/NORWAY" sc:name="NORWAY"/>

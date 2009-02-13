@@ -1,5 +1,5 @@
 <!ENTITY title.label "Sun Cult configuratie">
-<!ENTITY location.label "Lokatie">
+<!ENTITY location.label "Locatie">
 <!ENTITY latitude.label "Breedtegraad">
 <!ENTITY longitude.label "Lengtegraad">
 <!ENTITY name.label "Naam">
@@ -8,7 +8,7 @@
 <!ENTITY north.label "Noord">
 <!ENTITY south.label "Zuid">
 <!ENTITY close.label "Sluiten">
-<!ENTITY enter.label "Voer s.v.p. uw coördinaten in. Geaccepteerde waardes zijn (bijvoorbeeld) -50.30, 49N20, 13°N, 13°19&apos;N en 13°19&apos;43.3&quot;N">
+<!ENTITY enter.label "Voer a.u.b. uw coördinaten in. Geaccepteerde waardes zijn (bijvoorbeeld) -50.30, 49N20, 13°N, 13°19&apos;N en 13°19&apos;43.3&quot;N">
 <!ENTITY time.label "Tijd">
 <!ENTITY timezone.label "Tijdszone">
 <!ENTITY timezone.system "Systeem gebruiken">
@@ -30,7 +30,7 @@
 <!ENTITY toolbar.label "Werkbalk">
 <!ENTITY last.label "Altijd achteraan">
 <!ENTITY specific.label "Specifieke positie">
-<!ENTITY config.menu.label "Sun Cult configuratie in Extra menu weergeven">
+<!ENTITY config.menu.label "Sun Cult configuratie in menu Extra weergeven">
 <!ENTITY menu.label "Menu">
 <!ENTITY show.label "Weergeven">
 <!ENTITY showSun.label "Zon weergeven">

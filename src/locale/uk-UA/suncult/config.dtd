@@ -1,0 +1,38 @@
+<!ENTITY title.label "Налаштування Sun Cult">
+<!ENTITY location.label "Місцезнаходження">
+<!ENTITY latitude.label "Широта">
+<!ENTITY longitude.label "Довгота">
+<!ENTITY name.label "Назва">
+<!ENTITY east.label "Схід">
+<!ENTITY west.label "Захід">
+<!ENTITY north.label "Північ">
+<!ENTITY south.label "Південь">
+<!ENTITY close.label "Закрити">
+<!ENTITY enter.label "Введіть Ваші координати. Можливими значеннями є (наприклад) -50.30, 49n20, 13°N, 13° 19&apos;N і 13°19&apos;43.3&quot;N">
+<!ENTITY time.label "Час">
+<!ENTITY timezone.label "Часовий пояс">
+<!ENTITY timezone.system "Використовувати системний час">
+<!ENTITY timeformat.label "Формат часу">
+<!ENTITY h24 "24 години">
+<!ENTITY ampm "12 годин">
+<!ENTITY sunriseTime.label "Час сходу/заходу Сонця">
+<!ENTITY srTime0 "Центр Сонячного диску перетинає математичний горизонт">
+<!ENTITY srTime25 "Верхній край (лімб) Сонячного диску перетинає математичний горизонт">
+<!ENTITY srTime583 "Типовий - Центр Сонячного диску перетинає горизонт (атмосферне заломлення враховано)">
+<!ENTITY srTime833 "Верхній край (лімб) Сонячного диску перетинає горизонт (атмосферне заломлення враховано)">
+<!ENTITY twilightTime.label "Час сутінок">
+<!ENTITY twTime6 "Типовий - Громадянські сутінки (читати на вулиці неможливо)">
+<!ENTITY twTime12 "Морські сутінки (навігація за морським горизонтом неможлива)">
+<!ENTITY twTime15 "Аматорські астрономічні сутінки (небо достатньо темне для проведення більшості астрономічних спостережень)">
+<!ENTITY twTime18 "Астрономічні сутінки (повна темрява)">
+<!ENTITY display.label "Виведення даних">
+<!ENTITY placement.label "Розміщувати">
+<!ENTITY toolbar.label "На панелі інструментів">
+<!ENTITY last.label "Завжди останнім">
+<!ENTITY specific.label "Зазначити позицію">
+<!ENTITY config.menu.label "Показувати &quot;Налаштування Sun Cult&quot; у меню інструментів">
+<!ENTITY menu.label "Меню">
+<!ENTITY show.label "Показати">
+<!ENTITY showSun.label "Показати Сонце">
+<!ENTITY showMoon.label "Показати Місяць">
+<!ENTITY image.label "Зображення">

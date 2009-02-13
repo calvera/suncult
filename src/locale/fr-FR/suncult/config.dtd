@@ -8,7 +8,7 @@
 <!ENTITY north.label "Nord">
 <!ENTITY south.label "Sud">
 <!ENTITY close.label "Fermer">
-<!ENTITY enter.label "Entrez vos coordonnées. Les valeurs acceptées sont (par exemple) -50.30, 49n20, 13°N, 13° 19&apos;N and 13°19&apos;43.3&quot;N">
+<!ENTITY enter.label "Entrez vos coordonnées. Les valeurs acceptées sont (par exemple) -50.30, 49n20, 13°N, 13° 19&apos;N et 13°19&apos;43.3&quot;N">
 <!ENTITY time.label "Jour/Heure">
 <!ENTITY timezone.label "Zone horaire">
 <!ENTITY timezone.system "Heure système">
@@ -18,13 +18,13 @@
 <!ENTITY sunriseTime.label "Lever/Coucher du Soleil">
 <!ENTITY srTime0 "Le centre du disque solaire touche l&apos;horizon mathématique">
 <!ENTITY srTime25 "La partie supérieure du limbe solaire touche l&apos;horizon mathématique">
-<!ENTITY srTime583 "Défaut - Le Centre du disque solaire touche l&apos;horizon (tient compte de la réfraction atmosphérique)">
+<!ENTITY srTime583 "Par défaut - Le centre du disque solaire touche l&apos;horizon (tient compte de la réfraction atmosphérique)">
 <!ENTITY srTime833 "La partie supérieure du limbe solaire touche l&apos;horizon (tient compte de la réfraction atmosphérique)">
 <!ENTITY twilightTime.label "Crépuscule">
 <!ENTITY twTime6 "Défaut - Crépuscule civil (Visibilité trop faible pour lire)">
 <!ENTITY twTime12 "Crépuscule nautique (l&apos;horizon marin est imperceptible)">
-<!ENTITY twTime15 "Crépuscule astronomique Amateur (Ciel assez sombre pour la majorité des observations)">
-<!ENTITY twTime18 "Crépuscule astronomique (Ciel entièrement noir)">
+<!ENTITY twTime15 "Crépuscule astronomique amateur (ciel assez sombre pour la majorité des observations)">
+<!ENTITY twTime18 "Crépuscule astronomique (ciel entièrement noir)">
 <!ENTITY display.label "Affichage">
 <!ENTITY placement.label "Emplacement">
 <!ENTITY toolbar.label "Barre d&apos;outils">

@@ -1,0 +1,38 @@
+<!ENTITY title.label "Настройки Sun Cult">
+<!ENTITY location.label "Местоположение">
+<!ENTITY latitude.label "Широта">
+<!ENTITY longitude.label "Долгота">
+<!ENTITY name.label "Название">
+<!ENTITY east.label "Восток">
+<!ENTITY west.label "Запад">
+<!ENTITY north.label "Север">
+<!ENTITY south.label "Юг">
+<!ENTITY close.label "Закрыть">
+<!ENTITY enter.label "Введите свои координаты. Допустимые значения(пример) -50.30, 49n20, 13°N, 13° 19&apos;N and 13°19&apos;43.3&quot;N">
+<!ENTITY time.label "Время">
+<!ENTITY timezone.label "Часовой пояс">
+<!ENTITY timezone.system "Использовать системное время">
+<!ENTITY timeformat.label "Формат часов">
+<!ENTITY h24 "24 часа">
+<!ENTITY ampm "AM/PM">
+<!ENTITY sunriseTime.label "Время восхода/заката">
+<!ENTITY srTime0 "Центр Солнечного диска пересекает математический горизонт">
+<!ENTITY srTime25 "Верхний край Солнечного диска пересекает математический горизонт">
+<!ENTITY srTime583 "По умолчанию - Центр солнечного диска пересекает горизонт (атмосферное преломление учитывается)">
+<!ENTITY srTime833 "Верхний край Солнечного диска пересекает горизонт (атмосферное преломление учитывается)">
+<!ENTITY twilightTime.label "Время сумерек">
+<!ENTITY twTime6 "По умолчанию - Гражданские сумерки (невозможно читать на улице)">
+<!ENTITY twTime12 "Морские сумерки (навигация по морскому горизонту невозможна)">
+<!ENTITY twTime15 "Взрослые астрономические сумерки (практически ничего не видно)">
+<!ENTITY twTime18 "Астрономические сумерки (полная темнота)">
+<!ENTITY display.label "Отображение">
+<!ENTITY placement.label "Отображать">
+<!ENTITY toolbar.label "На панели инструментов">
+<!ENTITY last.label "Всегда в конце">
+<!ENTITY specific.label "Указать позицию">
+<!ENTITY config.menu.label "Показать настройки Sun Cult в меню инструментов">
+<!ENTITY menu.label "Меню">
+<!ENTITY show.label "Показать">
+<!ENTITY showSun.label "Показать Солнце">
+<!ENTITY showMoon.label "Показать Луну">
+<!ENTITY image.label "Изображение">
