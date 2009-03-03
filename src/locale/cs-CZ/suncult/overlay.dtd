@@ -4,6 +4,8 @@
 <!ENTITY twilightStart "Začátek úsvitu">
 <!ENTITY sunrise "Východ slunce">
 <!ENTITY sunset "Západ slunce">
+<!ENTITY sunrise-azimuth "Azimut při východu">
+<!ENTITY sunset-azimuth "Azimut při západu">
 <!ENTITY twilightEnd "Konec soumraku">
 <!ENTITY moonPhase "Fáze měsíce">
 <!ENTITY nextFullMoon "Následující úplněk">
@@ -13,3 +15,4 @@
 <!ENTITY moonSetAzimuth "Azimut západu">
 <!ENTITY moonRiseAzimuth "Azimut východu">
 <!ENTITY midday "Pravé poledne">
+<!ENTITY today "Dnes">

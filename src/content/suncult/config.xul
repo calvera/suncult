@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <?xml-stylesheet href="chrome://mozapps/skin/pref/pref.css" type="text/css"?> 
@@ -191,6 +191,8 @@
       <preference id="pref-sun-twilight-end" name="extensions.suncult.show.sun.twilight-end" type="bool"/>
       <preference id="pref-sun-sunrise" name="extensions.suncult.show.sun.sunrise" type="bool"/>
       <preference id="pref-sun-sunset" name="extensions.suncult.show.sun.sunset" type="bool"/>
+      <preference id="pref-sun-sunrise-azimuth" name="extensions.suncult.show.sun.sunrise.azimuth" type="bool"/>
+      <preference id="pref-sun-sunset-azimuth" name="extensions.suncult.show.sun.sunset.azimuth" type="bool"/>
       <preference id="pref-sun-midday" name="extensions.suncult.show.sun.midday" type="bool"/>
 
       <preference id="pref-moon" name="extensions.suncult.show.moon" type="bool" onchange="suncultConfig.onMoon();"/>
@@ -264,6 +266,12 @@
             </row>
             <row align="left">
               <checkbox label="&sunset;" preference="pref-sun-sunset"/>
+            </row>
+            <row align="left">
+              <checkbox label="&sunrise-azimuth;" preference="pref-sun-sunrise-azimuth"/>
+            </row>
+            <row align="left">
+              <checkbox label="&sunset-azimuth;" preference="pref-sun-sunset-azimuth"/>
             </row>
             <row align="left">
               <checkbox label="&midday;" preference="pref-sun-midday"/>

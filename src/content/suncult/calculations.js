@@ -1,3 +1,8 @@
+Date.prototype.getDOY = function() {
+var onejan = new Date(this.getFullYear(),0,1);
+return Math.ceil((this - onejan) / 86400000);
+}
+
 var suncultUtils = {
   formatTime: function(h, m, tf) {
   if (h > 23) h -= 24;
@@ -425,6 +430,8 @@ formValues: function(lat, lon, _date, tzOffset, tf, srAngle, twAngle)
   var twEnd;
   var srise;
   var sset;
+  var sriseaz;
+  var ssetaz;
   var ssouth = suncultUtils.formatTime(sSouthT_h, sSouthT_m, tf);
   
   if(this.twStatus == 0){
@@ -441,12 +448,18 @@ formValues: function(lat, lon, _date, tzOffset, tf, srAngle, twAngle)
   if(this.srStatus == 0) {
     srise = suncultUtils.formatTime(sris_h, sris_m, tf);     
     sset = suncultUtils.formatTime(sset_h, sset_m, tf);
+    
+    yearday = _date.getDOY();
+    dump("doy: " + yearday + "\n");
+    sriseaz = Math.round(90 + 31 * this.cosd(0.986 * yearday + 7.9));
+    ssetaz = Math.round(270 - 31 * this.cosd(0.986 * yearday + 7.9));
+    
   } else {
     srise = "na";     
     sset = "na";
   }
 
-  return [ twStart, twEnd, srise, sset, ssouth ];
+  return [ twStart, twEnd, srise, sset, ssouth, sriseaz, ssetaz ];
 }
 
 

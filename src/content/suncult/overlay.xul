@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="chrome://suncult/skin/overlay.css" type="text/css"?>
 
 <!DOCTYPE overlay SYSTEM "chrome://suncult/locale/overlay.dtd">
@@ -48,95 +48,118 @@
       <tooltip id="suncult-tooltip" orient="vertical" onpopupshowing="suncult.onPopupShowing(this);" noautohide="true">
         <grid align="center">
           <columns>
-            <column/>
-            <column/>
+            <column id="suncult-today"/>
+            <column id="suncult-other"/>
           </columns>
           <rows>
-            <row id="suncult-sun">
-              <vbox id="suncult-sun-img-box">
-                <spacer flex="1"/> 
-                <image id="suncult-sun-img" width="64" height="64" src="chrome://suncult/content/images/sun_64.png" align="center"/>
-                <spacer flex="1"/> 
-              </vbox>
-              <grid align="center">
-                <columns>
-                  <column/>
-                  <column/>
-                </columns>
-                <rows>
-                  <spacer flex="1"/> 
-                  <row id="suncult-row-twilightStart">
-                     <description value="&twilightStart;:"/>
-                     <description id="suncult-twilight-start"/>
-                  </row>
-                  <row id="suncult-row-sunrise">
-                     <description value="&sunrise;:"/>
-                     <description id="suncult-sunrise"/>
-                  </row>
-                  <row id="suncult-row-midday">
-                     <description value="&midday;:"/>
-                     <description id="suncult-midday"/>
-                  </row>
-                  <row id="suncult-row-sunset">
-                     <description value="&sunset;:"/>
-                     <description id="suncult-sunset"/>
-                  </row>
-                  <row id="suncult-row-twilightEnd">
-                     <description value="&twilightEnd;:"/>
-                     <description id="suncult-twilight-end"/>
-                  </row>
-                  <spacer flex="1"/> 
-                </rows>
-              </grid>
+            <row>
+              <description value="&today;:" class="header"/>
+              <!--description value="&today;:" class="header"/-->
             </row>
-            <separator id="suncult-separator" class="groove-thin"/>
-            <row id="suncult-moon">
-               <vbox id="suncult-moon-img-box">
-                 <spacer flex="1"/> 
-                 <image id="suncult-moon-img" width="64" height="64" src="chrome://suncult/content/images/moon_14_64.png" align="center"/>
-                 <spacer flex="1"/> 
-               </vbox>
-              <grid align="center">
-                <columns>
-                  <column/>
-                  <column/>
-                </columns>
-                <rows>
-                  <spacer flex="1"/> 
-                  <row id="suncult-row-moonphase">
-                     <description value="&moonPhase;:"/>
-                     <description id="suncult-moonphase"/>
-                  </row>
-                  <row id="suncult-row-nextFullMoon">
-                     <description value="&nextFullMoon;:"/>
-                     <description id="suncult-next-fullmoon"/>
-                  </row>
-                  <row id="suncult-row-nextNewMoon">
-                     <description value="&nextNewMoon;:"/>
-                     <description id="suncult-next-newmoon"/>
-                  </row>
-                  <row id="suncult-row-moonrise">
-                     <description value="&moonRise;:"/>
-                     <description id="suncult-moonrise" />
-                  </row>
-                  <row id="suncult-row-moonrise-azimuth">
-                     <description value="&moonRiseAzimuth;:"/>
-                      <description id="suncult-moonrise-azimuth" />
-                  </row>
-                  <row id="suncult-row-moonset">
-                     <description value="&moonSet;:"/>
-                     <description id="suncult-moonset"/>
-                  </row>
-                  <row id="suncult-row-moonset-azimuth">
-                     <description value="&moonSetAzimuth;:"/>
-                     <description id="suncult-moonset-azimuth" />
-                  </row>
-                  <spacer flex="1"/>
-                </rows>
-              </grid>
-            </row>
-           </rows>
-        </grid>
+            <separator id="suncult-separator-today" class="groove thin"/>
+            <row>
+			        <grid align="center">
+			          <columns>
+			            <column/>
+			            <column/>
+			          </columns>
+			          <rows>
+			            <row id="suncult-sun-today">
+			              <vbox id="suncult-sun-today-img-box">
+			                <spacer flex="1"/> 
+			                <image id="suncult-sun-today-img" width="64" height="64" src="chrome://suncult/content/images/sun_64.png" align="center"/>
+			                <spacer flex="1"/> 
+			              </vbox>
+			              <grid align="center">
+			                <columns>
+			                  <column/>
+			                  <column/>
+			                </columns>
+			                <rows>
+			                  <spacer flex="1"/> 
+			                  <row id="suncult-row-twilightStart-today">
+			                     <description value="&twilightStart;:"/>
+			                     <description id="suncult-twilight-start-today"/>
+			                  </row>
+			                  <row id="suncult-row-sunrise-today">
+			                     <description value="&sunrise;:"/>
+			                     <description id="suncult-sunrise-today"/>
+			                  </row>
+			                  <row id="suncult-row-sunrise-azimuth-today">
+			                     <description value="&sunrise-azimuth;:"/>
+			                     <description id="suncult-sunrise-azimuth-today"/>
+			                  </row>
+			                  <row id="suncult-row-midday-today">
+			                     <description value="&midday;:"/>
+			                     <description id="suncult-midday-today"/>
+			                  </row>
+			                  <row id="suncult-row-sunset-today">
+			                     <description value="&sunset;:"/>
+			                     <description id="suncult-sunset-today"/>
+			                  </row>
+			                  <row id="suncult-row-sunset-azimuth-today">
+			                     <description value="&sunset-azimuth;:"/>
+			                     <description id="suncult-sunset-azimuth-today"/>
+			                  </row>
+			                  <row id="suncult-row-twilightEnd-today">
+			                     <description value="&twilightEnd;:"/>
+			                     <description id="suncult-twilight-end-today"/>
+			                  </row>
+			                  <spacer flex="1"/> 
+			                </rows>
+			              </grid>
+			            </row>
+			            <separator id="suncult-separator-today" class="groove thin"/>
+			            <row id="suncult-moon-today">
+			               <vbox id="suncult-moon-today-img-box">
+			                 <spacer flex="1"/> 
+			                 <image id="suncult-moon-today-img" width="64" height="64" src="chrome://suncult/content/images/moon_14_64.png" align="center"/>
+			                 <spacer flex="1"/> 
+			               </vbox>
+			              <grid align="center">
+			                <columns>
+			                  <column/>
+			                  <column/>
+			                </columns>
+			                <rows>
+			                  <spacer flex="1"/> 
+			                  <row id="suncult-row-moonphase-today">
+			                     <description value="&moonPhase;:"/>
+			                     <description id="suncult-moonphase-today"/>
+			                  </row>
+			                  <row id="suncult-row-nextFullMoon-today">
+			                     <description value="&nextFullMoon;:"/>
+			                     <description id="suncult-next-fullmoon-today"/>
+			                  </row>
+			                  <row id="suncult-row-nextNewMoon-today">
+			                     <description value="&nextNewMoon;:"/>
+			                     <description id="suncult-next-newmoon-today"/>
+			                  </row>
+			                  <row id="suncult-row-moonrise-today">
+			                     <description value="&moonRise;:"/>
+			                     <description id="suncult-moonrise-today" />
+			                  </row>
+			                  <row id="suncult-row-moonrise-azimuth-today">
+			                     <description value="&moonRiseAzimuth;:"/>
+			                      <description id="suncult-moonrise-azimuth-today" />
+			                  </row>
+			                  <row id="suncult-row-moonset-today">
+			                     <description value="&moonSet;:"/>
+			                     <description id="suncult-moonset-today"/>
+			                  </row>
+			                  <row id="suncult-row-moonset-azimuth-today">
+			                     <description value="&moonSetAzimuth;:"/>
+			                     <description id="suncult-moonset-azimuth-today" />
+			                  </row>
+			                  <spacer flex="1"/>
+			                </rows>
+			              </grid>
+			            </row>
+			           </rows>
+			        </grid>
+			      </row>
+			    </rows>
+			  </grid>
       </tooltip>
       <popup id="suncult-status-popup" position="before_end" onpopupshowing="event.preventBubble();">
         <menuitem id="popup-suncult-config" label="&config;" accesskey="&configKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>

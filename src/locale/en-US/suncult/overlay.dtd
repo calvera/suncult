@@ -4,6 +4,8 @@
 <!ENTITY twilightStart "Twilight start">
 <!ENTITY sunrise "Sunrise">
 <!ENTITY sunset "Sunset">
+<!ENTITY sunrise-azimuth "Sunrise azimuth">
+<!ENTITY sunset-azimuth "Sunset azimuth">
 <!ENTITY twilightEnd "Twilight end">
 <!ENTITY moonPhase "Moon Phase">
 <!ENTITY nextFullMoon "Next Full Moon">
@@ -13,3 +15,4 @@
 <!ENTITY moonSetAzimuth "Moonset azimuth">
 <!ENTITY moonRiseAzimuth "Moonrise azimuth">
 <!ENTITY midday "High noon">
+<!ENTITY today "Today">

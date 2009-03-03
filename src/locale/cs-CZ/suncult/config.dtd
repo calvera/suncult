@@ -19,12 +19,12 @@
 <!ENTITY srTime0 "Střed slunečního disku na matematickém horizontu">
 <!ENTITY srTime25 "Vršek slunčního disku na matematickém horizontu">
 <!ENTITY srTime583 "Výchozí - Střed slunečního disku na horizontu (se započtením lomu světla v atmosféře)">
-<!ENTITY srTime833 "Vršek slunčního disku na horizontu (se započtením lomu světla v atmosféře)">
-<!ENTITY twilightTime.label "Okamžik úsvitu a soumralu">
+<!ENTITY srTime833 "Vršek slunečního disku na horizontu (se započtením lomu světla v atmosféře)">
+<!ENTITY twilightTime.label "Okamžik úsvitu a soumraku">
 <!ENTITY twTime6 "Výchozí - civilní (venku není možné číst)">
 <!ENTITY twTime12 "Námořní (není možná navigace podle mořského horizontu)">
 <!ENTITY twTime15 "Amatérský astronomický (obloha je dostatečně tmavá na většinu pozorování)">
-<!ENTITY twTime18 "Astronomický (obloha je kompletně tmavá">
+<!ENTITY twTime18 "Astronomický (obloha je kompletně tmavá)">
 <!ENTITY display.label "Display">
 <!ENTITY placement.label "Umístění">
 <!ENTITY toolbar.label "Lišta">

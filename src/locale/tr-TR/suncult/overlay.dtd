@@ -4,6 +4,8 @@
 <!ENTITY twilightStart "Alacakaranlık (D)">
 <!ENTITY sunrise "Gündoğumu">
 <!ENTITY sunset "Günbatımı">
+<!ENTITY sunrise-azimuth "Güneşin Doğuş Açısı">
+<!ENTITY sunset-azimuth "Güneşin Batış Açısı">
 <!ENTITY twilightEnd "Alacakaranlık (B)">
 <!ENTITY moonPhase "Ayın Evresi">
 <!ENTITY nextFullMoon "Sonraki Dolunay">
@@ -13,3 +15,4 @@
 <!ENTITY moonSetAzimuth "Ayın Batış Açısı">
 <!ENTITY moonRiseAzimuth "Ayın Doğuş Açısı">
 <!ENTITY midday "Öğle Vakti">
+<!ENTITY today "Bugün">
