@@ -304,6 +304,10 @@ var suncult = {
   showConfig: function() {
     window.openDialog("chrome://suncult/content/config.xul", "Suncult:Configuration", "chrome,resizable,titlebar,toolbar");
   },
+
+  showOther: function() {
+    window.openDialog("chrome://suncult/content/other.xul", "Suncult:Other", "chrome,resizable,titlebar,toolbar");
+  },
   
   onPopupShowing: function(popup) {
     this.updatePopupSun(popup);
