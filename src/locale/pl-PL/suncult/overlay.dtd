@@ -4,6 +4,8 @@
 <!ENTITY twilightStart "Świt">
 <!ENTITY sunrise "Wschód Słońca">
 <!ENTITY sunset "Zachód Słońca">
+<!ENTITY sunrise-azimuth "Azymut wschodu">
+<!ENTITY sunset-azimuth "Azymut zachodu">
 <!ENTITY twilightEnd "Zmierzch">
 <!ENTITY moonPhase "Faza Księżyca">
 <!ENTITY nextFullMoon "Następna pełnia">
@@ -13,3 +15,4 @@
 <!ENTITY moonSetAzimuth "Azymut zachodu">
 <!ENTITY moonRiseAzimuth "Azymut wschodu">
 <!ENTITY midday "Południe">
+<!ENTITY today "Dzisiaj">

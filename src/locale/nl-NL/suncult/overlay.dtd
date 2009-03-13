@@ -4,12 +4,15 @@
 <!ENTITY twilightStart "Start van de ochtendschemering">
 <!ENTITY sunrise "Zonsopkomst">
 <!ENTITY sunset "Zonsondergang">
+<!ENTITY sunrise-azimuth "Positie zonsopkomst (azimut)">
+<!ENTITY sunset-azimuth "Positie zonsondergang (azimut)">
 <!ENTITY twilightEnd "Einde van de avondschemering">
 <!ENTITY moonPhase "Maanfase">
 <!ENTITY nextFullMoon "Volgende volle maan">
 <!ENTITY nextNewMoon "Volgende nieuwe maan">
 <!ENTITY moonSet "Maanondergang">
 <!ENTITY moonRise "Maanopkomst">
-<!ENTITY moonSetAzimuth "Maanondergang azimut">
-<!ENTITY moonRiseAzimuth "Maanopkomst azimut">
+<!ENTITY moonSetAzimuth "Positie maanondergang (azimut)">
+<!ENTITY moonRiseAzimuth "Positie maanopkomst (azimut)">
 <!ENTITY midday "Hoogste punt">
+<!ENTITY today "Vandaag">

@@ -1,5 +1,5 @@
 <!ENTITY suncult "Kult Slunce">
-<!ENTITY config "Kult Slunce Nastavení">
+<!ENTITY config "Nastavení Kultu Slunce">
 <!ENTITY configKey "N">
 <!ENTITY twilightStart "Začátek úsvitu">
 <!ENTITY sunrise "Východ slunce">
@@ -11,8 +11,8 @@
 <!ENTITY nextFullMoon "Následující úplněk">
 <!ENTITY nextNewMoon "Následující nov">
 <!ENTITY moonSet "Západ měsíce">
-<!ENTITY moonRise "Východ měsíce ">
-<!ENTITY moonSetAzimuth "Azimut západu">
-<!ENTITY moonRiseAzimuth "Azimut východu">
+<!ENTITY moonRise "Východ měsíce">
+<!ENTITY moonSetAzimuth "Azimut při západu">
+<!ENTITY moonRiseAzimuth "Azimut při východu">
 <!ENTITY midday "Pravé poledne">
 <!ENTITY today "Dnes">

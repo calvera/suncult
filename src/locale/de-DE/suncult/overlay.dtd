@@ -4,6 +4,8 @@
 <!ENTITY twilightStart "Morgendämmerung">
 <!ENTITY sunrise "Sonnenaufgang">
 <!ENTITY sunset "Sonnenuntergang">
+<!ENTITY sunrise-azimuth "Sonnenaufgang - Azimut">
+<!ENTITY sunset-azimuth "Sonnenuntergang - Azimut">
 <!ENTITY twilightEnd "Abenddämmerung">
 <!ENTITY moonPhase "Mondphase">
 <!ENTITY nextFullMoon "Nächster Vollmond">
@@ -13,3 +15,4 @@
 <!ENTITY moonSetAzimuth "Monduntergang - Azimut">
 <!ENTITY moonRiseAzimuth "Mondaufgang - Azimut">
 <!ENTITY midday "Wahrer Mittag">
+<!ENTITY today "Heute">

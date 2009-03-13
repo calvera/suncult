@@ -1,9 +1,11 @@
 <!ENTITY suncult "Sun Cult">
-<!ENTITY config "Налаштування Sun Cult">
-<!ENTITY configKey "К">
+<!ENTITY config "Налаштування Sun Сult">
+<!ENTITY configKey "С">
 <!ENTITY twilightStart "Початок сутінок">
 <!ENTITY sunrise "Схід">
 <!ENTITY sunset "Захід">
+<!ENTITY sunrise-azimuth "Азимут сходу">
+<!ENTITY sunset-azimuth "Азимут заходу">
 <!ENTITY twilightEnd "Кінець сутінок">
 <!ENTITY moonPhase "Фаза Місяця">
 <!ENTITY nextFullMoon "Наступна повня">
@@ -13,3 +15,4 @@
 <!ENTITY moonSetAzimuth "Азимут заходу">
 <!ENTITY moonRiseAzimuth "Азимут сходу">
 <!ENTITY midday "Полудень">
+<!ENTITY today "Сьогодні">

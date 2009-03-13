@@ -4,6 +4,8 @@
 <!ENTITY twilightStart "Inicio del crepúsculo">
 <!ENTITY sunrise "Amanecer">
 <!ENTITY sunset "Ocaso">
+<!ENTITY sunrise-azimuth "Sunrise azimuth">
+<!ENTITY sunset-azimuth "Sunset azimuth">
 <!ENTITY twilightEnd "Fin del crepúsculo">
 <!ENTITY moonPhase "Fase lunar">
 <!ENTITY nextFullMoon "Próxima luna llena">
@@ -13,3 +15,4 @@
 <!ENTITY moonSetAzimuth "Acimut de puesta de la luna">
 <!ENTITY moonRiseAzimuth "Acimut de salida de la luna">
 <!ENTITY midday "Mediodía">
+<!ENTITY today "Today">

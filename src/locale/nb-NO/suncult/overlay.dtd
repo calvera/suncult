@@ -4,6 +4,8 @@
 <!ENTITY twilightStart "Skumring begynner">
 <!ENTITY sunrise "Soloppgang">
 <!ENTITY sunset "Solnedgang">
+<!ENTITY sunrise-azimuth "Soloppgang asimut">
+<!ENTITY sunset-azimuth "Solnedgang asimut">
 <!ENTITY twilightEnd "Skumring slutter">
 <!ENTITY moonPhase "Månefase">
 <!ENTITY nextFullMoon "Neste fullmåne">
@@ -13,3 +15,4 @@
 <!ENTITY moonSetAzimuth "Månenedgang asimut">
 <!ENTITY moonRiseAzimuth "Måneoppgang asimut">
 <!ENTITY midday "Solen på sitt høyeste">
+<!ENTITY today "i dag">

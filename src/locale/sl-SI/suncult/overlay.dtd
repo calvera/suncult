@@ -4,6 +4,8 @@
 <!ENTITY twilightStart "Pričetek somraka">
 <!ENTITY sunrise "Sončni vzhod">
 <!ENTITY sunset "Sončni zahod">
+<!ENTITY sunrise-azimuth "Sunrise azimuth">
+<!ENTITY sunset-azimuth "Sunset azimuth">
 <!ENTITY twilightEnd "Konec somraka">
 <!ENTITY moonPhase "Lunina mena">
 <!ENTITY nextFullMoon "Naslednji ščip">
@@ -13,3 +15,4 @@
 <!ENTITY moonSetAzimuth "Azimut mesečevega zahoda">
 <!ENTITY moonRiseAzimuth "Azimut mesečevega vzhoda">
 <!ENTITY midday "Opoldan">
+<!ENTITY today "Today">

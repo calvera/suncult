@@ -4,6 +4,8 @@
 <!ENTITY twilightStart "szürkület kezdete">
 <!ENTITY sunrise "napkelte">
 <!ENTITY sunset "napnyugta">
+<!ENTITY sunrise-azimuth "Sunrise azimuth">
+<!ENTITY sunset-azimuth "Sunset azimuth">
 <!ENTITY twilightEnd "szürkület vége">
 <!ENTITY moonPhase "holdfázis">
 <!ENTITY nextFullMoon "köv. telihold">
@@ -13,3 +15,4 @@
 <!ENTITY moonSetAzimuth "holdnyugta azimut">
 <!ENTITY moonRiseAzimuth "holdkelte azimut">
 <!ENTITY midday "délidő">
+<!ENTITY today "Today">

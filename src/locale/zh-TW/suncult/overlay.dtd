@@ -8,8 +8,8 @@
 <!ENTITY sunset-azimuth "日落方位">
 <!ENTITY twilightEnd "黄昏">
 <!ENTITY moonPhase "月相">
-<!ENTITY nextFullMoon "下次滿月(d日h小時後)">
-<!ENTITY nextNewMoon "下次新月(d日h小時後)">
+<!ENTITY nextFullMoon "距再月圓日時">
+<!ENTITY nextNewMoon "距再月盡日時">
 <!ENTITY moonSet "月落">
 <!ENTITY moonRise "月出">
 <!ENTITY moonSetAzimuth "月落方位">

@@ -4,6 +4,8 @@
 <!ENTITY twilightStart "黎明">
 <!ENTITY sunrise "日出">
 <!ENTITY sunset "日落">
+<!ENTITY sunrise-azimuth "Sunrise azimuth">
+<!ENTITY sunset-azimuth "Sunset azimuth">
 <!ENTITY twilightEnd "黄昏">
 <!ENTITY moonPhase "月相">
 <!ENTITY nextFullMoon "下次满月">
@@ -13,3 +15,4 @@
 <!ENTITY moonSetAzimuth "月落方位">
 <!ENTITY moonRiseAzimuth "月出方位">
 <!ENTITY midday "正午">
+<!ENTITY today "Today">
