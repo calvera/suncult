@@ -1,6 +1,8 @@
 <!ENTITY suncult "Sun Cult">
 <!ENTITY config "Sun Cult Configuration">
 <!ENTITY configKey "C">
+<!ENTITY calendar "Calendar">
+<!ENTITY calendarKey "l">
 <!ENTITY twilightStart "Twilight start">
 <!ENTITY sunrise "Sunrise">
 <!ENTITY sunset "Sunset">

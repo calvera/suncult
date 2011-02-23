@@ -27,7 +27,7 @@ var suncult = {
   _moonRiseAz: null,
   _moonSetAz: null,
   
-  _other_date: null,
+  _calendar_date: null,
 
   _latitude: null,
   _longitude: null,
@@ -61,7 +61,7 @@ var suncult = {
       _moonRiseAz = document.getElementById("suncult-moonrise-azimuth");
       _moonSetAz = document.getElementById("suncult-moonset-azimuth");
       
-      _other_date = document.getElementById("suncult-other-date");
+      _calendar_date = document.getElementById("suncult-calendar-date");
       
       readPreferences();
       
@@ -147,7 +147,7 @@ var suncult = {
       dump("long: " + _longitude + "\n");
       dump("timezone: " + _timezone + "\n");
       dump("timeformat: " + _timeFormat + "\n"); */
-      var day = _other_date.dateValue;
+      var day = _calendar_date.dateValue;
       var lat = parseFloat(_latitude);
       var lon = parseFloat(_longitude);
       var result = suncultCalcSun.formValues(lat, lon, day, _timezone, _timeFormat, _srAngle, _twAngle);
@@ -175,7 +175,7 @@ var suncult = {
   
   updateMoon: function(popup) {
     with (this) {
-      var day = _other_date.dateValue;
+      var day = _calendar_date.dateValue;
       var lat = parseFloat(_latitude);
       var lon = parseFloat(_longitude);
       _moonPhase.value = getResource(_resMoonPrefix + suncultCalcMoon.phaseName(day));

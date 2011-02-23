@@ -1,3 +1,6 @@
 #suncult-config, #popup-suncult-config {
   list-style-image: url("chrome://suncult/content/menu_icon.png"); 
   }
+#popup-suncult-compute-calendar {
+  list-style-image: url("chrome://suncult/content/menu_icon_calendar.png"); 
+  }

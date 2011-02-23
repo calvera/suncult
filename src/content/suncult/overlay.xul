@@ -29,7 +29,7 @@
 
     <commandset>
       <command id="cmd_suncult_config" oncommand="suncult.showConfig();"/>
-      <command id="cmd_suncult_other" oncommand="suncult.showOther();"/>
+      <command id="cmd_suncult_calendar" oncommand="suncult.showCalendar();"/>
     </commandset>
 
     <statusbarpanel id="suncult-box">
@@ -50,7 +50,7 @@
         <grid align="center">
           <columns>
             <column id="suncult-today"/>
-            <column id="suncult-other"/>
+            <column id="suncult-calendar"/>
           </columns>
           <rows>
             <row>
@@ -164,7 +164,7 @@
       </tooltip>
       <popup id="suncult-status-popup" position="before_end" onpopupshowing="event.preventBubble();">
         <menuitem id="popup-suncult-config" label="&config;" accesskey="&configKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
-        <menuitem id="popup-suncult-compute-other" label="Calendar" command="cmd_suncult_other" class="menuitem-iconic menu-iconic"/>
+        <menuitem id="popup-suncult-compute-calendar" label="Calendar" command="cmd_suncult_calendar" class="menuitem-iconic menu-iconic"/>
       </popup>
     </popupset>
   </statusbar>

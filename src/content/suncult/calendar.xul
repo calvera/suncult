@@ -2,7 +2,7 @@
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <!DOCTYPE window SYSTEM "chrome://suncult/locale/overlay.dtd">
 
-<window id="suncult-other" title=""
+<window id="suncult-calendar" title=""
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
   
   <script src="calculations.js"/>
@@ -13,7 +13,7 @@
   </stringbundleset>
       
   <box>
-  	<datepicker type="grid" id="suncult-other-date" onchange="suncult.update();"/>
+  	<datepicker type="grid" id="suncult-calendar-date" onchange="suncult.update();"/>
   	
   	<grid align="center">
 	    <columns>
