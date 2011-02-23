@@ -164,7 +164,7 @@
       </tooltip>
       <popup id="suncult-status-popup" position="before_end" onpopupshowing="event.preventBubble();">
         <menuitem id="popup-suncult-config" label="&config;" accesskey="&configKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
-        <menuitem id="popup-suncult-compute-other" label="Other" command="cmd_suncult_other" class="menuitem-iconic menu-iconic"/>
+        <menuitem id="popup-suncult-compute-other" label="Calendar" command="cmd_suncult_other" class="menuitem-iconic menu-iconic"/>
       </popup>
     </popupset>
   </statusbar>

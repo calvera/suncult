@@ -6,7 +6,7 @@
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
   
   <script src="calculations.js"/>
-  <script src="other.js"/>
+  <script src="calendar.js"/>
 
   <stringbundleset>
     <stringbundle id="suncult-string-bundle" src="chrome://suncult/locale/suncult.properties"/>

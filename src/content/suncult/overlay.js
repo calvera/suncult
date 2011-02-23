@@ -306,7 +306,7 @@ var suncult = {
   },
 
   showOther: function() {
-    window.openDialog("chrome://suncult/content/other.xul", "Suncult:Other", "chrome,resizable,titlebar,toolbar");
+    window.openDialog("chrome://suncult/content/calendar.xul", "Suncult:Other", "chrome,resizable,titlebar,toolbar");
   },
   
   onPopupShowing: function(popup) {
