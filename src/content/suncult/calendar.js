@@ -8,6 +8,26 @@ var suncult = {
   _prefTwilightAngle: suncultPrefix + "twAngle",
   _prefSetRiseAngle: suncultPrefix + "srAngle",
 
+  _prefShowSun: suncultPrefix + "show.sun",
+  _prefShowSunImage: suncultPrefix + "show.sun.image",
+  _prefShowSunTwilightStart: suncultPrefix + "show.sun.twilight-start",
+  _prefShowSunTwilightEnd: suncultPrefix + "show.sun.twilight-end",
+  _prefShowSunrise: suncultPrefix + "show.sun.sunrise",
+  _prefShowSunset: suncultPrefix + "show.sun.sunset",
+  _prefShowSunriseAzimuth: suncultPrefix + "show.sun.sunrise.azimuth",
+  _prefShowSunsetAzimuth: suncultPrefix + "show.sun.sunset.azimuth",
+  _prefShowMidday: suncultPrefix + "show.sun.midday",
+
+  _prefShowMoon: suncultPrefix + "show.moon",
+  _prefShowMoonImage: suncultPrefix + "show.moon.image",
+  _prefShowMoonrise: suncultPrefix + "show.moon.moonrise",
+  _prefShowMoonriseAzimuth: suncultPrefix + "show.moon.moonrise.azimuth",
+  _prefShowMoonset: suncultPrefix + "show.moon.moonset",
+  _prefShowMoonsetAzimuth: suncultPrefix + "show.moon.moonset.azimuth",
+  _prefShowMoonphase: suncultPrefix + "show.moon.phase",
+  _prefShowNextFullMoon: suncultPrefix + "show.moon.next-full",
+  _prefShowNextNewMoon: suncultPrefix + "show.moon.next-new",
+
   _resNoMoonrise: "suncult.noMoonrise",
   _resNoMoonset: "suncult.noMoonset",
   _resMoonPrefix: "suncult.moon.",
@@ -101,6 +121,28 @@ var suncult = {
       _timeFormat = getCharPref(_prefTimeFormat, 'h24');
       _srAngle = parseFloat(getCharPref(_prefSetRiseAngle, -7.0/12.0));
       _twAngle = parseFloat(getCharPref(_prefTwilightAngle, -6.0));
+
+      _showSun = getBoolPref(_prefShowSun, true);
+      _showSunImage = getBoolPref(_prefShowSunImage, true);
+      _showSunTwilightStart = getBoolPref(_prefShowSunTwilightStart, true);
+      _showSunTwilightEnd = getBoolPref(_prefShowSunTwilightEnd, true);
+      _showSunrise = getBoolPref(_prefShowSunrise, true);
+      _showSunset = getBoolPref(_prefShowSunset, true);
+      _showSunriseAzimuth = getBoolPref(_prefShowSunriseAzimuth, true);
+      _showSunsetAzimuth = getBoolPref(_prefShowSunsetAzimuth, true);
+      _showMidday = getBoolPref(_prefShowMidday, false);
+
+      _showMoon = getBoolPref(_prefShowMoon, true);
+      _showMoonImage = getBoolPref(_prefShowMoonImage, true);
+      _showMoonrise = getBoolPref(_prefShowMoonrise, true);
+      _showMoonriseAzimuth = getBoolPref(_prefShowMoonriseAzimuth, false);
+      _showMoonset = getBoolPref(_prefShowMoonset, true);
+      _showMoonsetAzimuth = getBoolPref(_prefShowMoonsetAzimuth, false);
+      _showMoonphase = getBoolPref(_prefShowMoonphase, true);
+      _showNextFullMoon = getBoolPref(_prefShowNextFullMoon, true);
+      _showNextNewMoon = getBoolPref(_prefShowNextNewMoon, false);
+
+      _showHide();
     }
   },
   
@@ -139,6 +181,32 @@ var suncult = {
 //      dump(name + ": " + result + "\n");
     }
     return result;
+  },
+
+  _showHide: function() {
+    with (this) {
+      document.getElementById("suncult-sun").collapsed = !_showSun;
+      document.getElementById("suncult-sun-img-box").collapsed = !_showSunImage;
+      document.getElementById("suncult-row-twilightStart").collapsed = !_showSunTwilightStart;
+      document.getElementById("suncult-row-sunrise").collapsed = !_showSunrise;
+      document.getElementById("suncult-row-midday").collapsed = !_showMidday;
+      document.getElementById("suncult-row-sunset").collapsed = !_showSunset;
+      document.getElementById("suncult-row-sunrise-azimuth").collapsed = !_showSunriseAzimuth;
+      document.getElementById("suncult-row-sunset-azimuth").collapsed = !_showSunsetAzimuth;
+      document.getElementById("suncult-row-twilightEnd").collapsed = !_showSunTwilightEnd;
+
+      document.getElementById("suncult-moon").collapsed = !_showMoon;
+      document.getElementById("suncult-moon-img-box").collapsed = !_showMoonImage;
+      document.getElementById("suncult-row-moonrise").collapsed = !_showMoonrise;
+      document.getElementById("suncult-row-moonrise-azimuth").collapsed = !_showMoonriseAzimuth;
+      document.getElementById("suncult-row-moonset").collapsed = !_showMoonset;
+      document.getElementById("suncult-row-moonset-azimuth").collapsed = !_showMoonsetAzimuth;
+      document.getElementById("suncult-row-moonphase").collapsed = !_showMoonphase;
+      document.getElementById("suncult-row-nextFullMoon").collapsed = !_showNextFullMoon;
+      document.getElementById("suncult-row-nextNewMoon").collapsed = !_showNextNewMoon;
+
+      document.getElementById("suncult-separator").collapsed = _showMoon ^ _showSun;
+    }
   },
 
   updateSun: function(popup) {
