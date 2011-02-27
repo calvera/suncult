@@ -128,8 +128,8 @@ var suncult = {
       _showSunTwilightEnd = getBoolPref(_prefShowSunTwilightEnd, true);
       _showSunrise = getBoolPref(_prefShowSunrise, true);
       _showSunset = getBoolPref(_prefShowSunset, true);
-      _showSunriseAzimuth = getBoolPref(_prefShowSunriseAzimuth, true);
-      _showSunsetAzimuth = getBoolPref(_prefShowSunsetAzimuth, true);
+      _showSunriseAzimuth = getBoolPref(_prefShowSunriseAzimuth, false);
+      _showSunsetAzimuth = getBoolPref(_prefShowSunsetAzimuth, false);
       _showMidday = getBoolPref(_prefShowMidday, false);
 
       _showMoon = getBoolPref(_prefShowMoon, true);

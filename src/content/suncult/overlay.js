@@ -67,8 +67,8 @@ var suncult = {
   _showSunTwilightEnd: true,
   _showSunrise: true,
   _showSunset: true,
-  _showSunriseAzimuth: true,
-  _showSunsetAzimuth: true,
+  _showSunriseAzimuth: false,
+  _showSunsetAzimuth: false,
   _showMidday: false,
 
   _showMoon: true,
