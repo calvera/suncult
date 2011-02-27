@@ -35,6 +35,8 @@ var suncult = {
   _resNoMoonset: "suncult.noMoonset",
   _resMoonPrefix: "suncult.moon.",
   
+  _today: null,
+
   _twilightStart: null,
   _sunrise: null,
   _midday: null,
@@ -87,6 +89,9 @@ var suncult = {
     with (this) {
       _stringBundle = document.getElementById("suncult-string-bundle");
       _prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
+
+      _today = document.getElementById("suncult-today-today");
+
       _twilightStart = document.getElementById("suncult-twilight-start-today");
       _sunrise = document.getElementById("suncult-sunrise-today");
       _sunset = document.getElementById("suncult-sunset-today");
@@ -310,6 +315,7 @@ var suncult = {
   },
   
   onPopupShowing: function(popup) {
+    this._today.value = new Date().toLocaleDateString();
     this.updatePopupSun(popup);
     this.updatePopupMoon(popup);
   },

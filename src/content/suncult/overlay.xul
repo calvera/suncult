@@ -47,15 +47,10 @@
 
     <popupset id="suncult-popupset">
       <tooltip id="suncult-tooltip" orient="vertical" onpopupshowing="suncult.onPopupShowing(this);" noautohide="true">
-        <grid align="center">
-          <columns>
-            <column id="suncult-today"/>
-            <column id="suncult-calendar"/>
-          </columns>
           <rows>
-            <row>
-              <description value="&today;:" class="header"/>
-              <!--description value="&today;:" class="header"/-->
+            <row class="header">
+              <description value="&today;:"/>
+              <description id="suncult-today-today"/>
             </row>
             <separator id="suncult-separator-today" class="groove thin"/>
             <row>
@@ -160,7 +155,6 @@
 			        </grid>
 			      </row>
 			    </rows>
-			  </grid>
       </tooltip>
       <popup id="suncult-status-popup" position="before_end" onpopupshowing="event.preventBubble();">
         <menuitem id="popup-suncult-config" label="&config;" accesskey="&configKey;" command="cmd_suncult_config" class="menuitem-iconic menu-iconic"/>
