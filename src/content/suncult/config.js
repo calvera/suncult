@@ -32,6 +32,15 @@ var suncultConfig = {
             .getService(Components.interfaces.nsIObserverService)
             .notifyObservers(null, "SunCult:Configuration", null);
   },
+
+  onDialogCancel: function(event) {
+    // Since 'instantApply' may be active: 
+    //  there can be changed configuration values, but only a 'cancel/close' button available
+    // Ensure all our parts get notification on closure too
+    Components.classes["@mozilla.org/observer-service;1"]
+            .getService(Components.interfaces.nsIObserverService)
+            .notifyObservers(null, "SunCult:Configuration", null);
+  },
   
   onSelectCity: function(event) {
 //    dump("suncultConfig.onSelectCity\n");

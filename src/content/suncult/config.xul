@@ -17,6 +17,7 @@
         title="&title.label;"
         buttons="accept,cancel"
         ondialogaccept="suncultConfig.onDialogAccept(event);"
+        ondialogcancel="suncultConfig.onDialogCancel(event);"
         windowtype="SunCult:Configuration"
         type="prefwindow"
         >
