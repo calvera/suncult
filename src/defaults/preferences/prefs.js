@@ -30,3 +30,5 @@ pref("extensions.suncult.show.moon.moonset.azimuth", false);
 pref("extensions.suncult.show.moon.phase", true);
 pref("extensions.suncult.show.moon.next-full", true);
 pref("extensions.suncult.show.moon.next-new", false);
+
+pref("extensions.suncult.show.moon.time-as-date", true);

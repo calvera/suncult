@@ -27,6 +27,7 @@ var suncult = {
   _prefShowMoonphase: suncultPrefix + "show.moon.phase",
   _prefShowNextFullMoon: suncultPrefix + "show.moon.next-full",
   _prefShowNextNewMoon: suncultPrefix + "show.moon.next-new",
+  _prefShowMoonDate: suncultPrefix + "show.moon.time-as-date",
 
   _resNoMoonrise: "suncult.noMoonrise",
   _resNoMoonset: "suncult.noMoonset",
@@ -141,6 +142,7 @@ var suncult = {
       _showMoonphase = getBoolPref(_prefShowMoonphase, true);
       _showNextFullMoon = getBoolPref(_prefShowNextFullMoon, true);
       _showNextNewMoon = getBoolPref(_prefShowNextNewMoon, false);
+      _showMoonDate = getBoolPref(_prefShowMoonDate, true);
 
       _showHide();
     }
@@ -249,12 +251,35 @@ var suncult = {
       _moonPhase.value = getResource(_resMoonPrefix + suncultCalcMoon.phaseName(day));
       var dfm = suncultCalcMoon.daysToFullMoon(day);
       var d = Math.floor(dfm);
-      var h = Math.floor((dfm - d) * 24)
-      _nextFullMoon.value = d + "d " + h + "h";
+      var h = Math.floor((dfm - d) * 24);
+
+      var myDate = new Date();
+      var str = null;
+
+      if (_showMoonDate) {
+	  myDate.setDate(day.getDate() + d);
+	  myDate.setHours(myDate.getHours() + h);
+	  str = myDate.toLocaleDateString() + " " + myDate.toLocaleTimeString();
+	  // Don't need to the second precision for date display, so hack off last three characters
+	  _nextFullMoon.value = str.substr (0, str.length - 3);
+      } else {	
+	  _nextFullMoon.value = d + "d " + h + "h";
+      }
+
       var dnm = suncultCalcMoon.daysToNewMoon(day);
       d = Math.floor(dnm);
-      h = Math.floor((dnm - d) * 24)
-      _nextNewMoon.value = d + "d " + h + "h";
+      h = Math.floor((dnm - d) * 24);
+
+      if (_showMoonDate) {
+	  myDate.setDate(day.getDate() + d);
+	  myDate.setHours(myDate.getHours() + h);
+	  str = myDate.toLocaleDateString() + " " + myDate.toLocaleTimeString();
+	  // Don't need to the second precision for date display, so hack off last three characters
+	  _nextNewMoon.value = str.substr (0, str.length - 3);
+      } else {
+	  _nextNewMoon.value = d + "d " + h + "h";
+      }
+
       _moonImg.src = getMoonImageSrc(day, 64);
 
       var result = suncultCalcMoon.riseset(parseFloat(_latitude),parseFloat(_longitude), day, _timezone, _timeFormat);

@@ -36,3 +36,4 @@
 <!ENTITY showSun.label "Show sun">
 <!ENTITY showMoon.label "Show moon">
 <!ENTITY image.label "Image">
+<!ENTITY showMoonDate.label "Show Next Full or New Moon as a Date">
