@@ -244,6 +244,23 @@ var suncult = {
       document.getElementById("suncult-row-nextNewMoon-today").collapsed = !_showNextNewMoon;
 
       document.getElementById("suncult-separator-today").collapsed = _showMoon ^ _showSun;
+
+      // Align displayed icon to match configured features to be shown - also saves UI space
+      if ( ! _showMoon && ! _showSun ) {
+	  // If both off force traditional 'dual icon'
+	  document.getElementById("suncult-status-icon-sun").hidden = false;
+	  document.getElementById("suncult-status-icon-moon").hidden = false;
+	  document.getElementById("suncult-status-icon-moon").left = 12;
+      } else {
+	  document.getElementById("suncult-status-icon-sun").hidden = !_showSun;
+	  document.getElementById("suncult-status-icon-moon").hidden = !_showMoon;
+	  // Move Moon a bit to the right if the sun is also shown
+	  if ( _showSun && _showSun )
+	      document.getElementById("suncult-status-icon-moon").left = 12;
+	  else
+	      document.getElementById("suncult-status-icon-moon").left = 0;
+      }
+
     }
   },
   
