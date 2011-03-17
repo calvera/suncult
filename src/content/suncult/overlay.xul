@@ -52,7 +52,7 @@
               <description value="&today;:"/>
               <description id="suncult-today-today"/>
             </row>
-            <separator id="suncult-separator-today" class="groove thin"/>
+            <separator id="suncult-separator-today-alwayson" class="groove thin"/>
             <row>
 			        <grid align="center">
 			          <columns>
