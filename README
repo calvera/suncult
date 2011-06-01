@@ -1,0 +1,14 @@
+To install simply use the latest suncult-<version>.xpi binary file.
+
+Dragging and dropping the xpi file into the program should start the install.
+
+Alternatively one can install via the 'Tools' menu.
+E.g Thunderbird 3.0 within the application:
+Menubar--->
+Tools->Add-Ons->Install... <select file - suncult.xpi> Wait for install timer 'Install Now' - Restart
+
+An internet search such as "how to install xpi firefox" can also help.
+
+================
+
+If you have acquired the source code - probably through svn - then running ./build.sh from the src/ directory will generate the .xpi to use.

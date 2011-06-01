@@ -1,3 +1,12 @@
+1.3.20110601
+- Also see svn history for full details & SourceForge for closed bugs.
+- Make available for latest FF & TB
+- SF#1478567: Ability to show dates for events (rather than time to go)
+- SF#3191556: Fix immediate configuration changes
+- SF#1479104: Improved icon display to match features shown
+- Improved popup layout & show todays date
+- Added Calendar mode to show information for any day
+
 1.0.20061106
 - brazilian locale fixes
 
