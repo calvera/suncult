@@ -23,6 +23,7 @@
     <em:contributor>Victor Martinez (Spannish)</em:contributor>
     <em:contributor>Marcos Perini (Brazilian)</em:contributor>
     <em:contributor>Mihaly Gyulai (Hungarian)</em:contributor>
+    <em:developer>Rob Norris</em:developer>
     <em:targetApplication RDF:resource="rdf:#$CgP6L"/>
     <em:targetApplication RDF:resource="rdf:#$HgP6L"/>
     <em:targetApplication RDF:resource="rdf:#$MgP6L"/>
