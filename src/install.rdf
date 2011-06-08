@@ -23,15 +23,15 @@
     <em:contributor>Victor Martinez (Spannish)</em:contributor>
     <em:contributor>Marcos Perini (Brazilian)</em:contributor>
     <em:contributor>Mihaly Gyulai (Hungarian)</em:contributor>
-    <em:file RDF:resource="urn:mozilla:extension:file:suncult.jar"/>
     <em:targetApplication RDF:resource="rdf:#$CgP6L"/>
     <em:targetApplication RDF:resource="rdf:#$HgP6L"/>
     <em:targetApplication RDF:resource="rdf:#$MgP6L"/>
+    <em:type>2</em:type>
   </RDF:Description>
   <RDF:Description RDF:about="rdf:#$HgP6L"
                    em:id="{3550f703-e582-4d05-9a08-453d09bdfdc6}"
                    em:minVersion="1.5"
-                   em:maxVersion="3.1+" />
+                   em:maxVersion="3.1.*" />
   <RDF:Description RDF:about="urn:mozilla:extension:file:suncult.jar"
                    em:package="content/suncult/"
                    em:skin="skin/classic/suncult/">
