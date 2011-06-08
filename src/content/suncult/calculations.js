@@ -1,8 +1,3 @@
-Date.prototype.getDOY = function() {
-var onejan = new Date(this.getFullYear(),0,1);
-return Math.ceil((this - onejan) / 86400000);
-}
-
 var suncultUtils = {
   formatTime: function(h, m, tf) {
   if (h > 23) h -= 24;
@@ -26,7 +21,12 @@ var suncultUtils = {
   } else {
     return (h < 10 ? "0" : "") + h + ":" + minutes;
   }
-}
+  },
+
+    getDOY: function(d) {
+	var onejan = new Date(d.getFullYear(),0,1);
+	return Math.ceil((d - onejan) / 86400000);
+    }
 };
 
 var suncultCalcSun = {
@@ -449,7 +449,7 @@ formValues: function(lat, lon, _date, tzOffset, tf, srAngle, twAngle)
     srise = suncultUtils.formatTime(sris_h, sris_m, tf);     
     sset = suncultUtils.formatTime(sset_h, sset_m, tf);
     
-    yearday = _date.getDOY();
+    yearday = suncultUtils.getDOY(_date);
     dump("doy: " + yearday + "\n");
     sriseaz = Math.round(90 + 31 * this.cosd(0.986 * yearday + 7.9));
     ssetaz = Math.round(270 - 31 * this.cosd(0.986 * yearday + 7.9));
