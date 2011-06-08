@@ -248,7 +248,7 @@ var suncultConfig = {
     el.setAttribute("value", "0 - "+this._positionMax);
     
     //revalidate position
-    setTimeout("suncultConfig.validatePos()", 5);
+    suncultConfig.validatePos();
   },
     
   setElement: function(aName, aPref, aType, aGroup){
