@@ -1,6 +1,8 @@
 <!ENTITY suncult "Sun Cult">
 <!ENTITY config "Nastavitve Sun Cult-a">
 <!ENTITY configKey "C">
+<!ENTITY calendar "Sun Cult Koledar">
+<!ENTITY calendarKey "l">
 <!ENTITY twilightStart "Pričetek somraka">
 <!ENTITY sunrise "Sončni vzhod">
 <!ENTITY sunset "Sončni zahod">

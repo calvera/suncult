@@ -1,6 +1,8 @@
 <!ENTITY suncult "Sun Cult">
 <!ENTITY config "Configurazione di Sun Cult">
 <!ENTITY configKey "C">
+<!ENTITY calendar "Sun Cult Calendar">
+<!ENTITY calendarKey "l">
 <!ENTITY twilightStart "Inizio del crepuscolo">
 <!ENTITY sunrise "Alba">
 <!ENTITY sunset "Tramonto">

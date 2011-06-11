@@ -1,6 +1,8 @@
 <!ENTITY suncult "Sun Cult">
 <!ENTITY config "Sun Cult Asetukset">
 <!ENTITY configKey "C">
+<!ENTITY calendar "Sun Cult Kalenteri">
+<!ENTITY calendarKey "l">
 <!ENTITY twilightStart "Valonkajastus Alkaa">
 <!ENTITY sunrise "Auringonnousu">
 <!ENTITY sunset "Auringonlasku">

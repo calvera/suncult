@@ -1,6 +1,8 @@
 <!ENTITY suncult "Sun Cult">
 <!ENTITY config "Настройки Sun Cult">
 <!ENTITY configKey "c">
+<!ENTITY calendar "календарь Sun Cult">
+<!ENTITY calendarKey "S">
 <!ENTITY twilightStart "Начало сумерек">
 <!ENTITY sunrise "Восход">
 <!ENTITY sunset "Закат">

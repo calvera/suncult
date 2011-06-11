@@ -1,6 +1,8 @@
 <!ENTITY suncult "Kult Slunce">
 <!ENTITY config "Nastavení Kultu Slunce">
 <!ENTITY configKey "N">
+<!ENTITY config "Kalendář Slunce">
+<!ENTITY configKey "K">
 <!ENTITY twilightStart "Začátek úsvitu">
 <!ENTITY sunrise "Východ slunce">
 <!ENTITY sunset "Západ slunce">

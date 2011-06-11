@@ -1,6 +1,8 @@
 <!ENTITY suncult "Sun Cult">
 <!ENTITY config "Sun Cult Ayarları">
 <!ENTITY configKey "C">
+<!ENTITY calendar "Sun Cult Takvim">
+<!ENTITY calendarKey "l">
 <!ENTITY twilightStart "Alacakaranlık (D)">
 <!ENTITY sunrise "Gündoğumu">
 <!ENTITY sunset "Günbatımı">
