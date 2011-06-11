@@ -149,6 +149,20 @@ var suncultConfig = {
        return top;
   },
     
+  concat: function(c1, c2) {
+      // Concats too collections into an array.
+      var c3 = new Array(c1.length + c2.length);
+      var x,y = 0;
+
+      for (x = 0; x < c1.length; x++)
+	  c3[y++] = c1[x];
+
+      for (x = 0; x < c2.length; x++)
+	  c3[y++] = c2[x];
+
+      return c3;
+  },
+
   populateBars: function() {
     // Creates the menuitems for the toolbar selector.
     var win = this.getWindow();
@@ -161,8 +175,8 @@ var suncultConfig = {
     while (popup.hasChildNodes())
       popup.removeChild(popup.firstChild);
           
-    toolbars = concat(toolbars, statusbars);
-    toolbars = concat(toolbars, menubars);
+    toolbars = this.concat(toolbars, statusbars);
+    toolbars = this.concat(toolbars, menubars);
     for (var x=0; x<toolbars.length; x++) {
       var bar = toolbars[x];
       
@@ -321,20 +335,5 @@ var suncultConfig = {
     }
   } 
 };
-
-function concat(c1, c2)
-{
-  // Concats too collections into an array.
-  var c3 = new Array(c1.length + c2.length);
-  var x,y = 0;
-
-  for (x = 0; x < c1.length; x++)
-    c3[y++] = c1[x];
-
-  for (x = 0; x < c2.length; x++)
-    c3[y++] = c2[x];
-
-  return c3;
-}
 
 window.addEventListener("load", function(e) { suncultConfig.init(e); }, false);
