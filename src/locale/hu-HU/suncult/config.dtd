@@ -36,3 +36,5 @@
 <!ENTITY showSun.label "Nap">
 <!ENTITY showMoon.label "Hold">
 <!ENTITY image.label "Kép">
+<!ENTITY showMoonDate.label "Megjelenítés Következő Teljes vagy New Moon, mint egy éve">
+

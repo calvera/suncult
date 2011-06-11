@@ -36,3 +36,4 @@
 <!ENTITY showSun.label "Näytä Aurinko">
 <!ENTITY showMoon.label "Näytä Kuu">
 <!ENTITY image.label "Kuva">
+<!ENTITY showMoonDate.label "Näytä Seuraava Koko tai New Kuu pvm">

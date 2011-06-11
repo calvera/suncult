@@ -36,3 +36,4 @@
 <!ENTITY showSun.label "Mostrar el sol">
 <!ENTITY showMoon.label "Mostrar la luna">
 <!ENTITY image.label "Imagen">
+<!ENTITY showMoonDate.label "Mostrar el siguiente Luna llena o nueva como una fecha">

@@ -36,3 +36,4 @@
 <!ENTITY showSun.label "태양 표시">
 <!ENTITY showMoon.label "달 표시">
 <!ENTITY image.label "그림">
+<!ENTITY showMoonDate.label "일자로 표시 다음 전체 또는 뉴 문">

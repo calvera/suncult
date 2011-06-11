@@ -36,3 +36,4 @@
 <!ENTITY showSun.label "太陽部份要顯示：">
 <!ENTITY showMoon.label "月亮部份要顯示：">
 <!ENTITY image.label "圖片">
+<!ENTITY showMoonDate.label "显示下一个满月或新月月球为日期">

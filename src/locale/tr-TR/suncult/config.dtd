@@ -36,3 +36,4 @@
 <!ENTITY showSun.label "Güneşi Göster">
 <!ENTITY showMoon.label "Ayı Göster">
 <!ENTITY image.label "Resim">
+<!ENTITY showMoonDate.label "Tarih olarak göster Sonraki Tam veya Yeni Ayı">

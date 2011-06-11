@@ -36,3 +36,4 @@
 <!ENTITY showSun.label "Visa sol">
 <!ENTITY showMoon.label "Visa måne">
 <!ENTITY image.label "Bild">
+<!ENTITY showMoonDate.label "Visa Nästa All eller New Måne som ett datum">

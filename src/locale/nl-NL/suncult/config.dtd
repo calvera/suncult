@@ -36,3 +36,4 @@
 <!ENTITY showSun.label "Zon weergeven">
 <!ENTITY showMoon.label "Maan weergeven">
 <!ENTITY image.label "Afbeelding">
+<!ENTITY showMoonDate.label "Show Volgende volle of nieuwe maan als een datum">

@@ -36,3 +36,4 @@
 <!ENTITY showSun.label "Dane dotyczące Słońca">
 <!ENTITY showMoon.label "Dane dotyczące Księżyca">
 <!ENTITY image.label "Ikona">
+<!ENTITY showMoonDate.label "Pokaż Następny Pełny lub Księżyc w nowiu jako data">

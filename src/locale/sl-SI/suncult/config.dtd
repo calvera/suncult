@@ -36,3 +36,4 @@
 <!ENTITY showSun.label "Pokaži sonce">
 <!ENTITY showMoon.label "Pokaži luno">
 <!ENTITY image.label "Slika">
+<!ENTITY showMoonDate.label "Pokaži Naslednje Celotno ali Nova Luno kot datum">

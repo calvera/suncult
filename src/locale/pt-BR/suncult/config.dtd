@@ -36,3 +36,4 @@
 <!ENTITY showSun.label "Exibir sol">
 <!ENTITY showMoon.label "Exibir lua">
 <!ENTITY image.label "Imagem">
+<!ENTITY showMoonDate.label "Mostrar lua seguinte cheia ou nova, como uma data">

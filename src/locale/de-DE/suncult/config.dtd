@@ -36,3 +36,5 @@
 <!ENTITY showSun.label "Sonne anzeigen">
 <!ENTITY showMoon.label "Mond anzeigen">
 <!ENTITY image.label "Grafik">
+<!ENTITY showMoonDate.label "Nächste anzeigen Voll-oder Neumond als ein Datum">
+

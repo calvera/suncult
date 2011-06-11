@@ -36,3 +36,4 @@
 <!ENTITY showSun.label "显示日相">
 <!ENTITY showMoon.label "显示月相">
 <!ENTITY image.label "图片">
+<!ENTITY showMoonDate.label "显示下一个满月或新月月球为日期">

@@ -36,3 +36,4 @@
 <!ENTITY showSun.label "Показать Солнце">
 <!ENTITY showMoon.label "Показать Луну">
 <!ENTITY image.label "Изображение">
+<!ENTITY showMoonDate.label "Показать Следующая Полное или новолуние, как дата">

@@ -36,3 +36,4 @@
 <!ENTITY showSun.label "Slunce">
 <!ENTITY showMoon.label "Měsíc">
 <!ENTITY image.label "Obrázek">
+<!ENTITY showMoonDate.label "Zobrazit Další Úplné nebo New Moon jako datum">
