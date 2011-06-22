@@ -399,8 +399,6 @@ var suncult = {
       h = Math.floor((dnm - d) * 24);
 
       if (_showMoonDate) {
-	  // Reset myDate
-	  myDate = today;
 	  myDate.setDate(today.getDate() + d);
 	  myDate.setHours(myDate.getHours() + h);
 	  str = myDate.toLocaleDateString() + " " + myDate.toLocaleTimeString();
