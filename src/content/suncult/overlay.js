@@ -81,6 +81,7 @@ var suncult = {
   _showMoonphase: true,
   _showNextFullMoon: true,
   _showNextNewMoon: false,
+  _showMoonDate: true,
 
   _prefs: null,
   _stringBundle: null,

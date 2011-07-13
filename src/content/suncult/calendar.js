@@ -37,6 +37,8 @@ var suncult = {
   _sunrise: null,
   _midday: null,
   _sunset: null,
+  _sunriseAzimuth: null,
+  _sunsetAzimuth: null,
   _twilightEnd: null,
   _moonPhaseImg: null,
   _moonImg: null,
