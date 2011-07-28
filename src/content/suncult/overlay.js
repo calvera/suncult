@@ -111,7 +111,7 @@ var suncult = {
       _moonRiseAz = document.getElementById("suncult-moonrise-azimuth-today");
       _moonSetAz = document.getElementById("suncult-moonset-azimuth-today");
       readPreferences();
-      if (!_prefs.prefHasUserValue(_prefLongitude) || !_prefs.prefHasUserValue(_prefLatitude)) {
+      if (!_prefs.prefHasUserValue(_prefLongitude) && !_prefs.prefHasUserValue(_prefLatitude)) {
         var module = this;
         setTimeout(function() { module.showConfig(); }, 250);
         }
