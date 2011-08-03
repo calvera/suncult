@@ -9,7 +9,7 @@
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="suncult@sf.net"
                    em:name="Sun Cult"
-                   em:version="1.3.20110715"
+                   em:version="1.3.20110803"
                    em:description="Worldwide Sunrise, Sunset, Twilight, Moonrise and Moonset Times"
                    em:creator="Karel Sommer"
                    em:homepageURL="http://suncult.sourceforge.net"
