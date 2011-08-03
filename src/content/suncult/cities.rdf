@@ -16,13 +16,13 @@
     <sc:country RDF:about="http://suncult.sf.net/ASIA/CHINA" sc:name="CHINA"/>
       <sc:city RDF:about="http://suncult.sf.net/ASIA/CHINA/Chongquing" sc:name="Chongquing" sc:latitude="29N33" sc:longitude="106E33"/>
       <sc:city RDF:about="http://suncult.sf.net/ASIA/CHINA/Shanghai" sc:name="Shanghai" sc:latitude="31N12" sc:longitude="121E26"/>
-			<sc:city RDF:about="http://suncult.sf.net/ASIA/CHINA/Beijing" sc:name="Beijing" sc:latitude="39N54" sc:longitude="116E28"/>
-			<sc:city RDF:about="http://suncult.sf.net/ASIA/CHINA/Guangzhou" sc:name="Guangzhou" sc:latitude="23N10" sc:longitude="113E18"/>
-			<sc:city RDF:about="http://suncult.sf.net/ASIA/CHINA/Tianjin" sc:name="Tianjin" sc:latitude="39N10" sc:longitude="117E10"/>
-			<sc:city RDF:about="http://suncult.sf.net/ASIA/CHINA/Xian" sc:name="Xian" sc:latitude="34N15" sc:longitude="108E55"/>
-			<sc:city RDF:about="http://suncult.sf.net/ASIA/CHINA/Chengdu" sc:name="Chengdu" sc:latitude="30N39" sc:longitude="104E04"/>
-			<sc:city RDF:about="http://suncult.sf.net/ASIA/CHINA/Nanjing" sc:name="Nanjing" sc:latitude="32N03" sc:longitude="118E46"/>  
-			<sc:city RDF:about="http://suncult.sf.net/ASIA/CHINA/Shenyang" sc:name="Shenyang" sc:latitude="41N48" sc:longitude="123E23"/>    
+      <sc:city RDF:about="http://suncult.sf.net/ASIA/CHINA/Beijing" sc:name="Beijing" sc:latitude="39N54" sc:longitude="116E28"/>
+      <sc:city RDF:about="http://suncult.sf.net/ASIA/CHINA/Guangzhou" sc:name="Guangzhou" sc:latitude="23N10" sc:longitude="113E18"/>
+      <sc:city RDF:about="http://suncult.sf.net/ASIA/CHINA/Tianjin" sc:name="Tianjin" sc:latitude="39N10" sc:longitude="117E10"/>
+      <sc:city RDF:about="http://suncult.sf.net/ASIA/CHINA/Xian" sc:name="Xian" sc:latitude="34N15" sc:longitude="108E55"/>
+      <sc:city RDF:about="http://suncult.sf.net/ASIA/CHINA/Chengdu" sc:name="Chengdu" sc:latitude="30N39" sc:longitude="104E04"/>
+      <sc:city RDF:about="http://suncult.sf.net/ASIA/CHINA/Nanjing" sc:name="Nanjing" sc:latitude="32N03" sc:longitude="118E46"/>
+      <sc:city RDF:about="http://suncult.sf.net/ASIA/CHINA/Shenyang" sc:name="Shenyang" sc:latitude="41N48" sc:longitude="123E23"/>
     <sc:country RDF:about="http://suncult.sf.net/ASIA/HONGxKONG" sc:name="HONG KONG"/>
       <sc:city RDF:about="http://suncult.sf.net/ASIA/HONGxKONG/Hong_Kong" sc:name="Hong Kong" sc:latitude="22N18" sc:longitude="114E10"/>
     <sc:country RDF:about="http://suncult.sf.net/ASIA/INDIA" sc:name="INDIA"/>
@@ -2392,6 +2392,13 @@
           <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/CHINA">
             <RDF:li RDF:resource="http://suncult.sf.net/ASIA/CHINA/Chongquing"/>
             <RDF:li RDF:resource="http://suncult.sf.net/ASIA/CHINA/Shanghai"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/CHINA/Beijing"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/CHINA/Guangzhou"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/CHINA/Tianjin"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/CHINA/Xian"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/CHINA/Chengdu"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/CHINA/Nanjing"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/CHINA/Shenyang"/>
           </RDF:Seq>
 				</RDF:li>
 				<RDF:li>
