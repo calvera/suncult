@@ -244,10 +244,16 @@
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM" sc:name="UNITED KINGDOM"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Belfast" sc:name="Belfast" sc:latitude="54N36" sc:longitude="5W55"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Birmingham" sc:name="Birmingham" sc:latitude="52N29" sc:longitude="1W56"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Bristol" sc:name="Bristol" sc:latitude="51N27" sc:longitude="2W35"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Cardiff" sc:name="Cardiff" sc:latitude="51N28" sc:longitude="3W10"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Edinburgh" sc:name="Edinburgh" sc:latitude="55N55" sc:longitude="3W11"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Glasgow" sc:name="Glasgow" sc:latitude="55N52" sc:longitude="4W17"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Leeds" sc:name="Leeds" sc:latitude="53N48" sc:longitude="1W33"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/London" sc:name="London" sc:latitude="51N29" sc:longitude="0E0"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Liverpool" sc:name="Liverpool" sc:latitude="53N20" sc:longitude="3W0"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Manchester" sc:name="Manchester" sc:latitude="53N28" sc:longitude="2W14"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Portsmouth" sc:name="Portsmouth" sc:latitude="50N48" sc:longitude="1W04"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Sheffield" sc:name="Sheffield" sc:latitude="53N23" sc:longitude="1W28"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/UKRAINE" sc:name="UKRAINE"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/UKRAINE/Kiev" sc:name="Kiev" sc:latitude="50N27" sc:longitude="30E30"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/UKRAINE/Kharkov" sc:name="Kharkov" sc:latitude="50N0" sc:longitude="36E14"/>
@@ -2929,10 +2935,16 @@
           <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM">
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Belfast"/>
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Birmingham"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Bristol"/>
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Cardiff"/>
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Edinburgh"/>
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Glasgow"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Leeds"/>
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/London"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Liverpool"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Manchester"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Portsmouth"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UNITEDxKINGDOM/Sheffield"/>
           </RDF:Seq>
 				</RDF:li>
 				<RDF:li>
