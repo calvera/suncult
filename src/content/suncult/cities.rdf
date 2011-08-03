@@ -30,9 +30,14 @@
       <sc:city RDF:about="http://suncult.sf.net/ASIA/INDIA/Bangalore" sc:name="Bangalore" sc:latitude="12N57" sc:longitude="77E37"/>
       <sc:city RDF:about="http://suncult.sf.net/ASIA/INDIA/Bombay" sc:name="Bombay" sc:latitude="18N54" sc:longitude="72E49"/>
       <sc:city RDF:about="http://suncult.sf.net/ASIA/INDIA/Calcutta" sc:name="Calcutta" sc:latitude="22N32" sc:longitude="88E20"/>
+      <sc:city RDF:about="http://suncult.sf.net/ASIA/INDIA/Hyderabad" sc:name="Hyderabad" sc:latitude="17N22" sc:longitude="78E28"/>
+      <sc:city RDF:about="http://suncult.sf.net/ASIA/INDIA/Jaipur" sc:name="Jaipur" sc:latitude="26N56" sc:longitude="75E49"/>
+      <sc:city RDF:about="http://suncult.sf.net/ASIA/INDIA/Kanpur" sc:name="Kanpur" sc:latitude="26N28" sc:longitude="80E20"/>
       <sc:city RDF:about="http://suncult.sf.net/ASIA/INDIA/Madras" sc:name="Madras" sc:latitude="13N4" sc:longitude="80E15"/>
       <sc:city RDF:about="http://suncult.sf.net/ASIA/INDIA/Nagpur" sc:name="Nagpur" sc:latitude="21N9" sc:longitude="79E7"/>
       <sc:city RDF:about="http://suncult.sf.net/ASIA/INDIA/New_Delhi" sc:name="New Delhi" sc:latitude="28N35" sc:longitude="77E12"/>
+      <sc:city RDF:about="http://suncult.sf.net/ASIA/INDIA/Pune" sc:name="Pune" sc:latitude="18N31" sc:longitude="73E51"/>
+      <sc:city RDF:about="http://suncult.sf.net/ASIA/INDIA/Surat" sc:name="Surat" sc:latitude="21N10" sc:longitude="72E50"/>
     <sc:country RDF:about="http://suncult.sf.net/ASIA/INDONESIA" sc:name="INDONESIA"/>
       <sc:city RDF:about="http://suncult.sf.net/ASIA/INDONESIA/Djakarta" sc:name="Djakarta" sc:latitude="6S11" sc:longitude="106E50"/>
       <sc:city RDF:about="http://suncult.sf.net/ASIA/INDONESIA/Kupang" sc:name="Kupang" sc:latitude="10S10" sc:longitude="123E34"/>
@@ -54,7 +59,9 @@
       <sc:city RDF:about="http://suncult.sf.net/ASIA/JAPAN/Fukuoka" sc:name="Fukuoka" sc:latitude="33N35" sc:longitude="130E27"/>
       <sc:city RDF:about="http://suncult.sf.net/ASIA/JAPAN/Sapporo" sc:name="Sapporo" sc:latitude="43N4" sc:longitude="141E21"/>
       <sc:city RDF:about="http://suncult.sf.net/ASIA/JAPAN/Tokyo" sc:name="Tokyo" sc:latitude="35N41" sc:longitude="139E46"/>
+      <sc:city RDF:about="http://suncult.sf.net/ASIA/JAPAN/Yokohama" sc:name="Yokohama" sc:latitude="35N27" sc:longitude="139E38"/>
     <sc:country RDF:about="http://suncult.sf.net/ASIA/KOREA" sc:name="KOREA"/>
+      <sc:city RDF:about="http://suncult.sf.net/ASIA/KOREA/Busan" sc:name="Busan" sc:latitude="35N11" sc:longitude="129E04"/>
       <sc:city RDF:about="http://suncult.sf.net/ASIA/KOREA/Pyongyang" sc:name="Pyongyang" sc:latitude="39N2" sc:longitude="125E41"/>
       <sc:city RDF:about="http://suncult.sf.net/ASIA/KOREA/Seoul" sc:name="Seoul" sc:latitude="37N34" sc:longitude="126E58"/>
     <sc:country RDF:about="http://suncult.sf.net/ASIA/LEBANON" sc:name="LEBANON"/>
@@ -107,6 +114,7 @@
     <sc:country RDF:about="http://suncult.sf.net/AFRICA/CONGO" sc:name="CONGO"/>
       <sc:city RDF:about="http://suncult.sf.net/AFRICA/CONGO/Brazzaville" sc:name="Brazzaville" sc:latitude="4S15" sc:longitude="15E15"/>
     <sc:country RDF:about="http://suncult.sf.net/AFRICA/EGYPT" sc:name="EGYPT"/>
+      <sc:city RDF:about="http://suncult.sf.net/AFRICA/EGYPT/Alexandria" sc:name="Alexandria" sc:latitude="31N12" sc:longitude="29E55"/>
       <sc:city RDF:about="http://suncult.sf.net/AFRICA/EGYPT/Cairo" sc:name="Cairo" sc:latitude="29N52" sc:longitude="31E20"/>
     <sc:country RDF:about="http://suncult.sf.net/AFRICA/ETHIOPIA" sc:name="ETHIOPIA"/>
       <sc:city RDF:about="http://suncult.sf.net/AFRICA/ETHIOPIA/Addis_Ababa" sc:name="Addis Ababa" sc:latitude="90N2" sc:longitude="38E45"/>
@@ -133,6 +141,7 @@
       <sc:city RDF:about="http://suncult.sf.net/AFRICA/SOMALIA/Mogadiscio" sc:name="Mogadiscio" sc:latitude="2N2" sc:longitude="49E19"/>
     <sc:country RDF:about="http://suncult.sf.net/AFRICA/SOUTHxAFRICA" sc:name="SOUTH AFRICA"/>
       <sc:city RDF:about="http://suncult.sf.net/AFRICA/SOUTHxAFRICA/Cape_Town" sc:name="Cape Town" sc:latitude="33S56" sc:longitude="18E29"/>
+      <sc:city RDF:about="http://suncult.sf.net/AFRICA/SOUTHxAFRICA/Durban" sc:name="Durban" sc:latitude="33S56" sc:longitude="18E29"/>
       <sc:city RDF:about="http://suncult.sf.net/AFRICA/SOUTHxAFRICA/Johannesburg" sc:name="Johannesburg" sc:latitude="26S11" sc:longitude="28E3"/>
       <sc:city RDF:about="http://suncult.sf.net/AFRICA/SOUTHxAFRICA/Pretoria" sc:name="Pretoria" sc:latitude="25S45" sc:longitude="28E14"/>
     <sc:country RDF:about="http://suncult.sf.net/AFRICA/SUDAN" sc:name="SUDAN"/>
@@ -2418,9 +2427,14 @@
             <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/Bangalore"/>
             <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/Bombay"/>
             <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/Calcutta"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/Hyderabad"/>
             <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/Madras"/>
-            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/Nagpur"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/Madras"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/Jaipur"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/Kanpur"/>
             <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/New_Delhi"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/Pune"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/INDIA/Surat"/>
           </RDF:Seq>
 				</RDF:li>
 				<RDF:li>
@@ -2462,6 +2476,7 @@
             <RDF:li RDF:resource="http://suncult.sf.net/ASIA/JAPAN/Fukuoka"/>
             <RDF:li RDF:resource="http://suncult.sf.net/ASIA/JAPAN/Sapporo"/>
             <RDF:li RDF:resource="http://suncult.sf.net/ASIA/JAPAN/Tokyo"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/JAPAN/Yokohama"/>
           </RDF:Seq>
 				</RDF:li>
 				<RDF:li>
@@ -2471,6 +2486,7 @@
 				</RDF:li>
 				<RDF:li>
           <RDF:Seq RDF:about="http://suncult.sf.net/ASIA/KOREA">
+            <RDF:li RDF:resource="http://suncult.sf.net/ASIA/KOREA/Busan"/>
             <RDF:li RDF:resource="http://suncult.sf.net/ASIA/KOREA/Pyongyang"/>
             <RDF:li RDF:resource="http://suncult.sf.net/ASIA/KOREA/Seoul"/>
           </RDF:Seq>
@@ -2640,6 +2656,7 @@
 				</RDF:li>
 				<RDF:li>
           <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/EGYPT">
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/EGYPT/Alexandria"/>
             <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/EGYPT/Cairo"/>
           </RDF:Seq>
 				</RDF:li>
@@ -2702,6 +2719,7 @@
 				<RDF:li>
           <RDF:Seq RDF:about="http://suncult.sf.net/AFRICA/SOUTHxAFRICA">
             <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/SOUTHxAFRICA/Cape_Town"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/SOUTHxAFRICA/Durban"/>
             <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/SOUTHxAFRICA/Johannesburg"/>
             <RDF:li RDF:resource="http://suncult.sf.net/AFRICA/SOUTHxAFRICA/Pretoria"/>
           </RDF:Seq>
