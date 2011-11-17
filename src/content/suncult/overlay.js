@@ -382,13 +382,13 @@ var suncult = {
       var d = Math.floor(dfm);
       var h = Math.floor((dfm - d) * 24);
 
-      var myDate = new Date();
       var str = null;
 
+      var myDate1 = new Date();
       if (_showMoonDate) {
-	  myDate.setDate(today.getDate() + d);
-	  myDate.setHours(myDate.getHours() + h);
-	  str = myDate.toLocaleDateString() + " " + myDate.toLocaleTimeString();
+	  myDate1.setDate(today.getDate() + d);
+	  myDate1.setHours(myDate1.getHours() + h);
+	  str = myDate1.toLocaleDateString() + " " + myDate1.toLocaleTimeString();
 	  // Don't need to the second precision for date display, so hack off last three characters
 	  _nextFullMoon.value = str.substr (0, str.length - 3);
       } else {
@@ -399,10 +399,11 @@ var suncult = {
       d = Math.floor(dnm);
       h = Math.floor((dnm - d) * 24);
 
+      var myDate2 = new Date();
       if (_showMoonDate) {
-	  myDate.setDate(today.getDate() + d);
-	  myDate.setHours(myDate.getHours() + h);
-	  str = myDate.toLocaleDateString() + " " + myDate.toLocaleTimeString();
+	  myDate2.setDate(today.getDate() + d);
+	  myDate2.setHours(myDate2.getHours() + h);
+	  str = myDate2.toLocaleDateString() + " " + myDate2.toLocaleTimeString();
 	  // Don't need to the second precision for date display, so hack off last three characters
 	  _nextNewMoon.value = str.substr (0, str.length - 3);
       } else {
