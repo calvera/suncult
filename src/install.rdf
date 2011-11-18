@@ -68,7 +68,7 @@
   <RDF:Description RDF:about="rdf:#$MgP6L"
                    em:id="{a23983c0-fd0e-11dc-95ff-0800200c9a66}"
                    em:minVersion="4.0.*"
-                   em:maxVersion="10.0.*" />
+                   em:maxVersion="10.*" />
   <!-- SeaMonkey -->
   <RDF:Description RDF:about="rdf:#$SgP6L"
                    em:id="{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}"
