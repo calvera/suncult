@@ -93,7 +93,7 @@ var suncult = {
             .addObserver(this, "SunCult:Configuration", false);      
       update();
                   
-      initialized = true;
+      //initialized = true;
     }
 //    dump("leaving suncult.init\n");
   },
@@ -303,7 +303,7 @@ var suncult = {
   },
     
   getMoonPhase: function(xdate) {
-      thePhase = Math.floor(this.getMoonPhasePercent(xdate) * .279);
+      var thePhase = Math.floor(this.getMoonPhasePercent(xdate) * .279);
       return (this._latitude < 0) ? 27 - thePhase : thePhase;
   },
   

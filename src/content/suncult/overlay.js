@@ -42,7 +42,10 @@ var suncult = {
   _sunrise: null,
   _midday: null,
   _sunset: null,
+  _sunriseAzimuth : null,
+  _sunsetAzimuth : null,
   _twilightEnd: null,
+
   _moonPhaseImg: null,
   _moonImg: null,
   _moonPhase: null,
@@ -121,7 +124,7 @@ var suncult = {
       Components.classes["@mozilla.org/observer-service;1"]
             .getService(Components.interfaces.nsIObserverService)
             .addObserver(this, "SunCult:Configuration", false);      
-      initialized = true;
+      //initialized = true;
     }
 //    dump("leaving suncult.init\n");
   },
@@ -431,7 +434,7 @@ var suncult = {
   },
     
   getMoonPhase: function(xdate) {
-      thePhase = Math.floor(this.getMoonPhasePercent(xdate) * .279);
+      var thePhase = Math.floor(this.getMoonPhasePercent(xdate) * .279);
       return (this._latitude < 0) ? 27 - thePhase : thePhase;
   },
   
@@ -463,7 +466,8 @@ var suncult = {
   },
   
   schedule: function() {
-    module = this;
+    var module = this;
+    // Update every minute
     setTimeout(function() { module.trigger(); }, 60000);
   }
 };
