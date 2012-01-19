@@ -433,7 +433,7 @@ formValues: function(lat, lon, _date, tzOffset, tf, srAngle, twAngle)
   var sriseaz;
   var ssetaz;
   var ssouth = suncultUtils.formatTime(sSouthT_h, sSouthT_m, tf);
-  
+
   if(this.twStatus == 0){
     twStart = suncultUtils.formatTime(twst_h, twst_m, tf);     
     twEnd = suncultUtils.formatTime(twen_h, twen_m, tf);
@@ -459,7 +459,45 @@ formValues: function(lat, lon, _date, tzOffset, tf, srAngle, twAngle)
     sset = "na";
   }
 
-  return [ twStart, twEnd, srise, sset, ssouth, sriseaz, ssetaz ];
+    // enum 0 = normal, 1 = sunrise/sunset, 2 = nighttime
+    var sun_image_type = 0;
+    var hh;
+    var mm;
+
+    var hhmm;
+    var twst_hhmm;
+    var twen_hhmm;
+    var sris_hhmm;
+    var sset_hhmm;
+
+    if ((this.twStatus == 0) && (this.srStatus == 0)) {
+
+	// Now
+	hh = _date.getHours();
+	mm = _date.getMinutes();
+
+	// Convert into a total number of minutes to make comparisons easier
+	hhmm = (hh * 60) + mm;
+	twst_hhmm = (twst_h * 60) + twst_m;
+	twen_hhmm = (twen_h * 60) + twen_m;
+	
+	sris_hhmm = (sris_h * 60) + sris_m;
+	sset_hhmm = (sset_h * 60) + sset_m;
+
+	// Compare
+	if ( ( hhmm > twst_hhmm && hhmm < sris_hhmm ) ||
+	     ( hhmm > sset_hhmm && hhmm < twen_hhmm ) ) {
+	    // Either in sunrise or sunset period
+	    sun_image_type = 1;
+	}
+	else if ( hhmm < twst_hhmm || hhmm > twen_hhmm ) {
+	    // Before or after twilight - thus night time
+	    sun_image_type = 2;
+	}
+
+    }
+
+    return [ twStart, twEnd, srise, sset, ssouth, sriseaz, ssetaz, sun_image_type ];
 }
 
 

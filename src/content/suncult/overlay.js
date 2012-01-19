@@ -45,6 +45,8 @@ var suncult = {
   _sunriseAzimuth : null,
   _sunsetAzimuth : null,
   _twilightEnd: null,
+  _sunImg: null,
+  _sunShadeImg: null,
 
   _moonPhaseImg: null,
   _moonImg: null,
@@ -97,6 +99,7 @@ var suncult = {
 
       _today = document.getElementById("suncult-today-today");
 
+      _sunImg = document.getElementById("suncult-sun-today-img");
       _twilightStart = document.getElementById("suncult-twilight-start-today");
       _sunrise = document.getElementById("suncult-sunrise-today");
       _sunset = document.getElementById("suncult-sunset-today");
@@ -104,6 +107,7 @@ var suncult = {
       _sunsetAzimuth = document.getElementById("suncult-sunset-azimuth-today");
       _midday = document.getElementById("suncult-midday-today");
       _twilightEnd = document.getElementById("suncult-twilight-end-today");
+      _sunShadeImg = document.getElementById("suncult-status-icon-sun");
       _moonPhaseImg = document.getElementById("suncult-status-icon-moon");
       _moonImg = document.getElementById("suncult-moon-today-img");
       _moonPhase = document.getElementById("suncult-moonphase-today");
@@ -372,6 +376,8 @@ var suncult = {
       _midday.value = result[4];
       _sunriseAzimuth.value = result[5];
       _sunsetAzimuth.value = result[6];
+
+      _sunImg.src = getSunImageSrc(result[7], 64);
     }
   },
   
@@ -451,10 +457,36 @@ var suncult = {
     return dir + base + delim + phase + delim + size + ext;
   },
 
-  updateStatusBar: function() {
-    var imgsrc = this.getMoonImageSrc(new Date(), 20);
-    this._moonPhaseImg.src = imgsrc;
-  },
+    getSunImageSrc: function(suntype, size) {
+	var dir = "chrome://suncult/content/images/";
+	var base = "sun_";
+	var ext = ".png";
+
+	if (suntype == 1) {
+	    return dir + base + "riseset_" + size + ext;
+	}
+	else if (suntype == 2) {
+	    return dir + base + "night_" + size + ext;
+	}
+	else {
+	    // Normal daytime
+	    return dir + base + size + ext;
+	}
+    },
+
+    updateStatusBar: function() {
+	var moonimgsrc = this.getMoonImageSrc(new Date(), 20);
+	this._moonPhaseImg.src = moonimgsrc;
+
+	//
+	var today = new Date();
+	var lat = parseFloat(this._latitude);
+	var lon = parseFloat(this._longitude);
+	var result = suncultCalcSun.formValues(lat, lon, today, this._timezone, this._timeFormat, this._srAngle, this._twAngle);
+
+	var sunimgsrc = this.getSunImageSrc(result[7], 20);
+	this._sunShadeImg.src = sunimgsrc;
+    },
   
   showAlerts: function() {
   },
