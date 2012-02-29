@@ -1,3 +1,23 @@
+/*
+ * Some of the algorithms for this have come from:
+ *
+ * Low-precision formulae for planetary positions
+ * Van Flandern & Pulkkinen, 1979
+ * Astrophysical Journal Supplement Series, vol. 41, Nov. 1979, p. 391-411.
+ *
+ * ATM see: http://adsabs.harvard.edu/abs/1979ApJS...41..391V
+ *
+ * Also referenced is - Jean Meeus, "Astronomical Algorithms", Willmann-Bell, 1991.
+ * 
+ * Cf. with published data on Moon Times using "Astronomical Algorithms":
+ *   http://eclipse.gsfc.nasa.gov/phase/phases2001.html
+ * 
+ * NOTE: At present there seems a discrepancy in the values calculated here with Suncult,
+ *  seemingly ranging from 1-16 hours earlier than the above published values.
+ * Hence, this can lead to Suncult stating Moon Times that are a day earlier than other systems/paper calendars/etc...
+ *  eg. Suncult Full Moon calculated : 2012-03-07 ~ 16:00
+ *  however from above NASA source   : 2012-03-08   09:40
+ */
 var suncultUtils = {
   formatTime: function(h, m, tf) {
   if (h > 23) h -= 24;
