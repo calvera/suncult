@@ -224,16 +224,16 @@ var suncult = {
       var lon = parseFloat(_longitude);
       var result = suncultCalcSun.formValues(lat, lon, day, _timezone, _timeFormat, _srAngle, _twAngle);
       if (result[0] == "all") {
-        _twilightStart.value = getResource(_resAllTwilight)
+        _twilightStart.value = getResource(_resAllTwilight);
       } else if (result[0] == "no") {
-        _twilightStart.value = getResource(_resNoTwilight)
+        _twilightStart.value = getResource(_resNoTwilight);
       } else {
         _twilightStart.value = result[0];
       }
       if (result[1] == "all") {
-        _twilightStart.value = getResource(_resAllTwilight)
+        _twilightStart.value = getResource(_resAllTwilight);
       } else if (result[1] == "no") {
-        _twilightStart.value = getResource(_resNoTwilight)
+        _twilightStart.value = getResource(_resNoTwilight);
       } else {
         _twilightEnd.value = result[1];
       }
@@ -259,13 +259,14 @@ var suncult = {
 
       var myDate1 = new Date();
       if (_showMoonDate) {
-	  myDate1.setDate(day.getDate() + d);
-	  myDate1.setHours(myDate1.getHours() + h);
-	  str = myDate1.toLocaleDateString() + " " + myDate1.toLocaleTimeString();
-	  // Don't need to the second precision for date display, so hack off last three characters
-	  _nextFullMoon.value = str.substr (0, str.length - 3);
+        myDate1 = day;
+        myDate1.setDate(myDate1.getDate() + d);
+        myDate1.setHours(myDate1.getHours() + h);
+        str = myDate1.toLocaleDateString() + " " + myDate1.toLocaleTimeString();
+        // Don't need to the second precision for date display, so hack off last three characters
+        _nextFullMoon.value = str.substr (0, str.length - 3);
       } else {	
-	  _nextFullMoon.value = d + "d " + h + "h";
+        _nextFullMoon.value = d + "d " + h + "h";
       }
 
       var dnm = suncultCalcMoon.daysToNewMoon(day);
@@ -274,13 +275,14 @@ var suncult = {
 
       var myDate2 = new Date();
       if (_showMoonDate) {
-	  myDate2.setDate(day.getDate() + d);
-	  myDate2.setHours(myDate2.getHours() + h);
-	  str = myDate2.toLocaleDateString() + " " + myDate2.toLocaleTimeString();
-	  // Don't need to the second precision for date display, so hack off last three characters
-	  _nextNewMoon.value = str.substr (0, str.length - 3);
+        myDate2 = day;
+        myDate2.setDate(myDate2.getDate() + d);
+        myDate2.setHours(myDate2.getHours() + h);
+        str = myDate2.toLocaleDateString() + " " + myDate2.toLocaleTimeString();
+        // Don't need to the second precision for date display, so hack off last three characters
+       _nextNewMoon.value = str.substr (0, str.length - 3);
       } else {
-	  _nextNewMoon.value = d + "d " + h + "h";
+        _nextNewMoon.value = d + "d " + h + "h";
       }
 
       _moonImg.src = getMoonImageSrc(day, 64);
