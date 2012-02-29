@@ -162,6 +162,8 @@
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/SVK/Bratislava" sc:name="Bratislava" sc:latitude="48N10" sc:longitude="17E8"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/SVK/Kosice" sc:name="Kosice" sc:latitude="48N44" sc:longitude="21E15"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/SVK/BanskaBystrica" sc:name="Banska Bystrica" sc:latitude="48N43" sc:longitude="19E8"/>
+    <sc:country RDF:about="http://suncult.sf.net/EUROPE/ALBANIA" sc:name="ALBANIA"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/ALBANIA/Tirana" sc:name="Tirana" sc:latitude="41N20" sc:longitude="19E49"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/AUSTRIA" sc:name="AUSTRIA"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/AUSTRIA/Vienna" sc:name="Vienna" sc:latitude="48N15" sc:longitude="16E22"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/AZORES" sc:name="AZORES"/>
@@ -170,10 +172,14 @@
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/BELARUS/Minsk" sc:name="Minsk" sc:latitude="53N54" sc:longitude="27E33"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/BELGIUM" sc:name="BELGIUM"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/BELGIUM/Brussels" sc:name="Brussels" sc:latitude="50N48" sc:longitude="4E21"/>
+    <sc:country RDF:about="http://suncult.sf.net/EUROPE/BOSNIAxANDxHERZEGOVINA" sc:name="BOSNIA AND HERZEGOVINA"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/BOSNIAxANDxHERZEGOVINA/Sarajevo" sc:name="Sarajevo" sc:latitude="43N52" sc:longitude="18E25"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/BULGARIA" sc:name="BULGARIA"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/BULGARIA/Sofia" sc:name="Sofia" sc:latitude="42N42" sc:longitude="23E20"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/CROATIA" sc:name="CROATIA"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/CROATIA/Rijeka" sc:name="Rijeka" sc:latitude="45N20" sc:longitude="14E21"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/CROATIA/Split" sc:name="Split" sc:latitude="43N30" sc:longitude="16E26"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/CROATIA/Zagreb" sc:name="Zagreb" sc:latitude="45N49" sc:longitude="15E59"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/DENMARK" sc:name="DENMARK"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/DENMARK/Copenhagen" sc:name="Copenhagen" sc:latitude="55N41" sc:longitude="12E33"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/FINLAND" sc:name="FINLAND"/>
@@ -223,6 +229,10 @@
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/NORWAY/Bergen" sc:name="Bergen" sc:latitude="60N24" sc:longitude="5E19"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/NORWAY/Oslo" sc:name="Oslo" sc:latitude="59N56" sc:longitude="10E44"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/NORWAY/Tromso" sc:name="Tromso" sc:latitude="69N66" sc:longitude="18E96"/>
+    <sc:country RDF:about="http://suncult.sf.net/EUROPE/MACEDONIA" sc:name="MACEDONIA"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/MACEDONIA/Skopje" sc:name="Skopje" sc:latitude="42N" sc:longitude="21E26"/>
+    <sc:country RDF:about="http://suncult.sf.net/EUROPE/MONTENEGRO" sc:name="MONTENEGRO"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/MONTENEGRO/Podgorica" sc:name="Podgorica" sc:latitude="42N28" sc:longitude="19E16"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/POLAND" sc:name="POLAND"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/POLAND/Krakow" sc:name="Krakow" sc:latitude="50N4" sc:longitude="19E57"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/POLAND/Warsaw" sc:name="Warsaw" sc:latitude="52N13" sc:longitude="21E2"/>
@@ -242,6 +252,10 @@
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/RUSSIA/Sverdlovsk" sc:name="Sverdlovsk" sc:latitude="56N49" sc:longitude="60E38"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/RUSSIA/Vladivostok" sc:name="Vladivostok" sc:latitude="43N7" sc:longitude="131E55"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/RUSSIA/Volgograd" sc:name="Volgograd" sc:latitude="48N42" sc:longitude="44E31"/>
+    <sc:country RDF:about="http://suncult.sf.net/EUROPE/SERBIA" sc:name="SERBIA"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/SERBIA/Belgrade" sc:name="Belgrade" sc:latitude="44N48" sc:longitude="20E28"/>
+    <sc:country RDF:about="http://suncult.sf.net/EUROPE/SLOVENIA" sc:name="SLOVENIA"/>
+      <sc:city RDF:about="http://suncult.sf.net/EUROPE/SLOVENIA/Ljubljana" sc:name="Ljubljana" sc:latitude="46N3" sc:longitude="14E30"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/SPAIN" sc:name="SPAIN"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/SPAIN/Barcelona" sc:name="Barcelona" sc:latitude="41N24" sc:longitude="2E9"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/SPAIN/Madrid" sc:name="Madrid" sc:latitude="40N25" sc:longitude="3W41"/>
@@ -269,8 +283,6 @@
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/UKRAINE/Odessa" sc:name="Odessa" sc:latitude="46N29" sc:longitude="30E44"/>
     <sc:country RDF:about="http://suncult.sf.net/EUROPE/UZBEKISTAN" sc:name="UZBEKISTAN"/>
       <sc:city RDF:about="http://suncult.sf.net/EUROPE/UZBEKISTAN/Tashkent" sc:name="Tashkent" sc:latitude="41N20" sc:longitude="69E18"/>
-    <sc:country RDF:about="http://suncult.sf.net/EUROPE/YUGOSLAVIA" sc:name="YUGOSLAVIA"/>
-      <sc:city RDF:about="http://suncult.sf.net/EUROPE/YUGOSLAVIA/Belgrade" sc:name="Belgrade" sc:latitude="44N48" sc:longitude="20E28"/>
 
   <sc:continent RDF:about="http://suncult.sf.net/NORTH_AMERICA" sc:name="North America"/>
     <sc:country RDF:about="http://suncult.sf.net/NORTH_AMERICA/Canada" sc:name="Canada"/>
@@ -2773,6 +2785,11 @@
 			</RDF:Seq>
 			<RDF:Seq RDF:about="http://suncult.sf.net/EUROPE">
 				<RDF:li>
+					<RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/ALBANIA">
+						<RDF:li RDF:resource="http://suncult.sf.net/EUROPE/ALBANIA/Tirana"/>
+					</RDF:Seq>
+				</RDF:li>
+				<RDF:li>
 					<RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/AUSTRIA">
 						<RDF:li RDF:resource="http://suncult.sf.net/EUROPE/AUSTRIA/Vienna"/>
 					</RDF:Seq>
@@ -2806,6 +2823,11 @@
           </RDF:Seq>
 				</RDF:li>
 				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/BOSNIAxANDxHERZEGOVINA">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/BOSNIAxANDxHERZEGOVINA/Sarajevo"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
           <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/BULGARIA">
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/BULGARIA/Sofia"/>
           </RDF:Seq>
@@ -2813,6 +2835,8 @@
 				<RDF:li>
           <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/CROATIA">
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/CROATIA/Rijeka"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/CROATIA/Split"/>
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/CROATIA/Zagreb"/>
           </RDF:Seq>
 				</RDF:li>
 				<RDF:li>
@@ -2907,6 +2931,16 @@
           </RDF:Seq>
 				</RDF:li>
 				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/MACEDONIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/MACEDONIA/Skopje"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/MONTENEGRO">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/MONTENEGRO/Podgorica"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
           <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/POLAND">
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/POLAND/Krakow"/>
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/POLAND/Warsaw"/>
@@ -2935,6 +2969,16 @@
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Sverdlovsk"/>
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Vladivostok"/>
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/RUSSIA/Volgograd"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/SERBIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/SERBIA/Belgrade"/>
+          </RDF:Seq>
+				</RDF:li>
+				<RDF:li>
+          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/SLOVENIA">
+            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/SLOVENIA/Ljubljana"/>
           </RDF:Seq>
 				</RDF:li>
 				<RDF:li>
@@ -2975,11 +3019,6 @@
 				<RDF:li>
           <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/UZBEKISTAN">
             <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/UZBEKISTAN/Tashkent"/>
-          </RDF:Seq>
-				</RDF:li>
-				<RDF:li>
-          <RDF:Seq RDF:about="http://suncult.sf.net/EUROPE/YUGOSLAVIA">
-            <RDF:li RDF:resource="http://suncult.sf.net/EUROPE/YUGOSLAVIA/Belgrade"/>
           </RDF:Seq>
 				</RDF:li>
 			</RDF:Seq>
