@@ -32,6 +32,11 @@
     <em:targetApplication RDF:resource="rdf:#$SgP6L"/>
     <em:targetApplication RDF:resource="rdf:#$FgP6L"/>
     <em:type>2</em:type>
+    <!--
+    I don't understand the build system, so this unpack setting primarily prevents AMO validation warning
+    It's possibly justified as we use a few icons and several language translations
+    -->
+    <em:unpack>true</em:unpack>
   </RDF:Description>
   <!-- Thunderbird -->
   <RDF:Description RDF:about="rdf:#$HgP6L"
