@@ -393,9 +393,9 @@ var suncult = {
 
       var str = null;
 
-      var myDate1 = new Date();
+      var myDate1;
       if (_showMoonDate) {
-          myDate1 = today;
+          myDate1 = new Date();
           myDate1.setDate(myDate1.getDate() + d);
           myDate1.setHours(myDate1.getHours() + h);
           str = myDate1.toLocaleDateString() + " " + myDate1.toLocaleTimeString();
@@ -409,9 +409,9 @@ var suncult = {
       d = Math.floor(dnm);
       h = Math.floor((dnm - d) * 24);
 
-      var myDate2 = new Date();
+      var myDate2;
       if (_showMoonDate) {
-          myDate2 = today;
+          myDate2 = new Date();
           myDate2.setDate(myDate2.getDate() + d);
           myDate2.setHours(myDate2.getHours() + h);
           str = myDate2.toLocaleDateString() + " " + myDate2.toLocaleTimeString();

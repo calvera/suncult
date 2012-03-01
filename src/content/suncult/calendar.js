@@ -259,7 +259,7 @@ var suncult = {
 
       var myDate1 = new Date();
       if (_showMoonDate) {
-        myDate1 = day;
+        myDate1.setTime(day.valueOf());
         myDate1.setDate(myDate1.getDate() + d);
         myDate1.setHours(myDate1.getHours() + h);
         str = myDate1.toLocaleDateString() + " " + myDate1.toLocaleTimeString();
@@ -275,7 +275,7 @@ var suncult = {
 
       var myDate2 = new Date();
       if (_showMoonDate) {
-        myDate2 = day;
+        myDate2.setTime(day.valueOf());
         myDate2.setDate(myDate2.getDate() + d);
         myDate2.setHours(myDate2.getHours() + h);
         str = myDate2.toLocaleDateString() + " " + myDate2.toLocaleTimeString();
