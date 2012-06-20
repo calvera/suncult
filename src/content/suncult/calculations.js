@@ -470,7 +470,7 @@ formValues: function(lat, lon, _date, tzOffset, tf, srAngle, twAngle)
     sset = suncultUtils.formatTime(sset_h, sset_m, tf);
     
     yearday = suncultUtils.getDOY(_date);
-    dump("doy: " + yearday + "\n");
+    //dump("doy: " + yearday + "\n");
     sriseaz = Math.round(90 + 31 * this.cosd(0.986 * yearday + 7.9));
     ssetaz = Math.round(270 - 31 * this.cosd(0.986 * yearday + 7.9));
     
