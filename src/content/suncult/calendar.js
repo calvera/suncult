@@ -32,6 +32,8 @@ var suncult = {
   _resNoMoonrise: "suncult.noMoonrise",
   _resNoMoonset: "suncult.noMoonset",
   _resMoonPrefix: "suncult.moon.",
+  _resAllTwilight: "suncult.sun.twilight.all",
+  _resNoTwilight: "suncult.sun.twilight.no",
   
   _twilightStart: null,
   _sunrise: null,
@@ -231,9 +233,9 @@ var suncult = {
         _twilightStart.value = result[0];
       }
       if (result[1] == "all") {
-        _twilightStart.value = getResource(_resAllTwilight);
+        _twilightEnd.value = getResource(_resAllTwilight);
       } else if (result[1] == "no") {
-        _twilightStart.value = getResource(_resNoTwilight);
+        _twilightEnd.value = getResource(_resNoTwilight);
       } else {
         _twilightEnd.value = result[1];
       }
