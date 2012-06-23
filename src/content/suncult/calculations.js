@@ -478,8 +478,9 @@ formValues: function(lat, lon, _date, tzOffset, tf, srAngle, twAngle)
     ssetaz = Math.round(270 - 31 * this.cosd(0.986 * yearday + 7.9));
     
   } else {
-    srise = "na";     
-    sset = "na";
+    // 24 hours of sunlight - therefore no sunrise or sunset times
+    srise = "--:--";
+    sset = "--:--";
   }
 
     // enum 0 = normal, 1 = sunrise/sunset, 2 = nighttime
