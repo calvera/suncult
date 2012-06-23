@@ -1,20 +1,20 @@
 <!ENTITY suncult "Sun Cult">
-<!ENTITY config "Configuración Sun Cult ">
+<!ENTITY config "ConfiguraciÃ³n Sun Cult ">
 <!ENTITY configKey "C">
 <!ENTITY calendar "Calendario Sun Cult">
 <!ENTITY calendarKey "l">
-<!ENTITY twilightStart "Inicio del crepúsculo">
+<!ENTITY twilightStart "Inicio del crepÃºsculo">
 <!ENTITY sunrise "Amanecer">
 <!ENTITY sunset "Ocaso">
 <!ENTITY sunrise-azimuth "Sunrise azimuth">
 <!ENTITY sunset-azimuth "Sunset azimuth">
-<!ENTITY twilightEnd "Fin del crepúsculo">
+<!ENTITY twilightEnd "Fin del crepÃºsculo">
 <!ENTITY moonPhase "Fase lunar">
-<!ENTITY nextFullMoon "Próxima luna llena">
-<!ENTITY nextNewMoon "Próxima luna nueva">
+<!ENTITY nextFullMoon "PrÃ³xima luna llena">
+<!ENTITY nextNewMoon "PrÃ³xima luna nueva">
 <!ENTITY moonSet "Salida de la luna">
 <!ENTITY moonRise "Puesta de la luna">
 <!ENTITY moonSetAzimuth "Acimut de puesta de la luna">
 <!ENTITY moonRiseAzimuth "Acimut de salida de la luna">
-<!ENTITY midday "Mediodía">
+<!ENTITY midday "MediodÃ­a">
 <!ENTITY today "Today">
