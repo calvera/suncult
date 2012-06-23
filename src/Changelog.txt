@@ -1,3 +1,25 @@
+1.3.20120620
+[Summer Solstice Bug Fix Release]
+- Fix start/end sun twilight display values to cope for 24 hours of continuous light
+- Update version compatibility
+
+1.3.20120301
+[Leap Day +1 Bug Fix release]
+- Bug fix to broken moon popup images in version 1.3.20120229 
+
+1.3.20120229
+[Leap Day release]
+- Add Sun Icon variable colour depending on the time of day
+- Improve European countries/cities location lists.
+- Improve reliabilty of date/time calculations when showing moon times as a date.
+
+1.3.20111118
+[Bug fix release]
+- Fix SF#1473668: No Tooltip when Statusbar hidden.
+- Fix New Moon (Show as) Date Display.
+- Improve compatibility
+- Minor Internal improvements
+
 1.3.20110803
 - Add more worldwide cities.
 - Add more British cities.
