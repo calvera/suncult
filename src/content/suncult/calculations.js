@@ -18,6 +18,7 @@
  *  eg. Suncult Full Moon calculated : 2012-03-07 ~ 16:00
  *  however from above NASA source   : 2012-03-08   09:40
  */
+"use strict";
 var suncultUtils = {
   formatTime: function(h, m, tf) {
   if (h > 23) h -= 24;
@@ -453,6 +454,8 @@ formValues: function(lat, lon, _date, tzOffset, tf, srAngle, twAngle)
   var sriseaz;
   var ssetaz;
   var ssouth = suncultUtils.formatTime(sSouthT_h, sSouthT_m, tf);
+
+  var yearday;
 
   if(this.twStatus == 0){
     twStart = suncultUtils.formatTime(twst_h, twst_m, tf);     

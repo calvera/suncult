@@ -1,3 +1,4 @@
+"use strict";
 var suncultConfig = {
   _stringBundle: null,
   _latitude: null,
@@ -8,23 +9,21 @@ var suncultConfig = {
   _errors: null,
   
   init: function() {
-    // initialization code
-    // dump("suncultConfig.init\n");
-    with (this) {
-      _errors = new Array();
-      _stringBundle = document.getElementById("string-bundle");
+      // initialization code
+      // dump("suncultConfig.init\n");
+      this._errors = new Array();
+      this._stringBundle = document.getElementById("string-bundle");
       this.initialized = true;
-      _latitude = document.getElementById("pref-latitude");
-      _longitude = document.getElementById("pref-longitude");
-      _latitudeEdit = document.getElementById("latitude-edit");
-      _longitudeEdit = document.getElementById("longitude-edit");
-      _latitudeEdit.value = this.formatValue(_latitude.value, "N", "S");
-      _longitudeEdit.value = this.formatValue(_longitude.value, "E", "W");
-      populateBars();
-      populatePositions();
-      onSun();
-      onMoon();
-    }
+      this._latitude = document.getElementById("pref-latitude");
+      this._longitude = document.getElementById("pref-longitude");
+      this._latitudeEdit = document.getElementById("latitude-edit");
+      this._longitudeEdit = document.getElementById("longitude-edit");
+      this._latitudeEdit.value = this.formatValue(this._latitude.value, "N", "S");
+      this._longitudeEdit.value = this.formatValue(this._longitude.value, "E", "W");
+      this.populateBars();
+      this.populatePositions();
+      this.onSun();
+      this.onMoon();
   },
 
   onDialogAccept: function(event) {

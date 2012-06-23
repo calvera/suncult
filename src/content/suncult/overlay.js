@@ -1,3 +1,5 @@
+"use strict";
+
 const suncultPrefix = "extensions.suncult.";
 
 var suncult = {
@@ -95,43 +97,40 @@ var suncult = {
   
   init: function() {
 //    dump("in suncult.init\n");
-    with (this) {
-      _stringBundle = document.getElementById("suncult-string-bundle");
-      _prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
+      this._stringBundle = document.getElementById("suncult-string-bundle");
+      this._prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
 
-      _today = document.getElementById("suncult-today-today");
+      this._today = document.getElementById("suncult-today-today");
 
-      _sunImg = document.getElementById("suncult-sun-today-img");
-      _twilightStart = document.getElementById("suncult-twilight-start-today");
-      _sunrise = document.getElementById("suncult-sunrise-today");
-      _sunset = document.getElementById("suncult-sunset-today");
-      _sunriseAzimuth = document.getElementById("suncult-sunrise-azimuth-today");
-      _sunsetAzimuth = document.getElementById("suncult-sunset-azimuth-today");
-      _midday = document.getElementById("suncult-midday-today");
-      _twilightEnd = document.getElementById("suncult-twilight-end-today");
-      _sunShadeImg = document.getElementById("suncult-status-icon-sun");
-      _moonPhaseImg = document.getElementById("suncult-status-icon-moon");
-      _moonImg = document.getElementById("suncult-moon-today-img");
-      _moonPhase = document.getElementById("suncult-moonphase-today");
-      _nextFullMoon = document.getElementById("suncult-next-fullmoon-today");
-      _nextNewMoon = document.getElementById("suncult-next-newmoon-today");
-      _moonRise = document.getElementById("suncult-moonrise-today");
-      _moonSet = document.getElementById("suncult-moonset-today");
-      _moonRiseAz = document.getElementById("suncult-moonrise-azimuth-today");
-      _moonSetAz = document.getElementById("suncult-moonset-azimuth-today");
-      readPreferences();
-      if (!_prefs.prefHasUserValue(_prefLongitude) && !_prefs.prefHasUserValue(_prefLatitude)) {
-        var module = this;
-        setTimeout(function() { module.showConfig(); }, 250);
-        }
-      updateStatusBar();
-      schedule();
+      this._sunImg = document.getElementById("suncult-sun-today-img");
+      this._twilightStart = document.getElementById("suncult-twilight-start-today");
+      this._sunrise = document.getElementById("suncult-sunrise-today");
+      this._sunset = document.getElementById("suncult-sunset-today");
+      this._sunriseAzimuth = document.getElementById("suncult-sunrise-azimuth-today");
+      this._sunsetAzimuth = document.getElementById("suncult-sunset-azimuth-today");
+      this._midday = document.getElementById("suncult-midday-today");
+      this._twilightEnd = document.getElementById("suncult-twilight-end-today");
+      this._sunShadeImg = document.getElementById("suncult-status-icon-sun");
+      this._moonPhaseImg = document.getElementById("suncult-status-icon-moon");
+      this._moonImg = document.getElementById("suncult-moon-today-img");
+      this._moonPhase = document.getElementById("suncult-moonphase-today");
+      this._nextFullMoon = document.getElementById("suncult-next-fullmoon-today");
+      this._nextNewMoon = document.getElementById("suncult-next-newmoon-today");
+      this._moonRise = document.getElementById("suncult-moonrise-today");
+      this._moonSet = document.getElementById("suncult-moonset-today");
+      this._moonRiseAz = document.getElementById("suncult-moonrise-azimuth-today");
+      this._moonSetAz = document.getElementById("suncult-moonset-azimuth-today");
+      this.readPreferences();
+      if (!this._prefs.prefHasUserValue(this._prefLongitude) && !this._prefs.prefHasUserValue(this._prefLatitude)) {
+        setTimeout(function() { this.showConfig(); }, 250);
+      }
+      this.updateStatusBar();
+      this.schedule();
       
       Components.classes["@mozilla.org/observer-service;1"]
             .getService(Components.interfaces.nsIObserverService)
             .addObserver(this, "SunCult:Configuration", false);      
       //initialized = true;
-    }
 //    dump("leaving suncult.init\n");
   },
   
@@ -154,44 +153,42 @@ var suncult = {
 
   
   readPreferences: function() {
-    with (this) {
-      _latitude = getCharPref(_prefLatitude, null);
-      _longitude = getCharPref(_prefLongitude, null);
-      _timezone = getCharPref(_prefTimezone, new Date().getTimezoneOffset());
-      _timeFormat = getCharPref(_prefTimeFormat, 'h24');
-      _srAngle = parseFloat(getCharPref(_prefSetRiseAngle, -7.0/12.0));
-      _twAngle = parseFloat(getCharPref(_prefTwilightAngle, -6.0));
+      this._latitude = this.getCharPref(this._prefLatitude, null);
+      this._longitude = this.getCharPref(this._prefLongitude, null);
+      this._timezone = this.getCharPref(this._prefTimezone, new Date().getTimezoneOffset());
+      this._timeFormat = this.getCharPref(this._prefTimeFormat, 'h24');
+      this._srAngle = parseFloat(this.getCharPref(this._prefSetRiseAngle, -7.0/12.0));
+      this._twAngle = parseFloat(this.getCharPref(this._prefTwilightAngle, -6.0));
 
-      var mc = getBoolPref(_prefMenuConfig, true);
+      var mc = this.getBoolPref(this._prefMenuConfig, true);
       document.getElementById("suncult-config").hidden = !mc;
 
-      _toolbar = getCharPref(_prefBar, "status-bar");
-      _toolbarPosition = getIntPref(_prefBarPosition, -1);
+      this._toolbar = this.getCharPref(this._prefBar, "status-bar");
+      this._toolbarPosition = this.getIntPref(this._prefBarPosition, -1);
 
-      _showSun = getBoolPref(_prefShowSun, true);
-      _showSunImage = getBoolPref(_prefShowSunImage, true);
-      _showSunTwilightStart = getBoolPref(_prefShowSunTwilightStart, true);
-      _showSunTwilightEnd = getBoolPref(_prefShowSunTwilightEnd, true);
-      _showSunrise = getBoolPref(_prefShowSunrise, true);
-      _showSunset = getBoolPref(_prefShowSunset, true);
-      _showSunriseAzimuth = getBoolPref(_prefShowSunriseAzimuth, true);
-      _showSunsetAzimuth = getBoolPref(_prefShowSunsetAzimuth, true);
-      _showMidday = getBoolPref(_prefShowMidday, false);
+      this._showSun = this.getBoolPref(this._prefShowSun, true);
+      this._showSunImage = this.getBoolPref(this._prefShowSunImage, true);
+      this._showSunTwilightStart = this.getBoolPref(this._prefShowSunTwilightStart, true);
+      this._showSunTwilightEnd = this.getBoolPref(this._prefShowSunTwilightEnd, true);
+      this._showSunrise = this.getBoolPref(this._prefShowSunrise, true);
+      this._showSunset = this.getBoolPref(this._prefShowSunset, true);
+      this._showSunriseAzimuth = this.getBoolPref(this._prefShowSunriseAzimuth, true);
+      this._showSunsetAzimuth = this.getBoolPref(this._prefShowSunsetAzimuth, true);
+      this._showMidday = this.getBoolPref(this._prefShowMidday, false);
 
-      _showMoon = getBoolPref(_prefShowMoon, true);
-      _showMoonImage = getBoolPref(_prefShowMoonImage, true);
-      _showMoonrise = getBoolPref(_prefShowMoonrise, true);
-      _showMoonriseAzimuth = getBoolPref(_prefShowMoonriseAzimuth, false);
-      _showMoonset = getBoolPref(_prefShowMoonset, true);
-      _showMoonsetAzimuth = getBoolPref(_prefShowMoonsetAzimuth, false);
-      _showMoonphase = getBoolPref(_prefShowMoonphase, true);
-      _showNextFullMoon = getBoolPref(_prefShowNextFullMoon, true);
-      _showNextNewMoon = getBoolPref(_prefShowNextNewMoon, false);
-      _showMoonDate = getBoolPref(_prefShowMoonDate, true);
+      this._showMoon = this.getBoolPref(this._prefShowMoon, true);
+      this._showMoonImage = this.getBoolPref(this._prefShowMoonImage, true);
+      this._showMoonrise = this.getBoolPref(this._prefShowMoonrise, true);
+      this._showMoonriseAzimuth = this.getBoolPref(this._prefShowMoonriseAzimuth, false);
+      this._showMoonset = this.getBoolPref(this._prefShowMoonset, true);
+      this._showMoonsetAzimuth = this.getBoolPref(this._prefShowMoonsetAzimuth, false);
+      this._showMoonphase = this.getBoolPref(this._prefShowMoonphase, true);
+      this._showNextFullMoon = this.getBoolPref(this._prefShowNextFullMoon, true);
+      this._showNextNewMoon = this.getBoolPref(this._prefShowNextNewMoon, false);
+      this._showMoonDate = this.getBoolPref(this._prefShowMoonDate, true);
 
-      _showHide();
-      _move();
-    }
+      this._showHide();
+      this._move();
   },
   
   getBoolPref: function(name, defval) {
@@ -232,58 +229,55 @@ var suncult = {
   },
 
   _showHide: function() {
-    with (this) {
-      document.getElementById("suncult-sun-today").collapsed = !_showSun;
-      document.getElementById("suncult-sun-today-img-box").collapsed = !_showSunImage;
-      document.getElementById("suncult-row-twilightStart-today").collapsed = !_showSunTwilightStart;
-      document.getElementById("suncult-row-sunrise-today").collapsed = !_showSunrise;
-      document.getElementById("suncult-row-midday-today").collapsed = !_showMidday;
-      document.getElementById("suncult-row-sunset-today").collapsed = !_showSunset;
-      document.getElementById("suncult-row-sunrise-azimuth-today").collapsed = !_showSunriseAzimuth;
-      document.getElementById("suncult-row-sunset-azimuth-today").collapsed = !_showSunsetAzimuth;
-      document.getElementById("suncult-row-twilightEnd-today").collapsed = !_showSunTwilightEnd;
+      document.getElementById("suncult-sun-today").collapsed = !this._showSun;
+      document.getElementById("suncult-sun-today-img-box").collapsed = !this._showSunImage;
+      document.getElementById("suncult-row-twilightStart-today").collapsed = !this._showSunTwilightStart;
+      document.getElementById("suncult-row-sunrise-today").collapsed = !this._showSunrise;
+      document.getElementById("suncult-row-midday-today").collapsed = !this._showMidday;
+      document.getElementById("suncult-row-sunset-today").collapsed = !this._showSunset;
+      document.getElementById("suncult-row-sunrise-azimuth-today").collapsed = !this._showSunriseAzimuth;
+      document.getElementById("suncult-row-sunset-azimuth-today").collapsed = !this._showSunsetAzimuth;
+      document.getElementById("suncult-row-twilightEnd-today").collapsed = !this._showSunTwilightEnd;
 
-      document.getElementById("suncult-moon-today").collapsed = !_showMoon;
-      document.getElementById("suncult-moon-today-img-box").collapsed = !_showMoonImage;
-      document.getElementById("suncult-row-moonrise-today").collapsed = !_showMoonrise;
-      document.getElementById("suncult-row-moonrise-azimuth-today").collapsed = !_showMoonriseAzimuth;
-      document.getElementById("suncult-row-moonset-today").collapsed = !_showMoonset;
-      document.getElementById("suncult-row-moonset-azimuth-today").collapsed = !_showMoonsetAzimuth;
-      document.getElementById("suncult-row-moonphase-today").collapsed = !_showMoonphase;
-      document.getElementById("suncult-row-nextFullMoon-today").collapsed = !_showNextFullMoon;
-      document.getElementById("suncult-row-nextNewMoon-today").collapsed = !_showNextNewMoon;
+      document.getElementById("suncult-moon-today").collapsed = !this._showMoon;
+      document.getElementById("suncult-moon-today-img-box").collapsed = !this._showMoonImage;
+      document.getElementById("suncult-row-moonrise-today").collapsed = !this._showMoonrise;
+      document.getElementById("suncult-row-moonrise-azimuth-today").collapsed = !this._showMoonriseAzimuth;
+      document.getElementById("suncult-row-moonset-today").collapsed = !this._showMoonset;
+      document.getElementById("suncult-row-moonset-azimuth-today").collapsed = !this._showMoonsetAzimuth;
+      document.getElementById("suncult-row-moonphase-today").collapsed = !this._showMoonphase;
+      document.getElementById("suncult-row-nextFullMoon-today").collapsed = !this._showNextFullMoon;
+      document.getElementById("suncult-row-nextNewMoon-today").collapsed = !this._showNextNewMoon;
 
-      document.getElementById("suncult-separator-today").collapsed = _showMoon ^ _showSun;
+      document.getElementById("suncult-separator-today").collapsed = this._showMoon ^ this._showSun;
 
       // Align displayed icon to match configured features to be shown - also saves UI space
-      if ( ! _showMoon && ! _showSun ) {
+      if ( ! this._showMoon && ! this._showSun ) {
 	  // If both off force traditional 'dual icon'
 	  document.getElementById("suncult-status-icon-sun").hidden = false;
 	  document.getElementById("suncult-status-icon-moon").hidden = false;
 	  document.getElementById("suncult-status-icon-moon").left = 12;
       } else {
-	  document.getElementById("suncult-status-icon-sun").hidden = !_showSun;
-	  document.getElementById("suncult-status-icon-moon").hidden = !_showMoon;
+	  document.getElementById("suncult-status-icon-sun").hidden = !this._showSun;
+	  document.getElementById("suncult-status-icon-moon").hidden = !this._showMoon;
 	  // Move Moon a bit to the right if the sun is also shown
-	  if ( _showSun && _showSun )
+	  if ( this._showSun && this._showSun )
 	      document.getElementById("suncult-status-icon-moon").left = 12;
 	  else
 	      document.getElementById("suncult-status-icon-moon").left = 0;
       }
 
-    }
   },
   
   _move: function() {
-    with (this) {
-      var toolbar = document.getElementById(_toolbar);
+      var toolbar = document.getElementById(this._toolbar);
       var box = document.getElementById("suncult-box");
-      var position = _toolbarPosition;
+      var position = this._toolbarPosition;
       
       if (!toolbar) {
-        _prefs.setCharPref(_prefBar, "status-bar");
-        _prefs.setIntPref(_prefBarPosition, -1);
-        return;
+          this._prefs.setCharPref(this._prefBar, "status-bar");
+          this._prefs.setIntPref(this._prefBarPosition, -1);
+          return;
       };
       
       // bail if it is in the right place
@@ -314,7 +308,6 @@ var suncult = {
       
       //insert us in correct place
       this._insertAtIndex(toolbar, newbox, position);
-    }
   },
 
   _indexOf: function(aParent, aChild){
@@ -350,45 +343,42 @@ var suncult = {
   },
   
   updatePopupSun: function(popup) {
-    with (this) {
-/*    dump("lat: " + _latitude + "\n");
-      dump("long: " + _longitude + "\n");
-      dump("timezone: " + _timezone + "\n");
-      dump("timeformat: " + _timeFormat + "\n"); */
+/*    dump("lat: " + this._latitude + "\n");
+      dump("long: " + this._longitude + "\n");
+      dump("timezone: " + this._timezone + "\n");
+      dump("timeformat: " + this._timeFormat + "\n"); */
       var today = new Date();
-      var lat = parseFloat(_latitude);
-      var lon = parseFloat(_longitude);
-      var result = suncultCalcSun.formValues(lat, lon, today, _timezone, _timeFormat, _srAngle, _twAngle);
+      var lat = parseFloat(this._latitude);
+      var lon = parseFloat(this._longitude);
+      var result = suncultCalcSun.formValues(lat, lon, today, this._timezone, this._timeFormat, this._srAngle, this._twAngle);
       if (result[0] == "all") {
-        _twilightStart.value = getResource(_resAllTwilight)
+          this._twilightStart.value = this.getResource(this._resAllTwilight)
       } else if (result[0] == "no") {
-        _twilightStart.value = getResource(_resNoTwilight)
+          this._twilightStart.value = this.getResource(this._resNoTwilight)
       } else {
-        _twilightStart.value = result[0];
+          this._twilightStart.value = result[0];
       }
       if (result[1] == "all") {
-        _twilightEnd.value = getResource(_resAllTwilight)
+          this._twilightEnd.value = this.getResource(this._resAllTwilight)
       } else if (result[1] == "no") {
-        _twilightEnd.value = getResource(_resNoTwilight)
+          this._twilightEnd.value = this.getResource(this._resNoTwilight)
       } else {
-        _twilightEnd.value = result[1];
+          this._twilightEnd.value = result[1];
       }
-      _sunrise.value = result[2];
-      _sunset.value = result[3];
-      _midday.value = result[4];
-      _sunriseAzimuth.value = result[5];
-      _sunsetAzimuth.value = result[6];
+      this._sunrise.value = result[2];
+      this._sunset.value = result[3];
+      this._midday.value = result[4];
+      this._sunriseAzimuth.value = result[5];
+      this._sunsetAzimuth.value = result[6];
 
-      _sunImg.src = getSunImageSrc(result[7], 64);
-    }
+      this._sunImg.src = this.getSunImageSrc(result[7], 64);
   },
   
   updatePopupMoon: function(popup) {
-    with (this) {
       var today = new Date();
-      var lat = parseFloat(_latitude);
-      var lon = parseFloat(_longitude);
-      _moonPhase.value = getResource(_resMoonPrefix + suncultCalcMoon.phaseName(today));
+      var lat = parseFloat(this._latitude);
+      var lon = parseFloat(this._longitude);
+      this._moonPhase.value = this.getResource(this._resMoonPrefix + suncultCalcMoon.phaseName(today));
       var dfm = suncultCalcMoon.daysToFullMoon(today);
       var d = Math.floor(dfm);
       var h = Math.floor((dfm - d) * 24);
@@ -396,15 +386,15 @@ var suncult = {
       var str = null;
 
       var myDate1;
-      if (_showMoonDate) {
+      if (this._showMoonDate) {
           myDate1 = new Date();
           myDate1.setDate(myDate1.getDate() + d);
           myDate1.setHours(myDate1.getHours() + h);
           str = myDate1.toLocaleDateString() + " " + myDate1.toLocaleTimeString();
 	      // Don't need to the second precision for date display, so hack off last three characters
-          _nextFullMoon.value = str.substr (0, str.length - 3);
+          this._nextFullMoon.value = str.substr (0, str.length - 3);
       } else {
-          _nextFullMoon.value = d + "d " + h + "h";
+          this._nextFullMoon.value = d + "d " + h + "h";
       }
 
       var dnm = suncultCalcMoon.daysToNewMoon(today);
@@ -412,35 +402,34 @@ var suncult = {
       h = Math.floor((dnm - d) * 24);
 
       var myDate2;
-      if (_showMoonDate) {
+      if (this._showMoonDate) {
           myDate2 = new Date();
           myDate2.setDate(myDate2.getDate() + d);
           myDate2.setHours(myDate2.getHours() + h);
           str = myDate2.toLocaleDateString() + " " + myDate2.toLocaleTimeString();
           // Don't need to the second precision for date display, so hack off last three characters
-          _nextNewMoon.value = str.substr (0, str.length - 3);
+          this._nextNewMoon.value = str.substr (0, str.length - 3);
       } else {
-          _nextNewMoon.value = d + "d " + h + "h";
+          this._nextNewMoon.value = d + "d " + h + "h";
       }
 
-      _moonImg.src = getMoonImageSrc(today, 64);
+      this._moonImg.src = this.getMoonImageSrc(today, 64);
 
-      var result = suncultCalcMoon.riseset(parseFloat(_latitude),parseFloat(_longitude), today, _timezone, _timeFormat);
+      var result = suncultCalcMoon.riseset(parseFloat(this._latitude), parseFloat(this._longitude), today, this._timezone, this._timeFormat);
       if (result[0]) {
-        _moonRise.value = result[0];
-        _moonRiseAz.value = result[2];
+          this._moonRise.value = result[0];
+          this._moonRiseAz.value = result[2];
       } else {
-        _moonRise.value = getResource(_resNoMoonrise);
-        _moonRiseAz.value = getResource(_resNoMoonrise);
+          this._moonRise.value = this.getResource(this._resNoMoonrise);
+          this._moonRiseAz.value = this.getResource(this._resNoMoonrise);
       }
       if (result[1]) {
-        _moonSet.value = result[1];
-        _moonSetAz.value = result[3];
+          this._moonSet.value = result[1];
+          this._moonSetAz.value = result[3];
       } else {
-        _moonSet.value = getResource(_resNoMoonset);
-        _moonSetAz.value = getResource(_resNoMoonset);
+          this._moonSet.value = this.getResource(this._resNoMoonset);
+          this._moonSetAz.value = this.getResource(this._resNoMoonset);
       }
-    } 
   },
     
   getMoonPhase: function(xdate) {
@@ -502,9 +491,8 @@ var suncult = {
   },
   
   schedule: function() {
-    var module = this;
     // Update every minute
-    setTimeout(function() { module.trigger(); }, 60000);
+    setTimeout(function() { this.trigger(); }, 60000);
   }
 };
 
